@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bubabu QR — Batch 9 (v06 + v09 kept + 7 new same direction)</title>
+<style>
+  :root {
+    --magenta: #FF1F8F; --cyan: #5BC0DE; --lime: #84CC16;
+    --yellow: #FFEB3B; --orange: #FF9F1C; --coral: #FF6B6B;
+    --pink: #FFB6D5; --butter-top: #FFFAEB; --butter-bottom: #FFF6CC;
+    --ink: #2A1F35; --muted: #7A6F85;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(180deg, var(--butter-top) 0%, var(--butter-bottom) 100%);
+    color: var(--ink); min-height: 100vh; padding: 32px 24px 80px;
+  }
+  .container { max-width: 1400px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 24px; }
+  header h1 {
+    font-size: 42px; font-weight: 800; color: var(--magenta);
+    margin: 0 0 8px; letter-spacing: -0.02em;
+  }
+  header .url {
+    font-size: 16px; color: var(--ink); background: white;
+    padding: 6px 16px; border-radius: 100px; display: inline-block;
+    font-family: 'Courier New', monospace; border: 2px solid var(--magenta);
+  }
+  header .subtitle {
+    font-size: 14px; color: var(--muted); margin-top: 10px;
+    letter-spacing: 0.08em; text-transform: uppercase;
+  }
+  .pick-note {
+    background: linear-gradient(135deg, var(--yellow) 0%, var(--orange) 100%);
+    color: var(--ink); padding: 16px 24px; border-radius: 16px;
+    font-weight: 700; font-size: 16px; text-align: center;
+    margin: 0 auto 28px; max-width: 900px;
+  }
+  .pick-note .num { color: var(--magenta); font-size: 18px; }
+  .direction-note {
+    background: white; padding: 14px 20px; border-radius: 12px;
+    border-left: 4px solid var(--coral); margin: 0 auto 32px;
+    max-width: 900px; font-size: 14px; line-height: 1.5;
+  }
+  .direction-note strong { color: var(--magenta); }
+  .grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 20px; margin-bottom: 32px;
+  }
+  .qr-card {
+    background: white; border-radius: 16px; padding: 18px;
+    box-shadow: 0 6px 20px rgba(255, 31, 143, 0.10);
+    display: flex; flex-direction: column; gap: 10px;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .qr-card.kept {
+    border: 3px solid var(--coral);
+    position: relative;
+  }
+  .qr-card.kept::before {
+    content: 'KEPT';
+    position: absolute; top: -10px; right: 12px;
+    background: var(--coral); color: white;
+    padding: 3px 12px; border-radius: 100px;
+    font-size: 11px; font-weight: 800; letter-spacing: 0.06em;
+  }
+  .qr-card.new {
+    border: 3px solid var(--cyan);
+    position: relative;
+  }
+  .qr-card.new::before {
+    content: 'NEW';
+    position: absolute; top: -10px; right: 12px;
+    background: var(--cyan); color: white;
+    padding: 3px 12px; border-radius: 100px;
+    font-size: 11px; font-weight: 800; letter-spacing: 0.06em;
+  }
+  .qr-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 28px rgba(255, 31, 143, 0.18);
+  }
+  .qr-number {
+    font-size: 24px; font-weight: 800; color: var(--magenta);
+    display: flex; align-items: baseline; gap: 8px;
+  }
+  .qr-number .label {
+    font-size: 13px; color: var(--ink); font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.04em;
+  }
+  .qr-image {
+    background: var(--butter-top); border-radius: 10px;
+    padding: 10px; aspect-ratio: 1;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .qr-image img { width: 100%; height: auto; border-radius: 6px; cursor: zoom-in; }
+  .qr-desc {
+    font-size: 13px; color: var(--muted);
+    line-height: 1.4; min-height: 55px;
+  }
+  .qr-desc strong { color: var(--ink); }
+
+  @media (max-width: 1000px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
+
+  .zoom-overlay {
+    position: fixed; inset: 0; background: rgba(42, 31, 53, 0.92);
+    display: none; align-items: center; justify-content: center;
+    z-index: 1000; cursor: zoom-out; padding: 24px;
+  }
+  .zoom-overlay.active { display: flex; }
+  .zoom-overlay img {
+    max-width: 92vw; max-height: 92vh;
+    border-radius: 12px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  }
+
+  footer {
+    text-align: center; margin-top: 24px; padding-top: 16px;
+    border-top: 1px solid rgba(255, 31, 143, 0.2);
+    color: var(--muted); font-size: 12px;
+  }
+  footer code { background: white; padding: 2px 6px; border-radius: 4px; color: var(--magenta); }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>BUBABU QR — Batch 9 (scan-safe v2)</h1>
+    <div class="url">https://bubabu.ge</div>
+    <div class="subtitle">v06 + v09 KEPT · 7 NEW · scan-safe palette · pure white BG для multi-color</div>
+  </header>
+
+  <div class="direction-note">
+    <strong>Direction:</strong> v06 = random Candy Pop modules, v09 = coral modules + soft yellow halo. Shared vibe = <strong>color in the modules + soft halo glow atmosphere</strong>. 7 NEW variants explore that space: different halo colors (pink / cyan / cream), different module color schemes (gradient / two-tone / warm-only), and combos (multi-color modules + halo glow).
+  </div>
+
+  <div class="pick-note">
+    👆 Click any QR to zoom · pick <span class="num">v06 / v09 / v11–v17</span> · скажи номер и я finalize + scan test
+  </div>
+
+  <div class="grid">
+
+    <div class="qr-card kept">
+      <div class="qr-number">v06 <span class="label">Multi-Color Modules</span></div>
+      <div class="qr-image"><img src="batch9/v06_multicolor_modules.png?sv2" alt="v06" loading="lazy"></div>
+      <div class="qr-desc"><strong>Random Candy Pop per module</strong> · Bubabu center · no backdrop · butter-cream BG. <em>Original kept.</em></div>
+    </div>
+
+    <div class="qr-card kept">
+      <div class="qr-number">v09 <span class="label">Coral + Yellow Halo</span></div>
+      <div class="qr-image"><img src="batch9/v09_coral_soft.png?sv2" alt="v09" loading="lazy"></div>
+      <div class="qr-desc"><strong>Coral rounded</strong> · Bubabu center · soft yellow halo glow · butter-cream BG. <em>Original kept.</em></div>
+    </div>
+
+    <div class="qr-card new">
+      <div class="qr-number">v11 <span class="label">Coral + Pink Halo</span></div>
+      <div class="qr-image"><img src="batch9/v11_coral_pink_halo.png?sv2" alt="v11" loading="lazy"></div>
+      <div class="qr-desc"><strong>Coral modules</strong> · Bubabu · soft pink halo glow · butter-cream BG. <em>Warm-on-warm sunset vibe.</em></div>
+    </div>
+
+    <div class="qr-card new">
+      <div class="qr-number">v12 <span class="label">Coral + Cyan Halo</span></div>
+      <div class="qr-image"><img src="batch9/v12_coral_cyan_halo.png?sv2" alt="v12" loading="lazy"></div>
+      <div class="qr-desc"><strong>Coral modules</strong> · Bubabu · soft cyan halo glow · butter-cream BG. <em>Warm/cool brand contrast.</em></div>
+    </div>
+
+    <div class="qr-card new">
+      <div class="qr-number">v13 <span class="label">Multi + Yellow Halo</span></div>
+      <div class="qr-image"><img src="batch9/v13_multi_yellow_halo.png?sv2" alt="v13" loading="lazy"></div>
+      <div class="qr-desc"><strong>Random Candy Pop modules + yellow halo glow</strong> · Bubabu · butter-cream BG. <em>v06+v09 hybrid.</em></div>
+    </div>
+
+    <div class="qr-card new">
+      <div class="qr-number">v14 <span class="label">Multi + Pink Halo</span></div>
+      <div class="qr-image"><img src="batch9/v14_multi_pink_halo.png?sv2" alt="v14" loading="lazy"></div>
+      <div class="qr-desc"><strong>Random Candy Pop modules + pink halo glow</strong> · Bubabu · butter-cream BG. <em>Softer atmosphere.</em></div>
+    </div>
+
+    <div class="qr-card new">
+      <div class="qr-number">v15 <span class="label">Vertical Gradient</span></div>
+      <div class="qr-image"><img src="batch9/v15_vertical_gradient.png?sv2" alt="v15" loading="lazy"></div>
+      <div class="qr-desc"><strong>Modules colored by Y position</strong> (cyan top → magenta mid → coral bottom) · Bubabu · soft cream halo · butter-cream BG. <em>Sunset gradient.</em></div>
+    </div>
+
+    <div class="qr-card new">
+      <div class="qr-number">v16 <span class="label">Two-Tone Split</span></div>
+      <div class="qr-image"><img src="batch9/v16_two_tone_split.png?sv2" alt="v16" loading="lazy"></div>
+      <div class="qr-desc"><strong>Left half magenta + right half cyan modules</strong> · Bubabu · no backdrop · butter-cream BG. <em>Dual-brand split.</em></div>
+    </div>
+
+    <div class="qr-card new">
+      <div class="qr-number">v17 <span class="label">Warm-Only + Cream Halo</span></div>
+      <div class="qr-image"><img src="batch9/v17_warm_multi_cream_halo.png?sv2" alt="v17" loading="lazy"></div>
+      <div class="qr-desc"><strong>Modules from warm palette only</strong> (magenta + coral + yellow + orange) · soft cream halo · butter-cream BG. <em>Warm-only family.</em></div>
+    </div>
+
+  </div>
+
+  <footer>
+    Generated by <code>scripts/bubabu_qr_batch9.py</code> · output <code>qr/batch9/</code> · pick favorite → finalize → scan test → mass print
+  </footer>
+
+</div>
+
+<div class="zoom-overlay" id="zoom">
+  <img id="zoom-img" src="" alt="zoom">
+</div>
+
+<script>
+  const zoom = document.getElementById('zoom');
+  const zoomImg = document.getElementById('zoom-img');
+  document.querySelectorAll('.qr-image img').forEach(img => {
+    img.addEventListener('click', () => {
+      zoomImg.src = img.src;
+      zoom.classList.add('active');
+    });
+  });
+  zoom.addEventListener('click', () => {
+    zoom.classList.remove('active');
+    zoomImg.src = '';
+  });
+</script>
+
+</body>
+</html>

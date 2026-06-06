@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bubabu — Контент-план Май 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    /* ainow design tokens — HSL */
+    --background: 0 0% 99%;
+    --foreground: 222.2 47% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47% 11%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --border: 214.3 31.8% 91.4%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --accent: 210 40% 96%;
+    --success: 142.1 76.2% 36.3%;
+    --warning: 38 92% 50%;
+    --info: 199 89% 48%;
+    --destructive: 0 84.2% 60.2%;
+
+    /* Spacing scale — Tailwind-aligned */
+    --radius: 0.75rem;
+    --radius-lg: 1rem;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: hsl(var(--background));
+    color: hsl(var(--foreground));
+    line-height: 1.6;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  ::selection {
+    background: hsl(var(--primary) / 0.2);
+  }
+
+  .container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 80px 32px 64px;
+  }
+
+  /* ────────── Header ────────── */
+  .header {
+    margin-bottom: 80px;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: hsl(var(--muted-foreground));
+    margin-bottom: 16px;
+  }
+
+  .eyebrow::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background: hsl(var(--primary));
+    border-radius: 50%;
+  }
+
+  h1 {
+    font-size: 56px;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+    font-weight: 700;
+    color: hsl(var(--foreground));
+    margin-bottom: 16px;
+    text-wrap: balance;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    color: hsl(var(--muted-foreground));
+    max-width: 580px;
+    text-wrap: pretty;
+  }
+
+  .header-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 32px;
+    padding-top: 32px;
+    border-top: 1px solid hsl(var(--border));
+  }
+
+  .meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .meta-label {
+    font-size: 12px;
+    color: hsl(var(--muted-foreground));
+    font-weight: 500;
+  }
+
+  .meta-value {
+    font-size: 18px;
+    color: hsl(var(--foreground));
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ────────── Section ────────── */
+  .section {
+    margin-bottom: 80px;
+  }
+
+  h2 {
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+    color: hsl(var(--foreground));
+    margin-bottom: 8px;
+    text-wrap: balance;
+  }
+
+  .section-lead {
+    font-size: 16px;
+    color: hsl(var(--muted-foreground));
+    margin-bottom: 32px;
+    max-width: 680px;
+    text-wrap: pretty;
+  }
+
+  /* ────────── Format cards ────────── */
+  .formats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+  }
+
+  .format-card {
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
+    padding: 24px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .format-card:hover {
+    border-color: hsl(var(--foreground) / 0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px hsl(var(--foreground) / 0.06);
+  }
+
+  .format-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: hsl(var(--muted-foreground));
+    margin-bottom: 16px;
+  }
+
+  .format-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+  }
+
+  .format-A .format-dot { background: hsl(var(--primary)); }
+  .format-B .format-dot { background: hsl(262 83% 58%); }
+  .format-C .format-dot { background: hsl(var(--info)); }
+  .format-D .format-dot { background: hsl(24 95% 53%); }
+  .format-AD .format-dot { background: hsl(var(--success)); }
+
+  .format-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: hsl(var(--foreground));
+    margin-bottom: 8px;
+    letter-spacing: -0.01em;
+  }
+
+  .format-card .desc {
+    font-size: 14px;
+    color: hsl(var(--muted-foreground));
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-wrap: pretty;
+  }
+
+  .format-stats {
+    display: flex;
+    gap: 16px;
+    padding-top: 16px;
+    border-top: 1px solid hsl(var(--border));
+  }
+
+  .format-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .format-stat-num {
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(var(--foreground));
+    font-variant-numeric: tabular-nums;
+  }
+
+  .format-stat-label {
+    font-size: 11px;
+    color: hsl(var(--muted-foreground));
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-weight: 500;
+  }
+
+  /* ────────── Info note ────────── */
+  .note {
+    margin-top: 32px;
+    padding: 20px 24px;
+    background: hsl(var(--muted));
+    border-radius: var(--radius);
+    font-size: 14px;
+    color: hsl(var(--foreground));
+    line-height: 1.6;
+  }
+
+  .note strong { font-weight: 600; }
+
+  .note-warn {
+    background: hsl(var(--warning) / 0.08);
+    border-left: 3px solid hsl(var(--warning));
+    padding-left: 21px;
+  }
+
+  /* ────────── Calendar grid ────────── */
+  .calendar {
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+
+  .weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background: hsl(var(--muted) / 0.7);
+    border-bottom: 1px solid hsl(var(--border));
+  }
+
+  .weekday {
+    padding: 10px 12px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: hsl(var(--muted-foreground));
+    text-align: left;
+  }
+
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: minmax(120px, auto);
+  }
+
+  .cell {
+    padding: 10px 12px;
+    border-right: 1px solid hsl(var(--border));
+    border-bottom: 1px solid hsl(var(--border));
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-height: 120px;
+    transition: background 0.15s;
+  }
+
+  .cell:nth-child(7n) { border-right: none; }
+  .cell:hover:not(.cell-empty) { background: hsl(var(--muted) / 0.4); }
+
+  .cell-empty {
+    background: hsl(var(--muted) / 0.25);
+  }
+
+  .cell-num {
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(var(--foreground));
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+  }
+
+  .cell-empty .cell-num {
+    color: hsl(var(--muted-foreground) / 0.5);
+  }
+
+  .cell-pill {
+    align-self: flex-start;
+  }
+
+  .cell-topic {
+    font-size: 12px;
+    line-height: 1.35;
+    color: hsl(var(--foreground));
+    font-weight: 500;
+    margin-top: auto;
+  }
+
+  .cell-topic-meta {
+    font-size: 10px;
+    color: hsl(var(--muted-foreground));
+    margin-top: 2px;
+    line-height: 1.3;
+  }
+
+  /* Weekend cells subtle tint */
+  .cell.is-weekend:not(.cell-empty) {
+    background: hsl(var(--muted) / 0.15);
+  }
+
+  .cell.is-weekend:hover:not(.cell-empty) {
+    background: hsl(var(--muted) / 0.5);
+  }
+
+  /* Pills */
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 6px;
+    letter-spacing: 0.02em;
+    width: fit-content;
+    white-space: nowrap;
+  }
+
+  .pill::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .pill-A {
+    background: hsl(var(--primary) / 0.1);
+    color: hsl(var(--primary));
+  }
+  .pill-A::before { background: hsl(var(--primary)); }
+
+  .pill-B {
+    background: hsl(262 83% 58% / 0.1);
+    color: hsl(262 60% 45%);
+  }
+  .pill-B::before { background: hsl(262 83% 58%); }
+
+  .pill-C {
+    background: hsl(var(--info) / 0.1);
+    color: hsl(199 70% 38%);
+  }
+  .pill-C::before { background: hsl(var(--info)); }
+
+  .pill-D {
+    background: hsl(24 95% 53% / 0.1);
+    color: hsl(24 80% 38%);
+  }
+  .pill-D::before { background: hsl(24 95% 53%); }
+
+  .pill-DC {
+    background: hsl(var(--success) / 0.12);
+    color: hsl(142 60% 28%);
+  }
+  .pill-DC::before { background: hsl(var(--success)); }
+
+  .pill-AD {
+    background: hsl(var(--success) / 0.1);
+    color: hsl(142 60% 28%);
+  }
+  .pill-AD::before { background: hsl(var(--success)); }
+
+  /* Goal labels — funnel purpose per cell */
+  .cell-goal {
+    font-size: 9px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 4px;
+  }
+
+  .goal-awareness { color: hsl(var(--muted-foreground)); }
+  .goal-trust { color: hsl(262 60% 45%); }
+  .goal-engagement { color: hsl(199 70% 38%); }
+  .goal-conversion { color: hsl(142 60% 28%); }
+
+  /* Topic */
+  .topic {
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(var(--foreground));
+    line-height: 1.4;
+  }
+
+  .topic-meta {
+    font-size: 12px;
+    color: hsl(var(--muted-foreground));
+    margin-top: 4px;
+    line-height: 1.4;
+  }
+
+  /* Status */
+  .status {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+  }
+
+  .status-shipped { color: hsl(var(--success)); }
+  .status-shipped .status-dot { background: hsl(var(--success)); }
+
+  .status-ready { color: hsl(var(--primary)); }
+  .status-ready .status-dot { background: hsl(var(--primary)); }
+
+  .status-new { color: hsl(var(--muted-foreground)); }
+  .status-new .status-dot {
+    background: transparent;
+    border: 1.5px solid hsl(var(--muted-foreground));
+  }
+
+  .time {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px;
+    color: hsl(var(--muted-foreground));
+    font-variant-numeric: tabular-nums;
+  }
+
+  .platforms {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+  }
+
+  .platform-tag {
+    font-size: 10px;
+    font-weight: 600;
+    color: hsl(var(--muted-foreground));
+    background: hsl(var(--muted));
+    padding: 2px 6px;
+    border-radius: 4px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  /* Highlighted cell variants */
+  .cell-shipped:not(.cell-empty) {
+    background: hsl(var(--success) / 0.06);
+    box-shadow: inset 3px 0 0 hsl(var(--success));
+  }
+
+  .cell-ready:not(.cell-empty) {
+    background: hsl(var(--primary) / 0.05);
+    box-shadow: inset 3px 0 0 hsl(var(--primary));
+  }
+
+  /* ────────── Stats grid ────────── */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .stat-card {
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
+    padding: 24px;
+  }
+
+  .stat-num {
+    font-size: 36px;
+    font-weight: 700;
+    color: hsl(var(--foreground));
+    line-height: 1;
+    letter-spacing: -0.03em;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .stat-num .delta {
+    font-size: 14px;
+    color: hsl(var(--success));
+    font-weight: 500;
+    margin-left: 8px;
+  }
+
+  .stat-label {
+    font-size: 13px;
+    color: hsl(var(--muted-foreground));
+    margin-top: 8px;
+    font-weight: 500;
+  }
+
+  /* ────────── KPI table ────────── */
+  .kpi-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+
+  .kpi-table th {
+    text-align: left;
+    padding: 14px 24px;
+    background: hsl(var(--muted) / 0.5);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: hsl(var(--muted-foreground));
+    border-bottom: 1px solid hsl(var(--border));
+  }
+
+  .kpi-table td {
+    padding: 16px 24px;
+    border-bottom: 1px solid hsl(var(--border));
+    font-size: 14px;
+    color: hsl(var(--foreground));
+  }
+
+  .kpi-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  .kpi-table .target {
+    color: hsl(var(--success));
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .kpi-table .now {
+    color: hsl(var(--muted-foreground));
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ────────── List ────────── */
+  .reasoning-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .reasoning-list li {
+    display: flex;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid hsl(var(--border));
+  }
+
+  .reasoning-list li:last-child {
+    border-bottom: none;
+  }
+
+  .reasoning-list li::before {
+    content: counter(item, decimal-leading-zero);
+    counter-increment: item;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px;
+    color: hsl(var(--muted-foreground));
+    font-weight: 500;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .reasoning-list {
+    counter-reset: item;
+  }
+
+  /* ────────── Production ────────── */
+  .production-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+
+  .production-table th {
+    text-align: left;
+    padding: 14px 24px;
+    background: hsl(var(--muted) / 0.5);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: hsl(var(--muted-foreground));
+    border-bottom: 1px solid hsl(var(--border));
+  }
+
+  .production-table td {
+    padding: 16px 24px;
+    border-bottom: 1px solid hsl(var(--border));
+    font-size: 14px;
+  }
+
+  .production-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  /* ────────── Next steps ────────── */
+  .next-steps-card {
+    background: hsl(var(--foreground));
+    color: hsl(var(--background));
+    border-radius: var(--radius-lg);
+    padding: 48px;
+  }
+
+  .next-steps-card h2 {
+    color: hsl(var(--background));
+    margin-bottom: 8px;
+  }
+
+  .next-steps-card .section-lead {
+    color: hsl(var(--background) / 0.7);
+    margin-bottom: 32px;
+  }
+
+  .step {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid hsl(var(--background) / 0.1);
+  }
+
+  .step:last-child { border-bottom: none; }
+
+  .step-num {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 13px;
+    color: hsl(var(--background) / 0.5);
+    flex-shrink: 0;
+    margin-top: 4px;
+  }
+
+  .step-content strong {
+    display: block;
+    color: hsl(var(--background));
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .step-content {
+    color: hsl(var(--background) / 0.8);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* ────────── Legend ────────── */
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 16px 24px;
+    background: hsl(var(--muted) / 0.5);
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
+    margin-bottom: 16px;
+  }
+
+  .legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: hsl(var(--muted-foreground));
+    font-weight: 500;
+  }
+
+  /* ────────── Footer ────────── */
+  .footer {
+    margin-top: 80px;
+    padding-top: 32px;
+    border-top: 1px solid hsl(var(--border));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: hsl(var(--muted-foreground));
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .footer-brand {
+    font-weight: 600;
+    color: hsl(var(--foreground));
+  }
+
+  /* ────────── Mobile ────────── */
+  @media (max-width: 900px) {
+    .container { padding: 48px 20px; }
+    h1 { font-size: 38px; }
+    .calendar-grid {
+      grid-template-columns: 1fr;
+      grid-auto-rows: auto;
+    }
+    .weekdays { display: none; }
+    .cell {
+      flex-direction: row;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 16px;
+      min-height: auto;
+      border-right: none;
+    }
+    .cell-empty { display: none; }
+    .cell-pill { order: 2; }
+    .cell-num { min-width: 32px; order: 1; font-size: 18px; }
+    .cell-topic { margin-top: 0; flex: 1; order: 3; }
+  }
+
+  @media print {
+    body { background: white; }
+    .container { padding: 24px; max-width: 100%; }
+    .cell, .format-card {
+      break-inside: avoid;
+    }
+    .next-steps-card { background: hsl(var(--muted)); color: hsl(var(--foreground)); }
+    .next-steps-card h2, .next-steps-card .section-lead, .next-steps-card .step-content,
+    .next-steps-card .step-content strong { color: hsl(var(--foreground)); }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="eyebrow">Контент-план · Bubabu × ainow</div>
+    <h1>Май 2026</h1>
+    <p class="subtitle">Регулярный контент Bubabu — четыре формата шоу как маркетинговая воронка. 23 публикации за 23 дня. Каждая работает на охват, доверие, вовлечение или конверсию.</p>
+  </header>
+
+  <!-- §1 What we launch -->
+  <section class="section">
+    <h2>Что мы запускаем</h2>
+    <p class="section-lead">Четыре регулярных шоу — каждое работает на свою точку воронки: охват, доверие, вовлечение, конверсия.</p>
+
+    <div class="formats-grid">
+      <div class="format-card format-A">
+        <div class="format-tag"><span class="format-dot"></span>Формат A · Вовлечение</div>
+        <h3>Вопрос Bubabu</h3>
+        <p class="desc">Ребёнок задаёт вопрос — Bubabu улетает в космос или природу и приносит ответ-приключение. Любопытство, обучение, engagement для TikTok / Reels / Shorts.</p>
+      </div>
+
+      <div class="format-card format-B">
+        <div class="format-tag"><span class="format-dot"></span>Формат B · Доверие</div>
+        <h3>Сказка Bubabu</h3>
+        <p class="desc">Грузинская народная сказка перед сном. Эмоциональный бренд, тёплая семейная коннекция, шерабельно в WhatsApp-группах родителей.</p>
+      </div>
+
+      <div class="format-card format-C">
+        <div class="format-tag"><span class="format-dot"></span>Формат C · Охват</div>
+        <h3>Слово дня</h3>
+        <p class="desc">Короткое слово на трёх языках (груз / англ / рус) с мини-фактом. Доказательство многоязычности, лёгкий ритм для TikTok.</p>
+      </div>
+
+      <div class="format-card format-D">
+        <div class="format-tag"><span class="format-dot"></span>Формат D · Доверие + Конверсия</div>
+        <h3>Родителям + Демо</h3>
+        <p class="desc">Коммерческий стержень месяца. Объяснения для родителей (что, для кого, безопасно ли, где купить) + прямые демо/CTA посты с призывом написать или заказать.</p>
+      </div>
+    </div>
+
+    <div class="note">
+      <strong>Как читать:</strong> 4 формата работают как воронка. <span style="color:hsl(var(--muted-foreground));font-weight:600">ОХВАТ</span> = знакомство (Слово). <span style="color:hsl(262 60% 45%);font-weight:600">ДОВЕРИЕ</span> = эмоция + объяснение (Сказка + Родителям). <span style="color:hsl(199 70% 38%);font-weight:600">ВОВЛЕЧЕНИЕ</span> = интерактив (Вопрос). <span style="color:hsl(142 60% 28%);font-weight:600">КОНВЕРСИЯ</span> = прямой CTA (Демо + промо-креативы). У каждой публикации в календаре указана своя цель.
+    </div>
+
+    <div class="note">
+      <strong>Май-распределение (revised по фидбэку):</strong> 3 Вопрос · 4 Сказка · 5 Слово · 6 Родителям · 4 Демо/CTA · 1 промо-креатив (BoG cashback). Доминирование «Слова дня» в первом черновике (16 эпизодов) убрано — стало вспомогательным форматом, а коммерческое ядро перешло на «Родителям + Демо» (новый Формат D).
+    </div>
+
+    <div class="note note-warn">
+      <strong>Про креативы под заказ:</strong> рекламный ролик (например, BoG cashback 9 мая) требует 2–3 рабочих дня производства. Если в течение месяца появляется новая заявка на креатив — перепланируем 2–3 ежедневных слота и сообщим заранее.
+    </div>
+  </section>
+
+  <!-- §2 Calendar -->
+  <section class="section">
+    <h2>Календарь публикаций</h2>
+    <p class="section-lead">23 публикации — день за днём, размечены по цели в воронке.</p>
+
+    <div class="goal-summary" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:12px; margin-bottom:20px;">
+      <div style="padding:14px 16px; background:hsl(var(--card)); border:1px solid hsl(var(--border)); border-radius:var(--radius); border-left:3px solid hsl(var(--muted-foreground));">
+        <div style="font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:hsl(var(--muted-foreground)); font-weight:600;">Охват</div>
+        <div style="font-size:24px; font-weight:700; color:hsl(var(--foreground)); margin-top:4px; font-variant-numeric:tabular-nums;">4</div>
+        <div style="font-size:12px; color:hsl(var(--muted-foreground)); margin-top:2px;">знакомство · Слово дня</div>
+      </div>
+      <div style="padding:14px 16px; background:hsl(var(--card)); border:1px solid hsl(var(--border)); border-radius:var(--radius); border-left:3px solid hsl(262 83% 58%);">
+        <div style="font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:hsl(262 60% 45%); font-weight:600;">Доверие</div>
+        <div style="font-size:24px; font-weight:700; color:hsl(var(--foreground)); margin-top:4px; font-variant-numeric:tabular-nums;">10</div>
+        <div style="font-size:12px; color:hsl(var(--muted-foreground)); margin-top:2px;">Сказка + Родителям</div>
+      </div>
+      <div style="padding:14px 16px; background:hsl(var(--card)); border:1px solid hsl(var(--border)); border-radius:var(--radius); border-left:3px solid hsl(var(--info));">
+        <div style="font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:hsl(199 70% 38%); font-weight:600;">Вовлечение</div>
+        <div style="font-size:24px; font-weight:700; color:hsl(var(--foreground)); margin-top:4px; font-variant-numeric:tabular-nums;">4</div>
+        <div style="font-size:12px; color:hsl(var(--muted-foreground)); margin-top:2px;">Вопрос + лёгкое Слово</div>
+      </div>
+      <div style="padding:14px 16px; background:hsl(var(--card)); border:1px solid hsl(var(--border)); border-radius:var(--radius); border-left:3px solid hsl(var(--success));">
+        <div style="font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:hsl(142 60% 28%); font-weight:600;">Конверсия</div>
+        <div style="font-size:24px; font-weight:700; color:hsl(var(--foreground)); margin-top:4px; font-variant-numeric:tabular-nums;">5</div>
+        <div style="font-size:12px; color:hsl(var(--muted-foreground)); margin-top:2px;">Демо + промо-креатив</div>
+      </div>
+    </div>
+
+    <div class="calendar">
+      <div class="weekdays">
+        <div class="weekday">Пн</div>
+        <div class="weekday">Вт</div>
+        <div class="weekday">Ср</div>
+        <div class="weekday">Чт</div>
+        <div class="weekday">Пт</div>
+        <div class="weekday">Сб</div>
+        <div class="weekday">Вс</div>
+      </div>
+      <div class="calendar-grid">
+        <!-- Row 1: Apr 27-30 leading empty + May 1-3 -->
+        <div class="cell cell-empty"></div>
+        <div class="cell cell-empty"></div>
+        <div class="cell cell-empty"></div>
+        <div class="cell cell-empty"></div>
+        <div class="cell"><span class="cell-num">1</span></div>
+        <div class="cell is-weekend"><span class="cell-num">2</span></div>
+        <div class="cell is-weekend"><span class="cell-num">3</span></div>
+
+        <!-- Row 2: May 4-10 -->
+        <div class="cell"><span class="cell-num">4</span></div>
+        <div class="cell"><span class="cell-num">5</span></div>
+        <div class="cell"><span class="cell-num">6</span></div>
+        <div class="cell"><span class="cell-num">7</span></div>
+        <div class="cell"><span class="cell-num">8</span></div>
+        <div class="cell is-weekend cell-shipped">
+          <span class="cell-num">9</span>
+          <span class="cell-pill"><span class="pill pill-AD">Реклама</span></span>
+          <div class="cell-topic">Кешбек BoG</div>
+          <div class="cell-topic-meta">SOLO + 30%</div>
+          <div class="cell-goal goal-conversion">Конверсия</div>
+        </div>
+        <div class="cell is-weekend cell-ready">
+          <span class="cell-num">10</span>
+          <span class="cell-pill"><span class="pill pill-B">Сказка</span></span>
+          <div class="cell-topic">ნაცარქექია</div>
+          <div class="cell-topic-meta">Натсаркекия · перед сном</div>
+          <div class="cell-goal goal-trust">Доверие</div>
+        </div>
+
+        <!-- Row 3: May 11-17 -->
+        <div class="cell">
+          <span class="cell-num">11</span>
+          <span class="cell-pill"><span class="pill pill-D">Родителям</span></span>
+          <div class="cell-topic">Что такое Bubabu за 15 секунд?</div>
+          <div class="cell-goal goal-trust">Доверие</div>
+        </div>
+        <div class="cell">
+          <span class="cell-num">12</span>
+          <span class="cell-pill"><span class="pill pill-C">Слово</span></span>
+          <div class="cell-topic">მთვარე</div>
+          <div class="cell-topic-meta">Moon · Луна</div>
+          <div class="cell-goal goal-awareness">Охват</div>
+        </div>
+        <div class="cell cell-ready">
+          <span class="cell-num">13</span>
+          <span class="cell-pill"><span class="pill pill-A">Вопрос</span></span>
+          <div class="cell-topic">Почему звёзды светят?</div>
+          <div class="cell-topic-meta">Bubabu в космосе</div>
+          <div class="cell-goal goal-engagement">Вовлечение</div>
+        </div>
+        <div class="cell">
+          <span class="cell-num">14</span>
+          <span class="cell-pill"><span class="pill pill-D">Родителям</span></span>
+          <div class="cell-topic">Почему родителям интересен Bubabu</div>
+          <div class="cell-goal goal-trust">Доверие</div>
+        </div>
+        <div class="cell">
+          <span class="cell-num">15</span>
+          <span class="cell-pill"><span class="pill pill-C">Слово</span></span>
+          <div class="cell-topic">ვარსკვლავი</div>
+          <div class="cell-topic-meta">Star · Звезда</div>
+          <div class="cell-goal goal-awareness">Охват</div>
+        </div>
+        <div class="cell is-weekend">
+          <span class="cell-num">16</span>
+          <span class="cell-pill"><span class="pill pill-DC">Демо</span></span>
+          <div class="cell-topic">Хотите услышать, как говорит Bubabu?</div>
+          <div class="cell-goal goal-conversion">Конверсия</div>
+        </div>
+        <div class="cell is-weekend">
+          <span class="cell-num">17</span>
+          <span class="cell-pill"><span class="pill pill-B">Сказка</span></span>
+          <div class="cell-topic">მზეჭაბუკი</div>
+          <div class="cell-topic-meta">Солнечный мальчик</div>
+          <div class="cell-goal goal-trust">Доверие</div>
+        </div>
+
+        <!-- Row 4: May 18-24 -->
+        <div class="cell">
+          <span class="cell-num">18</span>
+          <span class="cell-pill"><span class="pill pill-D">Родителям</span></span>
+          <div class="cell-topic">Bubabu — это только игра или ещё и обучение?</div>
+          <div class="cell-goal goal-trust">Доверие</div>
+        </div>
+        <div class="cell">
+          <span class="cell-num">19</span>
+          <span class="cell-pill"><span class="pill pill-C">Слово</span></span>
+          <div class="cell-topic">ცისარტყელა</div>
+          <div class="cell-topic-meta">Rainbow · Радуга</div>
+          <div class="cell-goal goal-awareness">Охват</div>
+        </div>
+        <div class="cell">
+          <span class="cell-num">20</span>
+          <span class="cell-pill"><span class="pill pill-A">Вопрос</span></span>
+          <div class="cell-topic">Почему наступает ночь?</div>
+          <div class="cell-topic-meta">Вращение Земли</div>
+          <div class="cell-goal goal-engagement">Вовлечение</div>
+        </div>
+        <div class="cell">
+          <span class="cell-num">21</span>
+          <span class="cell-pill"><span class="pill pill-D">Родителям</span></span>
+          <div class="cell-topic">Для какого возраста Bubabu?</div>
+          <div class="cell-goal goal-trust">Доверие</div>
+        </div>
+        <div class="cell">
+          <span class="cell-num">22</span>
+          <span class="cell-pill"><span class="pill pill-DC">Демо</span></span>
+          <div class="cell-topic">Запросите настоящее демо-видео</div>
+          <div class="cell-goal goal-conversion">Конверсия</div>
+        </div>
+        <div class="cell is-weekend">
+          <span class="cell-num">23</span>
+          <span class="cell-pill"><span class="pill pill-C">Слово</span></span>
+          <div class="cell-topic">ყვავილი</div>
+          <div class="cell-topic-meta">Flower · Цветок</div>
+          <div class="cell-goal goal-engagement">Вовлечение</div>
+        </div>
+        <div class="cell is-weekend">
+          <span class="cell-num">24</span>
+          <span class="cell-pill"><span class="pill pill-B">Сказка</span></span>
+          <div class="cell-topic">კომბლე</div>
+          <div class="cell-topic-meta">Комбле</div>
+          <div class="cell-goal goal-trust">Доверие</div>
+        </div>
+
+        <!-- Row 5: May 25-31 -->
+        <div class="cell">
+          <span class="cell-num">25</span>
+          <span class="cell-pill"><span class="pill pill-D">Родителям</span></span>
+          <div class="cell-topic">Bubabu — без экрана и безопасный?</div>
+          <div class="cell-goal goal-trust">Доверие</div>
+        </div>
+        <div class="cell">
+          <span class="cell-num">26</span>
+          <span class="cell-pill"><span class="pill pill-A">Вопрос</span></span>
+          <div class="cell-topic">Почему облака не падают?</div>
+          <div class="cell-topic-meta">Водяной пар</div>
+          <div class="cell-goal goal-engagement">Вовлечение</div>
+        </div>
+        <div class="cell">
+          <span class="cell-num">27</span>
+          <span class="cell-pill"><span class="pill pill-DC">Демо</span></span>
+          <div class="cell-topic">Где купить Bubabu / как заказать</div>
+          <div class="cell-goal goal-conversion">Конверсия</div>
+        </div>
+        <div class="cell">
+          <span class="cell-num">28</span>
+          <span class="cell-pill"><span class="pill pill-C">Слово</span></span>
+          <div class="cell-topic">ზღვა</div>
+          <div class="cell-topic-meta">Sea · Море</div>
+          <div class="cell-goal goal-awareness">Охват</div>
+        </div>
+        <div class="cell">
+          <span class="cell-num">29</span>
+          <span class="cell-pill"><span class="pill pill-D">Родителям</span></span>
+          <div class="cell-topic">3 причины — чем Bubabu отличается от обычной игрушки</div>
+          <div class="cell-goal goal-trust">Доверие</div>
+        </div>
+        <div class="cell is-weekend">
+          <span class="cell-num">30</span>
+          <span class="cell-pill"><span class="pill pill-B">Сказка</span></span>
+          <div class="cell-topic">ნანა · იავნანა</div>
+          <div class="cell-topic-meta">Колыбельная · Нана</div>
+          <div class="cell-goal goal-trust">Доверие</div>
+        </div>
+        <div class="cell is-weekend">
+          <span class="cell-num">31</span>
+          <span class="cell-pill"><span class="pill pill-DC">Демо</span></span>
+          <div class="cell-topic">День защиты детей — подарок · демо · заказ</div>
+          <div class="cell-goal goal-conversion">Конверсия</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div>
+      <span class="footer-brand">Bubabu × ainow</span> · Контент-план Май 2026
+    </div>
+    <div>v1.0 · подготовлено 9 мая 2026</div>
+  </footer>
+
+</div>
+
+</body>
+</html>

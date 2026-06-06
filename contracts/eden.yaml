@@ -1,0 +1,13 @@
+# Orchestration contract: /bubabu -> general-purpose
+# Phase 4b per plans/tidy-cooking-book.md.
+# Read by .claude/hooks/orch_guard.py to enforce cost cap + iteration limit.
+
+version: 1
+parent: bubabu
+sub_agent: general-purpose
+purpose: "Generate Bubabu social/script content with brand lock"
+cost_cap:
+  max_input_tokens: 8000
+  max_output_tokens: 4000
+max_iterations: 1
+expected_duration_sec: 60

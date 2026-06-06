@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bubabu — Execution Sheet Май 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --background: 0 0% 99%;
+    --foreground: 222.2 47% 11%;
+    --card: 0 0% 100%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --border: 214.3 31.8% 91.4%;
+    --primary: 221.2 83.2% 53.3%;
+    --success: 142.1 76.2% 36.3%;
+    --info: 199 89% 48%;
+    --warning: 38 92% 50%;
+    --destructive: 0 84.2% 60.2%;
+    --radius: 0.75rem;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+    background: hsl(var(--background));
+    color: hsl(var(--foreground));
+    line-height: 1.5;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 48px 32px;
+  }
+
+  /* Header */
+  .header {
+    margin-bottom: 32px;
+    max-width: 900px;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: hsl(var(--warning));
+    margin-bottom: 12px;
+  }
+
+  .eyebrow::before {
+    content: "";
+    width: 6px; height: 6px;
+    background: hsl(var(--warning));
+    border-radius: 50%;
+  }
+
+  h1 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    text-wrap: balance;
+    margin-bottom: 12px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+    color: hsl(var(--muted-foreground));
+    max-width: 720px;
+    text-wrap: pretty;
+  }
+
+  /* Stats bar */
+  .stats-bar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+    margin: 24px 0 32px;
+  }
+
+  .stat {
+    padding: 12px 14px;
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
+  }
+
+  .stat-label {
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: hsl(var(--muted-foreground));
+    font-weight: 600;
+  }
+
+  .stat-num {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 2px;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Table */
+  .table-wrap {
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
+    overflow: auto;
+    box-shadow: 0 1px 3px hsl(var(--foreground) / 0.03);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    min-width: 1400px;
+  }
+
+  thead th {
+    background: hsl(var(--muted) / 0.7);
+    color: hsl(var(--muted-foreground));
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 12px 10px;
+    text-align: left;
+    border-bottom: 1px solid hsl(var(--border));
+    position: sticky;
+    top: 0;
+    white-space: nowrap;
+  }
+
+  tbody td {
+    padding: 12px 10px;
+    border-bottom: 1px solid hsl(var(--border));
+    vertical-align: top;
+    line-height: 1.4;
+  }
+
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover { background: hsl(var(--muted) / 0.4); }
+
+  /* Cell widths via colgroup */
+  col.col-num { width: 38px; }
+  col.col-date { width: 80px; }
+  col.col-format { width: 110px; }
+  col.col-topic { width: 220px; }
+  col.col-msg { width: 200px; }
+  col.col-aud { width: 160px; }
+  col.col-purpose { width: 110px; }
+  col.col-orgpaid { width: 130px; }
+  col.col-cta { width: 180px; }
+  col.col-asset { width: 130px; }
+  col.col-status { width: 110px; }
+
+  .row-num {
+    font-family: "JetBrains Mono", monospace;
+    color: hsl(var(--muted-foreground));
+    font-size: 11px;
+    font-weight: 500;
+  }
+
+  .date {
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 600;
+    font-size: 13px;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+
+  .date small {
+    display: block;
+    color: hsl(var(--muted-foreground));
+    font-size: 10px;
+    font-weight: 500;
+    margin-top: 2px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  /* Pills */
+  .pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    letter-spacing: 0.02em;
+  }
+
+  .pill::before {
+    content: "";
+    width: 5px; height: 5px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .pill-A { background: hsl(var(--primary) / 0.1); color: hsl(var(--primary)); }
+  .pill-A::before { background: hsl(var(--primary)); }
+  .pill-B { background: hsl(262 83% 58% / 0.1); color: hsl(262 60% 45%); }
+  .pill-B::before { background: hsl(262 83% 58%); }
+  .pill-C { background: hsl(var(--info) / 0.1); color: hsl(199 70% 38%); }
+  .pill-C::before { background: hsl(var(--info)); }
+  .pill-D { background: hsl(24 95% 53% / 0.1); color: hsl(24 80% 38%); }
+  .pill-D::before { background: hsl(24 95% 53%); }
+  .pill-DC { background: hsl(var(--success) / 0.12); color: hsl(142 60% 28%); }
+  .pill-DC::before { background: hsl(var(--success)); }
+  .pill-AD { background: hsl(var(--success) / 0.18); color: hsl(142 60% 22%); }
+  .pill-AD::before { background: hsl(var(--success)); }
+
+  .topic-mk {
+    font-weight: 600;
+    color: hsl(var(--foreground));
+  }
+  .topic-meta {
+    color: hsl(var(--muted-foreground));
+    font-size: 11px;
+    margin-top: 2px;
+  }
+
+  .msg {
+    color: hsl(var(--foreground));
+    font-size: 12px;
+    font-style: italic;
+  }
+
+  .audience {
+    color: hsl(var(--muted-foreground));
+    font-size: 11px;
+  }
+
+  /* Purpose label */
+  .purpose {
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .purpose-awareness { color: hsl(var(--muted-foreground)); }
+  .purpose-trust { color: hsl(262 60% 45%); }
+  .purpose-engagement { color: hsl(199 70% 38%); }
+  .purpose-conversion { color: hsl(142 60% 28%); }
+
+  /* Org/Paid */
+  .channel {
+    font-size: 11px;
+    font-weight: 500;
+  }
+  .channel-org { color: hsl(var(--muted-foreground)); }
+  .channel-boost { color: hsl(var(--info)); }
+  .channel-retarget { color: hsl(24 80% 38%); }
+  .channel-conversion { color: hsl(142 60% 28%); }
+  .channel-paid { color: hsl(var(--destructive)); font-weight: 600; }
+
+  .cta {
+    font-size: 12px;
+    color: hsl(var(--foreground));
+  }
+  .cta strong {
+    color: hsl(var(--primary));
+    font-weight: 600;
+  }
+
+  .asset {
+    font-size: 11px;
+    color: hsl(var(--muted-foreground));
+  }
+  .asset.ready { color: hsl(var(--success)); font-weight: 600; }
+  .asset.pilot { color: hsl(var(--primary)); font-weight: 600; }
+
+  /* Status */
+  .status {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 11px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  .status::before {
+    content: "";
+    width: 6px; height: 6px;
+    border-radius: 50%;
+  }
+  .status-shipped { color: hsl(var(--success)); }
+  .status-shipped::before { background: hsl(var(--success)); }
+  .status-ready { color: hsl(var(--primary)); }
+  .status-ready::before { background: hsl(var(--primary)); }
+  .status-work { color: hsl(var(--muted-foreground)); }
+  .status-work::before { background: transparent; border: 1.5px solid hsl(var(--muted-foreground)); }
+
+  /* Row highlights */
+  tr.row-shipped { background: hsl(var(--success) / 0.04); }
+  tr.row-shipped:hover { background: hsl(var(--success) / 0.08); }
+  tr.row-ready { background: hsl(var(--primary) / 0.03); }
+  tr.row-ready:hover { background: hsl(var(--primary) / 0.06); }
+
+  /* Footer note */
+  .footer-note {
+    margin-top: 24px;
+    padding: 16px 20px;
+    background: hsl(var(--muted) / 0.5);
+    border-radius: var(--radius);
+    font-size: 12px;
+    color: hsl(var(--muted-foreground));
+    line-height: 1.6;
+    max-width: 900px;
+  }
+  .footer-note strong { color: hsl(var(--foreground)); }
+
+  .footer {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid hsl(var(--border));
+    font-size: 12px;
+    color: hsl(var(--muted-foreground));
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .footer strong { color: hsl(var(--foreground)); }
+
+  @media print {
+    body { background: white; }
+    .container { padding: 16px; }
+    .table-wrap { box-shadow: none; }
+    table { font-size: 10px; min-width: auto; }
+    thead th, tbody td { padding: 6px 4px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <header class="header">
+    <div class="eyebrow">Internal · Production Tracking</div>
+    <h1>Execution Sheet — Май 2026</h1>
+    <p class="subtitle">Внутренний production-tracker. Все 23 публикации с targeting + funnel + paid-media стратегией + статусом ассетов. Источник правды для медиа-байеров, копирайтеров и пост-продакшна.</p>
+  </header>
+
+  <div class="stats-bar">
+    <div class="stat">
+      <div class="stat-label">Всего публикаций</div>
+      <div class="stat-num">23</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">Готовых пилотов</div>
+      <div class="stat-num" style="color: hsl(var(--primary));">3</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">Уже отгружено</div>
+      <div class="stat-num" style="color: hsl(var(--success));">1</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">В работе</div>
+      <div class="stat-num" style="color: hsl(var(--muted-foreground));">19</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">Платных промо</div>
+      <div class="stat-num" style="color: hsl(var(--destructive));">1</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">Retargeting</div>
+      <div class="stat-num" style="color: hsl(24 80% 38%);">7</div>
+    </div>
+    <div class="stat">
+      <div class="stat-label">Conversion ads</div>
+      <div class="stat-num" style="color: hsl(var(--success));">4</div>
+    </div>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <colgroup>
+        <col class="col-num">
+        <col class="col-date">
+        <col class="col-format">
+        <col class="col-topic">
+        <col class="col-msg">
+        <col class="col-aud">
+        <col class="col-purpose">
+        <col class="col-orgpaid">
+        <col class="col-cta">
+        <col class="col-asset">
+        <col class="col-status">
+      </colgroup>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Дата</th>
+          <th>Формат</th>
+          <th>Тема</th>
+          <th>Главное сообщение</th>
+          <th>Аудитория</th>
+          <th>Воронка</th>
+          <th>Organic / Paid</th>
+          <th>CTA</th>
+          <th>Asset source</th>
+          <th>Статус</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="row-shipped">
+          <td class="row-num">01</td>
+          <td class="date">9 мая<small>Сб</small></td>
+          <td><span class="pill pill-AD">Реклама</span></td>
+          <td><div class="topic-mk">Кешбек BoG · SOLO + 30%</div><div class="topic-meta">креатив-промо</div></td>
+          <td class="msg">«30% назад с SOLO картой — только выходные»</td>
+          <td class="audience">Tbilisi 25–55 + grandparents + BoG SOLO holders</td>
+          <td><span class="purpose purpose-conversion">Конверсия</span></td>
+          <td><span class="channel channel-paid">PAID AD</span></td>
+          <td class="cta">Заказать → <strong>bubabu.ge</strong></td>
+          <td class="asset ready">Готов</td>
+          <td><span class="status status-shipped">Запущено</span></td>
+        </tr>
+
+        <tr class="row-ready">
+          <td class="row-num">02</td>
+          <td class="date">10 мая<small>Вс</small></td>
+          <td><span class="pill pill-B">Сказка</span></td>
+          <td><div class="topic-mk">ნაცარქექია</div><div class="topic-meta">Натсаркекия · перед сном</div></td>
+          <td class="msg">«Грузинская мудрость в плюшевой сове»</td>
+          <td class="audience">Parents 25–55 + grandparents · bedtime</td>
+          <td><span class="purpose purpose-trust">Доверие</span></td>
+          <td><span class="channel channel-boost">Organic + boost</span></td>
+          <td class="cta">«Какую сказку дальше?» → comments</td>
+          <td class="asset pilot">Пилот ep_b</td>
+          <td><span class="status status-ready">Готов</span></td>
+        </tr>
+
+        <tr>
+          <td class="row-num">03</td>
+          <td class="date">11 мая<small>Пн</small></td>
+          <td><span class="pill pill-D">Родителям</span></td>
+          <td><div class="topic-mk">Что такое Bubabu за 15 секунд?</div><div class="topic-meta">explainer</div></td>
+          <td class="msg">«AI-друг ребёнка без экрана»</td>
+          <td class="audience">Parents 25–55 · cold + warm</td>
+          <td><span class="purpose purpose-trust">Доверие</span></td>
+          <td><span class="channel channel-boost">Organic + boost</span></td>
+          <td class="cta">Узнать → <strong>bubabu.ge</strong></td>
+          <td class="asset">Производим Wk1</td>
+          <td><span class="status status-work">В работе</span></td>
+        </tr>
+
+        <tr>
+          <td class="row-num">04</td>
+          <td class="date">12 мая<small>Вт</small></td>
+          <td><span class="pill pill-C">Слово</span></td>
+          <td><div class="topic-mk">მთვარე</div><div class="topic-meta">Moon · Луна</div></td>
+          <td class="msg">«Каждый день — новое слово на 3 языках»</td>
+          <td class="audience">Parents + kids 3–12</td>
+          <td><span class="purpose purpose-awareness">Охват</span></td>
+          <td><span class="channel channel-org">Organic only</span></td>
+          <td class="cta">«Какое слово дальше?» → comments</td>
+          <td class="asset">Производим Wk1</td>
+          <td><span class="status status-work">В работе</span></td>
+        </tr>
+
+        <tr class="row-ready">
+          <td class="row-num">05</td>
+          <td class="date">13 мая<small>Ср</small></td>
+          <td><span class="pill pill-A">Вопрос</span></td>
+          <td><div class="topic-mk">Почему звёзды светят?</div><div class="topic-meta">ратом ანათებენ ვარსკვლავები?</div></td>
+          <td class="msg">«Bubabu отвечает через приключение в космосе»</td>
+          <td class="audience">Kids 3–12 + curious parents</td>
+          <td><span class="purpose purpose-engagement">Вовлечение</span></td>
+          <td><span class="channel channel-boost">Organic + boost</span></td>
+          <td class="cta">«Чей вопрос следующий?» → comments</td>
+          <td class="asset pilot">Пилот ep_a</td>
+          <td><span class="status status-ready">Готов</span></td>
+        </tr>
+
+        <tr>
+          <td class="row-num">06</td>
+          <td class="date">14 мая<small>Чт</small></td>
+          <td><span class="pill pill-D">Родителям</span></td>
+          <td><div class="topic-mk">Почему родителям интересен Bubabu</div><div class="topic-meta">positioning</div></td>
+          <td class="msg">«Замена экрана — друг, а не гаджет»</td>
+          <td class="audience">Parents 28–55 · screen-fatigued</td>
+          <td><span class="purpose purpose-trust">Доверие</span></td>
+          <td><span class="channel channel-boost">Organic + boost</span></td>
+          <td class="cta">Узнать подробнее → <strong>DM</strong></td>
+          <td class="asset">Производим Wk1</td>
+          <td><span class="status status-work">В работе</span></td>
+        </tr>
+
+        <tr>
+          <td class="row-num">07</td>
+          <td class="date">15 мая<small>Пт</small></td>
+          <td><span class="pill pill-C">Слово</span></td>
+          <td><div class="topic-mk">ვარსკვლავი</div><div class="topic-meta">Star · Звезда</div></td>
+          <td class="msg">«Учим Звезду на 3 языках»</td>
+          <td class="audience">Parents + kids</td>
+          <td><span class="purpose purpose-awareness">Охват</span></td>
+          <td><span class="channel channel-org">Organic only</span></td>
+          <td class="cta">comments engagement</td>
+          <td class="asset">Производим Wk1</td>
+          <td><span class="status status-work">В работе</span></td>
+        </tr>
+
+        <tr>
+          <td class="row-num">08</td>
+          <td class="date">16 мая<small>Сб</small></td>
+          <td><span class="pill pill-DC">Демо</span></td>
+          <td><div class="topic-mk">Хотите услышать, как говорит Bubabu?</div><div class="topic-meta">demo request</div></td>
+          <td class="msg">«Реальное демо в DM по запросу»</td>
+          <td class="audience">Warm · engaged FB+IG followers</td>
+          <td><span class="purpose purpose-conversion">Конверсия</span></td>
+          <td><span class="channel channel-retarget">Retargeting ad</span></td>
+          <td class="cta">Напишите «ДЕМО» → <strong>DM</strong></td>
+          <td class="asset">Производим Wk1 + Арчил-видео</td>
+          <td><span class="status status-work">В работе</span></td>
+        </tr>
+
+        <tr>
+          <td class="row-num">09</td>
+          <td class="date">17 мая<small>Вс</small></td>
+          <td><span class="pill pill-B">Сказка</span></td>
+          <td><div class="topic-mk">მზეჭაბუკი</div><div class="topic-meta">Солнечный мальчик</div></td>
+          <td class="msg">«Грузинская легенда оживает в спальне»</td>
+          <td class="audience">Parents + grandparents · bedtime</td>
+          <td><span class="purpose purpose-trust">Доверие</span></td>
+          <td><span class="channel channel-boost">Organic + boost</span></td>
+          <td class="cta">«Какую сказку дальше?» → comments</td>
+          <td class="asset">Производим Wk2</td>
+          <td><span class="status status-work">В работе</span></td>
+        </tr>
+
+        <tr>
+          <td class="row-num">10</td>
+          <td class="date">18 мая<small>Пн</small></td>
+          <td><span class="pill pill-D">Родителям</span></td>
+          <td><div class="topic-mk">Bubabu — это только игра, или ещё и обучение?</div><div class="topic-meta">benefit framing</div></td>
+          <td class="msg">«Развитие через диалог, а не зубрёжку»</td>
+          <td class="audience">Parents 28–55 · education-oriented</td>
+          <td><span class="purpose purpose-trust">Доверие</span></td>
+          <td><span class="channel channel-retarget">Retargeting ad</span></td>
+          <td class="cta">Узнать больше → <strong>bubabu.ge</strong></td>
+          <td class="asset">Производим Wk2</td>
+          <td><span class="status status-work">В работе</span></td>
+        </tr>
+
+        <tr>
+          <td class="row-num">11</td>
+          <td class="date">19 мая<small>Вт</small></td>
+          <td><span class="pill pill-C">Слово</span></td>
+          <td><div class="topic-mk">ცისარტყელა</div><div class="topic-meta">Rainbow · Радуга</div></td>
+          <td class="msg">«Радуга на 3 языках»</td>
+          <td class="audience">Parents + kids</td>
+          <td><span class="purpose purpose-awareness">Охват</span></td>
+          <td><span class="channel channel-org">Organic only</span></td>
+          <td class="cta">comments engagement</td>
+          <td class="asset">Производим Wk2</td>
+          <td><span class="status status-work">В работе</span></td>
+        </tr>
+
+        <tr>
+          <td class="row-num">12</td>
+          <td class="date">20 мая<small>Ср</small></td>
+          <td><span class="pill pill-A">Вопрос</span></td>
+          <td><div class="topic-mk">Почему наступает ночь?</div><div class="topic-meta">რატომ ღამდება?</div></td>
+          <td class="msg">«Bubabu летит вокруг Земли, объясняет вращение»</td>
+          <td class="audience">Kids 3–12 + curious parents</td>
+          <td><span class="purpose purpose-engagement">Вовлечение</span></td>
+          <td><span class="channel channel-boost">Organic + boost</span></td>
+          <td class="cta">«Чей вопрос?» → comments</td>
+          <td class="asset">Производим Wk2</td>
+          <td><span class="status status-work">В работе</span></td>
+        </tr>
+
+        <tr>
+          <td class="row-num">13</td>
+          <td class="date">21 мая<small>Чт</small></td>
+          <td><span class="pill pill-D">Родителям</span></td>
+          <td><div class="topic-mk">Для какого возраста Bubabu?</div><div class="topic-meta">age fit</div></td>
+          <td class="msg">«3–12 лет — растёт вместе с ребёнком»</td>
+          <td class="audience">Parents 28–55 · gift-buyers</td>
+          <td><span class="purpose purpose-trust">Доверие</span></td>
+          <td><span class="channel channel-retarget">Retargeting ad</span></td>
+          <td class="cta">Узнать → <strong>DM</strong></td>
+          <td class="asset">Производим Wk2</td>
+          <td><span class="status status-work">В работе</span></td>
+        </tr>
+
+        <tr>
+          <td class="row-num">14</td>
+          <td class="date">22 мая<small>Пт</small></td>
+          <td><span class="pill pill-DC">Демо</span></td>
+          <td><div class="topic-mk">Запросите настоящее демо-видео</div><div class="topic-meta">demo CTA</div></td>
+          <td class="msg">«Реальная демонстрация Bubabu по запросу»</td>
+          <td class="audience">Warm + retarget · engaged</td>
+          <td><span class="purpose purpose-conversion">Конверсия</span></td>
+          <td><span class="channel channel-conversion">Conversion ad</span></td>
+          <td class="cta">Напишите «ДЕМО» → <strong>DM</strong></td>
+          <td class="asset">Производим Wk2 + Арчил-видео</td>
+          <td><span class="status status-work">В работе</span></td>
+        </tr>
+
+        <tr>
+          <td class="row-num">15</td>
+          <td class="date">23 мая<small>Сб</small></td>
+          <td><span class="pill pill-C">Слово</span></td>
+          <td><div class="topic-mk">ყვავილი</div><div class="topic-meta">Flower · Цветок</div></td>
+          <td class="msg">«Цветок на 3 языках»</td>
+          <td class="audience">Parents + kids</td>
+          <td><span class="purpose purpose-engagement">Вовлечение</span></td>
+          <td><span class="channel channel-org">Organic only</span></td>
+          <td class="cta">comments engagement</td>
+          <td class="asset">Производим Wk2</td>
+          <td><span class="status status-work">В работе</span></td>
+        </tr>
+
+        <tr>
+          <td class="row-num">16</td>
+          <td class="date">24 мая<small>Вс</small></td>
+          <td><span class="pill pill-B">Сказка</span></td>
+          <td><div class="topic-mk">კომბლე</div><div class="topic-meta">Комбле — смелый мальчик</div></td>
+          <td class="msg">«Грузинский герой возвращается в комнату ребёнка»</td>
+          <td class="audience">Parents + grandparents · bedtime</td>
+          <td><span class="purpose purpose-trust">Доверие</span></td>
+          <td><span class="channel channel-boost">Organic + boost</span></td>
+          <td class="cta">«Какую сказку дальше?» → comments</td>
+          <td class="asset">Производим Wk3</td>
+          <td><span class="status status-work">В работе</span></td>
+        </tr>
+
+        <tr>
+          <td class="row-num">17</td>
+          <td class="date">25 мая<small>Пн</small></td>
+          <td><span class="pill pill-D">Родителям</span></td>
+          <td><div class="topic-mk">Bubabu — без экрана и безопасный?</div><div class="topic-meta">safety</div></td>
+          <td class="msg">«Никакого тачскрина · сертифицированные материалы»</td>
+          <td class="audience">Concerned parents · safety-first</td>
+          <td><span class="purpose purpose-trust">Доверие</span></td>
+          <td><span class="channel channel-retarget">Retargeting ad</span></td>
+          <td class="cta">Подробнее → <strong>bubabu.ge</strong></td>
+          <td class="asset">Производим Wk3</td>
+          <td><span class="status status-work">В работе</span></td>
+        </tr>
+
+        <tr>
+          <td class="row-num">18</td>
+          <td class="date">26 мая<small>Вт</small></td>
+          <td><span class="pill pill-A">Вопрос</span></td>
+          <td><div class="topic-mk">Почему облака не падают?</div><div class="topic-meta">რატომ არ ვარდება ღრუბლები?</div></td>
+          <td class="msg">«Водяной пар — физика для детей»</td>
+          <td class="audience">Kids 3–12 + curious parents</td>
+          <td><span class="purpose purpose-engagement">Вовлечение</span></td>
+          <td><span class="channel channel-boost">Organic + boost</span></td>
+          <td class="cta">«Чей вопрос?» → comments</td>
+          <td class="asset">Производим Wk3</td>
+          <td><span class="status status-work">В работе</span></td>
+        </tr>
+
+        <tr>
+          <td class="row-num">19</td>
+          <td class="date">27 мая<small>Ср</small></td>
+          <td><span class="pill pill-DC">Демо</span></td>
+          <td><div class="topic-mk">Где купить Bubabu / как заказать</div><div class="topic-meta">purchase path</div></td>
+          <td class="msg">«bubabu.ge + Tbilisi Mall + Galleria»</td>
+          <td class="audience">Hot · multi-touchpoint</td>
+          <td><span class="purpose purpose-conversion">Конверсия</span></td>
+          <td><span class="channel channel-conversion">Conversion ad</span></td>
+          <td class="cta">Заказать → <strong>bubabu.ge</strong> checkout</td>
+          <td class="asset">Производим Wk3</td>
+          <td><span class="status status-work">В работе</span></td>
+        </tr>
+
+        <tr>
+          <td class="row-num">20</td>
+          <td class="date">28 мая<small>Чт</small></td>
+          <td><span class="pill pill-C">Слово</span></td>
+          <td><div class="topic-mk">ზღვა</div><div class="topic-meta">Sea · Море</div></td>
+          <td class="msg">«Море на 3 языках»</td>
+          <td class="audience">Parents + kids</td>
+          <td><span class="purpose purpose-awareness">Охват</span></td>
+          <td><span class="channel channel-org">Organic only</span></td>
+          <td class="cta">comments engagement</td>
+          <td class="asset">Производим Wk3</td>
+          <td><span class="status status-work">В работе</span></td>
+        </tr>
+
+        <tr>
+          <td class="row-num">21</td>
+          <td class="date">29 мая<small>Пт</small></td>
+          <td><span class="pill pill-D">Родителям</span></td>
+          <td><div class="topic-mk">3 причины — чем Bubabu отличается от обычной игрушки</div><div class="topic-meta">differentiation</div></td>
+          <td class="msg">«AI-разговор · 3 языка · без экрана»</td>
+          <td class="audience">Parents 25–55 + gift buyers</td>
+          <td><span class="purpose purpose-trust">Доверие</span></td>
+          <td><span class="channel channel-retarget">Retargeting ad</span></td>
+          <td class="cta">Узнать → <strong>bubabu.ge</strong></td>
+          <td class="asset">Производим Wk3</td>
+          <td><span class="status status-work">В работе</span></td>
+        </tr>
+
+        <tr>
+          <td class="row-num">22</td>
+          <td class="date">30 мая<small>Сб</small></td>
+          <td><span class="pill pill-B">Сказка</span></td>
+          <td><div class="topic-mk">ნანა · იავნანა</div><div class="topic-meta">Колыбельная Нана</div></td>
+          <td class="msg">«Семейная колыбельная традиция оживает»</td>
+          <td class="audience">Parents + grandparents · family</td>
+          <td><span class="purpose purpose-trust">Доверие</span></td>
+          <td><span class="channel channel-boost">Organic + boost</span></td>
+          <td class="cta">«Поделитесь с семьёй» → share</td>
+          <td class="asset">Производим Wk4</td>
+          <td><span class="status status-work">В работе</span></td>
+        </tr>
+
+        <tr>
+          <td class="row-num">23</td>
+          <td class="date">31 мая<small>Вс</small></td>
+          <td><span class="pill pill-DC">Демо</span></td>
+          <td><div class="topic-mk">День защиты детей — подарок · демо · заказ</div><div class="topic-meta">Kids Day eve</div></td>
+          <td class="msg">«Подарок к 1 июня — успейте заказать сегодня»</td>
+          <td class="audience">Gift buyers · all warm + cold</td>
+          <td><span class="purpose purpose-conversion">Конверсия</span></td>
+          <td><span class="channel channel-conversion">Conversion ad + Awareness</span></td>
+          <td class="cta">Заказать → <strong>bubabu.ge</strong> + UTM</td>
+          <td class="asset">Производим Wk4 — финал</td>
+          <td><span class="status status-work">В работе</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="footer-note">
+    <strong>Что нужно от Арчила (для разблокировки производства):</strong>
+    <br>(1) Реальное демо-видео Bubabu (для CTA-постов 16/22 · если он сам снимет — лучше) ·
+    (2) UGC реакции детей (для Format D · можно из существующих в Google Drive) ·
+    (3) Подтверждение текстов CTA + где-купить + цена ·
+    (4) Бюджет на boost / retargeting / conversion ads (~300 GEL/неделя × 3 недели = 900 GEL отдельно от 2,000 контракта) ·
+    (5) UTM-параметр <code>utm_source=may_calendar</code> на все ссылки bubabu.ge ·
+    (6) Подтверждение Pixel events + retargeting audiences в Meta Ads Manager.
+  </div>
+
+  <footer class="footer">
+    <div><strong>Bubabu × ainow</strong> · Execution Sheet · INTERNAL</div>
+    <div>v1.0 · 11 мая 2026</div>
+  </footer>
+
+</div>
+
+</body>
+</html>

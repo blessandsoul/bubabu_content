@@ -1,0 +1,43 @@
+# Per-agent permissions for /bubabu
+# Phase 2a per plans/tidy-cooking-book.md. Read by .claude/hooks/permissions_guard.py.
+
+version: 1
+inherits: _default_toolset.yaml
+allowed_tools:
+  - Read
+  - Glob
+  - Grep
+  - Edit
+  - Write
+  - Bash
+  - PowerShell
+  - Task
+  - AskUserQuestion
+  - TodoWrite
+  - WebFetch
+allowed_paths:
+  - "agents/bubabu/**"
+  - "bible/**"
+  - "memory/**"
+  - "wiki/**"
+  - "analytics/**"
+  - "scripts/**"
+  - ".claude/commands/bubabu.md"
+allowed_domains: []
+requires_approval:
+  - tool: Bash
+    pattern: 'git\s+push'
+  - tool: Bash
+    pattern: 'git\s+reset\s+--hard'
+  - tool: Bash
+    pattern: 'git\s+checkout\s+--'
+  - tool: Bash
+    pattern: 'rm\s+-rf'
+  - tool: Bash
+    pattern: 'Remove-Item.*-Recurse.*-Force'
+  - tool: Write
+    pattern: 'C:/Users/User/.claude/settings(\.local)?\.json'
+  - tool: Write
+    pattern: 'bible/ABSOLUTE_RULES\.md'
+  - tool: Write
+    pattern: 'agents/registry\.json'

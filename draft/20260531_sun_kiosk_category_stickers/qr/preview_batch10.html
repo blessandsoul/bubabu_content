@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bubabu QR — Batch of 10 · Pick your favorite</title>
+<style>
+  :root {
+    --magenta: #FF1F8F;
+    --cyan: #5BC0DE;
+    --lime: #84CC16;
+    --yellow: #FFEB3B;
+    --orange: #FF9F1C;
+    --coral: #FF6B6B;
+    --butter-top: #FFFAEB;
+    --butter-bottom: #FFF6CC;
+    --ink: #2A1F35;
+    --muted: #7A6F85;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(180deg, var(--butter-top) 0%, var(--butter-bottom) 100%);
+    color: var(--ink);
+    min-height: 100vh;
+    padding: 32px 24px 80px;
+  }
+  .container { max-width: 1440px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 32px; }
+  header h1 {
+    font-size: 42px; font-weight: 800; color: var(--magenta);
+    margin: 0 0 8px; letter-spacing: -0.02em;
+  }
+  header .url {
+    font-size: 16px; color: var(--ink); background: white;
+    padding: 6px 16px; border-radius: 100px; display: inline-block;
+    font-family: 'Courier New', monospace; border: 2px solid var(--magenta);
+  }
+  header .subtitle {
+    font-size: 14px; color: var(--muted); margin-top: 10px;
+    letter-spacing: 0.08em; text-transform: uppercase;
+  }
+  .pick-note {
+    background: linear-gradient(135deg, var(--yellow) 0%, var(--orange) 100%);
+    color: var(--ink); padding: 16px 24px; border-radius: 16px;
+    font-weight: 700; font-size: 16px; text-align: center;
+    margin: 0 auto 32px; max-width: 800px;
+  }
+  .pick-note .num { color: var(--magenta); font-size: 18px; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+  .qr-card {
+    background: white; border-radius: 16px; padding: 16px;
+    box-shadow: 0 6px 20px rgba(255, 31, 143, 0.10);
+    display: flex; flex-direction: column; gap: 8px;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .qr-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 28px rgba(255, 31, 143, 0.18);
+  }
+  .qr-number {
+    font-size: 24px; font-weight: 800; color: var(--magenta);
+    display: flex; align-items: baseline; gap: 8px;
+  }
+  .qr-number .label {
+    font-size: 13px; color: var(--ink); font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.04em;
+  }
+  .qr-image {
+    background: var(--butter-top); border-radius: 10px;
+    padding: 8px; aspect-ratio: 1;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .qr-image img { width: 100%; height: auto; border-radius: 6px; cursor: zoom-in; }
+  .qr-desc {
+    font-size: 12px; color: var(--muted);
+    line-height: 1.4; min-height: 50px;
+  }
+  .qr-desc strong { color: var(--ink); }
+
+  @media (max-width: 1200px) { .grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 720px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 480px) { .grid { grid-template-columns: 1fr; } }
+
+  /* Zoom overlay */
+  .zoom-overlay {
+    position: fixed; inset: 0; background: rgba(42, 31, 53, 0.92);
+    display: none; align-items: center; justify-content: center;
+    z-index: 1000; cursor: zoom-out; padding: 24px;
+  }
+  .zoom-overlay.active { display: flex; }
+  .zoom-overlay img {
+    max-width: 92vw; max-height: 92vh;
+    border-radius: 12px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  }
+
+  footer {
+    text-align: center; margin-top: 24px; padding-top: 16px;
+    border-top: 1px solid rgba(255, 31, 143, 0.2);
+    color: var(--muted); font-size: 12px;
+  }
+  footer code { background: white; padding: 2px 6px; border-radius: 4px; color: var(--magenta); }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>BUBABU QR — Batch of 10</h1>
+    <div class="url">https://bubabu.ge</div>
+    <div class="subtitle">Pick your favorite · 300 DPI print-ready · H-level ECC</div>
+  </header>
+
+  <div class="pick-note">
+    👆 Click any QR to zoom · choose <span class="num">v01–v10</span> · скажи мне номер и я finalize + scan test
+  </div>
+
+  <div class="grid">
+
+    <div class="qr-card">
+      <div class="qr-number">v01 <span class="label">Classic Black</span></div>
+      <div class="qr-image"><img src="batch10/v01_classic_black.png" alt="v01" loading="lazy"></div>
+      <div class="qr-desc"><strong>Black square classic</strong> · Bubabu center · pure white BG · no backdrop. <em>Max scan reliability.</em></div>
+    </div>
+
+    <div class="qr-card">
+      <div class="qr-number">v02 <span class="label">Magenta Confetti</span></div>
+      <div class="qr-image"><img src="batch10/v02_magenta_confetti.png" alt="v02" loading="lazy"></div>
+      <div class="qr-desc"><strong>Magenta rounded</strong> · Bubabu center · Candy confetti dots backdrop · butter-cream BG. <em>Baseline v4.</em></div>
+    </div>
+
+    <div class="qr-card">
+      <div class="qr-number">v03 <span class="label">Cyan Confetti</span></div>
+      <div class="qr-image"><img src="batch10/v03_cyan_confetti.png" alt="v03" loading="lazy"></div>
+      <div class="qr-desc"><strong>Cyan rounded</strong> · Bubabu center · Candy confetti dots · butter-cream BG. <em>Cyan brand variant.</em></div>
+    </div>
+
+    <div class="qr-card">
+      <div class="qr-number">v04 <span class="label">Sunburst</span></div>
+      <div class="qr-image"><img src="batch10/v04_sunburst.png" alt="v04" loading="lazy"></div>
+      <div class="qr-desc"><strong>Magenta rounded</strong> · Bubabu center · 6-color radial sunburst rays · butter-cream BG. <em>Cover.md series-skin match.</em></div>
+    </div>
+
+    <div class="qr-card">
+      <div class="qr-number">v05 <span class="label">Cloud Bubabu</span></div>
+      <div class="qr-image"><img src="batch10/v05_cloud_bubabu.png" alt="v05" loading="lazy"></div>
+      <div class="qr-desc"><strong>Magenta rounded</strong> · Bubabu in soft butter-cream Pixar cloud · butter-cream BG. <em>Cloud-tree canon nod.</em></div>
+    </div>
+
+    <div class="qr-card">
+      <div class="qr-number">v06 <span class="label">Multi-Color Modules</span></div>
+      <div class="qr-image"><img src="batch10/v06_multicolor_modules.png" alt="v06" loading="lazy"></div>
+      <div class="qr-desc"><strong>Random Candy Pop per module</strong> · Bubabu center · butter-cream BG. <em>Dramatic kid-toy.</em></div>
+    </div>
+
+    <div class="qr-card">
+      <div class="qr-number">v07 <span class="label">Circle Dots</span></div>
+      <div class="qr-image"><img src="batch10/v07_circle_dots.png" alt="v07" loading="lazy"></div>
+      <div class="qr-desc"><strong>Cyan circle dots</strong> · Bubabu center · Candy confetti · butter-cream BG. <em>Bubbly circle module shape.</em></div>
+    </div>
+
+    <div class="qr-card">
+      <div class="qr-number">v08 <span class="label">Pure Brand No Logo</span></div>
+      <div class="qr-image"><img src="batch10/v08_pure_brand_no_logo.png" alt="v08" loading="lazy"></div>
+      <div class="qr-desc"><strong>Magenta rounded</strong> · NO center logo · butter-cream BG. <em>Cleanest minimal. Place BUBABU.GE text below QR in sticker layout.</em></div>
+    </div>
+
+    <div class="qr-card">
+      <div class="qr-number">v09 <span class="label">Coral Soft</span></div>
+      <div class="qr-image"><img src="batch10/v09_coral_soft.png" alt="v09" loading="lazy"></div>
+      <div class="qr-desc"><strong>Coral rounded</strong> · Bubabu center · soft yellow halo glow · butter-cream BG. <em>Warm tone test.</em></div>
+    </div>
+
+    <div class="qr-card">
+      <div class="qr-number">v10 <span class="label">Star Burst</span></div>
+      <div class="qr-image"><img src="batch10/v10_star_burst.png" alt="v10" loading="lazy"></div>
+      <div class="qr-desc"><strong>Magenta rounded</strong> · Bubabu center · 22 scattered Candy Pop 6-point stars · butter-cream BG. <em>Kid-magic star atmosphere.</em></div>
+    </div>
+
+  </div>
+
+  <footer>
+    All 10 generated by <code>scripts/bubabu_qr_batch10.py</code> · output in <code>qr/batch10/</code> · pick any → finalize + scan test → mass print
+  </footer>
+
+</div>
+
+<div class="zoom-overlay" id="zoom">
+  <img id="zoom-img" src="" alt="zoom">
+</div>
+
+<script>
+  const zoom = document.getElementById('zoom');
+  const zoomImg = document.getElementById('zoom-img');
+  document.querySelectorAll('.qr-image img').forEach(img => {
+    img.addEventListener('click', () => {
+      zoomImg.src = img.src;
+      zoom.classList.add('active');
+    });
+  });
+  zoom.addEventListener('click', () => {
+    zoom.classList.remove('active');
+    zoomImg.src = '';
+  });
+</script>
+
+</body>
+</html>

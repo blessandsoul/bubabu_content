@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bubabu QR Preview — iteration page</title>
+<style>
+  :root {
+    --magenta: #FF1F8F;
+    --cyan: #5BC0DE;
+    --lime: #84CC16;
+    --yellow: #FFEB3B;
+    --orange: #FF9F1C;
+    --coral: #FF6B6B;
+    --butter-cream-top: #FFFAEB;
+    --butter-cream-bottom: #FFF6CC;
+    --ink: #2A1F35;
+    --muted: #7A6F85;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(180deg, var(--butter-cream-top) 0%, var(--butter-cream-bottom) 100%);
+    color: var(--ink);
+    min-height: 100vh;
+    padding: 40px 24px 80px;
+  }
+
+  .container {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  header h1 {
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--magenta);
+    margin: 0 0 8px;
+    letter-spacing: -0.02em;
+  }
+
+  header .url {
+    font-size: 18px;
+    color: var(--ink);
+    background: white;
+    padding: 8px 20px;
+    border-radius: 100px;
+    display: inline-block;
+    font-family: 'Courier New', monospace;
+    border: 2px solid var(--magenta);
+  }
+
+  header .subtitle {
+    font-size: 14px;
+    color: var(--muted);
+    margin-top: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .qr-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-bottom: 48px;
+  }
+
+  .qr-card {
+    background: white;
+    border-radius: 24px;
+    padding: 32px;
+    box-shadow: 0 8px 32px rgba(255, 31, 143, 0.12), 0 2px 8px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .qr-card.maximal {
+    border: 3px solid var(--magenta);
+  }
+
+  .qr-card.minimal {
+    border: 3px solid var(--cyan);
+  }
+
+  .qr-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .qr-label .name {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--ink);
+  }
+
+  .qr-label .badge {
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .qr-card.maximal .badge {
+    background: var(--magenta);
+    color: white;
+  }
+
+  .qr-card.minimal .badge {
+    background: var(--cyan);
+    color: white;
+  }
+
+  .qr-image-wrapper {
+    background: var(--butter-cream-top);
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1;
+    overflow: hidden;
+  }
+
+  .qr-image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
+
+  .qr-meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 16px;
+    font-size: 13px;
+  }
+
+  .qr-meta .label {
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-size: 11px;
+  }
+
+  .qr-meta .value {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  .scan-test {
+    background: white;
+    border-radius: 24px;
+    padding: 32px;
+    box-shadow: 0 8px 32px rgba(255, 31, 143, 0.08);
+    margin-bottom: 32px;
+  }
+
+  .scan-test h2 {
+    font-size: 24px;
+    color: var(--magenta);
+    margin: 0 0 16px;
+  }
+
+  .scan-test .note {
+    background: linear-gradient(135deg, var(--yellow) 0%, var(--orange) 100%);
+    color: var(--ink);
+    padding: 16px 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    font-size: 15px;
+  }
+
+  .scan-test .checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  .scan-test .checklist li {
+    background: var(--butter-cream-top);
+    padding: 14px 18px;
+    border-radius: 12px;
+    border-left: 4px solid var(--cyan);
+    font-size: 14px;
+  }
+
+  .scan-test .checklist li.fail {
+    border-left-color: var(--coral);
+  }
+
+  .palette {
+    background: white;
+    border-radius: 24px;
+    padding: 32px;
+    box-shadow: 0 8px 32px rgba(255, 31, 143, 0.08);
+    margin-bottom: 32px;
+  }
+
+  .palette h2 {
+    font-size: 24px;
+    color: var(--magenta);
+    margin: 0 0 20px;
+  }
+
+  .palette .swatches {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+  }
+
+  .swatch {
+    aspect-ratio: 1;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+    color: var(--ink);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08);
+  }
+
+  .swatch .name { display: block; }
+  .swatch .hex { font-family: 'Courier New', monospace; font-weight: 400; opacity: 0.7; font-size: 10px; }
+
+  .swatch.dark { color: white; }
+
+  .iteration {
+    background: white;
+    border-radius: 24px;
+    padding: 32px;
+    box-shadow: 0 8px 32px rgba(255, 31, 143, 0.08);
+  }
+
+  .iteration h2 {
+    font-size: 24px;
+    color: var(--magenta);
+    margin: 0 0 20px;
+  }
+
+  .iteration .options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .iteration .option {
+    background: var(--butter-cream-top);
+    border: 2px dashed var(--magenta);
+    border-radius: 16px;
+    padding: 20px;
+  }
+
+  .iteration .option h3 {
+    font-size: 16px;
+    color: var(--magenta);
+    margin: 0 0 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .iteration .option p {
+    margin: 0;
+    font-size: 13px;
+    color: var(--ink);
+    line-height: 1.5;
+  }
+
+  .iteration .option code {
+    background: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: var(--magenta);
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 31, 143, 0.2);
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  footer .brand {
+    color: var(--magenta);
+    font-weight: 800;
+    letter-spacing: 0.04em;
+  }
+
+  @media (max-width: 900px) {
+    .qr-grid { grid-template-columns: 1fr; }
+    .scan-test .checklist { grid-template-columns: 1fr; }
+    .iteration .options { grid-template-columns: 1fr; }
+    .palette .swatches { grid-template-columns: repeat(3, 1fr); }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>BUBABU QR — Preview &amp; Iteration</h1>
+    <div class="url">https://bubabu.ge</div>
+    <div class="subtitle">Kiosk sticker variants · 300 DPI print-ready · iterate here · <strong style="color: var(--magenta);">v4 — Bubabu cutout + Candy confetti dots backdrop</strong></div>
+  </header>
+
+  <div class="qr-grid">
+
+    <div class="qr-card maximal">
+      <div class="qr-label">
+        <div class="name">A — Maximal</div>
+        <div class="badge">Default ship</div>
+      </div>
+      <div class="qr-image-wrapper">
+        <img src="bubabu_ge_qr_maximal.png?v=4" alt="Bubabu QR Maximal v4" loading="lazy">
+      </div>
+      <div class="qr-meta">
+        <div class="label">URL</div><div class="value">https://bubabu.ge</div>
+        <div class="label">Modules</div><div class="value">Rounded · Magenta</div>
+        <div class="label">Background</div><div class="value">Butter-cream solid</div>
+        <div class="label">Center</div><div class="value">Bubabu 1.jpeg · 28%</div>
+        <div class="label">Backdrop</div><div class="value">Candy Pop 6-color arc</div>
+        <div class="label">ECC</div><div class="value">H-level (30% recovery)</div>
+        <div class="label">Size</div><div class="value">1110×1110px @ 300 DPI</div>
+        <div class="label">Print at</div><div class="value">~9×9cm vinyl</div>
+      </div>
+    </div>
+
+    <div class="qr-card minimal">
+      <div class="qr-label">
+        <div class="name">B — Minimal Brand</div>
+        <div class="badge">Fallback</div>
+      </div>
+      <div class="qr-image-wrapper">
+        <img src="bubabu_ge_qr_minimal_brand.png?v=3" alt="Bubabu QR Minimal Brand v3" loading="lazy">
+      </div>
+      <div class="qr-meta">
+        <div class="label">URL</div><div class="value">https://bubabu.ge</div>
+        <div class="label">Modules</div><div class="value">Rounded · Magenta</div>
+        <div class="label">Background</div><div class="value">Butter-cream solid</div>
+        <div class="label">Center</div><div class="value">— (no logo)</div>
+        <div class="label">Backdrop</div><div class="value">— (no rainbow)</div>
+        <div class="label">ECC</div><div class="value">H-level (30% recovery)</div>
+        <div class="label">Size</div><div class="value">1110×1110px @ 300 DPI</div>
+        <div class="label">Print at</div><div class="value">~9×9cm vinyl</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="scan-test">
+    <h2>Scan test checklist</h2>
+    <div class="note">
+      ⚠️ Variant A (Maximal) is highest brand visibility but lowest scan-rate confidence. <strong>Test on real phones BEFORE mass print.</strong> If any test fails, use Variant B (Minimal Brand) as fallback.
+    </div>
+    <ul class="checklist">
+      <li>📱 iPhone (latest iOS native camera) — scan from 30cm close-up</li>
+      <li>📱 iPhone — scan from 1m kiosk-shopper distance</li>
+      <li>📱 iPhone — scan from 2m far-aisle distance</li>
+      <li>🤖 Android (Google Lens / native camera) — same 3 distances</li>
+      <li>💡 Mall LED strong overhead lighting — close + far</li>
+      <li>🌗 Tabletop low-light — close + far</li>
+      <li>☀️ Outdoor sunlight — close + far</li>
+      <li>🖥 On-screen scan (FB / IG / TT video frame) — phone camera scanning monitor</li>
+    </ul>
+  </div>
+
+  <div class="palette">
+    <h2>Brand palette used</h2>
+    <div class="swatches">
+      <div class="swatch dark" style="background: #FF1F8F;">
+        <span class="name">Magenta</span>
+        <span class="hex">#FF1F8F</span>
+      </div>
+      <div class="swatch" style="background: #5BC0DE;">
+        <span class="name">Cyan</span>
+        <span class="hex">#5BC0DE</span>
+      </div>
+      <div class="swatch" style="background: #84CC16;">
+        <span class="name">Lime</span>
+        <span class="hex">#84CC16</span>
+      </div>
+      <div class="swatch" style="background: #FFEB3B;">
+        <span class="name">Yellow</span>
+        <span class="hex">#FFEB3B</span>
+      </div>
+      <div class="swatch dark" style="background: #FF9F1C;">
+        <span class="name">Orange</span>
+        <span class="hex">#FF9F1C</span>
+      </div>
+      <div class="swatch dark" style="background: #FF6B6B;">
+        <span class="name">Coral</span>
+        <span class="hex">#FF6B6B</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="iteration">
+    <h2>Iteration menu — что можно крутить</h2>
+    <div class="options">
+
+      <div class="option">
+        <h3>1. Module color</h3>
+        <p>Сейчас magenta <code>#FF1F8F</code>. Можно поменять на cyan <code>#5BC0DE</code>, deep magenta-dark <code>#C70066</code>, или black для max scan reliability.</p>
+      </div>
+
+      <div class="option">
+        <h3>2. Center logo size</h3>
+        <p>Сейчас 28% площади. Уменьшить до 22% = scan надёжнее, Bubabu меньше. Увеличить до 35% = риск scan, Bubabu бросается в глаза. <code>LOGO_RATIO</code> в script.</p>
+      </div>
+
+      <div class="option">
+        <h3>3. Rainbow style</h3>
+        <p>Сейчас 6 concentric thin arcs. Альтернативы — solid 6-stripe vertical backdrop, soft pastel gradient blob, или single arc above Bubabu. <code>make_rainbow_backdrop()</code>.</p>
+      </div>
+
+      <div class="option">
+        <h3>4. Finder patterns</h3>
+        <p>3 угла сейчас стандартные square outlines. Можно сделать rounded squares / circles / Bubabu-shaped. <code>eye_drawer</code> param. Risk: scan rate.</p>
+      </div>
+
+      <div class="option">
+        <h3>5. Background</h3>
+        <p>Сейчас solid butter-cream <code>#FFFAEB</code>. Можно добавить gradient → <code>#FFF6CC</code> для warmth (matches ad cover override). Risk: gradient может ухудшить module contrast.</p>
+      </div>
+
+      <div class="option">
+        <h3>6. White halo</h3>
+        <p>Сейчас halo radius = 62% от Bubabu size. Можно убрать (без halo, прямо на модулях) или увеличить до 80% для cleaner clear-zone. Trade-off vs visual density.</p>
+      </div>
+
+      <div class="option">
+        <h3>7. Bubabu mood</h3>
+        <p>Сейчас <code>1.jpeg</code> normal. Можно <code>2.jpeg</code> alternative pose или <code>3.jpeg</code> heart-eyes (rare — только для специальных QR кампаний).</p>
+      </div>
+
+      <div class="option">
+        <h3>8. URL + UTM tracking</h3>
+        <p>Сейчас bare <code>https://bubabu.ge</code>. Можно добавить UTM tags для analytics: <code>?utm_source=kiosk&utm_medium=qr&utm_campaign=pair01</code>. Увеличит data length = QR денсер.</p>
+      </div>
+
+      <div class="option">
+        <h3>9. Output format</h3>
+        <p>Сейчас PNG raster 300 DPI. Могу также SVG vector (бесконечно масштабируется, idealen для print) или PDF.</p>
+      </div>
+
+      <div class="option">
+        <h3>10. Size variants</h3>
+        <p>Сейчас 1110×1110px (~9cm print). Могу батчем сгенерить: kiosk large 12cm / sticker medium 6cm / business card small 3cm. Каждый размер = свой LOGO_RATIO для optimal scan.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    Generated by <span class="brand">BUBABU SMART GIFTS</span> agent · 2026-05-31 · script: <code>scripts/bubabu_qr_maximal.py</code>
+  </footer>
+
+</div>
+</body>
+</html>

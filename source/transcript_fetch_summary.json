@@ -1,0 +1,936 @@
+{
+  "ch1_dziliskhairi": [
+    {
+      "id": "ESEQAzGCnpA",
+      "status": "ok",
+      "lang": "en",
+      "n_snippets": 17,
+      "n_chars": 161,
+      "langs": [
+        "en-auto"
+      ],
+      "title": "🌙 „წელიწადის დროები“ - ძილისპირული მუსიკა | 28 წთ"
+    },
+    {
+      "id": "KcDpo6JGAec",
+      "status": "ok",
+      "lang": "ka",
+      "n_snippets": 117,
+      "n_chars": 3409,
+      "langs": [
+        "ka-auto"
+      ],
+      "title": "💤 ძალა ერთობაშია | ძილისპირული ზღაპრები ბავშვებისთვის"
+    },
+    {
+      "id": "m8T4Rw7URG8",
+      "status": "ok",
+      "lang": "ka",
+      "n_snippets": 119,
+      "n_chars": 3304,
+      "langs": [
+        "ka-auto"
+      ],
+      "title": "💤 კატა და ლომი | ძილისპირული ზღაპრები ბავშვებისთვის"
+    },
+    {
+      "id": "bR8zmqdow-w",
+      "status": "ok",
+      "lang": "en",
+      "n_snippets": 290,
+      "n_chars": 2896,
+      "langs": [
+        "en-auto"
+      ],
+      "title": "🌙 „წელიწადის დროები“ - ძილისპირული მუსიკა | 30 წთ"
+    },
+    {
+      "id": "Tdc1TVNJHgU",
+      "status": "ok",
+      "lang": "ka",
+      "n_snippets": 87,
+      "n_chars": 2882,
+      "langs": [
+        "ka-auto"
+      ],
+      "title": "💤 თებროს და თანოს დალაგება | ძილისპირული ზღაპრები ბავშვებისთვის"
+    },
+    {
+      "id": "8vVI6lRRyOA",
+      "status": "ok",
+      "lang": "ka",
+      "n_snippets": 77,
+      "n_chars": 2331,
+      "langs": [
+        "ka-auto"
+      ],
+      "title": "💤 თებროს და თანოს დამალობანა | ძილისპირული ზღაპრები ბავშვებისთვის"
+    },
+    {
+      "id": "8t9w2QotS00",
+      "status": "ok",
+      "lang": "ka",
+      "n_snippets": 98,
+      "n_chars": 3336,
+      "langs": [
+        "ka-auto"
+      ],
+      "title": "💤 დუდუნა და წელიწადის დროები | ძილისპირული ზღაპარი ბავშვებისთვის."
+    },
+    {
+      "id": "k4FZWQc7MV0",
+      "status": "ok",
+      "lang": "ka",
+      "n_snippets": 94,
+      "n_chars": 3201,
+      "langs": [
+        "ka-auto"
+      ],
+      "title": "💤 ჟოზეს მოგზაურობა საქართველოში | ძილისპირული ზღაპარი ბავშვებისთვის."
+    },
+    {
+      "id": "96eWQG47_04",
+      "status": "ok",
+      "lang": "ka",
+      "n_snippets": 117,
+      "n_chars": 3844,
+      "langs": [
+        "ka-auto"
+      ],
+      "title": "💤 ჟოზეფინას დაბადების დღე | ძილისპირული ზღაპარი ბავშვებისთვის."
+    },
+    {
+      "id": "uTfeHaDQmEQ",
+      "status": "ok",
+      "lang": "ka",
+      "n_snippets": 100,
+      "n_chars": 3107,
+      "langs": [
+        "ka-auto"
+      ],
+      "title": "💤 ჟოზე, მეგობრები და მთვარე | ძილისპირული ზღაპარი ბავშვებისთვის."
+    }
+  ],
+  "ch2_jirafijoze": [
+    {
+      "id": "Z6pBfXJW1m4",
+      "status": "ok",
+      "lang": "ka",
+      "n_snippets": 116,
+      "n_chars": 2924,
+      "langs": [
+        "ka-auto"
+      ],
+      "title": "ჟოზე და გაგრინიო (სეზონი 5 | ეპიზოდი 6)"
+    },
+    {
+      "id": "0aWXp934fn4",
+      "status": "ok",
+      "lang": "ka",
+      "n_snippets": 9,
+      "n_chars": 307,
+      "langs": [
+        "ka-auto"
+      ],
+      "title": "🎨 ისწავლე ხატვა ჩემთან ერთად!"
+    },
+    {
+      "id": "fF8qw-kpT2A",
+      "status": "ok",
+      "lang": "ka",
+      "n_snippets": 78,
+      "n_chars": 2029,
+      "langs": [
+        "ka-auto"
+      ],
+      "title": "ბავშვების სუპერ-ძალა! (სეზონი 5 | ეპიზოდი 5)"
+    },
+    {
+      "id": "EHW_DI6sm80",
+      "status": "ok",
+      "lang": "ka",
+      "n_snippets": 94,
+      "n_chars": 2202,
+      "langs": [
+        "ka-auto"
+      ],
+      "title": "გადავარჩინოთ დედამიწა (სეზონი 5 | ეპიზოდი 4)"
+    },
+    {
+      "id": "-P21p1Ba4ho",
+      "status": "disabled",
+      "title": "ჟოზეს სიურპრიზი (სეზონი 5 | ეპიზოდი 3)"
+    },
+    {
+      "id": "fB9euJHiUCI",
+      "status": "disabled",
+      "title": "ახალი მეგობარი (სეზონი 5 | სერია 2)"
+    },
+    {
+      "id": "wEARtpySiGM",
+      "status": "disabled",
+      "title": "გართობა ბაკურიანთან ერთად (სეზონი 5 | ეპიზოდი 1)"
+    },
+    {
+      "id": "a5wXAhZr6kI",
+      "status": "no_lang",
+      "langs": [
+        "ro-auto"
+      ],
+      "title": "ჟოზეფინას და მამინის მეგობრობა"
+    },
+    {
+      "id": "kTBIRLzkGcw",
+      "status": "no_lang",
+      "langs": [
+        "ro-auto"
+      ],
+      "title": "ბუნებრივი მოვლენები (სეზონი 4 | სერია 9)"
+    },
+    {
+      "id": "mrz_9ivAZ8o",
+      "status": "ok",
+      "lang": "en",
+      "n_snippets": 49,
+      "n_chars": 323,
+      "langs": [
+        "en-auto"
+      ],
+      "title": "ჟოზეს აჭარული (სეზონი 4 | ეპიზოდი 8)"
+    },
+    {
+      "id": "XpdUzrNrZwk",
+      "status": "ok",
+      "lang": "en",
+      "n_snippets": 69,
+      "n_chars": 480,
+      "langs": [
+        "en-auto"
+      ],
+      "title": "მეგობრები პიოს გამარჯვებისთვის (სეზონი 4 | ეპიზოდი 7)"
+    },
+    {
+      "id": "WJ2I27SrfUg",
+      "status": "disabled",
+      "title": "ჟოზეს და ჟოზეფინას იავნანა (სეზონი 4 | ეპიზოდი 6)"
+    },
+    {
+      "id": "5uNOrzKRhbI",
+      "status": "no_lang",
+      "langs": [
+        "ro-auto"
+      ],
+      "title": "მამინის სიმღერა (სეზონი 4 | ეპიზოდი 5)"
+    },
+    {
+      "id": "K2wJMzIuoHg",
+      "status": "no_lang",
+      "langs": [
+        "ro-auto"
+      ],
+      "title": "ბედნიერება ბაკურიანთან ერთად (სერია 4 | სეზონი 4)"
+    },
+    {
+      "id": "Do19IY-AcgA",
+      "status": "no_lang",
+      "langs": [
+        "ro-auto"
+      ],
+      "title": "ჟოზეს და ვენდის მეგობრობა (სერია 3 | სეზონი 4)"
+    },
+    {
+      "id": "ALXJk5lO9G4",
+      "status": "no_lang",
+      "langs": [
+        "ro-auto"
+      ],
+      "title": "ჟირაფი ჟოზეს საახალწლო თავგადასავალი"
+    },
+    {
+      "id": "xN3DTAH9PTE",
+      "status": "disabled",
+      "title": "🎄 ჟირაფი ჟოზეს საახალწლო კონცერტები \"ამირანში\""
+    },
+    {
+      "id": "HnUa85h_GvM",
+      "status": "ok",
+      "lang": "en",
+      "n_snippets": 14,
+      "n_chars": 129,
+      "langs": [
+        "en-auto"
+      ],
+      "title": "ჟოზეს საცეკვაო (სერია 1 | სეზონი 4)"
+    },
+    {
+      "id": "aaC9-ngGp9o",
+      "status": "ok",
+      "lang": "en",
+      "n_snippets": 42,
+      "n_chars": 341,
+      "langs": [
+        "en-auto"
+      ],
+      "title": "ისწავლე ჟოზესთან ერთად (ფერები) S1E8"
+    },
+    {
+      "id": "2XUjwG7IjCk",
+      "status": "ok",
+      "lang": "en",
+      "n_snippets": 36,
+      "n_chars": 300,
+      "langs": [
+        "en-auto"
+      ],
+      "title": "ისწავლე ჟოზესთან ერთად (კვირის დღეები) S1E7"
+    },
+    {
+      "id": "lnWSxSs_GMA",
+      "status": "ok",
+      "lang": "en",
+      "n_snippets": 38,
+      "n_chars": 289,
+      "langs": [
+        "en-auto"
+      ],
+      "title": "ისწავლე ჟოზესთან ერთად (ბოსტნეული) S1E6"
+    },
+    {
+      "id": "kxbS6XyJpfg",
+      "status": "no_lang",
+      "langs": [
+        "ro-auto"
+      ],
+      "title": "ისწავლე ჟოზესთან ერთად (ხილი) S1E5"
+    },
+    {
+      "id": "vlF5XYcwfHU",
+      "status": "ok",
+      "lang": "en",
+      "n_snippets": 29,
+      "n_chars": 202,
+      "langs": [
+        "en-auto"
+      ],
+      "title": "ისწავლე ჟოზესთან ერთად (წყლის ბინადრები) S1E4"
+    },
+    {
+      "id": "YE8TE5xmNzs",
+      "status": "ok",
+      "lang": "en",
+      "n_snippets": 22,
+      "n_chars": 139,
+      "langs": [
+        "en-auto"
+      ],
+      "title": "ისწავლე ჟოზესთან ერთად (ტყის ბინადრები) S1E3"
+    },
+    {
+      "id": "kmflIULJTEk",
+      "status": "no_lang",
+      "langs": [
+        "ro-auto"
+      ],
+      "title": "ისწავლე ჟოზესთან ერთად (ბუნებრივი მოვლენები) S1E2"
+    },
+    {
+      "id": "V6b9P4jydv0",
+      "status": "no_lang",
+      "langs": [
+        "ro-auto"
+      ],
+      "title": "ისწავლე ჟოზესთან ერთად (წელიწადის დროები) S1E1"
+    },
+    {
+      "id": "e4SB_9GlDhU",
+      "status": "ok",
+      "lang": "en",
+      "n_snippets": 1,
+      "n_chars": 7,
+      "langs": [
+        "en-auto"
+      ],
+      "title": "🔴⚪ ჟოზე და ჩიპოლინოს სავარძელი #5"
+    },
+    {
+      "id": "U3bGTLHLtoU",
+      "status": "ok",
+      "lang": "en",
+      "n_snippets": 3,
+      "n_chars": 18,
+      "langs": [
+        "en-auto"
+      ],
+      "title": "🔴⚪ ჟოზე და ჩიპოლინოს სავარძელი #4"
+    },
+    {
+      "id": "R6HLvD9Zvv4",
+      "status": "ok",
+      "lang": "en",
+      "n_snippets": 2,
+      "n_chars": 11,
+      "langs": [
+        "en-auto"
+      ],
+      "title": "🔴⚪ ჟოზე და ჩიპოლინოს სავარძელი #3"
+    },
+    {
+      "id": "X32T4268k5c",
+      "status": "no_lang",
+      "langs": [
+        "th-auto"
+      ],
+      "title": "🔴⚪ ჟოზე და ჩიპოლინოს სავარძელი #2"
+    },
+    {
+      "id": "mSClLgiJ0Hg",
+      "status": "no_lang",
+      "langs": [
+        "pl-auto"
+      ],
+      "title": "🔴⚪ ჟოზე და ჩიპოლინოს სავარძელი #1"
+    },
+    {
+      "id": "6Z3IXY_zedQ",
+      "status": "disabled",
+      "title": "პირველი სახალხო მიუზიკლი ჟოზესგან"
+    },
+    {
+      "id": "JakM2fCyMOQ",
+      "status": "no_lang",
+      "langs": [
+        "ro-auto"
+      ],
+      "title": "ჟოზეფინას დაბადების დღე (სერია 8 | სეზონი 3)"
+    },
+    {
+      "id": "KXOsl1VjZNY",
+      "status": "no_lang",
+      "langs": [
+        "ro-auto"
+      ],
+      "title": "სპორტი (სერია 7 | სეზონი 3)"
+    },
+    {
+      "id": "7IxUKRUwJo8",
+      "status": "no_lang",
+      "langs": [
+        "ro-auto"
+      ],
+      "title": "🐿 ერთად დავხატოთ ციყვი"
+    },
+    {
+      "id": "SWU-mgt2HME",
+      "status": "no_lang",
+      "langs": [
+        "id-auto"
+      ],
+      "title": "ჟოზეფინას სიმღერა (სერია 6 | სეზონი 3)"
+    },
+    {
+      "id": "FEbv1dMxidM",
+      "status": "no_lang",
+      "langs": [
+        "ro-auto"
+      ],
+      "title": "☁ ერთად დავხატოთ ღრუბელი"
+    },
+    {
+      "id": "MAdzTzzzPgk",
+      "status": "disabled",
+      "title": "🌵 ერთად დავხატოთ კაქტუსი"
+    },
+    {
+      "id": "KsbgNnzkI78",
+      "status": "disabled",
+      "title": "🚀 ერთად დავხატოთ რაკეტა"
+    },
+    {
+      "id": "UY_2EDVJR8I",
+      "status": "no_lang",
+      "langs": [
+        "ro-auto"
+      ],
+      "title": "🌼 ერთად დავხატოთ გვირილა"
+    },
+    {
+      "id": "hMIKk6e1FaQ",
+      "status": "disabled",
+      "title": "🥕 ერთად დავხატოთ სტაფილო"
+    },
+    {
+      "id": "J-Wlb6vpNl4",
+      "status": "disabled",
+      "title": "🛠 ჟოზეს განმავითარებელი სათამაშოები"
+    },
+    {
+      "id": "dvZNGOn6BNM",
+      "status": "ok",
+      "lang": "en",
+      "n_snippets": 30,
+      "n_chars": 194,
+      "langs": [
+        "en-auto"
+      ],
+      "title": "ჟირაფი ჟოზე - გავუფრთხილდეთ დედამიწას (სერია 5 | სეზონი 3)"
+    },
+    {
+      "id": "hdhLqZ7Fluo",
+      "status": "disabled",
+      "title": "🍭 ჟირაფი ჟოზეს საახალწლო ტკბილები."
+    },
+    {
+      "id": "2mlzv9Dcwxk",
+      "status": "ok",
+      "lang": "en",
+      "n_snippets": 45,
+      "n_chars": 309,
+      "langs": [
+        "en-auto"
+      ],
+      "title": "ჟოზეფინას შემოდგომა (სერია 4 | სეზონი 3)"
+    },
+    {
+      "id": "_YsKbbQTFPI",
+      "status": "no_lang",
+      "langs": [
+        "ro-auto"
+      ],
+      "title": "\"ჟოზე მეგობარია\" - დუდუნა და ტკბილეული"
+    },
+    {
+      "id": "gtuow6Ml2Zk",
+      "status": "disabled",
+      "title": "\"ჟოზე მეგობარია\" - პიო და ელვა"
+    },
+    {
+      "id": "litpohF21QI",
+      "status": "no_lang",
+      "langs": [
+        "ro-auto"
+      ],
+      "title": "🐢 ერთად დავხატოთ კუ"
+    },
+    {
+      "id": "pSeqhbHMFOI",
+      "status": "disabled",
+      "title": "\"ჟოზე მეგობარია\" - მამინი და ვირუსი"
+    },
+    {
+      "id": "OMilG_63kIo",
+      "status": "ok",
+      "lang": "en",
+      "n_snippets": 41,
+      "n_chars": 1171,
+      "langs": [
+        "en-auto"
+      ],
+      "title": "ჟირაფი ჟოზე - ბრაზიანი ვირუსები (სერია 3 | სეზონი 3)"
+    },
+    {
+      "id": "idquhtnDD90",
+      "status": "no_lang",
+      "langs": [
+        "fr-auto"
+      ],
+      "title": "ჟოზეს წვეულება (სერია2 | სეზონი 3)"
+    },
+    {
+      "id": "HCX6JuHp1EY",
+      "status": "disabled",
+      "title": "\"ჟოზე მეგობარია\" - ჟოზეფინა ზღვაზე"
+    },
+    {
+      "id": "mZSU9sKR2GQ",
+      "status": "disabled",
+      "title": "\"ჟოზე მეგობარია\" - პიო და წყალდიდობა."
+    },
+    {
+      "id": "I4hw-YWOdC4",
+      "status": "disabled",
+      "title": "\"ჟოზე მეგობარია\" - მამინი და ბურთი."
+    },
+    {
+      "id": "kbZM8h_FCEM",
+      "status": "no_lang",
+      "langs": [
+        "pt-auto"
+      ],
+      "title": "🐑 ჩემი მეგობარი შონი"
+    },
+    {
+      "id": "p6yXNSY0N38",
+      "status": "disabled",
+      "title": "\"ჟოზე მეგობარია\" - დუდუნა და ნაყინი."
+    },
+    {
+      "id": "ZvrPZVyIEew",
+      "status": "disabled",
+      "title": "\"ჟოზე მეგობარია\" - ჟოზეფინა გაიყინა"
+    },
+    {
+      "id": "V49f4rlxUpM",
+      "status": "disabled",
+      "title": "\"ჟოზე მეგობარია\" - პიო და ნაძვის ხე"
+    },
+    {
+      "id": "99lzsbJIuz0",
+      "status": "disabled",
+      "title": "🦋 ერთად დავხატოთ პეპელა"
+    },
+    {
+      "id": "ri3p66aumJc",
+      "status": "disabled",
+      "title": "ჟირაფი ჟოზე – მარჯვენა და მარცხენა (სერია 1 | სეზონი 3)"
+    },
+    {
+      "id": "0nu8sWXgXtY",
+      "status": "disabled",
+      "title": "ჟოზე ჯინოში"
+    },
+    {
+      "id": "pFTPTmDZxT0",
+      "status": "ok",
+      "lang": "en",
+      "n_snippets": 22,
+      "n_chars": 278,
+      "langs": [
+        "en-auto"
+      ],
+      "title": "ჟირაფი ჟოზე - დალაგება (სერია 8 | სეზონი 2)"
+    },
+    {
+      "id": "q-6lmn0BKH8",
+      "status": "disabled",
+      "title": "🦒 მსოფლიოს გარშემო ჟოზესთან ერთად"
+    },
+    {
+      "id": "Yyg5VAZUpzI",
+      "status": "disabled",
+      "title": "🦒 ჟოზეს გასაფერადებელ-სახატავი რვეული"
+    },
+    {
+      "id": "E-fl-SbzNAg",
+      "status": "disabled",
+      "title": "📣 ჟოზეს წიგნები შენ გელოდება 💛"
+    },
+    {
+      "id": "SB02AntjOqw",
+      "status": "disabled",
+      "title": "ჟირაფი ჟოზე - ექიმობანა (სერია 7 | სეზონი 2)"
+    },
+    {
+      "id": "EKfikkb1XAU",
+      "status": "disabled",
+      "title": "ახალი წლის ჯადოსნური ღამე ჟირაფ ჟოზესთან ერთად"
+    },
+    {
+      "id": "_lBQZNPl7jQ",
+      "status": "error",
+      "error": "IpBlocked: \nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=_lBQZNPl7jQ! This is most likely caused b",
+      "title": "ჟირაფი ჟოზე - სიმღერა საქართველოზე (სერია 6 | სეზონი 2)"
+    },
+    {
+      "id": "edkwMXUrNGQ",
+      "status": "no_lang",
+      "langs": [
+        "es-auto"
+      ],
+      "title": "ჟირაფი ჟოზე - გემრიელი ლუკმა (სერია 5 | სეზონი 2)"
+    },
+    {
+      "id": "9kbTp2wFdbM",
+      "status": "disabled",
+      "title": "ჟოზეს ხატვის გაკვეთილი - სერია 4 | სეზონი 2"
+    },
+    {
+      "id": "M_j1wwBLr7Q",
+      "status": "disabled",
+      "title": "ჟირაფი ჟოზე - წელიწადის დროები (სერია 4 | სეზონი 2)"
+    },
+    {
+      "id": "4-9x03sT1q0",
+      "status": "disabled",
+      "title": "ჟოზეს ხატვის გაკვეთილი - სერია 3 | სეზონი 2"
+    },
+    {
+      "id": "LD7zh3aqx3I",
+      "status": "no_lang",
+      "langs": [
+        "es-auto"
+      ],
+      "title": "ჟირაფი ჟოზე - ქართული ანბანი (სერია 3 | სეზონი 2)"
+    },
+    {
+      "id": "0Xluv5pUXwY",
+      "status": "disabled",
+      "title": "ჟოზეს ხატვის გაკვეთილი - სერია 2 | სეზონი 2"
+    },
+    {
+      "id": "XVKGzsRxaKQ",
+      "status": "error",
+      "error": "IpBlocked: \nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=XVKGzsRxaKQ! This is most likely caused b",
+      "title": "ჟოზე და ჟოზეფინა - ფერები (სერია 2 | სეზონი 2)"
+    },
+    {
+      "id": "7PtUz7MUwzc",
+      "status": "disabled",
+      "title": "ჟირაფი ჟოზე იწყება! [ქუდი]"
+    },
+    {
+      "id": "zPX96FtUl4A",
+      "status": "disabled",
+      "title": "ჟოზეს ხატვის გაკვეთილი - სერია 1 | სეზონი 2"
+    },
+    {
+      "id": "YNVGWPUWjRc",
+      "status": "error",
+      "error": "IpBlocked: \nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=YNVGWPUWjRc! This is most likely caused b",
+      "title": "ჟოზე და ჟოზეფინა - მე და შენ (სეზონი 2 | სერია 1)"
+    },
+    {
+      "id": "8YSTX_6m978",
+      "status": "disabled",
+      "title": "ჟოზეს თამაშები ვაკის პარკში 1 ივნისს"
+    },
+    {
+      "id": "nsV9kWT825Q",
+      "status": "disabled",
+      "title": "ჟოზეს ხატვის გაკვეთილი - (სერია 11 - სეზონი1)"
+    },
+    {
+      "id": "Q8KZBqYrtXs",
+      "status": "disabled",
+      "title": "ნამდვილი ჟირაფი ჟოზე რუსთავი2-ზე"
+    },
+    {
+      "id": "3KX02CWwzJM",
+      "status": "error",
+      "error": "IpBlocked: \nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=3KX02CWwzJM! This is most likely caused b",
+      "title": "ჟოზეს ორიგამი - ვაკეთებთ ვეშაპს (1 სერია)"
+    },
+    {
+      "id": "grqLHVTV3A8",
+      "status": "disabled",
+      "title": "ჟოზეს ხატვის გაკვეთილი - (სერია 10 - სეზონი1)"
+    },
+    {
+      "id": "1ec-O52emXE",
+      "status": "disabled",
+      "title": "ჟირაფი ჟოზეს ასაწყობი მაგნიტები"
+    },
+    {
+      "id": "9SWg-t53p68",
+      "status": "no_lang",
+      "langs": [
+        "ko-auto"
+      ],
+      "title": "ჟოზეს ხატვის გაკვეთილი - (სერია 9 - სეზონი1)"
+    },
+    {
+      "id": "wiS9qTEZy-k",
+      "status": "disabled",
+      "title": "ჟოზეს ხატვის გაკვეთილი -  (სერია 8 - სეზონი 1)"
+    },
+    {
+      "id": "VQE8P-mwEpc",
+      "status": "disabled",
+      "title": "ჟოზეს თამაშები - მურაბები (1 სეზონი | 2 სერია)"
+    },
+    {
+      "id": "ZNxzHZvDr4M",
+      "status": "error",
+      "error": "IpBlocked: \nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=ZNxzHZvDr4M! This is most likely caused b",
+      "title": "ჟოზეს ხატვის გაკვეთილი - (სერია 7 - სეზონი1)"
+    },
+    {
+      "id": "51kpyuflFzw",
+      "status": "disabled",
+      "title": "ჟოზეს ხატვის გაკვეთილი - (სერია 6 - სეზონი1)"
+    },
+    {
+      "id": "3N0u93dT--k",
+      "status": "disabled",
+      "title": "ჟოზეს ჩანთები"
+    },
+    {
+      "id": "TZddQn2dlVU",
+      "status": "no_lang",
+      "langs": [
+        "ko-auto"
+      ],
+      "title": "ჟირაფი ჟოზე - ჭუპა-ჭუპა ბანაობა (სეზონი 1 | სერია 11)"
+    },
+    {
+      "id": "B6yXuwY5Nm8",
+      "status": "disabled",
+      "title": "ჟოზეს ხატვის გაკვეთილი - (სერია 5 - სეზონი1)"
+    },
+    {
+      "id": "FdRvxCzJQ0M",
+      "status": "disabled",
+      "title": "ჟოზეს ხატვის გაკვეთილი - (სერია 4 - სეზონი1)"
+    },
+    {
+      "id": "P48cKO7nQwQ",
+      "status": "error",
+      "error": "IpBlocked: \nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=P48cKO7nQwQ! This is most likely caused b",
+      "title": "ჟოზეს თამაშები - გაფერადება  (1 სეზონი | 1 სერია)"
+    },
+    {
+      "id": "d9JhmGKv9LE",
+      "status": "disabled",
+      "title": "ჟოზეს ხატვის გაკვეთილი - (სერია 3 - სეზონი1)"
+    },
+    {
+      "id": "xmcybT9F_fg",
+      "status": "error",
+      "error": "IpBlocked: \nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=xmcybT9F_fg! This is most likely caused b",
+      "title": "ჟირაფი ჟოზე - დაბადების დღე (სეზონი 1 | სერია 10)"
+    },
+    {
+      "id": "3aOMUDpEyxI",
+      "status": "disabled",
+      "title": "ჟოზეს ხატვის გაკვეთილი - (სერია 2 - სეზონი1)"
+    },
+    {
+      "id": "63gRUxBjwBs",
+      "status": "error",
+      "error": "IpBlocked: \nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=63gRUxBjwBs! This is most likely caused b",
+      "title": "ჟირაფი ჟოზე - ანბანი (სეზონი 1 | სერია 9)"
+    },
+    {
+      "id": "OVNKcuEW7JA",
+      "status": "error",
+      "error": "IpBlocked: \nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=OVNKcuEW7JA! This is most likely caused b",
+      "title": "ჟოზეს ხატვის გაკვეთილი - (სერია 1 - სეზონი1)"
+    },
+    {
+      "id": "AmWOzq_ZAKo",
+      "status": "disabled",
+      "title": "ჟოზეს ხატვის გაკვეთილები (ანონსი)"
+    },
+    {
+      "id": "Os02VYaoTE8",
+      "status": "disabled",
+      "title": "გოგა ოსეფაშვილი სტუმრად ჟოზეს სტუდიაში ( mivideo.ge-s ვლოგი #24)"
+    },
+    {
+      "id": "gFfKOz3MZZ0",
+      "status": "error",
+      "error": "IpBlocked: \nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=gFfKOz3MZZ0! This is most likely caused b",
+      "title": "ჟირაფი ჟოზე - კარგად ვიქცევი! (სეზონი 1 | სერია 8)"
+    },
+    {
+      "id": "J2TgjhdUXUo",
+      "status": "disabled",
+      "title": "ჟოზეს გასაფერადებელი რვეულები ყველგან !"
+    },
+    {
+      "id": "RYhaD18XIgc",
+      "status": "disabled",
+      "title": "როგორ კეთდება მულტფილმები - ანიმაციის გაკვეთილი 137-ე ბაგა ბაღში"
+    },
+    {
+      "id": "YAO-63Cv1kA",
+      "status": "error",
+      "error": "IpBlocked: \nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=YAO-63Cv1kA! This is most likely caused b",
+      "title": "ჟირაფი ჟოზე - ფრინველები (სეზონი 1 | სერია 7)"
+    },
+    {
+      "id": "5grQfgnYTG0",
+      "status": "no_lang",
+      "langs": [
+        "tr-auto"
+      ],
+      "title": "ჟირაფი ჟოზე - ცხოველები (სეზონი 1 | სერია 6)"
+    },
+    {
+      "id": "UsOmquPHRx4",
+      "status": "disabled",
+      "title": "აი, როგორ დამზადდა ჟოზეს საახალწლო სიმღერა"
+    },
+    {
+      "id": "UPG8wnEc0d0",
+      "status": "disabled",
+      "title": "ჟირაფი ჟოზე - საახალწლო სიმღერა [ვიდეო] (სეზონი 1 | სერია 5)"
+    },
+    {
+      "id": "27jOtnrCd7o",
+      "status": "no_lang",
+      "langs": [
+        "es-auto"
+      ],
+      "title": "ჟოზე - ცხოველები (სიმღერა)"
+    },
+    {
+      "id": "cEH_CWVSgkA",
+      "status": "disabled",
+      "title": "ნიკა არაბიძის ანეგდოტები (ტიხრები)"
+    },
+    {
+      "id": "iglpDoarMqU",
+      "status": "disabled",
+      "title": "ჟირაფი ჟოზე - მხიარული მათემატიკა (სეზონი 1 | სერია 1)"
+    },
+    {
+      "id": "qyutS8DJOls",
+      "status": "disabled",
+      "title": "დათუნია დრუნჩა - სცენა ვირთხასთან (საპილოტე ვერსია)"
+    },
+    {
+      "id": "nmVu2VkQ0v0",
+      "status": "disabled",
+      "title": "დათუნია დრუნჩა - სცენა მელიასთნ (საპილოტე ვერსია)"
+    },
+    {
+      "id": "uE7w7aSZTz0",
+      "status": "disabled",
+      "title": "დათუნია დრუნჩა - სახლის სცენა (საპილოტე ვერსია)"
+    },
+    {
+      "id": "dg-63-B5RHQ",
+      "status": "disabled",
+      "title": "დათუნია დრუნჩა - სცენა ზღარბთან (საპილოტე ვერსია)"
+    },
+    {
+      "id": "kziXPePnGdQ",
+      "status": "disabled",
+      "title": "რეზო და ბავშვები - ძილისპირული ანბანი (იავნანა)"
+    },
+    {
+      "id": "LSzWA2hJulI",
+      "status": "error",
+      "error": "IpBlocked: \nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=LSzWA2hJulI! This is most likely caused b",
+      "title": "ჟირაფი ჟოზე - ფერები (სეზონი 1 | სერია 4)"
+    },
+    {
+      "id": "TvOO2f8rIko",
+      "status": "no_lang",
+      "langs": [
+        "ko-auto"
+      ],
+      "title": "ჟირაფი ჟოზე - საახალწლო სიმღერა"
+    },
+    {
+      "id": "-bex01BR51o",
+      "status": "no_lang",
+      "langs": [
+        "th-auto"
+      ],
+      "title": "ჟირაფი ჟოზე - ფერადი სამყარო (სეზონი 1 | სერია 2)"
+    },
+    {
+      "id": "lP6J8rbnifQ",
+      "status": "error",
+      "error": "IpBlocked: \nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=lP6J8rbnifQ! This is most likely caused b",
+      "title": "ჟირაფი ჟოზე - მეგობრები (სეზონი 1 | სერია 3)"
+    },
+    {
+      "id": "4YIHmvYGF8Q",
+      "status": "error",
+      "error": "IpBlocked: \nCould not retrieve a transcript for the video https://www.youtube.com/watch?v=4YIHmvYGF8Q! This is most likely caused b",
+      "title": "ჟირაფი ჟოზეს გაკვეთილი პოზიტივის კარნავალზე"
+    }
+  ]
+}

@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bubabu Smart Gifts — Новое позиционирование 2026-05-28</title>
+<style>
+  :root {
+    --bg-cream-1: #FFFAEB;
+    --bg-cream-2: #FFF6CC;
+    --bg-cream-3: #FFEED8;
+    --ink-deep: #2A2017;
+    --ink-soft: #5C4A36;
+    --cyan: #5BC0DE;
+    --cyan-deep: #1A8BBC;
+    --magenta: #FF1F8F;
+    --lime: #84CC16;
+    --yellow: #FFEB3B;
+    --coral: #FF6B6B;
+    --orange: #FF9F1C;
+    --shadow-soft: 0 6px 24px rgba(42, 32, 23, 0.08);
+    --shadow-card: 0 12px 32px rgba(42, 32, 23, 0.12);
+    --radius: 18px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    background: linear-gradient(180deg, var(--bg-cream-1) 0%, var(--bg-cream-2) 100%);
+    color: var(--ink-deep);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+  /* ---------- HERO ---------- */
+  .hero {
+    padding: 80px 24px 60px;
+    text-align: center;
+    background: radial-gradient(ellipse at top, var(--bg-cream-3) 0%, transparent 60%);
+  }
+  .hero .badge {
+    display: inline-block;
+    padding: 6px 14px;
+    background: var(--cyan);
+    color: white;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  .hero h1 {
+    font-size: clamp(36px, 6vw, 64px);
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+    color: var(--cyan-deep);
+  }
+  .hero .subtitle {
+    font-size: clamp(18px, 2.2vw, 24px);
+    color: var(--ink-soft);
+    max-width: 720px;
+    margin: 0 auto 32px;
+  }
+  .hero .meta {
+    display: inline-flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+  .hero .meta span { background: white; padding: 8px 16px; border-radius: 999px; box-shadow: var(--shadow-soft); }
+
+  /* ---------- SECTION ---------- */
+  section { padding: 60px 24px; }
+  section.alt { background: white; }
+  .section-title {
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 800;
+    letter-spacing: -0.015em;
+    color: var(--cyan-deep);
+    margin-bottom: 12px;
+  }
+  .section-lead {
+    font-size: 18px;
+    color: var(--ink-soft);
+    max-width: 760px;
+    margin-bottom: 40px;
+  }
+
+  /* ---------- BEFORE / AFTER ---------- */
+  .compare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+  .compare > div {
+    padding: 28px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-card);
+  }
+  .compare .was {
+    background: #F4ECE0;
+    color: var(--ink-soft);
+    text-decoration: line-through;
+    text-decoration-color: var(--coral);
+    text-decoration-thickness: 2px;
+  }
+  .compare .now {
+    background: linear-gradient(135deg, var(--cyan) 0%, var(--cyan-deep) 100%);
+    color: white;
+  }
+  .compare h3 {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    text-decoration: none;
+  }
+  .compare h3.was-label { color: var(--coral); }
+  .compare h3.now-label { color: var(--yellow); }
+  .compare p { font-size: 18px; line-height: 1.5; text-decoration: none; }
+  .compare .now p { color: white; text-decoration: none; }
+  .compare .was p { text-decoration: line-through; text-decoration-color: var(--coral); }
+
+  @media (max-width: 720px) { .compare { grid-template-columns: 1fr; } }
+
+  /* ---------- LOCKS GRID (8 decisions) ---------- */
+  .locks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+  }
+  .lock {
+    background: white;
+    padding: 28px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-soft);
+    border-left: 6px solid var(--cyan);
+    transition: transform 0.2s ease;
+  }
+  .lock:hover { transform: translateY(-4px); box-shadow: var(--shadow-card); }
+  .lock:nth-child(2) { border-color: var(--magenta); }
+  .lock:nth-child(3) { border-color: var(--lime); }
+  .lock:nth-child(4) { border-color: var(--yellow); }
+  .lock:nth-child(5) { border-color: var(--coral); }
+  .lock:nth-child(6) { border-color: var(--orange); }
+  .lock:nth-child(7) { border-color: var(--cyan-deep); }
+  .lock:nth-child(8) { border-color: var(--magenta); }
+  .lock .num {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--ink-soft);
+    margin-bottom: 8px;
+    letter-spacing: 0.08em;
+  }
+  .lock h4 {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color: var(--ink-deep);
+    line-height: 1.25;
+  }
+  .lock p { font-size: 15px; color: var(--ink-soft); line-height: 1.55; }
+
+  /* ---------- WORKFLOW DIAGRAM ---------- */
+  .workflow {
+    display: grid;
+    grid-template-columns: 1fr 80px 1fr;
+    align-items: stretch;
+    gap: 20px;
+    margin: 40px 0;
+  }
+  .day-card {
+    background: white;
+    padding: 32px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-card);
+    position: relative;
+  }
+  .day-card.even { border-top: 8px solid var(--cyan); }
+  .day-card.odd  { border-top: 8px solid var(--magenta); }
+  .day-card .day-label {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .day-card.even .day-label { background: var(--cyan); color: white; }
+  .day-card.odd  .day-label { background: var(--magenta); color: white; }
+  .day-card h4 { font-size: 24px; font-weight: 800; margin-bottom: 12px; }
+  .day-card ul { list-style: none; padding: 0; }
+  .day-card li {
+    padding: 8px 0 8px 24px;
+    position: relative;
+    font-size: 15px;
+    color: var(--ink-soft);
+  }
+  .day-card li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--cyan);
+    font-weight: 800;
+  }
+  .day-card.odd li::before { color: var(--magenta); }
+
+  .workflow-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: var(--cyan-deep);
+    font-weight: 800;
+  }
+
+  @media (max-width: 720px) {
+    .workflow { grid-template-columns: 1fr; }
+    .workflow-arrow { transform: rotate(90deg); padding: 0; }
+  }
+
+  /* ---------- SKU ZONES ---------- */
+  .zones {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+  }
+  .zone {
+    padding: 24px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-soft);
+    color: var(--ink-deep);
+  }
+  .zone-1 { background: linear-gradient(135deg, #fff 0%, var(--bg-cream-3) 100%); border: 2px solid var(--cyan); }
+  .zone-2 { background: linear-gradient(135deg, #fff 0%, #FFE3F0 100%); border: 2px solid var(--magenta); }
+  .zone-3 { background: linear-gradient(135deg, #fff 0%, #F0FFE3 100%); border: 2px solid var(--lime); }
+  .zone-4 { background: linear-gradient(135deg, #fff 0%, #FFFAE0 100%); border: 2px solid var(--yellow); }
+  .zone-5 { background: linear-gradient(135deg, #fff 0%, #FFE8E0 100%); border: 2px solid var(--orange); }
+  .zone h4 { font-size: 18px; font-weight: 800; margin-bottom: 6px; }
+  .zone .count { font-size: 36px; font-weight: 900; color: var(--cyan-deep); line-height: 1; margin-bottom: 8px; }
+  .zone p { font-size: 13px; color: var(--ink-soft); }
+
+  /* ---------- WONDER TOOLS TABLE ---------- */
+  .wonder {
+    background: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+  }
+  table.wonder-table { width: 100%; border-collapse: collapse; }
+  table.wonder-table th, table.wonder-table td {
+    padding: 14px 20px;
+    text-align: left;
+    border-bottom: 1px solid var(--bg-cream-2);
+    font-size: 15px;
+  }
+  table.wonder-table thead { background: var(--cyan-deep); color: white; }
+  table.wonder-table thead th { font-weight: 700; font-size: 13px; letter-spacing: 0.05em; text-transform: uppercase; }
+  table.wonder-table tbody tr:hover { background: var(--bg-cream-1); }
+  table.wonder-table td.product { font-weight: 600; color: var(--ink-deep); }
+  table.wonder-table td.wonder-name { color: var(--magenta); font-weight: 600; font-style: italic; }
+  table.wonder-table td.role { color: var(--ink-soft); }
+
+  /* ---------- FOLDER TREE ---------- */
+  .folder-tree {
+    background: var(--ink-deep);
+    color: #E8DCC8;
+    padding: 32px;
+    border-radius: var(--radius);
+    font-family: 'SF Mono', Menlo, Monaco, Consolas, monospace;
+    font-size: 14px;
+    line-height: 1.7;
+    overflow-x: auto;
+    box-shadow: var(--shadow-card);
+  }
+  .folder-tree .folder { color: var(--cyan); font-weight: 700; }
+  .folder-tree .file { color: #E8DCC8; }
+  .folder-tree .comment { color: var(--ink-soft); font-style: italic; }
+  .folder-tree .accent { color: var(--yellow); }
+
+  /* ---------- KEEPS / RISKS ---------- */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    margin-top: 32px;
+  }
+  .col-card {
+    padding: 28px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-soft);
+  }
+  .col-card.keeps { background: linear-gradient(135deg, #fff 0%, #E8FFE0 100%); border: 2px solid var(--lime); }
+  .col-card.risks { background: linear-gradient(135deg, #fff 0%, #FFE8E0 100%); border: 2px solid var(--coral); }
+  .col-card h4 { font-size: 22px; font-weight: 800; margin-bottom: 16px; }
+  .col-card.keeps h4 { color: #4A8516; }
+  .col-card.risks h4 { color: #C13D3D; }
+  .col-card ul { list-style: none; padding: 0; }
+  .col-card li {
+    padding: 10px 0 10px 32px;
+    position: relative;
+    font-size: 15px;
+    color: var(--ink-deep);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+  }
+  .col-card li:last-child { border-bottom: none; }
+  .col-card.keeps li::before { content: '✓'; position: absolute; left: 0; color: var(--lime); font-weight: 800; font-size: 18px; }
+  .col-card.risks li::before { content: '!'; position: absolute; left: 0; color: var(--coral); font-weight: 900; font-size: 20px; width: 22px; height: 22px; border: 2px solid var(--coral); border-radius: 50%; text-align: center; line-height: 18px; }
+
+  @media (max-width: 720px) { .two-col { grid-template-columns: 1fr; } }
+
+  /* ---------- FOOTER ---------- */
+  footer {
+    padding: 60px 24px 80px;
+    text-align: center;
+    background: var(--ink-deep);
+    color: #E8DCC8;
+  }
+  footer h3 { font-size: 28px; font-weight: 800; color: var(--yellow); margin-bottom: 16px; letter-spacing: -0.01em; }
+  footer p { font-size: 16px; opacity: 0.7; max-width: 640px; margin: 0 auto 8px; }
+  footer .signoff { margin-top: 24px; font-size: 13px; opacity: 0.5; }
+
+  /* ---------- POSITION QUOTE ---------- */
+  .quote-banner {
+    background: linear-gradient(135deg, var(--cyan-deep) 0%, var(--magenta) 100%);
+    color: white;
+    padding: 60px 24px;
+    text-align: center;
+    margin: 40px 0;
+    border-radius: var(--radius);
+  }
+  .quote-banner blockquote {
+    font-size: clamp(22px, 3vw, 32px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+    max-width: 800px;
+    margin: 0 auto 16px;
+  }
+  .quote-banner .quote-attr {
+    font-size: 14px;
+    opacity: 0.85;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="container">
+    <div class="badge">Pivot Locked · 2026-05-28</div>
+    <h1>Bubabu Smart Gifts</h1>
+    <p class="subtitle">Bubabu больше не одна игрушка. Теперь он — герой и маскот магазина умных подарков для детей. Один мир, 37 товаров, ежедневная мульт+реклама связка.</p>
+    <div class="meta">
+      <span>🦉 Bubabu = маскот + герой</span>
+      <span>📦 37 SKU в каталоге</span>
+      <span>🎬 Cartoon чётный день</span>
+      <span>📢 Реклама нечётный день</span>
+      <span>⏱ ~10 недель полный охват</span>
+    </div>
+  </div>
+</header>
+
+<!-- 1. Position quote -->
+<section>
+  <div class="container">
+    <div class="quote-banner">
+      <blockquote>«Bubabu Smart Gifts — Smart, safe and meaningful gifts for kids, teens and families.»</blockquote>
+      <div class="quote-attr">Verbatim positioning — никогда не перефразируем</div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. WAS / NOW -->
+<section>
+  <div class="container">
+    <h2 class="section-title">Что меняется</h2>
+    <p class="section-lead">Пивот меняет КАК мы продаём и КАКОЙ контент выпускаем. Сам Bubabu (вид, голос, миссия) остаётся таким же.</p>
+
+    <div class="compare">
+      <div class="was">
+        <h3 class="was-label">Было до 2026-05-28</h3>
+        <p>Один продукт: AI-сова Bubabu для детей 3-12. Контент = реакции детей, демо игрушки, посты «без экрана». Один сюжет, одна игрушка.</p>
+      </div>
+      <div class="now">
+        <h3 class="now-label">Стало с 2026-05-28</h3>
+        <p>Магазин умных подарков. Bubabu — герой+маскот. Контент = ежедневная пара мультик+реклама с другим товаром каждые 2 дня. 37 товаров, 5 ритейл-зон.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. 8 LOCKS -->
+<section class="alt">
+  <div class="container">
+    <h2 class="section-title">8 решений, зафиксированных навсегда</h2>
+    <p class="section-lead">Каждое решение принято тобой 2026-05-28. Это база. Меняется только по твоему явному «отменить лок».</p>
+
+    <div class="locks">
+      <div class="lock">
+        <div class="num">01 · РОЛЬ</div>
+        <h4>Bubabu = маскот магазина</h4>
+        <p>Bubabu появляется в каждой рекламе. В кадре с товаром — держит / рассматривает / реагирует. Не один из 37 SKU — он надо всеми.</p>
+      </div>
+      <div class="lock">
+        <div class="num">02 · ГОЛОС</div>
+        <h4>Голос не меняется</h4>
+        <p>Bubabu всегда молчит (клюв закрыт, бренд-лок). Закадровый Pixar-нарратор (Charon Storytime) описывает сцену.</p>
+      </div>
+      <div class="lock">
+        <div class="num">03 · ТОВАРЫ</div>
+        <h4>SKU без брендинга</h4>
+        <p>Магниты = просто магниты в руках у Bubabu. Никаких имён, никаких character.md для не-Bubabu товаров. Photo + Bubabu + 1 строка пользы + цена.</p>
+      </div>
+      <div class="lock">
+        <div class="num">04 · МИР</div>
+        <h4>Один мир, один нарратив</h4>
+        <p>У Bubabu в облачном дереве есть полка с подарками. Он берёт один, спускается к ребёнку, отдаёт. 37 товаров каталога = его полка.</p>
+      </div>
+      <div class="lock">
+        <div class="num">05 · ТЕМП</div>
+        <h4>Чёт-нечёт график</h4>
+        <p>Чётный день = новый мульт. Нечётный = реклама из вчерашнего мульта. 37 SKU × 2 дня = ~10 недель полный охват каталога.</p>
+      </div>
+      <div class="lock">
+        <div class="num">06 · ЭКРАН</div>
+        <h4>Screen-tech → Wonder Tools</h4>
+        <p>В мульте слово «экран/планшет/телефон/TV» = БАН. LCD-планшеты, лептоп, рация переименованы в Wonder Canvas, Wisdom Box, Cloud Caller. В рекламе товарное название как есть.</p>
+      </div>
+      <div class="lock">
+        <div class="num">07 · АРХИВ</div>
+        <h4>Старый контент в архиве</h4>
+        <p>19 папок (16 контента + 3 драфта) переехали в <code>_archive/bubabu/20260528_pre_smart_gifts_pivot/</code>. EP01 ADV туда же. Новый канон лочится на первой паре.</p>
+      </div>
+      <div class="lock">
+        <div class="num">08 · ПАПКИ</div>
+        <h4>Pair-folder</h4>
+        <p>Одна папка на пару: <code>[date]_pair[NN]_[sku-slug]/{cartoon/, ad/}</code>. Внутри подпапки cartoon/ и ad/. Связка через meta.md.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. WORKFLOW -->
+<section>
+  <div class="container">
+    <h2 class="section-title">Workflow одной пары</h2>
+    <p class="section-lead">2 дня = 1 пара = 1 SKU полностью покрыт. История родилась в мульте, продаётся в рекламе.</p>
+
+    <div class="workflow">
+      <div class="day-card even">
+        <span class="day-label">День N · чётный</span>
+        <h4>Cartoon</h4>
+        <ul>
+          <li>Bubabu выбирает SKU из каталога</li>
+          <li>10-14 сцен ADV mode v4 (Bernard/Remedy)</li>
+          <li>Сюжет: облачное дерево → видит ребёнка → берёт SKU с полки → спускается → отдаёт</li>
+          <li>Scene 7-9 = handoff key frame (для рекламы)</li>
+          <li>Charon narrator + Lyria 3 audio + baked-text cover + EN/KA/RU social</li>
+        </ul>
+      </div>
+
+      <div class="workflow-arrow">→</div>
+
+      <div class="day-card odd">
+        <span class="day-label">День N+1 · нечётный</span>
+        <h4>Ad</h4>
+        <ul>
+          <li>Открываем <code>ad/</code> подпапку той же пары</li>
+          <li>image.md = reuse cartoon scene 7-9 key frame</li>
+          <li>video.md = 4-8 сек motion вариант (опционально)</li>
+          <li>post.md = 1 строка пользы + цена ₾ + CTA</li>
+          <li>EN/KA/RU мультиязычно если все каналы</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. SKU ZONES -->
+<section class="alt">
+  <div class="container">
+    <h2 class="section-title">37 SKU по 5 ритейл-зонам</h2>
+    <p class="section-lead">Каталог раскидан по зонам как в физической витрине. Bubabu = в центре, остальное вокруг.</p>
+
+    <div class="zones">
+      <div class="zone zone-1">
+        <h4>Hero Bubabu</h4>
+        <div class="count">1</div>
+        <p>AI-сова Bubabu. Главный продукт, эмоциональный якорь.</p>
+      </div>
+      <div class="zone zone-2">
+        <h4>Gift Sets</h4>
+        <div class="count">~5</div>
+        <p>Bundles — день рождения / Новый год / школа. Bubabu + 1-2 SKU комплектом.</p>
+      </div>
+      <div class="zone zone-3">
+        <h4>Educational</h4>
+        <div class="count">~14</div>
+        <p>Деревянные пазлы, магнитные конструкторы, LCD-доски, рисовалки. Родители одобряют.</p>
+      </div>
+      <div class="zone zone-4">
+        <h4>Impulse / Small</h4>
+        <div class="count">~7</div>
+        <p>LED-кубики, брелоки, фиджет, вентилятор. Касса/витрина у выхода.</p>
+      </div>
+      <div class="zone zone-5">
+        <h4>Premium / Seasonal</h4>
+        <div class="count">~10</div>
+        <p>Дрон, лептоп, камера, рация, караоке + сезонная кампания. 100₾+.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. WONDER TOOLS -->
+<section>
+  <div class="container">
+    <h2 class="section-title">Screen-tech → Wonder Tools</h2>
+    <p class="section-lead">Чтобы магия мира не ломалась, экранные SKU получают магические имена и роли. В мульте — Wonder Tool. В рекламе — товарное название.</p>
+
+    <div class="wonder">
+      <table class="wonder-table">
+        <thead>
+          <tr><th>В каталоге</th><th>В мульте (Wonder Tool)</th><th>Роль в мире Bubabu</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="product">LCD Writing Tablet</td><td class="wonder-name">Wonder Canvas / ჯადოსნური ტილო</td><td class="role">Холст-память. Bubabu кончиком крыла рисует свечение, ребёнок копирует.</td></tr>
+          <tr><td class="product">Kids Learning Laptop</td><td class="wonder-name">Wisdom Box / ცოდნის ყუთი</td><td class="role">Маленькая шкатулка, спрашивает ребёнка ласковые вопросы и хвалит.</td></tr>
+          <tr><td class="product">Walkie-Talkie Set</td><td class="wonder-name">Cloud Caller / ღრუბლის ხმა</td><td class="role">Способ позвать друга через лес — Bubabu шепчет, дальняя загорается.</td></tr>
+          <tr><td class="product">Drone JS39P</td><td class="wonder-name">Paper-Glider's Little Brother / პატარა ძმა</td><td class="role">Маленький летун, возвращается домой как сам Bubabu на бумажном корабле.</td></tr>
+          <tr><td class="product">LED Light-Up Cubes</td><td class="wonder-name">Star Pebbles / ვარსკვლავი ქვები</td><td class="role">Звёздочки с облачной полки. Светятся в детской ладони.</td></tr>
+          <tr><td class="product">Mickey-Style Headphones</td><td class="wonder-name">Listening Shells / მოსმენის ნიჟარა</td><td class="role">Bubabu надевает их ребёнку, делится секретной мелодией облачного дерева.</td></tr>
+          <tr><td class="product">Karaoke Speaker</td><td class="wonder-name">Singing Stone / მომღერალი ქვა</td><td class="role">Голос ребёнка возвращается музыкой. Bubabu танцует чуть-чуть.</td></tr>
+          <tr><td class="product">Electronic Tic-Tac-Toe / RC Car</td><td class="wonder-name">Little Spark / ნაპერწკალი</td><td class="role">Маленькая искра-игрушка с полки, движется когда ребёнок зовёт.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- 7. FOLDER STRUCTURE -->
+<section class="alt">
+  <div class="container">
+    <h2 class="section-title">Структура папок</h2>
+    <p class="section-lead">Один pair-folder содержит и мульт и рекламу. На «выложил» переезжает целиком из draft/ в content/.</p>
+
+    <div class="folder-tree">
+<span class="folder">agents/bubabu/draft/</span>                            <span class="comment">← work-in-progress</span>
+└── <span class="folder">20260601_pair01_magnetic_balls/</span>            <span class="comment">← одна пара = один SKU</span>
+    ├── <span class="folder">cartoon/</span>                                 <span class="accent">← чётный день N</span>
+    │   ├── <span class="file">brief.md</span>      <span class="comment">concept + spark + child + variant + SKU</span>
+    │   ├── <span class="file">character.md</span>  <span class="comment">Bubabu ref + per-ep child</span>
+    │   ├── <span class="file">voiceover.md</span>  <span class="comment">EN master + KA draft + Charon preset</span>
+    │   ├── <span class="file">video.md</span>      <span class="comment">10-14 сцен, scene 7-9 = handoff frame</span>
+    │   ├── <span class="file">audio.md</span>      <span class="comment">Lyria 3 + motif + librosa spec</span>
+    │   ├── <span class="file">cover.md</span>      <span class="comment">baked-text Pixar candy-pop</span>
+    │   ├── <span class="file">facebook.md</span>   <span class="comment">EN body + KA caption</span>
+    │   ├── <span class="file">tiktok.md</span>     <span class="comment">EN caption</span>
+    │   └── <span class="file">meta.md</span>       <span class="comment">variant + SKU id + paired_ad pointer</span>
+    └── <span class="folder">ad/</span>                                      <span class="accent">← нечётный день N+1</span>
+        ├── <span class="file">brief.md</span>      <span class="comment">cartoon ref + SKU + price + key benefit</span>
+        ├── <span class="file">image.md</span>      <span class="comment">Nano Banana reuse of cartoon scene 7-9</span>
+        ├── <span class="file">video.md</span>      <span class="comment">4-8 sec motion variant (опционально)</span>
+        ├── <span class="file">post.md</span>       <span class="comment">caption + price + CTA</span>
+        ├── <span class="file">cover.md</span>      <span class="comment">FB/IG thumbnail из того же кадра</span>
+        └── <span class="file">meta.md</span>       <span class="comment">paired_cartoon pointer + zone + age + channels</span>
+    </div>
+  </div>
+</section>
+
+<!-- 8. KEEPS / RISKS -->
+<section>
+  <div class="container">
+    <h2 class="section-title">Что НЕ меняется + Известные риски</h2>
+    <p class="section-lead">Пивот — про коммерцию. Бренд Bubabu (как герой) остаётся целостным. Риски осознаны.</p>
+
+    <div class="two-col">
+      <div class="col-card keeps">
+        <h4>Что осталось ровно как было</h4>
+        <ul>
+          <li>Внешность Bubabu (белая пушистая сова, циан-очки, чёрный клюв закрыт навсегда)</li>
+          <li>Reference jpeg-файлы (1.jpeg / 2.jpeg / 3.jpeg) — обязательны на каждом рендере</li>
+          <li>Голос: Bubabu молчит, narrator Charon Storytime</li>
+          <li>Веками отлаженные production-локи: статичная камера, никаких squash/stretch, Pixar 3D не photoreal</li>
+          <li>Языковые правила: EN+KA only, никогда Russian/Cyrillic в кадре</li>
+          <li>Draft-first до «выложил»</li>
+          <li>Произношение <code>.ge</code> = «ჯი» в TTS</li>
+        </ul>
+      </div>
+      <div class="col-card risks">
+        <h4>Известные риски</h4>
+        <ul>
+          <li>37 мультов = большая производственная нагрузка. Срыв темпа → пара без cartoon</li>
+          <li>Wonder Tools реконтекст может выглядеть натянуто (Wisdom Box vs «лептоп»). Тест на первой паре</li>
+          <li>Дети в мультах разные каждую серию (нет face-lock между ep) — может ощущаться как «у Bubabu нет постоянного друга»</li>
+          <li>Premortem skipped — если через 6 мес видим что-то ломается, нужна reflection-engine ретроспектива</li>
+          <li>Flagged SKU (дрон model mismatch, магнитные шарики safety) НЕ продвигаются до снятия флага</li>
+          <li>Public announce пока НЕ делаем — пилот retail-only</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9. FOOTER -->
+<footer>
+  <div class="container">
+    <h3>🦉 Bubabu Smart Gifts</h3>
+    <p>Smart, safe and meaningful gifts for kids, teens and families.</p>
+    <p>AI Toys · Educational Gifts · Smart Surprises</p>
+    <div class="signoff">Pivot locked 2026-05-28 · Internal rollout only · By Axiom Smart, agency aiNOW</div>
+  </div>
+</footer>
+
+</body>
+</html>
