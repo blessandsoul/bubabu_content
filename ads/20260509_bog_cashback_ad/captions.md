@@ -1,4 +1,4 @@
-# Burned-In Captions — Bank of Georgia Cashback Ad (15s)
+# Burned-In Captions - Bank of Georgia Cashback Ad (15s)
 
 **Critical:** Meta Ads run sound-off ~80% of the time → captions MANDATORY. Burned in directly to video (NOT toggleable subtitles).
 
@@ -12,7 +12,7 @@
 
 ---
 
-## CUT — 15s (Georgian primary, burned in)
+## CUT - 15s (Georgian primary, burned in)
 
 ```
 00:00:00,000 --> 00:00:03,000

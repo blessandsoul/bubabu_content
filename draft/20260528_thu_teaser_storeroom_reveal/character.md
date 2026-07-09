@@ -1,8 +1,8 @@
-# Character — Bubabu (verbatim from `agents/bubabu/character_bubabu.md`)
+# Character - Bubabu (verbatim from `agents/bubabu/character_bubabu.md`)
 
 ## SOURCE OF TRUTH
 
-**Reference photos uploaded to every Nano Banana 2 render:** `1.jpeg` + `2.jpeg` (normal). NEVER `3.jpeg` (heart-eyes — banned in ADV mode).
+**Reference photos uploaded to every Nano Banana 2 render:** `1.jpeg` + `2.jpeg` (normal). NEVER `3.jpeg` (heart-eyes - banned in ADV mode).
 
 ## IDENTITY BLOCK (copy-paste VERBATIM into every image + video prompt)
 
@@ -12,14 +12,14 @@ Bubabu is a round fluffy plush owl mascot, ball-shaped body almost spherical, pr
 
 ## COLOR LOCK
 - WHITE: body + face + ears + top of head (`#FFFFFF`)
-- CYAN goggle ring (`#5BC0DE`) — matte printed fabric, NEVER illuminated
+- CYAN goggle ring (`#5BC0DE`) - matte printed fabric, NEVER illuminated
 - CREAM inner ring (`#F5E6D3`)
 - YELLOW eyelid arc (`#FFD23F`)
 - BLACK eyes + BLACK beak (`#1A1A1A`)
 - CARAMEL-BROWN: ONLY wings + feet (`#A47551`)
 - ORANGE toes (`#E8843D`)
 
-## IDENTITY LOCK (last line of every prompt — paste verbatim)
+## IDENTITY LOCK (last line of every prompt - paste verbatim)
 
 ```
 Identity Lock: match uploaded 1.jpeg + 2.jpeg plush form 1:1, white body white face white ears, cyan goggle markings printed fabric matte never illuminated, black beak closed, caramel-brown wings and feet ONLY, no other color drift, no character drift, single character Bubabu only.
@@ -38,8 +38,8 @@ Identity Lock: match uploaded 1.jpeg + 2.jpeg plush form 1:1, white body white f
 ## MOOD-STATE (this episode = mixed sequence)
 
 Teaser cycles through three of the four Bubabu mascot mood-states across the storeroom shelves:
-- **Curious** (scenes 5-8) — head tilt 8-12° toward the shelves, eyes wide on the wonders, wing-tip extending toward but not touching.
-- **Cozy** (scenes 9-11) — seated softly, wing draped over the chest's lid, body softened in pose.
-- **Excited** (scenes 12-14) — feet apart on the branch, body upright, eyes wide on the guiding star, tiny forward lean before launching paper-glider.
+- **Curious** (scenes 5-8) - head tilt 8-12° toward the shelves, eyes wide on the wonders, wing-tip extending toward but not touching.
+- **Cozy** (scenes 9-11) - seated softly, wing draped over the chest's lid, body softened in pose.
+- **Excited** (scenes 12-14) - feet apart on the branch, body upright, eyes wide on the guiding star, tiny forward lean before launching paper-glider.
 
 Cover.md uses the COZY mood (Bubabu seated by the chest, chest just opened, gold light on his front).

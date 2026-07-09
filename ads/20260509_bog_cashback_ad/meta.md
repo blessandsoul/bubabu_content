@@ -1,4 +1,4 @@
-# Meta Ads Placement & Targeting Spec — Bank of Georgia Cashback Weekend
+# Meta Ads Placement & Targeting Spec - Bank of Georgia Cashback Weekend
 
 **Campaign objective:** Conversions (purchase) on bubabu.ge
 **Pixel event:** Purchase
@@ -20,37 +20,37 @@
 
 Skip: FB Stories (low conversion for this product), Marketplace (wrong audience).
 
-All placements use the SAME 15-second video — just different aspect-ratio crops from the master. One source video, no separate cuts.
+All placements use the SAME 15-second video - just different aspect-ratio crops from the master. One source video, no separate cuts.
 
 ---
 
 ## Targeting
 
-### Ad Set 1 — Cold (KA, broad)
+### Ad Set 1 - Cold (KA, broad)
 - Geo: Georgia (Tbilisi + 50km radius around all major cities)
-- Age: 25–55
+- Age: 25-55
 - Gender: All
 - Interests: Parenting, Kids toys, AI/Tech, Bank of Georgia
 - Languages: Georgian
 - Estimated reach: ~250K
 
-### Ad Set 2 — Cold (RU, expat)
-- Geo: Georgia (Tbilisi only — expats concentrated)
-- Age: 28–50
+### Ad Set 2 - Cold (RU, expat)
+- Geo: Georgia (Tbilisi only - expats concentrated)
+- Age: 28-50
 - Languages: Russian
 - Interests: Parenting, Kids toys, Russian-speaking parents, Tbilisi expat groups
 - Estimated reach: ~80K
 
-### Ad Set 3 — Warm Retargeting
+### Ad Set 3 - Warm Retargeting
 - Audiences:
   - Visited bubabu.ge last 90 days (didn't purchase)
   - Engaged with Bubabu IG/FB last 60 days
   - Watched any Bubabu video 50%+
 - Geo: Georgia + neighbouring CIS expats
 - Languages: All
-- Estimated reach: ~10–30K
+- Estimated reach: ~10-30K
 
-### Ad Set 4 — Lookalike
+### Ad Set 4 - Lookalike
 - Source: Bubabu past purchasers (if pixel data sufficient, ≥100 events)
 - Lookalike: 1-3% in Georgia
 - Estimated reach: ~50K
@@ -79,7 +79,7 @@ Reserve another 200 GEL for scaling winning variants on May 9-10.
 | CPC | ≤ 1.5 GEL | 0.8 GEL |
 | CPA (purchase) | ≤ 30 GEL | 15 GEL |
 | ROAS | ≥ 2.0× | 3.5× |
-| Frequency cap | 4 max | — |
+| Frequency cap | 4 max | - |
 
 ---
 
@@ -95,7 +95,7 @@ Reserve another 200 GEL for scaling winning variants on May 9-10.
 
 ## Creative Rotation
 
-One 15s creative × 3 crops × 4 ad sets × 3 language variants on **headline/primary-text** copy = 12 variant combinations in Meta Ads Manager. The video itself is the same — only the surrounding ad copy varies (KA / RU / EN per `facebook.md`).
+One 15s creative × 3 crops × 4 ad sets × 3 language variants on **headline/primary-text** copy = 12 variant combinations in Meta Ads Manager. The video itself is the same - only the surrounding ad copy varies (KA / RU / EN per `facebook.md`).
 
 Day 1 (May 7): all variants live, low budget per ad
 Day 2 (May 8): pause bottom 50% by CTR, scale top 30% by CPA
@@ -106,7 +106,7 @@ Day 3-4 (May 9-10): only top 4 variants running, full budget on weekend peak
 ## Landing Page Requirements
 
 bubabu.ge product page MUST display before May 9:
-- Banner at top: "30% ქეშბექი საქართველოს ბანკის SOLO ბარათით — 9-10 მაისს"
+- Banner at top: "30% ქეშბექი საქართველოს ბანკის SOLO ბარათით - 9-10 მაისს"
 - Countdown timer to May 11 0:00
 - Bank of Georgia logo prominent on payment options
 - "Effective price 252 ₾" callout next to 360 ₾ price
@@ -116,7 +116,7 @@ bubabu.ge product page MUST display before May 9:
 
 ## Compliance Check
 
-- [x] No misleading claims ("only days this year" — verify with Bank of Georgia contract)
+- [x] No misleading claims ("only days this year" - verify with Bank of Georgia contract)
 - [x] No competitor mentions
 - [x] No religious symbolism
 - [x] No Cyrillic baked into video frames (only in toggle subtitle track)
@@ -128,7 +128,7 @@ bubabu.ge product page MUST display before May 9:
 
 ---
 
-## Post-Campaign Report (template — fill May 11)
+## Post-Campaign Report (template - fill May 11)
 
 | Metric | Result | vs Target |
 |--------|--------|-----------|

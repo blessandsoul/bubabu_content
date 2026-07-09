@@ -1,8 +1,8 @@
-# Audio — "ეზოს ბიჭები"
+# Audio - "ეზოს ბიჭები"
 
 **Engine:** Suno AI (music) + Gemini 3.1 Flash TTS (dialogue) + foley library + custom SFX
 **Total runtime:** 70 seconds
-**Style DNA:** Pixar warm family commercial — *Coco* tenderness × *Encanto* ukulele warmth × *Up* "Married Life" intimacy × Pixar product brand sting
+**Style DNA:** Pixar warm family commercial - *Coco* tenderness × *Encanto* ukulele warmth × *Up* "Married Life" intimacy × Pixar product brand sting
 
 ---
 
@@ -10,16 +10,16 @@
 
 | Time | Beat | Music state | Instruments | BPM | Key |
 |------|------|------------|-------------|-----|-----|
-| 0:00–0:07 | Pain courtyard | Near-silence, uncomfortable | Tiny low cello drone -30dB | — | A minor sus |
-| 0:07–0:16 | Mom calls window | Curiosity enters | Soft pizzicato strings | 80 | C major |
-| 0:16–0:25 | Stairs + mom greets | Anticipation builds | Pizzicato + light piano | 95 | C major |
-| 0:25–0:36 | Bedroom approach + box opening | Suspense | Single piano notes, sparse | 90 | C major sus |
-| 0:36–0:40 | Lift Bubabu | Held breath | Soft pad only, near-silent | — | — |
-| 0:40–0:48 | Eyes activate + first hello | **MAGIC** | Warm string swell + cyan-chime | 70 → 90 | F major |
-| 0:48–0:51 | Wonder | Sustained | Held warm chord | — | F major |
-| 0:51–0:57 | Invitation + "Riddles!" | Playful warmth | Ukulele + light strings | 100 | F major |
-| 0:57–1:08 | Joy montage | **TRIUMPH** | Full ensemble — ukulele + strings + piano + light percussion | 115 | G major |
-| 1:08–1:15 | Final hero CTA | Resolution | Warm sustained chord + signature bell chime | — | G major |
+| 0:00-0:07 | Pain courtyard | Near-silence, uncomfortable | Tiny low cello drone -30dB | - | A minor sus |
+| 0:07-0:16 | Mom calls window | Curiosity enters | Soft pizzicato strings | 80 | C major |
+| 0:16-0:25 | Stairs + mom greets | Anticipation builds | Pizzicato + light piano | 95 | C major |
+| 0:25-0:36 | Bedroom approach + box opening | Suspense | Single piano notes, sparse | 90 | C major sus |
+| 0:36-0:40 | Lift Bubabu | Held breath | Soft pad only, near-silent | - | - |
+| 0:40-0:48 | Eyes activate + first hello | **MAGIC** | Warm string swell + cyan-chime | 70 → 90 | F major |
+| 0:48-0:51 | Wonder | Sustained | Held warm chord | - | F major |
+| 0:51-0:57 | Invitation + "Riddles!" | Playful warmth | Ukulele + light strings | 100 | F major |
+| 0:57-1:08 | Joy montage | **TRIUMPH** | Full ensemble - ukulele + strings + piano + light percussion | 115 | G major |
+| 1:08-1:15 | Final hero CTA | Resolution | Warm sustained chord + signature bell chime | - | G major |
 
 **Music duck:** -12dB under all dialogue lines. Foley sits on top of music at -18dB.
 
@@ -73,11 +73,11 @@ Genre: orchestral commercial / kid family Pixar score. Mood: warm, hopeful, inti
 
 | SFX | Source | Use |
 |-----|--------|-----|
-| Birds chirping | Library — sparse Mediterranean | Scenes 1-3 (courtyard) |
+| Birds chirping | Library - sparse Mediterranean | Scenes 1-3 (courtyard) |
 | Distant traffic hum | Library | Scenes 1-3 |
 | Kid sneaker footsteps on concrete | Custom or library | Scene 4 (stairwell) |
 | Apartment door open/close | Library | Scene 4 → 4.5 |
-| Kitchen room tone | Library — warm domestic | Scenes 4.5–10 |
+| Kitchen room tone | Library - warm domestic | Scenes 4.5-10 |
 | Bed fabric rustle | Custom | Scene 5 |
 | Cardboard flap rustle | Custom | Scene 5.5 |
 | Soft plush lift | Custom | Scene 6 |
@@ -85,8 +85,8 @@ Genre: orchestral commercial / kid family Pixar score. Mood: warm, hopeful, inti
 | Group kid laughter | Voice recording | Scene 10 |
 | Hand clap × 1 | Library | Scene 10 |
 | Fist pump fabric snap | Library | Scene 10 |
-| **Bubabu cyan-chime bell** ⭐ | Custom synth — C5→E5 ascending bell, 0.8s, 200ms decay, soft attack | Scenes 7 + 11 |
-| **Bubabu heart-pulse blip** 💗 | Custom synth — heartbeat-like soft blip, 0.3s, warm synth | Scenes 9 + 10 |
+| **Bubabu cyan-chime bell** ⭐ | Custom synth - C5→E5 ascending bell, 0.8s, 200ms decay, soft attack | Scenes 7 + 11 |
+| **Bubabu heart-pulse blip** 💗 | Custom synth - heartbeat-like soft blip, 0.3s, warm synth | Scenes 9 + 10 |
 
 ---
 
@@ -105,8 +105,8 @@ Genre: orchestral commercial / kid family Pixar score. Mood: warm, hopeful, inti
 ## Production Workflow
 
 1. **Generate Suno track** using prompt above. Aim for full 70s in one render. Retry if structure off.
-2. **Generate TTS dialogue** in Gemini AI Studio per `voiceover.md` settings — separate clip per line.
-3. **Foley library pull + custom record** — group laughter and wonder gasps need real kid voices recorded.
+2. **Generate TTS dialogue** in Gemini AI Studio per `voiceover.md` settings - separate clip per line.
+3. **Foley library pull + custom record** - group laughter and wonder gasps need real kid voices recorded.
 4. **Mix in Premiere/CapCut/DaVinci:**
    - Layer 1: Music (Suno)
    - Layer 2: Dialogue (TTS, ducked music auto)

@@ -1,13 +1,13 @@
-# CHARACTER — Bubabu Brain Remedy · Car Building Set
+# CHARACTER - Bubabu Brain Remedy · Car Building Set
 
 Per `bible/CHARACTER_ENGINE.md` + `character_bubabu.md` canon + NO-APPEARANCE-DUMP rule (refs attached → reference-only line).
 
-## 1 · BUBABU (constant hero — silent, FRONTAL + STATIC)
+## 1 · BUBABU (constant hero - silent, FRONTAL + STATIC)
 **Refs to EVERY render:** `agents/bubabu/1.jpeg` + `agents/bubabu/2.jpeg`. NEVER `3.jpeg`.
 - SPEC `character_dna`: `persistent_features` = reference-only `["match attached 1.jpeg + 2.jpeg EXACTLY 1:1 — do NOT describe or invent Bubabu's appearance, the uploaded photos are the sole source"]` · `heritage` = `"match uploaded 1.jpeg + 2.jpeg EXACTLY 1:1"` · bone `delicate` · face_id 0.95 / locked / speech null.
-- **RENDER LOCK (the fidelity fix):** Bubabu is **FRONTAL (facing forward), perfectly ROUND ball shape, and STATIC** in every scene — body never turns, leans-to-camera, or moves; only a small wing or eye-shine. No angle that shows his back (→ no invented tail). Beak BLACK CLOSED. Cyan goggles = matte fabric, never glow. The BOY's action carries every beat — Bubabu just watches, still.
+- **RENDER LOCK (the fidelity fix):** Bubabu is **FRONTAL (facing forward), perfectly ROUND ball shape, and STATIC** in every scene - body never turns, leans-to-camera, or moves; only a small wing or eye-shine. No angle that shows his back (→ no invented tail). Beak BLACK CLOSED. Cyan goggles = matte fabric, never glow. The BOY's action carries every beat - Bubabu just watches, still.
 
-## 2 · THE CHILD (NEW boy ~6 — Pixar-stylized, moderation-safe)
+## 2 · THE CHILD (NEW boy ~6 - Pixar-stylized, moderation-safe)
 > AWAKE · DAYTIME · CLOTHED · playroom floor. NEVER bed/pyjamas/nightwear/sleeping. Mouth FIRMLY SEALED CLOSED all scenes (cheek-lift only). No real-age/skin/freckle tokens. Distinct from ep2 boy (leaf-green hoodie).
 
 CHARACTER_BLOCK:
@@ -32,14 +32,14 @@ DYNAMIC: red-and-white striped tee under denim dungarees, rolled cuffs, white so
 A small soft rounded Pixar wonder-brain — coral-pink plush-soft folds, toy-like NOT anatomical,
 inside a translucent bubble of light. A region SNAPS on bright each beat (never a slow steady glow).
 ```
-- Region-glow: **gold = patience/focus · cyan = sequencing/steps · coral = the proud-build joy.** SNAP/POP/FLICK on — a visible EVENT each beat, never "holds steady." Glow on the brain prop ONLY, never Bubabu/child.
+- Region-glow: **gold = patience/focus · cyan = sequencing/steps · coral = the proud-build joy.** SNAP/POP/FLICK on - a visible EVENT each beat, never "holds steady." Glow on the brain prop ONLY, never Bubabu/child.
 
-## 4 · THE CAR KIT (SKU — reference-only)
-Per `feedback_no_sku_appearance_dump_when_ref_uploaded`. SKU = **Car Building Set 214pc** (`4860129132077`, secured `sku_ref.jpg` = `IMG_3413` — LEGO-style red/white/black racing car). Appearance carried SOLELY by the photo.
+## 4 · THE CAR KIT (SKU - reference-only)
+Per `feedback_no_sku_appearance_dump_when_ref_uploaded`. SKU = **Car Building Set 214pc** (`4860129132077`, secured `sku_ref.jpg` = `IMG_3413` - LEGO-style red/white/black racing car). Appearance carried SOLELY by the photo.
 - persistent_features: `["match attached sku_ref.jpg 1:1, do not invent shape colors or design — use uploaded photo as sole appearance source"]` · heritage `"Car Building Set, uploaded sku_ref.jpg"` · bone `delicate` · face_id 0.85 / locked / speech null.
 - Generic nouns only: "the bricks" / "a brick" / "the chassis frame" / "a wheel" / "the car" / "the box" / "the step-sheet". NEVER brand / "INFINITI" / "Racing Cars" / specific colors.
 
-## 5 · STYLE ANCHOR (paste into every SPEC — BRIGHT GLOSSY, not arthouse)
+## 5 · STYLE ANCHOR (paste into every SPEC - BRIGHT GLOSSY, not arthouse)
 ```
 Pixar 3D cartoon render, bright and glossy, vivid saturated Candy-Pop colors, ultra cute, ultra sharp high clarity, clean bright lighting that makes the subject POP. NOT soft, NOT muted, NOT washed out, NOT hazy, NOT atmospheric, NOT dreamy, NOT photoreal, NOT live-action, NOT cinematic film grade.
 ```

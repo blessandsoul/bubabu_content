@@ -1,7 +1,7 @@
-# Письмо для Tuya — Voice Fix Request
+# Письмо для Tuya - Voice Fix Request
 
 **Цель:** Отправить tech team Tuya чёткое описание что нужно изменить в TTS воспроизведении Bubabu
-**Контекст:** Сейчас Bubabu использует Microsoft Azure TTS через Tuya integration. Voice звучит как "робот" — не подходит для маркетинговых видео и ослабляет brand connection.
+**Контекст:** Сейчас Bubabu использует Microsoft Azure TTS через Tuya integration. Voice звучит как "робот" - не подходит для маркетинговых видео и ослабляет brand connection.
 **Sender:** Арчил (Axiom Smart) → Tuya tech team
 **Channel:** WeChat / email (через существующий контакт)
 
@@ -119,7 +119,7 @@ Bubabu — Запрос улучшения качества TTS голоса
 | 2 | Скопируй ENGLISH версию из этого файла |
 | 3 | Подпиши именем + контактами |
 | 4 | Отправь |
-| 5 | Когда они ответят — пришли ответ мне → подготовлю brief для встречи |
+| 5 | Когда они ответят - пришли ответ мне → подготовлю brief для встречи |
 
 ---
 
@@ -129,8 +129,8 @@ Bubabu — Запрос улучшения качества TTS голоса
 
 | Сценарий | Что делаем |
 |----------|-----------|
-| ✅ "Можем интегрировать ElevenLabs/OpenAI TTS — стоимость X, время Y" | согласовываем cost + timeline + начинаем |
-| 🟡 "Только Azure доступен — но есть premium voices внутри" | тестируем premium Azure voices, выбираем лучший |
+| ✅ "Можем интегрировать ElevenLabs/OpenAI TTS - стоимость X, время Y" | согласовываем cost + timeline + начинаем |
+| 🟡 "Только Azure доступен - но есть premium voices внутри" | тестируем premium Azure voices, выбираем лучший |
 | 🔴 "Только текущий вариант доступен" | план B: keep current TTS в продукте, AI видео делаем с lookalike voice + transparent disclaimer |
 
 ---
@@ -140,13 +140,13 @@ Bubabu — Запрос улучшения качества TTS голоса
 **Backup план:**
 
 1. Self-host TTS layer на нашем сервере (между Tuya и Bubabu)
-   - ElevenLabs API key — $5/месяц на 30,000 символов
+   - ElevenLabs API key - $5/месяц на 30,000 символов
    - Custom Georgian voice model (~$1000 setup)
    - Real-time TTS streaming через WebSocket
-2. Saba (web dev) интегрирует — оценить 1-2 недели работы
+2. Saba (web dev) интегрирует - оценить 1-2 недели работы
 3. Tuya остаётся как hardware/connectivity provider, TTS = наш стек
 
-Это последний вариант — сначала пытаемся через Tuya partnership.
+Это последний вариант - сначала пытаемся через Tuya partnership.
 
 ---
 

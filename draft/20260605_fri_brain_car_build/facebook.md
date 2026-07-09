@@ -1,4 +1,4 @@
-# FACEBOOK — Bubabu Brain Remedy · Car Building Set (15 days)
+# FACEBOOK - Bubabu Brain Remedy · Car Building Set (15 days)
 
 > EN body per `bible/SOCIAL_ENGINE.md` v2.1 (English always; user translates KA). One body for FB + IG + TikTok + YT. Trigger T1/T3. First comment only. Soft + true, no fake stats.
 
@@ -20,21 +20,21 @@ A phone finishes it for him. This one makes a builder out of him.
 
 ---
 
-## FIRST COMMENT (English, debate-bait — Q1 pick-a-side)
+## FIRST COMMENT (English, debate-bait - Q1 pick-a-side)
 
-❓ A finished toy from a screen, or two hundred pieces he builds himself — which one wins in your house? 👇
+❓ A finished toy from a screen, or two hundred pieces he builds himself - which one wins in your house? 👇
 
 ---
 
 ## SOCIAL SELF-CHECK (SE§9)
-- [x] LAW 1 — body + first comment 100% English (KA = user)
-- [x] LAW 2 — naked hook + SETUP/CONFLICT/PUNCH + closing + hashtags
-- [x] LAW 3 — first comment = ONE English question, ❓…👇
-- [x] LAW 4 — hook line no emoji · LAW 5 — Kill-Switch clean (no bold, no ellipsis, no em-dash, no bait CTA)
-- [x] CHAR — body ~520 (500-900); hook ~118 (≤120); punch ~84 (≤90); closing ~52 (≤90)
-- [x] STORY — lines 2-3-4 escalate: SETUP (a few bricks a day, first CLICK) → CONFLICT (phone snaps it together, builder sleeps) → PUNCH (day 15 he pushes a car he built, it rolls)
-- [x] EMOJI — 🧱 / 🔧 / 🏎️ each anchors a concrete element; all different; none on line 1/5/hashtags
-- [x] TRIGGER — T1 (warn a parent about the phone) + T3 (I learned something)
-- [x] HASHTAGS — 7 English single-word (broad #STEM #Patience + niche #BuildingToys #FineMotor + brand #Bubabu #SmartGifts)
-- [x] SLOP — no negation-correction (closing = parallel contrast), no "just/really", no em-dash; "two hundred pieces" + CLICK = remedy-slop number + action
+- [x] LAW 1 - body + first comment 100% English (KA = user)
+- [x] LAW 2 - naked hook + SETUP/CONFLICT/PUNCH + closing + hashtags
+- [x] LAW 3 - first comment = ONE English question, ❓…👇
+- [x] LAW 4 - hook line no emoji · LAW 5 - Kill-Switch clean (no bold, no ellipsis, no em-dash, no bait CTA)
+- [x] CHAR - body ~520 (500-900); hook ~118 (≤120); punch ~84 (≤90); closing ~52 (≤90)
+- [x] STORY - lines 2-3-4 escalate: SETUP (a few bricks a day, first CLICK) → CONFLICT (phone snaps it together, builder sleeps) → PUNCH (day 15 he pushes a car he built, it rolls)
+- [x] EMOJI - 🧱 / 🔧 / 🏎️ each anchors a concrete element; all different; none on line 1/5/hashtags
+- [x] TRIGGER - T1 (warn a parent about the phone) + T3 (I learned something)
+- [x] HASHTAGS - 7 English single-word (broad #STEM #Patience + niche #BuildingToys #FineMotor + brand #Bubabu #SmartGifts)
+- [x] SLOP - no negation-correction (closing = parallel contrast), no "just/really", no em-dash; "two hundred pieces" + CLICK = remedy-slop number + action
 - [x] No Cyrillic / no Mkhedruli / no price in body

@@ -1,8 +1,8 @@
-# Characters — "ეზოს ბიჭები" (Pixar 3D)
+# Characters - "ეზოს ბიჭები" (Pixar 3D)
 
-**Style:** Pixar 3D animation — warm cinematic render, soft subsurface skin, expressive eyes, stylized but anatomically grounded
+**Style:** Pixar 3D animation - warm cinematic render, soft subsurface skin, expressive eyes, stylized but anatomically grounded
 **Style anchors:** Pixar Animation Studios × Disney 3D × *Coco* warm family × *Turning Red* modern kid design × *Encanto* Mediterranean tones
-**Engine:** CHARACTER_ENGINE v1.0 — paste CHARACTER_BLOCK VERBATIM into every scene prompt
+**Engine:** CHARACTER_ENGINE v1.0 - paste CHARACTER_BLOCK VERBATIM into every scene prompt
 **4 characters:** Main Boy / Friend 1 / Friend 2 / Mom + group reference
 
 **Universal style line (paste into every prompt):**
@@ -12,7 +12,7 @@ Pixar 3D animation style. Octane render. Subsurface scattering skin. Soft cinema
 
 ---
 
-## CHARACTER 1 — MAIN BOY (Nika)
+## CHARACTER 1 - MAIN BOY (Nika)
 
 ### CHARACTER_BLOCK
 Pixar 3D nine-to-ten-year-old Georgian boy. Medium-slim build, stylized but grounded child proportions, slightly oversized head typical of Pixar kids. Warm olive sun-kissed skin with subsurface scattering glow. Dark brown slightly wavy short messy hair, individual hair strands rendered. Round face, LARGE expressive dark brown eyes with bright crisp catchlights, thick dark eyebrows, small slightly upturned nose, thin lips usually slightly open. Small pale 1cm scar on LEFT chin (stylized soft mark, not horror). White cotton t-shirt with single bold horizontal ORANGE stripe across chest, fabric with soft cloth weight and gentle wrinkles. Dark navy blue cotton shorts with white drawstring visible at waistband. Beat-up white canvas low-top sneakers, soles slightly grimy gray. [expression: zombie-blank]
@@ -26,7 +26,7 @@ Pixar 3D nine-to-ten-year-old Georgian boy. Medium-slim build, stylized but grou
 
 ---
 
-### REFERENCE SHEET — MAIN BOY
+### REFERENCE SHEET - MAIN BOY
 
 **→ Paste into Nano Banana / Midjourney / Flux:**
 
@@ -47,10 +47,10 @@ NEGATIVE: text labels, watermarks, panel borders, hat, glasses, jacket, photorea
 
 ---
 
-## CHARACTER 2 — FRIEND 1 (shorter sturdy boy)
+## CHARACTER 2 - FRIEND 1 (shorter sturdy boy)
 
 ### CHARACTER_BLOCK
-Pixar 3D nine-year-old Georgian boy, same age as main boy but shorter and stockier sturdy build. Warm olive Mediterranean skin with subsurface scattering. Thick wavy dark brown almost-black hair, messy and slightly grown out, rendered strand detail. STRONG THICK DARK EYEBROWS prominent (Georgian Caucasian feature, key visual anchor). LARGE expressive dark brown eyes behind round THICK-FRAME BLACK GLASSES (frames stylized chunky like Pixar character glasses — Russell from *Up* / Mr. Incredible glasses style). Straight medium nose, full lips, broad cheekbones, sturdy nine-year-old proportions. Faded olive-green zip-up hoodie, zipper open, plain white t-shirt underneath. Dark gray denim jeans with small hole in LEFT knee exposing skin. Red canvas sneakers with white soles, laces half-undone on right shoe. [expression: zombie-blank]
+Pixar 3D nine-year-old Georgian boy, same age as main boy but shorter and stockier sturdy build. Warm olive Mediterranean skin with subsurface scattering. Thick wavy dark brown almost-black hair, messy and slightly grown out, rendered strand detail. STRONG THICK DARK EYEBROWS prominent (Georgian Caucasian feature, key visual anchor). LARGE expressive dark brown eyes behind round THICK-FRAME BLACK GLASSES (frames stylized chunky like Pixar character glasses - Russell from *Up* / Mr. Incredible glasses style). Straight medium nose, full lips, broad cheekbones, sturdy nine-year-old proportions. Faded olive-green zip-up hoodie, zipper open, plain white t-shirt underneath. Dark gray denim jeans with small hole in LEFT knee exposing skin. Red canvas sneakers with white soles, laces half-undone on right shoe. [expression: zombie-blank]
 
 **ANCHORS:**
 1. Round THICK-FRAME BLACK GLASSES (Pixar-style chunky frames)
@@ -61,7 +61,7 @@ Pixar 3D nine-year-old Georgian boy, same age as main boy but shorter and stocki
 
 ---
 
-### REFERENCE SHEET — FRIEND 1
+### REFERENCE SHEET - FRIEND 1
 
 **→ Paste into Nano Banana / Midjourney / Flux:**
 
@@ -82,7 +82,7 @@ NEGATIVE: text labels, watermarks, missing glasses, changed glasses style, missi
 
 ---
 
-## CHARACTER 3 — FRIEND 2 (tallest slim boy)
+## CHARACTER 3 - FRIEND 2 (tallest slim boy)
 
 ### CHARACTER_BLOCK
 Pixar 3D ten-year-old Georgian boy, tallest and slimmest of the three. Warm olive Mediterranean skin with subsurface scattering glow. DARK BROWN straight hair, slightly longer, naturally swept to the LEFT, soft fringe falling over right side of forehead, rendered strand detail. Longer oval face, LARGE expressive dark brown eyes with crisp catchlights, thick dark eyebrows, straight medium nose, normal mouth, NO dimples, NO scars, NO facial markings. Bright YELLOW cotton t-shirt, no graphics or logos, slightly oversized, soft fabric weight. Blue denim shorts ending above the knee. White sports socks visible 3cm above low-top black sneakers with white sole trim. Multi-color WOVEN FRIENDSHIP BRACELET on LEFT wrist (red-blue-yellow threaded). Small white BANDAID on RIGHT knee (kid scrape). Slim build, tall lanky stylized child proportions, slightly awkward posture. [expression: zombie-blank]
@@ -96,7 +96,7 @@ Pixar 3D ten-year-old Georgian boy, tallest and slimmest of the three. Warm oliv
 
 ---
 
-### REFERENCE SHEET — FRIEND 2
+### REFERENCE SHEET - FRIEND 2
 
 **→ Paste into Nano Banana / Midjourney / Flux:**
 
@@ -117,7 +117,7 @@ NEGATIVE: text labels, watermarks, dimples on cheek, scars on face, mole on chee
 
 ---
 
-## CHARACTER 4 — MOM
+## CHARACTER 4 - MOM
 
 ### CHARACTER_BLOCK
 Pixar 3D Georgian woman age 35-40. Slender stylized adult build, slightly elongated proportions typical Pixar mom characters (think Helen Parr / Mirabel's mom from *Encanto*). Warm olive complexion with subsurface scattering, natural skin with subtle stylized crow's feet at eye corners showing age. Dark brown shoulder-length hair, loose with slight natural wave, individual hair strands rendered, soft volume. High cheekbones, large warm dark brown eyes with crisp catchlights, thick dark eyebrows, straight medium nose, full lips with natural color. Small GOLD HOOP earrings 1.5cm in both ears. NAVY BLUE cotton blouse, slightly fitted, crew neckline, short sleeves, soft fabric weight with realistic drape. Dark charcoal straight-leg trousers. Flat beige leather strap sandals. Natural minimal makeup. Warm confident expression, slight tired-loving energy. [expression: warm calling]
@@ -131,7 +131,7 @@ Pixar 3D Georgian woman age 35-40. Slender stylized adult build, slightly elonga
 
 ---
 
-### REFERENCE SHEET — MOM
+### REFERENCE SHEET - MOM
 
 **→ Paste into Nano Banana / Midjourney / Flux:**
 
@@ -152,7 +152,7 @@ NEGATIVE: text labels, watermarks, missing earrings, changed earring size, heavy
 
 ---
 
-## GROUP REFERENCE SHOT — 3 BOYS TOGETHER
+## GROUP REFERENCE SHOT - 3 BOYS TOGETHER
 
 Generate AFTER all 3 individual refs approved. Use approved individual refs as input.
 

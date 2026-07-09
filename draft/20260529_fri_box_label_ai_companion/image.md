@@ -1,19 +1,19 @@
-# Bubabu — Box Label Strip (AI Companion)
+# Bubabu - Box Label Strip (AI Companion)
 
 **Asset:** printed sticker for toy box. Final size **25 × 2.5 cm = 10:1 strip**.
 **Headline added by USER in editor (NOT baked):** `ბუბაბუ — კომპანიონი ხელოვნური ინტელექტით`
-**Style:** candy-pop, matches the colorful 30% poster — butter-cream BG, multicolor sunburst rays, candy confetti, Bubabu hero.
+**Style:** candy-pop, matches the colorful 30% poster - butter-cream BG, multicolor sunburst rays, candy confetti, Bubabu hero.
 **Refs to upload to Nano Banana 2:** `1.jpeg` + `2.jpeg` (normal cyan-eye plush). NEVER `3.jpeg` heart-eyes.
 
-## Layout — TOP-CONCENTRATED (user crops the bottom off)
+## Layout - TOP-CONCENTRATED (user crops the bottom off)
 All meaningful content packed into the **TOP band**. Bottom ~40% is plain butter-cream = disposable crop margin.
 - **Top-left:** Bubabu plush mascot, wings raised in cheerful celebration, sized to the top band.
 - **Top, behind mascot:** multicolor sunburst rays fanning rightward; candy confetti + curly streamers along the **TOP edge only**.
 - **Top-right:** CLEAN low-clutter butter-cream zone reserved for the user's Georgian headline.
-- **Bottom ~40%:** plain empty butter-cream, NO elements, NO confetti — pure croppable margin.
+- **Bottom ~40%:** plain empty butter-cream, NO elements, NO confetti - pure croppable margin.
 - Text zone stays empty: `text_rendering.enabled = false`, negative bans all letters.
 
-## NANO BANANA 2 — IMAGE SPEC
+## NANO BANANA 2 - IMAGE SPEC
 
 ```json
 {
@@ -116,7 +116,7 @@ All meaningful content packed into the **TOP band**. Bottom ~40% is plain butter
 - NB2 native widest = **21:9** (2.33:1). True **10:1** is not a native ratio.
 - **Recommended:** generate at 21:9 → in editor **crop the BOTTOM off** down to the 2.5cm band. All content (mascot + rays + empty headline field) sits in the TOP band; the lower 40% is plain cream → crop it away cleanly. Mascot is sized to the top band, survives the crop.
 - Alt: generate 21:9, then **outpaint width** left/right if you need more empty banner before placing text.
-- Print: add **3 mm bleed** all sides, export **CMYK** (the cyan/magenta will shift slightly vs RGB — fine for this palette).
+- Print: add **3 mm bleed** all sides, export **CMYK** (the cyan/magenta will shift slightly vs RGB - fine for this palette).
 - Headline goes in the right cream zone, mkhedruli lowercase, your own typesetting.
 
 ## SELF-CHECK
@@ -126,4 +126,4 @@ All meaningful content packed into the **TOP band**. Bottom ~40% is plain butter
 - [x] Candy-pop palette + sunburst + confetti = matches the 30% poster
 - [x] No Cyrillic / no Russian in file · headline is Georgian mkhedruli
 - [x] NB2 v3.2 image SPEC, strict-floor fields populated (seed, ≥3 persistent_features, ≥5 narrative_clutter, Kelvin, camera, ≥15 negatives)
-- [ ] **L4 viewer/print test pending** — render + crop to 10:1 + eyeball before sticking on box
+- [ ] **L4 viewer/print test pending** - render + crop to 10:1 + eyeball before sticking on box

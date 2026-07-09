@@ -1,13 +1,13 @@
-# Video — pair01 Cartoon (14 scenes, dual NB2 SPEC-only per PROMPT_ENGINE v3.2)
+# Video - pair01 Cartoon (14 scenes, dual NB2 SPEC-only per PROMPT_ENGINE v3.2)
 
-## CHARACTER REFERENCE (paste-source for every prompt — verbatim from character.md)
+## CHARACTER REFERENCE (paste-source for every prompt - verbatim from character.md)
 
 ### Bubabu IDENTITY BLOCK
 ```
 Bubabu is a round fluffy plush owl mascot, ball-shaped body almost spherical, primary color soft pure white snowy fluffy fur covering the entire body, face AND TOP OF HEAD. Two tiny pointed PURE WHITE ear tufts on top of head matching the body fur exactly — ears are SAME WHITE COLOR as body, NEVER brown, NEVER caramel. Signature cyan-turquoise circular eye-goggle markings on face — like aviator pilot goggles built in — with cream-beige inner ring around each eye. Bright yellow upper eyelid arcs inside the cyan goggle rings. Large round black expressive eyes with single white highlight reflection. Small triangular black beak between the goggles, STAYS CLOSED throughout, brand lock. Two small caramel-brown stubby wings sticking out from sides — short and rounded — wings ONLY are caramel-brown. Two small caramel-brown feet at bottom with three orange toes each — feet ONLY are caramel-brown. Body is round and chunky like a fluffy snowball. Soft cute kawaii expression, gentle calm wise look. Match uploaded 1.jpeg + 2.jpeg plush form EXACTLY 1:1.
 ```
 
-### Child IDENTITY BLOCK (STATIC) — Pixar stylized only, NO photoreal anatomy
+### Child IDENTITY BLOCK (STATIC) - Pixar stylized only, NO photoreal anatomy
 ```
 A Pixar stylized 3D kid character with Boo (Monsters Inc) + Riley (Inside Out) proportions and stylization. Large stylized Pixar eyes, simplified rounded hair shape (no individual hair strands), soft Pixar 3D skin shader — NOT photoreal SSS, NOT real human skin tone. Toy-like body proportions, stylized cheek + nose geometry, gentle warm expression. Awake and dressed in Pixar stylized daytime kid clothes. Anchor frame = Scene 02 first child render — Scenes 13 + 14 propagate identity via Pixar character DNA, NEVER via photoreal anatomy / skin tone / freckle / hair hex.
 ```
@@ -17,7 +17,7 @@ A Pixar stylized 3D kid character with Boo (Monsters Inc) + Riley (Inside Out) p
 Wearing soft cream daytime kid t-shirt with simple round collar and no print, matching soft cream cotton kid leggings or simple kid pants, soft cream cotton kid socks — all rendered in Pixar stylized fabric shader (NOT photoreal cotton). Daytime morning kid clothes only. NEVER pyjamas, NEVER nightwear. No accessories, no jewelry, no hair clip.
 ```
 
-### Wonder object — WOODEN VEGETABLE PUZZLE (SKU reference-only — appearance from uploaded photo)
+### Wonder object - WOODEN VEGETABLE PUZZLE (SKU reference-only - appearance from uploaded photo)
 ```
 Wooden vegetable matching puzzle SKU. APPEARANCE = match attached ./sku_ref.jpg 1:1 — do NOT invent shape, colors, vegetable types, label text, tile-slot count, or frame material. Generator MUST use the uploaded sku_ref.jpg as the SOLE visual source of truth for this object. Rendered in Pure Pixar 3D feature-film aesthetic to match the rest of the scene (toy-like proportions, stylized geometry, NOT photoreal).
 ```
@@ -39,7 +39,7 @@ Sound: only ambient foley (soft sheet rustle, gentle wood creak, distant cloud-r
 
 ---
 
-## VOICEOVER-TO-CLIP MAP (SCENE_SYNC_ENGINE §9 — synced to voiceover.md verbatim)
+## VOICEOVER-TO-CLIP MAP (SCENE_SYNC_ENGINE §9 - synced to voiceover.md verbatim)
 
 | Scene | Time | Voiceover beat | Visual focus | Subjects | Mood |
 |-------|------|----------------|--------------|----------|------|
@@ -52,7 +52,7 @@ Sound: only ambient foley (soft sheet rustle, gentle wood creak, distant cloud-r
 | 07 | 0:54-1:04 | Bubabu lifts the wooden tray gently with the tip of his wing, and the curious painted shapes shine in the storeroom light. | Bubabu wing-tip touches puzzle, lifts it, painted shapes catch cyan + amber light | bubabu, wooden_puzzle, curiosity_shelf | Curious tender |
 | 08 | 1:04-1:12 | He carries the wonder out of the storeroom and tucks it carefully into the soft fold of his wing. | Bubabu carries puzzle out, tucks into wing-fold against chest | bubabu, wooden_puzzle, storeroom | Curious soft |
 | 09 | 1:12-1:22 | At the edge of the branch, the paper-glider boat is already woven from leaves and ribbons, ready for the journey down. | Bubabu at branch edge, paper-glider boat behind him, puzzle in wing | bubabu, wooden_puzzle, paper_glider, cloud_tree | Excited ready |
-| 10 | 1:22-1:34 | His wing-tip arcs once beside him, leaving a trail of cyan curiosity-sparks in the cold morning air, and the small wonder motif sings in four notes. | R4 wing-arc spark mechanic — cyan particles trail beside Bubabu | bubabu, wooden_puzzle, cyan_spark_trail, paper_glider | Magical |
+| 10 | 1:22-1:34 | His wing-tip arcs once beside him, leaving a trail of cyan curiosity-sparks in the cold morning air, and the small wonder motif sings in four notes. | R4 wing-arc spark mechanic - cyan particles trail beside Bubabu | bubabu, wooden_puzzle, cyan_spark_trail, paper_glider | Magical |
 | 11 | 1:34-1:42 | The paper-glider tilts down through a gap in the clouds, and the guiding star drifts alongside to light the path. | Paper-glider descends through cloud-gap, guiding star alongside | bubabu, wooden_puzzle, paper_glider, guiding_star, morning_sky | Descending |
 | 12 | 1:42-1:54 | Bubabu lands softly on the child's windowsill, places the small wooden tray of painted wonders gently on the sill, and steps back into the dawn. | Bubabu lands on sill, places puzzle on sill, paper-glider folds beside him | bubabu, wooden_puzzle, windowsill, paper_glider | Handoff |
 | 13 | 1:54-2:04 | The child turns gently toward the window, looks softly through the glass, and sees something resting in the soft morning light on her sill. | Child still on cushion turning toward window, sees puzzle on sill in daytime kid clothes (no bed visible) | child, reading_nook, wooden_puzzle, windowsill, bedroom | Awake wonder |
@@ -64,7 +64,7 @@ Sound: only ambient foley (soft sheet rustle, gentle wood creak, distant cloud-r
 
 > VOICEOVER: "There is a quiet window in a quiet small room, and on this morning the windowsill is still empty."
 
-**📎 ЗАГРУЗИТЬ В NANO BANANA 2:** — (без upload, environment only — empty windowsill + guiding star, child НЕ в кадре)
+**📎 ЗАГРУЗИТЬ В NANO BANANA 2:** - (без upload, environment only - empty windowsill + guiding star, child НЕ в кадре)
 
 ### Image SPEC (paste into Nano Banana 2)
 
@@ -84,7 +84,7 @@ Sound: only ambient foley (soft sheet rustle, gentle wood creak, distant cloud-r
 
 > VOICEOVER: "In a small quiet room far below, a child sits awake on a soft cushion by the window and watches the morning come."
 
-**📎 ЗАГРУЗИТЬ В NANO BANANA 2:** — (без upload, **★ FIRST CHILD RENDER** — генератор создаёт ребёнка как anchor для Scenes 13+14)
+**📎 ЗАГРУЗИТЬ В NANO BANANA 2:** - (без upload, **★ FIRST CHILD RENDER** - генератор создаёт ребёнка как anchor для Scenes 13+14)
 
 ### Image SPEC
 
@@ -104,7 +104,7 @@ Sound: only ambient foley (soft sheet rustle, gentle wood creak, distant cloud-r
 
 > VOICEOVER: "Far above her, in the same pale pre-dawn light, the old cloud-tree is waking too."
 
-**📎 ЗАГРУЗИТЬ В NANO BANANA 2:** — (без upload, environment only — cloud-tree)
+**📎 ЗАГРУЗИТЬ В NANO BANANA 2:** - (без upload, environment only - cloud-tree)
 
 ### Image SPEC
 
@@ -124,7 +124,7 @@ Sound: only ambient foley (soft sheet rustle, gentle wood creak, distant cloud-r
 
 > VOICEOVER: "Inside the hollow at the very top of the tree, Bubabu has been awake for a while, listening for someone."
 
-**📎 ЗАГРУЗИТЬ В NANO BANANA 2:** `1.jpeg` + `2.jpeg` — **★ FIRST BUBABU RENDER, локает character anchor для всех scenes 05-12**
+**📎 ЗАГРУЗИТЬ В NANO BANANA 2:** `1.jpeg` + `2.jpeg` - **★ FIRST BUBABU RENDER, локает character anchor для всех scenes 05-12**
 
 ### Image SPEC
 
@@ -164,7 +164,7 @@ Sound: only ambient foley (soft sheet rustle, gentle wood creak, distant cloud-r
 
 > VOICEOVER: "On one of the shelves, lit by a soft cyan glow, a small wooden tray of painted wonders is waiting for the right child."
 
-**📎 ЗАГРУЗИТЬ В NANO BANANA 2:** `1.jpeg` + `2.jpeg` + `sku_ref.jpg` + **Scene 04 рендер** — **★ FIRST BUBABU+SKU PAIR, локает pairing anchor для 07-12**
+**📎 ЗАГРУЗИТЬ В NANO BANANA 2:** `1.jpeg` + `2.jpeg` + `sku_ref.jpg` + **Scene 04 рендер** - **★ FIRST BUBABU+SKU PAIR, локает pairing anchor для 07-12**
 
 ### Image SPEC
 
@@ -180,11 +180,11 @@ Sound: only ambient foley (soft sheet rustle, gentle wood creak, distant cloud-r
 
 ---
 
-## SCENE 07 — KEY FRAME for next-day ad
+## SCENE 07 - KEY FRAME for next-day ad
 
 > VOICEOVER: "Bubabu lifts the wooden tray gently with the tip of his wing, and the curious painted shapes shine in the storeroom light."
 
-**📎 ЗАГРУЗИТЬ В NANO BANANA 2:** `1.jpeg` + `2.jpeg` + `sku_ref.jpg` + **Scene 06 рендер** — **★★ KEY FRAME для ad reuse, критический рендер**
+**📎 ЗАГРУЗИТЬ В NANO BANANA 2:** `1.jpeg` + `2.jpeg` + `sku_ref.jpg` + **Scene 06 рендер** - **★★ KEY FRAME для ad reuse, критический рендер**
 
 ### Image SPEC
 
@@ -220,7 +220,7 @@ Sound: only ambient foley (soft sheet rustle, gentle wood creak, distant cloud-r
 
 ---
 
-## SCENE 09 — branch edge with paper-glider
+## SCENE 09 - branch edge with paper-glider
 
 > VOICEOVER: "At the edge of the branch, the paper-glider boat is already woven from leaves and ribbons, ready for the journey down."
 
@@ -240,7 +240,7 @@ Sound: only ambient foley (soft sheet rustle, gentle wood creak, distant cloud-r
 
 ---
 
-## SCENE 10 — WING-ARC SPARK MECHANIC (R4)
+## SCENE 10 - WING-ARC SPARK MECHANIC (R4)
 
 > VOICEOVER: "His wing-tip arcs once beside him, leaving a trail of cyan curiosity-sparks in the cold morning air, and the small wonder motif sings in four notes."
 
@@ -260,7 +260,7 @@ Sound: only ambient foley (soft sheet rustle, gentle wood creak, distant cloud-r
 
 ---
 
-## SCENE 11 — DESCENT
+## SCENE 11 - DESCENT
 
 > VOICEOVER: "The paper-glider tilts down through a gap in the clouds, and the guiding star drifts alongside to light the path."
 
@@ -280,7 +280,7 @@ Sound: only ambient foley (soft sheet rustle, gentle wood creak, distant cloud-r
 
 ---
 
-## SCENE 12 — HANDOFF (key frame for ad too)
+## SCENE 12 - HANDOFF (key frame for ad too)
 
 > VOICEOVER: "Bubabu lands softly on the child's windowsill, places the small wooden tray of painted wonders gently on the sill, and steps back into the dawn."
 
@@ -304,7 +304,7 @@ Sound: only ambient foley (soft sheet rustle, gentle wood creak, distant cloud-r
 
 > VOICEOVER: "The child turns gently toward the window, looks softly through the glass, and sees something resting in the soft morning light on her sill."
 
-**📎 ЗАГРУЗИТЬ В NANO BANANA 2:** `sku_ref.jpg` + **Scene 02 рендер** (child anchor) — Bubabu НЕ в кадре
+**📎 ЗАГРУЗИТЬ В NANO BANANA 2:** `sku_ref.jpg` + **Scene 02 рендер** (child anchor) - Bubabu НЕ в кадре
 
 ### Image SPEC
 
@@ -320,11 +320,11 @@ Sound: only ambient foley (soft sheet rustle, gentle wood creak, distant cloud-r
 
 ---
 
-## SCENE 14 — THE HOLD
+## SCENE 14 - THE HOLD
 
 > VOICEOVER: "She walks over, cradles the small tray in both hands, and the very last cyan spark of curiosity fades quietly on the empty window behind her."
 
-**📎 ЗАГРУЗИТЬ В NANO BANANA 2:** `sku_ref.jpg` + **Scene 02 рендер** (child anchor) — Bubabu НЕ в кадре, только fading cyan spark
+**📎 ЗАГРУЗИТЬ В NANO BANANA 2:** `sku_ref.jpg` + **Scene 02 рендер** (child anchor) - Bubabu НЕ в кадре, только fading cyan spark
 
 ### Image SPEC
 
@@ -370,12 +370,12 @@ For each scene, the video SPEC `subjects[].id` set is a subset of the image SPEC
 **All 14 scenes pass PHOTO_VIDEO_FIDELITY §1 set-equality.** No video subject introduces a noun the image did not establish.
 
 ### Veo 3.1 speech lock
-- [x] ZERO `Speech:` tags anywhere in any scene's video SPEC — narrator-led only, off-screen voice, editor-overlay.
+- [x] ZERO `Speech:` tags anywhere in any scene's video SPEC - narrator-led only, off-screen voice, editor-overlay.
 - [x] Bubabu beak-closed expression bracket on every Bubabu-visible scene.
 - [x] Child mouth softly-closed bracket on every child-visible scene.
 - [x] Bubabu and child NEVER in same frame (asynchronous handoff per character.md).
 
-### Cinema engine — ≥2 cinematic effects per scene
+### Cinema engine - ≥2 cinematic effects per scene
 - [x] All scenes carry ≥2 of: cinematic lighting / depth of field / volumetric fog / color grading / camera angle. Verified inline via SPEC fields (sequence_logic.shot_type + lighting_advanced + technical.camera + color_grading).
 
 ### PROMPT_ENGINE v3.2 STRICT_DETAIL_FLOOR (Bubabu agent)
@@ -385,18 +385,18 @@ For each scene, the video SPEC `subjects[].id` set is a subset of the image SPEC
 - [x] `lighting_advanced.Kelvin` + `type` populated on every image SPEC.
 - [x] `technical.camera.model + lens + aperture` populated on every image SPEC.
 - [x] `text_rendering.enabled = false` on every image SPEC (cover.md is the only file allowed to enable text rendering).
-- [x] `advanced.negative_prompt` populated inline on every image + video SPEC (≤25 image / ≤30 video target — exceeded in some scenes for safety, accepted).
-- [x] Video SPECs have `motion_bucket_id` SCENE-SPECIFIC (60-180 range — 60/65/70/75/80/85/110/120 used).
+- [x] `advanced.negative_prompt` populated inline on every image + video SPEC (≤25 image / ≤30 video target - exceeded in some scenes for safety, accepted).
+- [x] Video SPECs have `motion_bucket_id` SCENE-SPECIFIC (60-180 range - 60/65/70/75/80/85/110/120 used).
 - [x] Video SPECs have `subjects[].actions[]` ≥3 per primary subject in motion-heavy scenes.
 - [x] Video SPECs have `audio_visual_sync_cues.sfx_cues` ≥3 strings on every scene.
-- [x] Both SPECs honor schema_version marker "PROMPT_ENGINE_v3.0" (per §2 backward compat — v3.2 keeps the marker).
+- [x] Both SPECs honor schema_version marker "PROMPT_ENGINE_v3.0" (per §2 backward compat - v3.2 keeps the marker).
 
 ### Hard NO list (Bubabu ADV §10 + Wonder Tools §BS)
-- [x] No real-world brand mentions in scene SPECs (only the catalog SKU's natural Georgian labels on the puzzle reference photo — that's the reference, not added text).
+- [x] No real-world brand mentions in scene SPECs (only the catalog SKU's natural Georgian labels on the puzzle reference photo - that's the reference, not added text).
 - [x] No «AI» word.
 - [x] No specific city or country (anti-canon).
 - [x] No on-screen text in cartoon body (text_rendering.enabled = false universally).
-- [x] No screen-tech vocabulary — wooden puzzle = canon-friendly noun.
+- [x] No screen-tech vocabulary - wooden puzzle = canon-friendly noun.
 - [x] No `...` ellipsis in any VOICEOVER line (per §BS).
 - [x] No inline `[bracket]` directives prefixing prompt body.
 - [x] No Russian / no Cyrillic / no Mtavruli on-screen.

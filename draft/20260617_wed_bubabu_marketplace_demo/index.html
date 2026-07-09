@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BUBABU.GE</title>
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#211F1D; --ink-soft:#6E665C; --ink-faint:#A89E90;
+    --paper:#FBF6EC; --paper-2:#F4ECDE; --card:#FFFFFF; --line:#E6DCCB; --line-soft:#F0E9DB;
+    --brand:#15635E; --brand-deep:#0E4A46;
+    --gift:#C0573F; --gift-deep:#9A4430;
+    --gold:#C8923A;
+    --cta:#E2632B; --cta-deep:#C44E1C; --cta-light:#FF8A4C; --trust:#3E7D5A;
+    --r:12px; --r-lg:22px; --pill:999px;
+    --maxw:1200px;
+    --sh-1:0 1px 0 rgba(33,31,29,.04);
+    --sh-2:0 22px 48px -30px rgba(40,30,20,.55);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Noto Sans Georgian',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  .wrap{max-width:var(--maxw);margin-inline:auto;padding-inline:26px}
+  section{position:relative;padding-block:clamp(56px,7vw,104px)}
+  :focus-visible{outline:2.5px solid var(--cta);outline-offset:3px}
+
+  h1{font-weight:900;letter-spacing:-.035em;line-height:1.0}
+  h2{font-weight:800;letter-spacing:-.02em;line-height:1.08;font-size:clamp(27px,3.5vw,43px)}
+  h3{font-weight:700;letter-spacing:-.01em}
+  .kick{display:inline-block;font-size:.8rem;font-weight:700;letter-spacing:.04em;color:var(--gift);margin-bottom:14px}
+  .muted{color:var(--ink-soft)}
+
+  /* section head: left, supporting line, view-all on right baseline */
+  .sh{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:38px}
+  .sh .sub{color:var(--ink-soft);margin-top:10px;max-width:48ch;font-size:1.04rem}
+  .va{font-weight:600;color:var(--ink);border-bottom:2px solid var(--cta);padding-bottom:3px;white-space:nowrap;transition:color .2s,border-color .2s}
+  .va:hover{color:var(--cta)}
+
+  /* gift-tag signature */
+  .gtag{position:relative;display:inline-flex;align-items:center;gap:.4em;background:var(--gift);color:#fff;font-weight:700;font-size:.74rem;letter-spacing:.01em;padding:.42em 1em .42em 1.45em;clip-path:polygon(15px 0,100% 0,100% 100%,15px 100%,0 50%)}
+  .gtag::before{content:"";position:absolute;left:8px;top:50%;transform:translateY(-50%);width:6px;height:6px;border-radius:50%;background:var(--paper)}
+  .gtag--ink{background:var(--ink)} .gtag--gold{background:var(--gold);color:#2a2110} .gtag--brand{background:var(--brand)} .gtag--cta{background:var(--cta)}
+
+  .btn{display:inline-flex;align-items:center;gap:.55em;font-family:inherit;font-weight:700;font-size:1rem;padding:.92em 1.7em;border-radius:var(--pill);border:none;cursor:pointer;transition:transform .25s,box-shadow .25s,background .25s,color .25s;line-height:1}
+  .btn--cta{background:var(--cta);color:#fff;box-shadow:0 14px 28px -14px rgba(226,99,43,.65)}
+  .btn--cta:hover{background:var(--cta-deep);transform:translateY(-3px)}
+  .btn--line{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+  .btn--line:hover{background:var(--ink);color:#fff;transform:translateY(-3px)}
+
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+  .js .reveal{opacity:0;transform:translateY(22px)} .js .reveal.in{opacity:1;transform:none}
+  body:not(.js) .reveal{opacity:1;transform:none}
+
+  /* ===== HEADER ===== */
+  .hdr{position:sticky;top:0;z-index:60;background:rgba(246,242,235,.86);backdrop-filter:blur(14px);border-bottom:1px solid transparent;transition:border-color .3s}
+  .hdr.scrolled{border-color:var(--line)}
+  .hdr__in{display:flex;align-items:center;gap:22px;padding-block:16px}
+  .brand{font-weight:900;font-size:1.42rem;letter-spacing:-.03em;color:var(--ink)}
+  .brand b{color:var(--brand)} .brand small{font-size:.62rem;color:var(--gold);font-weight:800;vertical-align:super;letter-spacing:.04em}
+  .nav{display:flex;gap:26px;margin-inline:auto;font-weight:500;font-size:.96rem;color:var(--ink-soft)}
+  .nav a{position:relative;padding:.2em 0;transition:color .2s}
+  .nav a::after{content:"";position:absolute;left:0;right:100%;bottom:-2px;height:2px;background:var(--cta);transition:right .25s}
+  .nav a:hover{color:var(--ink)} .nav a:hover::after{right:0}
+  .hdr__act{display:flex;align-items:center;gap:10px}
+  .lang{font-weight:700;font-size:.76rem;color:var(--ink-soft);letter-spacing:.02em} .lang b{color:var(--ink)}
+  .ibtn{width:42px;height:42px;border-radius:var(--pill);background:transparent;border:1px solid var(--line);cursor:pointer;display:grid;place-items:center;transition:border-color .2s,color .2s} .ibtn:hover{border-color:var(--ink)} .ibtn i{font-size:19px}
+  .cartb{position:relative}
+  .cartb::after{content:"3";position:absolute;top:-4px;right:-4px;background:var(--cta);color:#fff;font-size:.62rem;font-weight:700;width:17px;height:17px;border-radius:50%;display:grid;place-items:center}
+  .burger{display:none}
+
+  /* ===== HERO (type-led, asymmetric) ===== */
+  .hero{padding-block:clamp(40px,5vw,76px)}
+  .hero__grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(30px,5vw,70px);align-items:center}
+  .hero h1{font-size:clamp(40px,6.6vw,80px)}
+  .hero h1 em{font-style:normal;color:var(--gift)}
+  .hero .sub{color:var(--ink-soft);font-size:1.16rem;max-width:40ch;margin:24px 0 30px}
+  .pick{margin-bottom:30px}
+  .pick__l{font-size:.82rem;font-weight:700;letter-spacing:.04em;color:var(--ink-faint);margin-bottom:12px}
+  .pick__row{display:flex;flex-wrap:wrap;gap:9px}
+  .pick__row a{font-weight:600;font-size:.95rem;padding:.5em 1.1em;border-radius:var(--pill);border:1px solid var(--line);transition:border-color .2s,background .2s,color .2s}
+  .pick__row a:hover{border-color:var(--brand);background:var(--brand);color:#fff}
+  .hero__cta{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+  .hero__cta .note{font-size:.9rem;color:var(--ink-soft)}
+
+  .hero__fig{position:relative;justify-self:center;width:min(420px,100%)}
+  .hero__img{position:relative;aspect-ratio:4/5;border-radius:240px 240px var(--r-lg) var(--r-lg);overflow:hidden;background:var(--paper-2);box-shadow:var(--sh-2)}
+  .hero__img img{width:100%;height:100%;object-fit:cover}
+  .hero__tag{position:absolute;top:18px;left:-14px;z-index:3;font-size:.92rem;padding:.55em 1.15em .55em 1.6em;box-shadow:var(--sh-2);transform:rotate(-3deg)}
+  .hero__chip{position:absolute;bottom:22px;right:-12px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;box-shadow:var(--sh-2);z-index:3}
+  .hero__chip b{display:block;font-size:1.15rem;color:var(--ink)} .hero__chip span{font-size:.78rem;color:var(--ink-soft)}
+  .float{animation:fl 6s ease-in-out infinite} @keyframes fl{50%{transform:translateY(-9px) rotate(-3deg)}}
+
+  /* ===== MARQUEE / promises ===== */
+  .promo{border-block:1px solid var(--line);background:var(--card);overflow:hidden}
+  .promo__track{display:flex;gap:46px;align-items:center;padding-block:16px;width:max-content;animation:marq 32s linear infinite}
+  .promo:hover .promo__track{animation-play-state:paused}
+  .promo span{display:inline-flex;align-items:center;gap:.6em;font-weight:600;font-size:.94rem;white-space:nowrap} .promo i{font-size:19px;color:var(--brand)}
+  @keyframes marq{to{transform:translateX(-50%)}}
+
+  /* ===== RECIPIENT bento ===== */
+  .recip{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:172px;gap:14px}
+  .rcard{position:relative;border-radius:var(--r-lg);overflow:hidden;padding:24px;display:flex;flex-direction:column;justify-content:space-between;color:#fff;transition:transform .35s} .rcard:hover{transform:translateY(-5px)}
+  .rcard h3{font-size:1.3rem} .rcard .go{font-size:.86rem;font-weight:600;opacity:.85;display:inline-flex;align-items:center;gap:.3em}
+  .rcard .deco{position:absolute;right:-22px;bottom:-26px;font-size:118px;opacity:.13}
+  .rcard.big{grid-column:span 2;grid-row:span 2} .rcard.big h3{font-size:2rem}
+  .rcard.wide{grid-column:span 2}
+  .rcard .gtag{align-self:flex-start}
+
+  /* ===== QUICK PICK (merged occasion/budget/interest, editorial lists) ===== */
+  .quick{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;background:var(--card)}
+  .qcol{padding:30px 32px} .qcol+.qcol{border-left:1px solid var(--line)}
+  .qcol h3{font-size:1.18rem;margin-bottom:18px;display:flex;align-items:center;gap:.5em} .qcol h3 i{color:var(--gift);font-size:1.1em}
+  .qcol ul{list-style:none;display:flex;flex-direction:column;gap:2px}
+  .qcol li a{display:flex;justify-content:space-between;align-items:center;padding:9px 0;color:var(--ink-soft);font-weight:500;border-bottom:1px solid var(--line-soft);transition:color .2s,padding .2s}
+  .qcol li:last-child a{border-bottom:none}
+  .qcol li a::after{content:"\2197";opacity:0;transition:opacity .2s;color:var(--cta);font-weight:700}
+  .qcol li a:hover{color:var(--ink);padding-left:6px} .qcol li a:hover::after{opacity:1}
+
+  /* ===== CATEGORIES (editorial: label left, list right) ===== */
+  .cats{display:grid;grid-template-columns:.7fr 1.3fr;gap:clamp(24px,4vw,56px);align-items:start}
+  .cats__head h2{margin-bottom:14px}
+  .catlist{display:grid;gap:0;border-top:1px solid var(--line)}
+  .catrow{display:flex;align-items:center;gap:18px;padding:20px 4px;border-bottom:1px solid var(--line);transition:padding .25s,background .25s}
+  .catrow:hover{padding-left:14px} .catrow .ci{flex:none;width:46px;height:46px;border-radius:12px;display:grid;place-items:center;color:#fff} .catrow .ci i{font-size:22px}
+  .catrow .cn{flex:1} .catrow .cn b{font-size:1.12rem;font-weight:700;display:block} .catrow .cn span{font-size:.9rem;color:var(--ink-soft)}
+  .catrow .ar{color:var(--ink-faint);font-size:1.2rem;transition:color .2s,transform .2s} .catrow:hover .ar{color:var(--cta);transform:translateX(4px)}
+
+  /* ===== FLAGSHIP ===== */
+  .flag{background:linear-gradient(135deg,var(--brand-deep),var(--brand));color:#fff;overflow:hidden}
+  .flag__grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,60px);align-items:center}
+  .flag .kick{color:var(--cta-light)} .flag h2{color:#fff;margin-bottom:14px}
+  .flag p{color:rgba(255,255,255,.86);max-width:44ch}
+  .flag .feat{list-style:none;display:flex;gap:20px;flex-wrap:wrap;margin:22px 0;font-weight:500;font-size:.96rem}
+  .flag .feat li{display:inline-flex;align-items:center;gap:.5em} .flag .feat i{color:var(--cta-light);font-size:1.1em}
+  .flag__price{display:flex;align-items:baseline;gap:.5em;margin-bottom:26px;font-weight:800}
+  .flag__price .old{color:rgba(255,255,255,.55);text-decoration:line-through;font-size:1.2rem}
+  .flag__price .now{font-size:2.3rem;color:var(--cta-light)} .flag__price .save{font-size:.85rem;color:rgba(255,255,255,.7);font-weight:600}
+  .flag__art{position:relative;display:flex;align-items:center;justify-content:center;gap:16px}
+  .flag__owl{width:54%;border-radius:50%;background:radial-gradient(circle at 50% 45%,rgba(255,255,255,.96),rgba(255,255,255,0) 70%);filter:drop-shadow(0 22px 26px rgba(0,0,0,.32))}
+  .flag__poster{width:40%;border-radius:var(--r-lg);box-shadow:var(--sh-2);transform:rotate(3deg)}
+  .flag__art .gtag{position:absolute;top:0;left:0;z-index:4}
+  .play{position:absolute;left:50%;top:46%;transform:translate(-50%,-50%);z-index:5;width:62px;height:62px;border-radius:50%;background:rgba(255,255,255,.16);backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.5);display:grid;place-items:center} .play i{font-size:30px;color:#fff;margin-left:3px}
+
+  /* ===== PRODUCT GRID ===== */
+  .pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .pcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;transition:transform .3s,box-shadow .3s,border-color .3s}
+  .pcard:hover{transform:translateY(-5px);box-shadow:var(--sh-2);border-color:transparent}
+  .pcard__img{position:relative;aspect-ratio:1;background:var(--paper-2)} .pcard__img img{width:100%;height:100%;object-fit:cover;mix-blend-mode:multiply}
+  .pcard__img .gtag{position:absolute;top:12px;left:0}
+  .pcard__b{padding:15px 16px 17px;display:flex;flex-direction:column;gap:5px;flex:1}
+  .pcard__b h3{font-size:1rem;line-height:1.3} .pcard__age{font-size:.82rem;color:var(--ink-faint);font-weight:500}
+  .pcard__foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;padding-top:10px}
+  .price{font-weight:800;font-size:1.25rem}
+  .add{border:none;background:var(--cta);color:#fff;width:40px;height:40px;border-radius:var(--pill);cursor:pointer;display:grid;place-items:center;transition:transform .2s,background .2s} .add:hover{transform:scale(1.09);background:var(--cta-deep)} .add i{font-size:18px}
+
+  /* ===== GIFT SETS ===== */
+  .sets{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .setc{background:var(--card);border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;display:flex;flex-direction:column;transition:transform .3s,box-shadow .3s} .setc:hover{transform:translateY(-5px);box-shadow:var(--sh-2)}
+  .setc .top{aspect-ratio:5/4;position:relative;display:grid;place-items:center;color:#fff} .setc .top img{width:100%;height:100%;object-fit:cover} .setc .top .gtag{position:absolute;top:12px;left:0}
+  .setc .b{padding:16px;display:flex;flex-direction:column;gap:6px;flex:1}
+  .setc h3{font-size:1.04rem} .setc .wrap-note{font-size:.84rem;color:var(--trust);display:flex;align-items:center;gap:.4em;font-weight:600}
+  .setc .foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;padding-top:8px}
+
+  /* ===== SEASONAL ===== */
+  .season{border-radius:var(--r-lg);overflow:hidden;padding:clamp(32px,5vw,60px);color:#fff;background:linear-gradient(125deg,#1E3A38,#7A4636 60%,#A8833C);position:relative}
+  .season .kick{color:rgba(255,255,255,.8)} .season h2{color:#fff;margin-bottom:12px;max-width:18ch} .season p{color:rgba(255,255,255,.9);max-width:46ch}
+  .season .chips{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0 26px} .season .chip{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);padding:.5em 1.1em;border-radius:var(--pill);font-weight:600;font-size:.9rem}
+  .season .deco{position:absolute;right:-30px;top:-30px;font-size:200px;opacity:.12}
+
+  /* ===== NEW ARRIVALS rail ===== */
+  .rail{display:flex;gap:18px;overflow-x:auto;padding-bottom:14px;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:var(--brand) transparent}
+  .rail::-webkit-scrollbar{height:6px} .rail::-webkit-scrollbar-thumb{background:var(--brand);border-radius:99px}
+  .rail .pcard{flex:0 0 250px;scroll-snap-align:start}
+
+  /* ===== COLLECTIONS (asymmetric) ===== */
+  .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-auto-rows:minmax(150px,auto);gap:16px}
+  .col{position:relative;border-radius:var(--r-lg);overflow:hidden;padding:24px;display:flex;flex-direction:column;justify-content:flex-end;border:1px solid var(--line);background:var(--card);transition:transform .3s} .col:hover{transform:translateY(-5px)}
+  .col h3{font-size:1.16rem;max-width:15ch} .col .cnt{color:var(--ink-soft);font-size:.88rem;margin-top:4px}
+  .col .deco{position:absolute;right:-14px;top:-14px;font-size:96px;opacity:.1}
+  .col.lead{grid-row:span 2;justify-content:flex-start;color:#fff;background:linear-gradient(150deg,var(--gift),var(--gift-deep));border:none} .col.lead h3{font-size:1.7rem;max-width:13ch;margin-top:auto} .col.lead .cnt{color:rgba(255,255,255,.85)}
+
+  /* ===== GUIDES ===== */
+  .guides{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .guide{border:1px solid var(--line);border-radius:var(--r-lg);overflow:hidden;background:var(--card);transition:transform .3s,box-shadow .3s} .guide:hover{transform:translateY(-5px);box-shadow:var(--sh-2)}
+  .guide img{aspect-ratio:16/10;width:100%;object-fit:cover}
+  .guide .b{padding:18px} .guide .t{font-size:.74rem;font-weight:700;letter-spacing:.05em;color:var(--gift)} .guide h3{font-size:1.08rem;margin-top:6px;line-height:1.32}
+
+  /* ===== FINDER ===== */
+  .finder{background:var(--ink);color:#fff;border-radius:var(--r-lg);padding:clamp(34px,5vw,60px);display:grid;grid-template-columns:1.2fr 1fr;gap:34px;align-items:center}
+  .finder .kick{color:var(--cta-light)} .finder h2{color:#fff;margin-bottom:12px} .finder p{color:rgba(255,255,255,.78);max-width:42ch}
+  .fbtns{display:flex;flex-direction:column;gap:11px}
+  .fbtns a{display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:var(--r);padding:1em 1.3em;font-weight:600;transition:background .2s,transform .2s} .fbtns a:hover{background:rgba(255,255,255,.13);transform:translateX(4px)} .fbtns i{color:var(--cta-light)}
+
+  /* ===== REVIEWS (feature + two) ===== */
+  .revs{display:grid;grid-template-columns:1.3fr 1fr;gap:18px}
+  .rev{border:1px solid var(--line);border-radius:var(--r-lg);padding:26px;background:var(--card);display:flex;flex-direction:column;gap:14px}
+  .rev.lead{background:var(--brand);color:#fff;border:none} .rev.lead .q{font-size:1.32rem;font-weight:600;line-height:1.4} .rev.lead .who span{color:rgba(255,255,255,.75)}
+  .rev .stars{color:var(--gold);letter-spacing:2px} .rev.lead .stars{color:var(--cta-light)}
+  .rev .q{font-size:1.02rem} .rev .who{display:flex;align-items:center;gap:11px;margin-top:auto} .rev .av{width:38px;height:38px;border-radius:50%;background:var(--gift);color:#fff;display:grid;place-items:center;font-weight:700;flex:none} .rev .who b{font-weight:700} .rev .who span{color:var(--ink-soft);font-size:.82rem}
+  .revs__col{display:grid;gap:18px}
+
+  /* ===== WHY (clean inline) ===== */
+  .why{border:1px solid var(--line);border-radius:var(--r-lg);background:var(--card);display:grid;grid-template-columns:repeat(3,1fr)}
+  .wi{display:flex;gap:13px;align-items:flex-start;padding:24px 26px;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+  .wi:nth-child(-n+3){border-top:none} .wi:nth-child(3n+1){border-left:none}
+  .wi i{font-size:22px;color:var(--brand);margin-top:2px} .wi b{display:block;font-size:1rem} .wi span{color:var(--ink-soft);font-size:.88rem}
+
+  /* ===== STORES ===== */
+  .stores{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .store{border:1px solid var(--line);border-radius:var(--r-lg);padding:26px;background:var(--card);display:flex;flex-direction:column;gap:7px}
+  .store .pin{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--paper-2);color:var(--gift);margin-bottom:6px} .store h3{font-size:1.1rem} .store p{color:var(--ink-soft)}
+  .store.online{background:var(--brand);color:#fff;border:none} .store.online p{color:rgba(255,255,255,.85)} .store.online .pin{background:rgba(255,255,255,.16);color:#fff} .store.online b{font-weight:800;font-size:1.3rem}
+
+  /* ===== FOOTER ===== */
+  footer{background:var(--ink);color:#A89E94;padding-block:56px 30px}
+  .fgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:32px}
+  footer .fb{font-weight:900;font-size:1.4rem;color:#fff} footer .fb span{color:var(--gold)}
+  footer h4{color:#fff;font-size:.96rem;margin-bottom:.9rem;font-weight:700}
+  footer ul{list-style:none;display:grid;gap:.55rem} footer a:hover{color:#fff}
+  .subscribe{display:flex;gap:8px;margin-top:14px;max-width:320px}
+  .subscribe input{flex:1;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:#fff;border-radius:var(--pill);padding:.7em 1.1em;font-family:inherit;font-size:.9rem} .subscribe input::placeholder{color:rgba(255,255,255,.45)}
+  .subscribe button{border:none;background:var(--cta);color:#fff;border-radius:var(--pill);padding:.7em 1.3em;font-weight:700;cursor:pointer;font-family:inherit}
+  footer .soc{display:flex;gap:10px;margin-top:16px} footer .soc a{width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.16);display:grid;place-items:center} footer .soc i{font-size:17px;color:#fff}
+  .fbar{border-top:1px solid rgba(255,255,255,.12);margin-top:36px;padding-top:18px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.85rem}
+  .fbar a{margin-left:18px}
+
+  /* life / motion */
+  .pcard__img img,.setc .top img,.guide img,.hero__img img{transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+  .pcard:hover .pcard__img img,.setc:hover .top img,.guide:hover img,.hero__fig:hover .hero__img img{transform:scale(1.07)}
+  .flag,.season{background-size:220% 220%;animation:grad 16s ease infinite}
+  @keyframes grad{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+  .hero__fig{animation:floaty 7s ease-in-out infinite}
+  @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+  .va i{display:inline-block;transition:transform .25s} .va:hover i{transform:translateX(3px)}
+  .add:hover{box-shadow:0 10px 18px -8px rgba(226,99,43,.8)}
+
+  /* ===== RESPONSIVE ===== */
+  @media(max-width:980px){
+    .nav{display:none} .burger{display:grid}
+    .hero__grid{grid-template-columns:1fr;text-align:center} .hero .sub{margin-inline:auto} .pick__row,.hero__cta{justify-content:center} .hero__fig{order:-1;width:min(330px,90%)}
+    .recip{grid-template-columns:repeat(2,1fr)} .rcard.big{grid-column:span 2;grid-row:span 1} .rcard.big h3{font-size:1.4rem}
+    .quick{grid-template-columns:1fr} .qcol+.qcol{border-left:none;border-top:1px solid var(--line)}
+    .cats{grid-template-columns:1fr}
+    .flag__grid{grid-template-columns:1fr;gap:28px} .flag__art{order:-1}
+    .pgrid{grid-template-columns:repeat(3,1fr)} .sets{grid-template-columns:repeat(2,1fr)} .guides{grid-template-columns:1fr}
+    .cols{grid-template-columns:1fr 1fr} .col.lead{grid-column:span 2;grid-row:span 1}
+    .finder{grid-template-columns:1fr} .revs{grid-template-columns:1fr} .why{grid-template-columns:1fr} .wi{border-left:none!important;border-top:1px solid var(--line)!important} .wi:first-child{border-top:none!important}
+    .stores{grid-template-columns:1fr} .fgrid{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:560px){
+    .promo__in{font-size:.85rem;gap:12px}
+    .recip{grid-template-columns:1fr 1fr;grid-auto-rows:148px} .pgrid{grid-template-columns:1fr 1fr} .sets{grid-template-columns:1fr 1fr} .cols{grid-template-columns:1fr} .col.lead{grid-column:span 1} .fgrid{grid-template-columns:1fr}
+  }
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto}.reveal{opacity:1!important;transform:none!important;transition:none}}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="hdr" id="hdr">
+  <div class="wrap hdr__in">
+    <a class="brand" href="#top">BUBAB<b>U</b><small>.GE</small></a>
+    <nav class="nav">
+      <a href="#recipient">მიმღების მიხედვით</a>
+      <a href="#categories">კატეგორიები</a>
+      <a href="#quick">ბიუჯეტით</a>
+      <a href="#sets">ნაკრებები</a>
+      <a href="#flagship">ბუბაბუ</a>
+      <a href="#finder">ასისტენტი</a>
+    </nav>
+    <div class="hdr__act">
+      <span class="lang"><b>GE</b> / EN / RU</span>
+      <button class="ibtn" aria-label="ძებნა"><i class="ph ph-magnifying-glass"></i></button>
+      <button class="ibtn cartb" aria-label="კალათა"><i class="ph ph-shopping-bag"></i></button>
+      <button class="ibtn burger" aria-label="მენიუ"><i class="ph ph-list"></i></button>
+    </div>
+  </div>
+</header>
+<a id="top"></a>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div class="reveal">
+      <span class="kick">კურირებული საჩუქრების მაღაზია</span>
+      <h1>საჩუქარი, რომელიც <em>გახსოვდება</em></h1>
+      <p class="sub">შერჩეული ჭკვიანი და განსაკუთრებული საჩუქრები ნებისმიერი ადამიანისა და შემთხვევისთვის. ერთ ადგილას.</p>
+      <div class="pick">
+        <div class="pick__l">ვისთვის ეძებ?</div>
+        <div class="pick__row">
+          <a href="#recipient">ქალს</a><a href="#recipient">მამაკაცს</a><a href="#flagship">ბავშვს</a><a href="#recipient">წყვილს</a><a href="#recipient">მშობლებს</a>
+        </div>
+      </div>
+      <div class="hero__cta">
+        <a class="btn btn--cta" href="#recipient"><i class="ph-fill ph-gift"></i> აირჩიე საჩუქარი</a>
+        <span class="note">უფასო მიწოდება 150₾-დან</span>
+      </div>
+    </div>
+    <div class="hero__fig reveal">
+      <div class="hero__img"><img src="assets/p-camera.jpg" alt="საჩუქარი"></div>
+      <span class="gtag gtag--gold hero__tag float">საჩუქრად</span>
+      <div class="hero__chip"><b>500+</b><span>შერჩეული საჩუქარი</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROMISES (marquee) -->
+<div class="promo"><div class="promo__track">
+  <span><i class="ph-fill ph-hand-heart"></i> კურირებული შერჩევა</span>
+  <span><i class="ph-fill ph-gift"></i> საჩუქრად შეფუთვა</span>
+  <span><i class="ph-fill ph-package" style="color:var(--trust)"></i> უფასო მიწოდება 150₾-დან</span>
+  <span><i class="ph-fill ph-shield-check" style="color:var(--trust)"></i> გარანტია და დაბრუნება</span>
+  <span><i class="ph-fill ph-star" style="color:var(--gold)"></i> 5000+ შეფუთული საჩუქარი</span>
+  <span><i class="ph-fill ph-truck"></i> მიწოდება მთელ საქართველოში</span>
+  <span><i class="ph-fill ph-hand-heart"></i> კურირებული შერჩევა</span>
+  <span><i class="ph-fill ph-gift"></i> საჩუქრად შეფუთვა</span>
+  <span><i class="ph-fill ph-package" style="color:var(--trust)"></i> უფასო მიწოდება 150₾-დან</span>
+  <span><i class="ph-fill ph-shield-check" style="color:var(--trust)"></i> გარანტია და დაბრუნება</span>
+  <span><i class="ph-fill ph-star" style="color:var(--gold)"></i> 5000+ შეფუთული საჩუქარი</span>
+  <span><i class="ph-fill ph-truck"></i> მიწოდება მთელ საქართველოში</span>
+</div></div>
+
+<!-- RECIPIENT -->
+<section id="recipient">
+  <div class="wrap">
+    <div class="sh reveal"><div><h2>საჩუქარი მიმღების მიხედვით</h2><p class="sub">დაიწყე იქიდან, თუ ვისთვის ეძებ. დანარჩენს ჩვენ შევარჩევთ.</p></div><a class="va" href="#">ყველა მიმღები</a></div>
+    <div class="recip">
+      <a class="rcard big reveal" style="background:linear-gradient(150deg,#1F8079,var(--brand-deep))"><span class="gtag gtag--gold">პოპულარული</span><i class="ph-fill ph-flower-tulip deco"></i><div><h3>ქალს</h3><span class="go">ნახვა <i class="ph-bold ph-arrow-right"></i></span></div></a>
+      <a class="rcard reveal" style="background:linear-gradient(150deg,#2C5560,#16323B)"><i class="ph-fill ph-compass-tool deco"></i><div><h3>მამაკაცს</h3></div></a>
+      <a class="rcard reveal" style="background:linear-gradient(150deg,#D06A4E,var(--gift-deep))"><span class="gtag gtag--ink">ბუბაბუ</span><i class="ph-fill ph-baby deco"></i><div><h3>ბავშვს</h3></div></a>
+      <a class="rcard wide reveal" style="background:linear-gradient(150deg,#D9A23E,var(--gold))"><i class="ph-fill ph-heart deco"></i><div><h3>წყვილს</h3></div></a>
+      <a class="rcard reveal" style="background:linear-gradient(150deg,#3E7D5A,#245C42)"><i class="ph-fill ph-users-three deco"></i><div><h3>მშობლებს</h3></div></a>
+      <a class="rcard reveal" style="background:linear-gradient(150deg,#7E5A8E,#4E3A5E)"><i class="ph-fill ph-briefcase deco"></i><div><h3>კოლეგას</h3></div></a>
+      <a class="rcard reveal" style="background:linear-gradient(150deg,#C07A46,#8A5128)"><i class="ph-fill ph-house-line deco"></i><div><h3>სახლს</h3></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- QUICK PICK (occasion + budget + interest, merged) -->
+<section id="quick" style="background:var(--paper-2)">
+  <div class="wrap">
+    <div class="sh reveal"><div><h2>სწრაფი არჩევა</h2><p class="sub">სამი მარტივი გზა, თუ ჯერ არ იცი ზუსტად რა გინდა.</p></div></div>
+    <div class="quick reveal">
+      <div class="qcol"><h3><i class="ph-fill ph-confetti"></i> შემთხვევის მიხედვით</h3><ul>
+        <li><a href="#">დაბადების დღე</a></li><li><a href="#">იუბილე</a></li><li><a href="#">ქორწილი</a></li><li><a href="#">ახალი სახლი</a></li><li><a href="#">ახალი წელი</a></li><li><a href="#">მადლობა</a></li></ul></div>
+      <div class="qcol"><h3><i class="ph-fill ph-tag"></i> ბიუჯეტის მიხედვით</h3><ul>
+        <li><a href="#">50₾-მდე</a></li><li><a href="#">100₾-მდე</a></li><li><a href="#">200₾-მდე</a></li><li><a href="#">პრემიუმ საჩუქრები</a></li><li><a href="#">ბუბაბუ და გმირი საჩუქრები</a></li></ul></div>
+      <div class="qcol"><h3><i class="ph-fill ph-compass"></i> ინტერესის მიხედვით</h3><ul>
+        <li><a href="#">AI და ჭკვიანი სათამაშოები</a></li><li><a href="#">ეკრანის გარეშე</a></li><li><a href="#">ზღაპრები და ფანტაზია</a></li><li><a href="#">ხატვა და მუსიკა</a></li><li><a href="#">საძილე და კომფორტი</a></li><li><a href="#">კინო-გმირები</a></li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES (editorial list) -->
+<section id="categories">
+  <div class="wrap cats">
+    <div class="cats__head reveal"><h2>კატეგორიები</h2><p class="sub">ხელით შერჩეული ჭკვიანი საჩუქრების ტიპები, არა შემთხვევითი სათამაშოები.</p></div>
+    <div class="catlist reveal">
+      <a class="catrow"><span class="ci" style="background:#3E7D5A"><i class="ph-fill ph-device-mobile-slash"></i></span><span class="cn"><b>ეკრანის გარეშე</b><span>ჭკვიანი თამაში ეკრანის გარეშე</span></span><i class="ph-bold ph-arrow-right ar"></i></a>
+      <a class="catrow"><span class="ci" style="background:var(--brand)"><i class="ph-fill ph-graduation-cap"></i></span><span class="cn"><b>საგანმანათლებლო</b><span>ისწავლე თამაშით</span></span><i class="ph-bold ph-arrow-right ar"></i></a>
+      <a class="catrow"><span class="ci" style="background:var(--ink)"><i class="ph-fill ph-robot"></i></span><span class="cn"><b>STEM და რობოტიკა</b><span>ააწყვე, დააპროგრამე, აღმოაჩინე</span></span><i class="ph-bold ph-arrow-right ar"></i></a>
+      <a class="catrow"><span class="ci" style="background:#C8743A"><i class="ph-fill ph-palette"></i></span><span class="cn"><b>შემოქმედებითი</b><span>ხატვა, მუსიკა, ფანტაზია</span></span><i class="ph-bold ph-arrow-right ar"></i></a>
+      <a class="catrow"><span class="ci" style="background:#7E5A8E"><i class="ph-fill ph-moon-stars"></i></span><span class="cn"><b>კომფორტი</b><span>ღამის შუქი, სიმშვიდე</span></span><i class="ph-bold ph-arrow-right ar"></i></a>
+      <a class="catrow"><span class="ci" style="background:var(--gift)"><i class="ph-fill ph-confetti"></i></span><span class="cn"><b>პატარა სიურპრიზები</b><span>პატარა საჩუქრები, დიდი სიხარული</span></span><i class="ph-bold ph-arrow-right ar"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- FLAGSHIP -->
+<section class="flag" id="flagship">
+  <div class="wrap flag__grid">
+    <div class="reveal">
+      <span class="kick">ჩვენი ფლაგმანი</span>
+      <h2>ბუბაბუ, ბავშვების AI მეგობარი</h2>
+      <p>საუბრობს, ჰყვება ზღაპრებს და ასწავლის ბავშვს ეკრანის გარეშე. ჩვენი მთავარი და ყველაზე საყვარელი საჩუქარი.</p>
+      <ul class="feat">
+        <li><i class="ph-fill ph-chats-circle"></i> საუბრობს და სწავლობს</li>
+        <li><i class="ph-fill ph-device-mobile-slash"></i> ეკრანის გარეშე</li>
+        <li><i class="ph-fill ph-shield-check"></i> უსაფრთხო</li>
+        <li><i class="ph-fill ph-globe-hemisphere-east"></i> 100+ ენა</li>
+      </ul>
+      <div class="flag__price"><span class="old">400₾</span><span class="now">360₾</span><span class="save">ზოგავ 40₾-ს</span></div>
+      <div class="hero__cta">
+        <a class="btn btn--cta" href="#"><i class="ph-fill ph-gift"></i> გაიცანი ბუბაბუ</a>
+        <a class="btn btn--line" href="#" style="color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.55)"><i class="ph-fill ph-play-circle"></i> ნახე ვიდეო</a>
+      </div>
+    </div>
+    <div class="flag__art reveal">
+      <span class="gtag gtag--gold">ფლაგმანი</span>
+      <img class="flag__owl" src="assets/bubabu-hero.jpg" alt="ბუბაბუ">
+      <img class="flag__poster" src="assets/bubabu-banner.jpg" alt="ბუბაბუ, სპეციალური ფასი">
+    </div>
+  </div>
+</section>
+
+<!-- SHOP BY AGE (kids sub-strip) -->
+<section id="age" style="padding-block:clamp(26px,3vw,38px);border-bottom:1px solid var(--line)">
+  <div class="wrap" style="display:flex;align-items:center;gap:20px;flex-wrap:wrap">
+    <strong style="font-size:1.06rem">ბუბაბუ ასაკის მიხედვით</strong>
+    <div class="pick__row" style="flex:1">
+      <a href="#flagship">3-5 წ</a><a href="#flagship">6-8 წ</a><a href="#flagship">9-12 წ</a><a href="#flagship">თინეიჯერები</a>
+    </div>
+  </div>
+</section>
+
+<!-- BESTSELLERS -->
+<section id="featured">
+  <div class="wrap"><div class="sh reveal"><div><h2>პოპულარული საჩუქრები</h2><p class="sub">ნახე, რას ირჩევენ ყველაზე ხშირად.</p></div><a class="va" href="#">ყველა საჩუქარი</a></div></div>
+  <div class="wrap"><div class="pgrid">
+    <article class="pcard reveal"><div class="pcard__img"><span class="gtag">ბესტსელერი</span><img src="assets/p-camera.jpg" alt="ფოტო-პრინტერი კამერა"></div><div class="pcard__b"><h3>ბავშვის ფოტო-პრინტერი კამერა</h3><span class="pcard__age">4+ წელი</span><div class="pcard__foot"><span class="price">129₾</span><button class="add" aria-label="კალათაში"><i class="ph ph-plus"></i></button></div></div></article>
+    <article class="pcard reveal"><div class="pcard__img"><span class="gtag gtag--brand">ეკრანის გარეშე</span><img src="assets/p-nightlight.jpg" alt="ღამის შუქი-პროექტორი"></div><div class="pcard__b"><h3>ბანის ღამის შუქი-პროექტორი</h3><span class="pcard__age">3+ წელი</span><div class="pcard__foot"><span class="price">89₾</span><button class="add" aria-label="კალათაში"><i class="ph ph-plus"></i></button></div></div></article>
+    <article class="pcard reveal"><div class="pcard__img"><span class="gtag gtag--ink">STEM</span><img src="assets/p-solarrobot.jpg" alt="მზის რობოტი"></div><div class="pcard__b"><h3>მზის რობოტი, 13 მოდელი</h3><span class="pcard__age">8+ წელი</span><div class="pcard__foot"><span class="price">59₾</span><button class="add" aria-label="კალათაში"><i class="ph ph-plus"></i></button></div></div></article>
+    <article class="pcard reveal"><div class="pcard__img"><span class="gtag gtag--gold">საგანმანათლებლო</span><img src="assets/p-microscope.jpg" alt="მიკროსკოპი"></div><div class="pcard__b"><h3>ბავშვის მიკროსკოპი</h3><span class="pcard__age">6+ წელი</span><div class="pcard__foot"><span class="price">69₾</span><button class="add" aria-label="კალათაში"><i class="ph ph-plus"></i></button></div></div></article>
+    <article class="pcard reveal"><div class="pcard__img"><span class="gtag">ახალი</span><img src="assets/p-alphabet.jpg" alt="ანბანის ტაბლეტი"></div><div class="pcard__b"><h3>ქართული ანბანის ტაბლეტი</h3><span class="pcard__age">3+ წელი</span><div class="pcard__foot"><span class="price">49₾</span><button class="add" aria-label="კალათაში"><i class="ph ph-plus"></i></button></div></div></article>
+    <article class="pcard reveal"><div class="pcard__img"><span class="gtag gtag--brand">შემოქმედებითი</span><img src="assets/p-3dpen.jpg" alt="3D კალამი"></div><div class="pcard__b"><h3>3D კალამი</h3><span class="pcard__age">8+ წელი</span><div class="pcard__foot"><span class="price">59₾</span><button class="add" aria-label="კალათაში"><i class="ph ph-plus"></i></button></div></div></article>
+    <article class="pcard reveal"><div class="pcard__img"><span class="gtag gtag--ink">პოპულარული</span><img src="assets/p-carbuild.jpg" alt="კონსტრუქტორი მანქანა"></div><div class="pcard__b"><h3>კონსტრუქტორი მანქანა, 214 ნაწილი</h3><span class="pcard__age">6+ წელი</span><div class="pcard__foot"><span class="price">79₾</span><button class="add" aria-label="კალათაში"><i class="ph ph-plus"></i></button></div></div></article>
+    <article class="pcard reveal"><div class="pcard__img"><span class="gtag gtag--gold">50₾-მდე</span><img src="assets/p-magicboard.jpg" alt="სახატავი დაფა"></div><div class="pcard__b"><h3>ჯადოსნური სახატავი დაფა</h3><span class="pcard__age">3+ წელი</span><div class="pcard__foot"><span class="price">39₾</span><button class="add" aria-label="კალათაში"><i class="ph ph-plus"></i></button></div></div></article>
+  </div></div>
+</section>
+
+<!-- GIFT SETS -->
+<section id="sets" style="background:var(--paper-2)">
+  <div class="wrap"><div class="sh reveal"><div><h2>მზა საჩუქრის ნაკრებები</h2><p class="sub">ერთ კლიკში მზად: შეფუთვა და ბარათი უკვე შიგნით.</p></div><a class="va" href="#">ყველა ნაკრები</a></div>
+  <div class="sets">
+    <div class="setc reveal"><div class="top"><span class="gtag">ბესტსელერი</span><img src="assets/bubabu-hero.jpg" alt="ბუბაბუს ნაკრები"></div><div class="b"><h3>ბუბაბუს სასაჩუქრე ნაკრები</h3><span class="wrap-note"><i class="ph-fill ph-gift"></i> შეფუთვა და ბარათი</span><div class="foot"><span class="price">390₾</span><button class="add" aria-label="კალათაში"><i class="ph ph-plus"></i></button></div></div></div>
+    <div class="setc reveal"><div class="top" style="background:linear-gradient(150deg,#D06A4E,var(--gift-deep))"><span class="gtag gtag--ink">დღესასწაული</span><i class="ph-fill ph-cake" style="font-size:48px"></i></div><div class="b"><h3>დაბადების დღის ნაკრები</h3><span class="wrap-note"><i class="ph-fill ph-gift"></i> შეფუთვა და ბარათი</span><div class="foot"><span class="price">120₾</span><button class="add" aria-label="კალათაში"><i class="ph ph-plus"></i></button></div></div></div>
+    <div class="setc reveal"><div class="top" style="background:linear-gradient(150deg,#1F8079,var(--brand-deep))"><span class="gtag gtag--gold">ხელმისაწვდომი</span><i class="ph-fill ph-tag" style="font-size:48px"></i></div><div class="b"><h3>ნაკრები 100₾-მდე</h3><span class="wrap-note"><i class="ph-fill ph-gift"></i> შეფუთვა და ბარათი</span><div class="foot"><span class="price">99₾</span><button class="add" aria-label="კალათაში"><i class="ph ph-plus"></i></button></div></div></div>
+    <div class="setc reveal"><div class="top" style="background:linear-gradient(150deg,#D9A23E,var(--gold))"><span class="gtag gtag--ink">პრემიუმ</span><i class="ph-fill ph-crown-simple" style="font-size:48px"></i></div><div class="b"><h3>პრემიუმ ნაკრები</h3><span class="wrap-note"><i class="ph-fill ph-gift"></i> შეფუთვა და ბარათი</span><div class="foot"><span class="price">250₾</span><button class="add" aria-label="კალათაში"><i class="ph ph-plus"></i></button></div></div></div>
+  </div></div>
+</section>
+
+<!-- SEASONAL -->
+<section>
+  <div class="wrap"><div class="season reveal">
+    <i class="ph-fill ph-snowflake deco"></i>
+    <span class="kick">სეზონური კამპანია</span>
+    <h2>ახალი წლის საჩუქრები</h2>
+    <p>ზამთრის შერჩევა მთელი ოჯახისთვის. ფილმის გმირები პატარა ფანებისთვის, კინო-კიოსკთან სინქრონში.</p>
+    <div class="chips"><span class="chip">ახალი წელი</span><span class="chip">Toy Story</span><span class="chip">Minions</span><span class="chip">Disney</span></div>
+    <a class="btn btn--cta" href="#"><i class="ph-fill ph-arrow-right"></i> ნახე კოლექცია</a>
+  </div></div>
+</section>
+
+<!-- NEW ARRIVALS (rail) -->
+<section id="new">
+  <div class="wrap"><div class="sh reveal"><div><h2>ახალი ჩამოსვლა</h2><p class="sub">ახლახან დაემატა შერჩევას.</p></div><a class="va" href="#">ყველა ახალი</a></div></div>
+  <div class="wrap"><div class="rail reveal">
+    <article class="pcard"><div class="pcard__img"><span class="gtag gtag--cta">ახალი</span><img src="assets/p-3dpen.jpg" alt="3D კალამი"></div><div class="pcard__b"><h3>3D კალამი</h3><span class="pcard__age">8+ წელი</span><div class="pcard__foot"><span class="price">59₾</span><button class="add" aria-label="კალათაში"><i class="ph ph-plus"></i></button></div></div></article>
+    <article class="pcard"><div class="pcard__img"><span class="gtag gtag--cta">ახალი</span><img src="assets/p-microscope.jpg" alt="მიკროსკოპი"></div><div class="pcard__b"><h3>ბავშვის მიკროსკოპი</h3><span class="pcard__age">6+ წელი</span><div class="pcard__foot"><span class="price">69₾</span><button class="add" aria-label="კალათაში"><i class="ph ph-plus"></i></button></div></div></article>
+    <article class="pcard"><div class="pcard__img"><span class="gtag gtag--cta">ახალი</span><img src="assets/p-carbuild.jpg" alt="კონსტრუქტორი"></div><div class="pcard__b"><h3>კონსტრუქტორი მანქანა</h3><span class="pcard__age">6+ წელი</span><div class="pcard__foot"><span class="price">79₾</span><button class="add" aria-label="კალათაში"><i class="ph ph-plus"></i></button></div></div></article>
+    <article class="pcard"><div class="pcard__img"><span class="gtag gtag--cta">ახალი</span><img src="assets/p-alphabet.jpg" alt="ანბანის ტაბლეტი"></div><div class="pcard__b"><h3>ქართული ანბანის ტაბლეტი</h3><span class="pcard__age">3+ წელი</span><div class="pcard__foot"><span class="price">49₾</span><button class="add" aria-label="კალათაში"><i class="ph ph-plus"></i></button></div></div></article>
+    <article class="pcard"><div class="pcard__img"><span class="gtag gtag--cta">ახალი</span><img src="assets/p-nightlight.jpg" alt="ღამის შუქი"></div><div class="pcard__b"><h3>ღამის შუქი-პროექტორი</h3><span class="pcard__age">3+ წელი</span><div class="pcard__foot"><span class="price">89₾</span><button class="add" aria-label="კალათაში"><i class="ph ph-plus"></i></button></div></div></article>
+  </div></div>
+</section>
+
+<!-- COLLECTIONS (asymmetric) -->
+<section id="collections" style="background:var(--paper-2)">
+  <div class="wrap"><div class="sh reveal"><div><h2>თემატური კოლექციები</h2><p class="sub">რედაქციის შერჩევა განსაკუთრებული შემთხვევებისთვის.</p></div></div>
+  <div class="cols reveal">
+    <a class="col lead"><i class="ph-fill ph-sparkle deco"></i><span class="gtag gtag--ink">რედაქციის არჩევანი</span><h3>რთულად ასარჩევი ადამიანისთვის</h3><span class="cnt">48 საჩუქარი</span></a>
+    <a class="col"><i class="ph-fill ph-tag deco" style="color:var(--brand)"></i><h3>საჩუქრები 50₾-მდე</h3><span class="cnt">62 საჩუქარი</span></a>
+    <a class="col"><i class="ph-fill ph-flag deco" style="color:var(--gift)"></i><h3>ქართული ბრენდები</h3><span class="cnt">27 საჩუქარი</span></a>
+    <a class="col"><i class="ph-fill ph-clock-countdown deco" style="color:var(--gold)"></i><h3>ბოლო წუთის საჩუქარი</h3><span class="cnt">34 საჩუქარი</span></a>
+    <a class="col"><i class="ph-fill ph-leaf deco" style="color:#5C7152"></i><h3>ეკო და ხელნაკეთი</h3><span class="cnt">19 საჩუქარი</span></a>
+  </div></div>
+</section>
+
+<!-- GUIDES -->
+<section id="guides">
+  <div class="wrap"><div class="sh reveal"><div><h2>საჩუქრის გზამკვლევები</h2><p class="sub">იდეები, თუ შთაგონება გჭირდება.</p></div><a class="va" href="#">ყველა სტატია</a></div>
+  <div class="guides">
+    <a class="guide reveal"><img src="assets/p-nightlight.jpg" alt="გზამკვლევი"><div class="b"><span class="t">გზამკვლევი</span><h3>როგორ ავირჩიოთ საჩუქარი ბავშვისთვის</h3></div></a>
+    <a class="guide reveal"><img src="assets/bubabu-hero.jpg" alt="ბუბაბუ"><div class="b"><span class="t">ბუბაბუ</span><h3>რა არის AI მეგობარი და რატომ ეკრანის გარეშე</h3></div></a>
+    <a class="guide reveal"><img src="assets/p-camera.jpg" alt="იდეები"><div class="b"><span class="t">იდეები</span><h3>10 საჩუქარი 50 ლარამდე</h3></div></a>
+  </div></div>
+</section>
+
+<!-- GIFT FINDER -->
+<section>
+  <div class="wrap"><div class="finder reveal">
+    <div><span class="kick">საჩუქრის ასისტენტი</span><h2>ვერ ირჩევ საჩუქარს?</h2><p>უპასუხე სამ კითხვას, და ჩვენ შევარჩევთ იდეალურ საჩუქარს მიმღების, შემთხვევისა და ბიუჯეტის მიხედვით.</p></div>
+    <div class="fbtns">
+      <a href="#recipient">ვისთვის ეძებ? <i class="ph-bold ph-arrow-right"></i></a>
+      <a href="#quick">რა შემთხვევაა? <i class="ph-bold ph-arrow-right"></i></a>
+      <a href="#quick">რა ბიუჯეტია? <i class="ph-bold ph-arrow-right"></i></a>
+    </div>
+  </div></div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" style="background:var(--paper-2)">
+  <div class="wrap"><div class="sh reveal"><div><h2>რას ამბობენ ჩვენზე</h2><p class="sub">5000-ზე მეტი შეფუთული საჩუქარი მთელ საქართველოში.</p></div></div>
+  <div class="revs reveal">
+    <div class="rev lead"><div class="stars">★★★★★</div><p class="q">ბავშვი აღფრთოვანებულია ბუბაბუთი. სწრაფი მიწოდება, ლამაზად შეფუთული, ნამდვილად მზად საჩუქრად. საუკეთესო არჩევანი დაბადების დღეზე.</p><div class="who"><span class="av">ნ</span><div><b>ნინო</b> <span>თბილისი</span></div></div></div>
+    <div class="revs__col">
+      <div class="rev"><div class="stars">★★★★★</div><p class="q">ასისტენტმა დამეხმარა იდეალური საჩუქრის პოვნაში. რთული იყო არჩევანი.</p><div class="who"><span class="av" style="background:var(--brand)">გ</span><div><b>გიორგი</b> <span>ბათუმი</span></div></div></div>
+      <div class="rev"><div class="stars">★★★★★</div><p class="q">ხარისხიანი და უსაფრთხო. მშობლისთვის ნდობა მთავარია.</p><div class="who"><span class="av" style="background:var(--gold);color:#2a2110">ს</span><div><b>სალომე</b> <span>ქუთაისი</span></div></div></div>
+    </div>
+  </div></div>
+</section>
+
+<!-- WHY -->
+<section id="why">
+  <div class="wrap"><div class="sh reveal"><div><h2>რატომ ბუბაბუ</h2></div></div>
+  <div class="why reveal">
+    <div class="wi"><i class="ph-fill ph-device-mobile-slash"></i><div><b>ეკრანის გარეშე</b><span>ეკრანის ჯანსაღი ალტერნატივა</span></div></div>
+    <div class="wi"><i class="ph-fill ph-graduation-cap"></i><div><b>საგანმანათლებლო</b><span>საჩუქრები განვითარებისთვის</span></div></div>
+    <div class="wi"><i class="ph-fill ph-house-line"></i><div><b>ოჯახისთვის</b><span>შერჩეული ოჯახებისთვის</span></div></div>
+    <div class="wi"><i class="ph-fill ph-hand-heart"></i><div><b>უსაფრთხო შერჩევა</b><span>მხოლოდ კურირებული პროდუქტი</span></div></div>
+    <div class="wi"><i class="ph-fill ph-seal-check"></i><div><b>გარანტია</b><span>დაბრუნება და მხარდაჭერა</span></div></div>
+    <div class="wi"><i class="ph-fill ph-truck"></i><div><b>მიწოდება</b><span>მთელ საქართველოში</span></div></div>
+  </div></div>
+</section>
+
+<!-- STORES -->
+<section id="stores" style="background:var(--paper-2)">
+  <div class="wrap"><div class="sh reveal"><div><h2>გვინახულე ან შეუკვეთე ონლაინ</h2></div></div>
+  <div class="stores">
+    <div class="store reveal"><span class="pin"><i class="ph-fill ph-map-pin"></i></span><h3>თბილისი მოლი</h3><p>მე-3 სართული, კვების სივრცეში</p></div>
+    <div class="store reveal"><span class="pin"><i class="ph-fill ph-map-pin"></i></span><h3>გალერია თბილისი</h3><p>მე-3 სართული, ლიფტის მიმდებარედ</p></div>
+    <div class="store online reveal"><span class="pin"><i class="ph-fill ph-globe"></i></span><h3>ონლაინ მაღაზია</h3><p>მიწოდება მთელ საქართველოში</p><b>BUBABU.GE</b></div>
+  </div></div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="fb">BUBABU<span>.GE</span></div>
+        <p style="margin-top:.6rem;max-width:32ch">კურირებული საჩუქრების მაღაზია ნებისმიერი ადამიანისა და შემთხვევისთვის.</p>
+        <form class="subscribe" onsubmit="return false"><input type="email" placeholder="ელ. ფოსტა" aria-label="ელ. ფოსტა"><button type="submit">გამოწერა</button></form>
+        <div class="soc"><a href="#" aria-label="Facebook"><i class="ph-fill ph-facebook-logo"></i></a><a href="#" aria-label="Instagram"><i class="ph-fill ph-instagram-logo"></i></a><a href="#" aria-label="WhatsApp"><i class="ph-fill ph-whatsapp-logo"></i></a><a href="#" aria-label="TikTok"><i class="ph-fill ph-tiktok-logo"></i></a></div>
+      </div>
+      <div><h4>მაღაზია</h4><ul><li><a href="#recipient">მიმღების მიხედვით</a></li><li><a href="#quick">სწრაფი არჩევა</a></li><li><a href="#categories">კატეგორიები</a></li><li><a href="#sets">ნაკრებები</a></li><li><a href="#flagship">ბუბაბუ</a></li></ul></div>
+      <div><h4>დახმარება</h4><ul><li><a href="#">მიწოდება</a></li><li><a href="#">დაბრუნება</a></li><li><a href="#">გარანტია</a></li><li><a href="#">FAQ</a></li><li><a href="#">კონტაქტი</a></li></ul></div>
+      <div><h4>კომპანია</h4><ul><li><a href="#">ჩვენ შესახებ</a></li><li><a href="#stores">მაღაზიები</a></li><li><a href="#">კონფიდენციალურობა</a></li><li><a href="#">წესები</a></li></ul></div>
+    </div>
+    <div class="fbar"><span>© 2026 BUBABU.GE. Axiom Smart.</span><span><a href="#">ჩვენ შესახებ</a><a href="#">კონფიდენციალურობა</a><a href="#">წესები</a></span></div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+<script>
+  const hdr=document.getElementById('hdr');
+  addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>10),{passive:true});
+  const io=new IntersectionObserver((es)=>{es.forEach((e)=>{if(e.isIntersecting){const els=[...e.target.parentElement.querySelectorAll('.reveal')];e.target.style.transitionDelay=(els.indexOf(e.target)%4*70)+'ms';e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

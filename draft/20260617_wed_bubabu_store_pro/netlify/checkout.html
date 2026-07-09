@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>შეკვეთის გაფორმება | Bubabu Smart Gifts</title>
+<meta name="description" content="სწრაფი და მარტივი შეკვეთა: მიწოდება, გადახდა მიღებისას ან ბარათით, სასაჩუქრე შეფუთვა და მისალოცი ბარათი.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800;900&family=Noto+Sans+Georgian:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
+<link rel="stylesheet" href="css/variables.css">
+<link rel="stylesheet" href="css/animations.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar"><div class="wrap topbar__in">
+  <div class="topbar__l">
+    <span><i class="ph-fill ph-truck"></i> უფასო მიწოდება 150₾-დან</span>
+    <span><i class="ph-fill ph-shield-check"></i> ოფიციალური გარანტია</span>
+    <span><i class="ph-fill ph-headset"></i> მხარდაჭერა ქართულად</span>
+    <span><i class="ph-fill ph-map-pin"></i> მაღაზიები თბილისში</span>
+  </div>
+  <div class="topbar__r"><a href="index.html#stores">მაღაზიები</a><span class="lng"><b>KA</b> · <a href="#!">RU</a> · <a href="#!">EN</a></span></div>
+</div></div>
+
+<!-- HEADER -->
+<header class="hdr" id="hdr">
+  <div class="wrap">
+    <div class="hdr__main">
+      <a class="logo" href="index.html"><img src="assets/images/logo.jpg" alt="ბუბაბუ"><span class="lt"><b class="ka">ბუბაბუ</b><span>Smart Gifts</span></span></a>
+      <div class="search">
+        <i class="ph ph-magnifying-glass"></i>
+        <input type="text" placeholder="რას ეძებთ? მაგ. საჩუქარი 8 წლის ბიჭს" aria-label="ძებნა">
+      </div>
+      <div class="hdr__icons">
+        <button class="icn" aria-label="რჩეული"><i class="ph ph-heart"></i></button>
+        <button class="icn" aria-label="ანგარიში"><i class="ph ph-user"></i></button>
+        <button class="icn" data-cart-open aria-label="კალათა"><i class="ph ph-shopping-bag"></i><span class="dot" id="cartCount">3</span></button>
+        <button class="icn burger" id="burger" aria-label="მენიუ"><i class="ph ph-list"></i></button>
+      </div>
+    </div>
+  </div>
+  <div class="nav" id="nav"><div class="wrap"><ul class="nav__row">
+    <li class="is-brand"><a href="product.html"><i class="ph-fill ph-sparkle"></i> ბუბაბუ AI მეგობარი</a></li>
+    <li><a href="index.html#finder"><i class="ph-fill ph-magic-wand"></i> საჩუქრის შერჩევა</a></li>
+    <li><a href="index.html#bestsellers"><i class="ph ph-baby"></i> ბავშვებს</a></li>
+    <li><a href="index.html#bestsellers"><i class="ph ph-device-mobile"></i> მოზარდებს</a></li>
+    <li><a href="index.html#bestsellers"><i class="ph ph-gift"></i> უფროსებს</a></li>
+    <li><a href="index.html#bundles"><i class="ph ph-package"></i> ნაკრებები</a></li>
+    <li><a href="index.html#bestsellers"><i class="ph ph-fire"></i> ბესტსელერები</a></li>
+    <li class="nav-sale"><a href="index.html#offers"><i class="ph-fill ph-fire"></i> აქცია</a></li>
+  </ul></div></div>
+</header>
+<a id="top"></a>
+
+<!-- BREADCRUMB -->
+<nav class="breadcrumb" aria-label="ნავიგაცია"><div class="wrap">
+  <a href="index.html">მთავარი</a> <i class="ph ph-caret-right"></i>
+  <a href="#!" data-cart-open>კალათა</a> <i class="ph ph-caret-right"></i>
+  <span>შეკვეთის გაფორმება</span>
+</div></nav>
+
+<!-- CHECKOUT -->
+<section class="block" style="padding-top:10px"><div class="wrap">
+  <h1 style="font-size:clamp(24px,5vw,34px);margin-bottom:6px">შეკვეთის გაფორმება</h1>
+  <p class="lead" style="margin-bottom:22px">სწრაფად, რეგისტრაციის გარეშე. შეავსეთ მონაცემები და დაადასტურეთ.</p>
+  <form class="checkout" onsubmit="return false">
+    <div class="coform">
+      <div class="cosec reveal">
+        <h2><span class="con">1</span> კონტაქტი</h2>
+        <div class="cogrid">
+          <div class="field"><label>სახელი</label><input type="text" placeholder="თქვენი სახელი" autocomplete="name"></div>
+          <div class="field"><label>მობილური</label><input type="tel" placeholder="5XX XX XX XX" autocomplete="tel"></div>
+        </div>
+      </div>
+
+      <div class="cosec reveal">
+        <h2><span class="con">2</span> მიწოდება</h2>
+        <div class="cogrid">
+          <div class="field"><label>ქალაქი</label><input type="text" placeholder="თბილისი" autocomplete="address-level2"></div>
+          <div class="field"><label>მისამართი</label><input type="text" placeholder="ქუჩა, სახლი, ბინა" autocomplete="street-address"></div>
+        </div>
+        <div class="radiorow">
+          <label class="radio on"><input type="radio" name="delivery" checked><span><b>თბილისი, დღეს ან ხვალ</b><small>უფასო 150₾-დან</small></span></label>
+          <label class="radio"><input type="radio" name="delivery"><span><b>რეგიონები, 1-3 დღე</b><small>5 ₾</small></span></label>
+          <label class="radio"><input type="radio" name="delivery"><span><b>აღება: Tbilisi Mall</b><small>უფასო</small></span></label>
+          <label class="radio"><input type="radio" name="delivery"><span><b>აღება: Galleria Tbilisi</b><small>უფასო</small></span></label>
+        </div>
+      </div>
+
+      <div class="cosec reveal">
+        <h2><span class="con">3</span> გადახდა</h2>
+        <div class="radiorow">
+          <label class="radio on"><input type="radio" name="pay" checked><span><b>ბარათით ონლაინ</b><small>Visa / Mastercard</small></span></label>
+          <label class="radio"><input type="radio" name="pay"><span><b>გადახდა მიღებისას</b><small>ნაღდი ან ბარათი</small></span></label>
+          <label class="radio"><input type="radio" name="pay"><span><b>განვადება 0%</b><small>ბანკის პირობებით</small></span></label>
+        </div>
+      </div>
+
+      <div class="cosec reveal">
+        <h2><span class="con">4</span> საჩუქრად</h2>
+        <p class="muted" style="margin-bottom:12px">საჩუქარია? დაამატეთ შეფუთვა და მისალოცი ტექსტი.</p>
+        <label class="gocard"><input type="checkbox" checked><i class="ph-fill ph-gift"></i><div><b>სასაჩუქრე შეფუთვა</b><span>+15 ₾</span></div></label>
+        <div class="field" style="margin-top:12px"><label>მისალოცი ტექსტი (არჩევითი)</label><textarea rows="2" placeholder="მაგ. გილოცავ დაბადების დღეს!"></textarea></div>
+        <div class="field" style="margin-top:12px"><label>კომენტარი შეკვეთაზე (არჩევითი)</label><textarea rows="2" placeholder="მისამართის დაზუსტება, დარეკვის დრო და სხვ."></textarea></div>
+      </div>
+    </div>
+
+    <aside class="summary reveal">
+      <h2>თქვენი შეკვეთა</h2>
+      <div class="summary__items">
+        <div class="citem"><img src="assets/images/pdp-bubabu-front.png" alt=""><div class="cn">ბუბაბუ, AI მეგობარი</div><div class="cp">360 ₾</div></div>
+        <div class="citem"><img src="assets/images/real-nightlight.jpg" alt=""><div class="cn">ვარსკვლავური ღამის სანათი</div><div class="cp">89 ₾</div></div>
+        <div class="citem"><img src="assets/images/gen-boardgame.png" alt=""><div class="cn">სამაგიდო თამაში</div><div class="cp">69 ₾</div></div>
+      </div>
+      <div class="summary__rows">
+        <div><span>ნივთები</span><span>518 ₾</span></div>
+        <div><span>შეფუთვა</span><span>15 ₾</span></div>
+        <div><span>მიწოდება</span><span class="free">უფასო</span></div>
+      </div>
+      <div class="summary__tot"><span>ჯამი</span><span>533 ₾</span></div>
+      <button class="btn btn--accent" style="width:100%;justify-content:center" type="submit"><i class="ph-fill ph-lock-simple"></i> შეკვეთის დადასტურება</button>
+      <div class="summary__trust">
+        <span><i class="ph-fill ph-shield-check"></i> უსაფრთხო გადახდა</span>
+        <span><i class="ph-fill ph-arrow-counter-clockwise"></i> დაბრუნება 14 დღეში</span>
+        <span><i class="ph-fill ph-headset"></i> მხარდაჭერა ქართულად</span>
+      </div>
+    </aside>
+  </form>
+</div></section>
+
+<!-- FOOTER -->
+<footer><div class="wrap">
+  <div class="fgrid">
+    <div>
+      <div class="fb"><img src="assets/images/logo.jpg" alt="ბუბაბუ"> <b class="ka">ბუბაბუ</b> <span>Smart Gifts</span></div>
+      <p style="margin-top:.6rem;max-width:32ch">ჭკვიანი საჩუქრები ყველა ასაკისთვის. შეგირჩევთ იდეალურ საჩუქარს ერთ წუთში.</p>
+      <div class="soc"><a href="#!" aria-label="Facebook"><i class="ph-fill ph-facebook-logo"></i></a><a href="#!" aria-label="Instagram"><i class="ph-fill ph-instagram-logo"></i></a><a href="#!" aria-label="WhatsApp"><i class="ph-fill ph-whatsapp-logo"></i></a><a href="#!" aria-label="TikTok"><i class="ph-fill ph-tiktok-logo"></i></a></div>
+    </div>
+    <div><h4>მაღაზია</h4><ul><li><a href="index.html#giftrow">მიმღების მიხედვით</a></li><li><a href="index.html#bestsellers">ბესტსელერები</a></li><li><a href="index.html#bundles">ნაკრებები</a></li><li><a href="index.html#offers">აქციები</a></li></ul></div>
+    <div><h4>დახმარება</h4><ul><li><a href="#!">მიწოდება</a></li><li><a href="#!">დაბრუნება</a></li><li><a href="#!">გარანტია</a></li><li><a href="#!">FAQ</a></li><li><a href="#!">კონტაქტი</a></li></ul></div>
+    <div><h4>კომპანია</h4><ul><li><a href="#!">ჩვენ შესახებ</a></li><li><a href="index.html#stores">მაღაზიები</a></li><li><a href="#!">კონფიდენციალურობა</a></li><li><a href="#!">წესები</a></li></ul></div>
+    <div><h4>მაღაზიები</h4><ul><li>Tbilisi Mall, მე-3 სართული</li><li>Galleria Tbilisi, მე-3 სართული</li><li>ონლაინ: <b style="color:#fff">BUBABU.GE</b></li></ul></div>
+  </div>
+  <div class="fbar"><span>© 2026 BUBABU.GE. Axiom Smart.</span><span><a href="#!">ჩვენ შესახებ</a><a href="#!">კონფიდენციალურობა</a><a href="#!">წესები</a></span></div>
+</div></footer>
+
+<!-- CART DRAWER -->
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="კალათა">
+  <div class="drawer__h"><b>კალათა</b><button data-cart-close aria-label="დახურვა"><i class="ph ph-x"></i></button></div>
+  <div class="drawer__body">
+    <div class="citem"><img src="assets/images/pdp-bubabu-front.png" alt=""><div class="cn">ბუბაბუ, AI მეგობარი</div><div class="cp">360 ₾</div></div>
+    <div class="citem"><img src="assets/images/real-nightlight.jpg" alt=""><div class="cn">ვარსკვლავური ღამის სანათი</div><div class="cp">89 ₾</div></div>
+    <div class="citem"><img src="assets/images/gen-boardgame.png" alt=""><div class="cn">სამაგიდო თამაში</div><div class="cp">69 ₾</div></div>
+  </div>
+  <div class="drawer__f"><p class="drawer__gift"><i class="ph-fill ph-gift"></i> საჩუქარია? შეფუთვასა და ბარათს გაფორმებისას დაამატებთ.</p><div class="drawer__tot"><span>ჯამი</span><span>518 ₾</span></div><a class="btn btn--accent" style="justify-content:center" href="checkout.html"><i class="ph-fill ph-lock-simple"></i> შეკვეთის გაფორმება</a><button class="btn btn--ghost" style="justify-content:center" data-cart-close>შოპინგის გაგრძელება</button></div>
+</aside>
+
+<!-- MOBILE TAB BAR -->
+<nav class="tabbar" aria-label="მობილური ნავიგაცია">
+  <a class="tab" href="index.html"><i class="ph-fill ph-house"></i><span>მთავარი</span></a>
+  <a class="tab" href="index.html#bestsellers"><i class="ph ph-squares-four"></i><span>კატალოგი</span></a>
+  <a class="tab" href="index.html#finder"><i class="ph-fill ph-magic-wand"></i><span>შერჩევა</span></a>
+  <button class="tab" data-cart-open aria-label="კალათა"><i class="ph ph-shopping-bag"></i><span>კალათა</span><span class="tab__dot">3</span></button>
+  <a class="tab" href="#!"><i class="ph ph-user"></i><span>პროფილი</span></a>
+</nav>
+
+<script src="js/app.js"></script>
+</body>
+</html>

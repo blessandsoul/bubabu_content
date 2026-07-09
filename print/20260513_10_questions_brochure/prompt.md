@@ -1,4 +1,4 @@
-# Bubabu — 10 Questions Brochure Page (Candy Pop, A4 vertical)
+# Bubabu - 10 Questions Brochure Page (Candy Pop, A4 vertical)
 
 **Generator:** Nano Banana 2
 **Format:** A4 vertical portrait, single page
@@ -68,7 +68,7 @@ NEGATIVE: no percentage symbols, no pixel values, no layer numbers, no degree nu
 
 ---
 
-## 10 ВОПРОСОВ — KA + EN (для редактуры если нужно)
+## 10 ВОПРОСОВ - KA + EN (для редактуры если нужно)
 
 | # | KA (в брошюре) | EN (для понимания) | Категория |
 |---|---|---|---|
@@ -77,7 +77,7 @@ NEGATIVE: no percentage symbols, no pixel values, no layer numbers, no degree nu
 | 3 | როგორ არის ფრანგულად დილა მშვიდობისა? | How do you say "good morning" in French? | Language |
 | 4 | მოდი 20-მდე ერთად დავთვალოთ | Let's count to 20 together | Education |
 | 5 | რას ჭამდნენ დინოზავრები? | What did dinosaurs eat? | Education |
-| 6 | მომიყევი ისტორია ჩემზე და ჩემს მეგობრებზე — ლუკა, ნინი, გიო და მე, სანდრო | Tell me a story about me and my friends — Luka, Nini, Gio and me, Sandro | Personalized · HERO |
+| 6 | მომიყევი ისტორია ჩემზე და ჩემს მეგობრებზე - ლუკა, ნინი, გიო და მე, სანდრო | Tell me a story about me and my friends - Luka, Nini, Gio and me, Sandro | Personalized · HERO |
 | 7 | დღეს სკოლაში ცუდი დღე მქონდა | I had a bad day at school today | Emotional |
 | 8 | მოდი გამოცანებით ვითამაშოთ! | Let's play riddles! | Play |
 | 9 | რატომ მიფრინავენ ჩიტები სამხრეთში ზამთარში? | Why do birds fly south in winter? | Education |
@@ -90,7 +90,7 @@ NEGATIVE: no percentage symbols, no pixel values, no layer numbers, no degree nu
 | Param | Value |
 |---|---|
 | Generator | Nano Banana 2 (single-prompt, all text baked) |
-| Aspect | A4 vertical (1:1.414) — render 2480×3508 px at 300 DPI for print |
+| Aspect | A4 vertical (1:1.414) - render 2480×3508 px at 300 DPI for print |
 | Reference uploaded | `bubabu_reference.jpg` |
 | Retry trigger | Any garbled Mkhedruli letter / missing pointer tail / identical bubble color / English overlay → regenerate |
 | Fallback if 3+ text fails | Try Imagen 4 / Sora image generator with same prompt |

@@ -1,4 +1,4 @@
-# Bubabu — Question Flyers (English)
+# Bubabu - Question Flyers (English)
 
 **Format:** static image flyers, square 1:1 + vertical 9:16 versions
 **Style:** Pixar 3D + Candy Pop palette consistent with brand
@@ -13,7 +13,7 @@
 
 ---
 
-## FLYER 1 — "Have you seen your child's eyes go dark?"
+## FLYER 1 - "Have you seen your child's eyes go dark?"
 
 ```
 Pixar 3D animation flyer poster 1:1 square. Candy Pop palette.
@@ -33,7 +33,7 @@ NEGATIVE: glasses on Bubabu, aviator goggles, eyewear, beak open, scary expressi
 
 ---
 
-## FLYER 2 — "What's the last gift your kid played with for a whole month?"
+## FLYER 2 - "What's the last gift your kid played with for a whole month?"
 
 ```
 Pixar 3D animation flyer 1:1 square. Same Candy Pop / Bubabu setup as Flyer 1.
@@ -47,7 +47,7 @@ BOTTOM: Bubabu mid-bounce pose, eyes pulse cyan, slight wave with one wing. Lime
 
 ---
 
-## FLYER 3 — "What if a toy spoke first?"
+## FLYER 3 - "What if a toy spoke first?"
 
 ```
 Pixar 3D animation flyer 1:1 square. Candy Pop.
@@ -63,7 +63,7 @@ Tiny speech-bubble visual indicator next to Bubabu (empty, no text in bubble —
 
 ---
 
-## FLYER 4 — "How many languages does your kid hear at home?"
+## FLYER 4 - "How many languages does your kid hear at home?"
 
 ```
 Pixar 3D animation flyer 1:1 square. Candy Pop.
@@ -79,7 +79,7 @@ Subtle small caption below pill: "3 LANGUAGES, ONE FRIEND" in smaller white text
 
 ---
 
-## FLYER 5 — "Would you trade 30 minutes of TikTok for 30 minutes of curiosity?"
+## FLYER 5 - "Would you trade 30 minutes of TikTok for 30 minutes of curiosity?"
 
 ```
 Pixar 3D animation flyer 9:16 vertical. Candy Pop.
@@ -95,7 +95,7 @@ Top-right corner subtle: tiny smartphone icon with strikethrough (no text inside
 
 ---
 
-## FLYER 6 — "What if your child's first AI friend wasn't a screen?"
+## FLYER 6 - "What if your child's first AI friend wasn't a screen?"
 
 ```
 Pixar 3D animation flyer 1:1 square. Candy Pop.
@@ -111,7 +111,7 @@ Subtle visual: faint screen icon fades behind Bubabu (low opacity, suggesting "t
 
 ---
 
-## FLYER 7 — "Remember when toys talked back?"
+## FLYER 7 - "Remember when toys talked back?"
 
 ```
 Pixar 3D animation flyer 1:1 square. Candy Pop.
@@ -127,7 +127,7 @@ Subtle nostalgic warmth in lighting — slightly more amber tone in the butter-c
 
 ---
 
-## FLYER 8 — "What's the one toy your kid would drop their phone for?"
+## FLYER 8 - "What's the one toy your kid would drop their phone for?"
 
 ```
 Pixar 3D animation flyer 9:16 vertical. Candy Pop.
@@ -141,7 +141,7 @@ BOTTOM HALF: Bubabu hero, eyes glowing cyan, big bouncy energy with both wings r
 
 ---
 
-## FLYER 9 — "How would you explain curiosity to a 5-year-old?"
+## FLYER 9 - "How would you explain curiosity to a 5-year-old?"
 
 ```
 Pixar 3D animation flyer 1:1 square. Candy Pop.
@@ -155,7 +155,7 @@ BOTTOM: Bubabu central, head tilted slightly with curious posture, eyes wide cya
 
 ---
 
-## FLYER 10 — "What's louder — your kid's questions or your phone notifications?"
+## FLYER 10 - "What's louder - your kid's questions or your phone notifications?"
 
 ```
 Pixar 3D animation flyer 9:16 vertical. Candy Pop.
@@ -190,7 +190,7 @@ BOTTOM HALF: Bubabu hero, eyes glowing cyan, slight inquisitive head-tilt as if 
 ## FALLBACK if AI fails text rendering
 
 For each flyer:
-1. Generate clean version WITHOUT question text — just Bubabu + BG + CTA pill
+1. Generate clean version WITHOUT question text - just Bubabu + BG + CTA pill
 2. Add English question text in Photoshop/Canva using Inter Black 900 navy
 3. CTA pill text overlay in editor too if AI fails the URL
 
@@ -201,8 +201,8 @@ This guarantees crisp typography. Ship route if AI proves stubborn.
 ## RECOMMENDED TEST SET (start here, scale winners)
 
 Top 3 to launch first (highest scroll-stop potential):
-- ⭐ **Flyer 1** — pain hook (every parent recognises)
-- ⭐ **Flyer 5** — TikTok vs curiosity (provocative comparison)
-- ⭐ **Flyer 8** — drop phone (clear pain → solution implied)
+- ⭐ **Flyer 1** - pain hook (every parent recognises)
+- ⭐ **Flyer 5** - TikTok vs curiosity (provocative comparison)
+- ⭐ **Flyer 8** - drop phone (clear pain → solution implied)
 
 Run on FB feed + IG feed for 24h, scale top performer.

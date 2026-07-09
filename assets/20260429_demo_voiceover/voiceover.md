@@ -32,55 +32,55 @@ SAMPLE CONTEXT:
 ```
 
 **Why these settings:**
-- **Sulafat** — warm intimate female, full emotional range, mother-storyteller energy
-- **Empathetic** (changed from Vocal Smile) — gives deeper emotional warmth + gentle inflections, room for the full arc. Vocal Smile too brand-bright.
-- **Natural pace** — 30s commercial cadence, not Drift (too slow) not Rapid Fire (too pushy)
-- **American (Gen)** — default for ka-GE Preview; accent dropdown affects English emphasis only, Georgian phonetics handled by base voice
+- **Sulafat** - warm intimate female, full emotional range, mother-storyteller energy
+- **Empathetic** (changed from Vocal Smile) - gives deeper emotional warmth + gentle inflections, room for the full arc. Vocal Smile too brand-bright.
+- **Natural pace** - 30s commercial cadence, not Drift (too slow) not Rapid Fire (too pushy)
+- **American (Gen)** - default for ka-GE Preview; accent dropdown affects English emphasis only, Georgian phonetics handled by base voice
 
 ---
 
-## BLOCK 1 — HOOK / IDENTITY (~6s)
+## BLOCK 1 - HOOK / IDENTITY (~6s)
 **Function:** Introduce Bubabu, set warm tone
 
-> ბუბაბუ უბრალო სათამაშო არ არის — ის ბავშვის პირველი მეგობარია, აღჭურვილი ხელოვნური ინტელექტით.
+> ბუბაბუ უბრალო სათამაშო არ არის - ის ბავშვის პირველი მეგობარია, აღჭურვილი ხელოვნური ინტელექტით.
 
-**Cut against:** UGC — kid hugs Bubabu / unboxing / first eye contact
+**Cut against:** UGC - kid hugs Bubabu / unboxing / first eye contact
 
 ---
 
-## BLOCK 2 — PERSONALIZED STORY DEMO (~10s)
-**Function:** Concrete demo — Bubabu uses YOUR kid's name + friends' names. Killer differentiator vs generic AI.
+## BLOCK 2 - PERSONALIZED STORY DEMO (~10s)
+**Function:** Concrete demo - Bubabu uses YOUR kid's name + friends' names. Killer differentiator vs generic AI.
 
-> ბავშვი ეუბნება: "მომიყევი ისტორია ჩემზე და ჩემს მეგობრებზე — ლუკა, ნინი, გიო და მე, სანდრო". ბუბაბუ კი უგონებს ზღაპარს, სადაც თითოეული მათგანი გმირია — სახელებით, ცოცხალი საუბრით, ეკრანის გარეშე.
+> ბავშვი ეუბნება: "მომიყევი ისტორია ჩემზე და ჩემს მეგობრებზე - ლუკა, ნინი, გიო და მე, სანდრო". ბუბაბუ კი უგონებს ზღაპარს, სადაც თითოეული მათგანი გმირია - სახელებით, ცოცხალი საუბრით, ეკრანის გარეშე.
 
-**Cut against:** UGC — kid leans in, whispers names to Bubabu / cyan eyes light up / cut to dreamy story-illustration b-roll with kid's name floating in / kid's face lights up hearing own name
+**Cut against:** UGC - kid leans in, whispers names to Bubabu / cyan eyes light up / cut to dreamy story-illustration b-roll with kid's name floating in / kid's face lights up hearing own name
 
 **TTS direction:** Block 2 needs DOUBLE-VOICE feel:
-- Kid request line (`ბავშვი ეუბნება: "..."`) — soft warmer slightly higher pitch, almost whisper, like quoting child's curiosity
-- Bubabu response setup (`ბუბაბუ კი უგონებს...`) — drop into proud-mother awe, slow on names ლუკა, ნინი, გიო, სანდრო — let each name LAND with tiny half-beat between (no pause tags, just natural phrasing weight)
-- "სახელებით" — lift with quiet wonder, this is the hook word
+- Kid request line (`ბავშვი ეუბნება: "..."`) - soft warmer slightly higher pitch, almost whisper, like quoting child's curiosity
+- Bubabu response setup (`ბუბაბუ კი უგონებს...`) - drop into proud-mother awe, slow on names ლუკა, ნინი, გიო, სანდრო - let each name LAND with tiny half-beat between (no pause tags, just natural phrasing weight)
+- "სახელებით" - lift with quiet wonder, this is the hook word
 
 ---
 
-## BLOCK 3 — UP TO 100 LANGUAGES (~7s)
+## BLOCK 3 - UP TO 100 LANGUAGES (~7s)
 **Function:** Massive multilingual capability, no internet
 
-> სათამაშო ბავშვს ასამდე ენაზე ელაპარაკება და ხვდება. ეს არის ბუნებრივი ინტერაქცია ერთ თამაშში — ინტერნეტისა და რეკლამების გარეშე.
+> სათამაშო ბავშვს ასამდე ენაზე ელაპარაკება და ხვდება. ეს არის ბუნებრივი ინტერაქცია ერთ თამაშში - ინტერნეტისა და რეკლამების გარეშე.
 
-**Cut against:** UGC — kid speaking different languages, fast montage of language tags flashing globe-style: 🇬🇪 KA / 🇬🇧 EN / 🇷🇺 RU / 🇪🇸 ES / 🇨🇳 ZH / 🇫🇷 FR / 🇩🇪 DE / 🇯🇵 JA / 🇮🇹 IT / etc — quick flicker conveying "many many languages"
+**Cut against:** UGC - kid speaking different languages, fast montage of language tags flashing globe-style: 🇬🇪 KA / 🇬🇧 EN / 🇷🇺 RU / 🇪🇸 ES / 🇨🇳 ZH / 🇫🇷 FR / 🇩🇪 DE / 🇯🇵 JA / 🇮🇹 IT / etc - quick flicker conveying "many many languages"
 
 ---
 
-## BLOCK 4 — SAFE & STORYTELLER (~7s)
+## BLOCK 4 - SAFE & STORYTELLER (~7s)
 **Function:** Parent-curated content + safety
 
 > მშობელს თავად შეუძლია შეარჩიოს შინაარსი: ზღაპრები, სიმღერები თუ შემეცნებითი კითხვები. ბუბაბუ უსაფრთხოა, ის ეკრანს კი არ ცვლის, არამედ ბავშვის სამყაროს აფართოებს.
 
-**Cut against:** UGC — evening warm light, kid in bed with Bubabu, parent in BG, sleep mode
+**Cut against:** UGC - evening warm light, kid in bed with Bubabu, parent in BG, sleep mode
 
 ---
 
-## BLOCK 5 — CTA / CLOSE (~3s)
+## BLOCK 5 - CTA / CLOSE (~3s)
 **Function:** URL close
 
 > გაიგე მეტი: bubabu.ge
@@ -102,9 +102,9 @@ SAMPLE CONTEXT:
 1. **AI Studio setup:** Open Google AI Studio → Gemini 3.1 Flash TTS Preview → paste TTS Settings into Speaker panel field-by-field (Voice dropdown = Sulafat, Style = Vocal Smile, Pace = Natural, Accent = American Gen, Scene + Audio Profile as free text)
 2. **Temperature:** **1.0** (mandatory on 3.1, lower causes stalling)
 3. **Paste FINAL SCRIPT** into text field
-4. **Generate** — if metallic/truncated → retry with same input (30-40% truncation rate)
+4. **Generate** - if metallic/truncated → retry with same input (30-40% truncation rate)
 5. **Cut in editor** at sentence boundaries → 5 clean blocks
-6. **Layer over UGC** — no music under voiceover, or very low ambient pad (-30dB)
+6. **Layer over UGC** - no music under voiceover, or very low ambient pad (-30dB)
 7. **Optional foley:** soft room tone under blocks 1-4, gentle bell swell on block 5 CTA
 
 ## Compliance Check
@@ -113,9 +113,9 @@ SAMPLE CONTEXT:
 - [x] STYLE = one of 6 presets (Vocal Smile)
 - [x] PACE = one of 4 presets (Natural)
 - [x] ACCENT = one of 7 presets (American Gen)
-- [x] No pause tags inline (per `feedback_no_pause_tags_in_voiceover.md` — ABSOLUTE)
+- [x] No pause tags inline (per `feedback_no_pause_tags_in_voiceover.md` - ABSOLUTE)
 - [x] No emotion adjective tags inline (Mode 3 trap)
-- [x] FINAL SCRIPT single-line concat present (per `feedback_voiceover_consolidated_final_line.md` — ABSOLUTE)
+- [x] FINAL SCRIPT single-line concat present (per `feedback_voiceover_consolidated_final_line.md` - ABSOLUTE)
 - [x] Georgian text + English-only tags rule honored (no tags used here at all)
 - [x] No CAPS on Georgian Mkhedruli (no case in script)
 - [x] Under 4,000 bytes ✅ (~700 chars)

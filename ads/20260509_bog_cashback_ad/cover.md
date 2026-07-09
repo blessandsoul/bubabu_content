@@ -1,10 +1,10 @@
-# Cover / Reels Thumbnail — Bank of Georgia Cashback Ad
+# Cover / Reels Thumbnail - Bank of Georgia Cashback Ad
 
 **Use:** Reels cover frame / TikTok cover / IG feed thumbnail / FB ad creative still
 **Engine:** Bubabu COVER OVERRIDE per `feedback_bubabu_cover_override_baked_text.md` (NOT default COVER_ENGINE)
 **Path:** PRIMARY baked-text (Nano Banana 2 / Imagen 3 / Midjourney v7 render directly into image). FALLBACK editor-overlay only after 3+ retries fail Mkhedruli.
 **Master ratio:** 9:16 (1080×1920) → crops 1:1 / 16:9
-**Style:** Pixar 3D × Squishmallow × Jellycat × Candy Pop kids-commercial brand polish — NOT editorial / tabloid / press chrome
+**Style:** Pixar 3D × Squishmallow × Jellycat × Candy Pop kids-commercial brand polish - NOT editorial / tabloid / press chrome
 
 ---
 
@@ -22,9 +22,9 @@
 
 - `1.jpeg` ⭐ standard cyan-eye plush state
 - `2.jpeg` alt angle, standard state
-- `character_bubabu.md` color lock (BLACK beak `#1A1A1A` / caramel-brown `#A47551` wings / white body / printed-fabric cyan eyes — NO LED glow)
+- `character_bubabu.md` color lock (BLACK beak `#1A1A1A` / caramel-brown `#A47551` wings / white body / printed-fabric cyan eyes - NO LED glow)
 
-(Heart-state ref `3.jpeg` NOT used — cashback ad = standard cyan eyes only.)
+(Heart-state ref `3.jpeg` NOT used - cashback ad = standard cyan eyes only.)
 
 ---
 
@@ -36,7 +36,7 @@
 | Upper-right or upper-center | `30%` then `ქეშბექი` | Magenta circle mega-sticker, two-line stacked |
 | Below 30% sticker | `9-10 მაისს` | Lime-yellow gradient pill |
 | Middle hook band | `მხოლოდ 2 დღე` | Bold headline navy on butter-cream |
-| Lower-middle | `360 ₾` (struck through) `→` `252 ₾` | Price reveal — old crossed, new big magenta |
+| Lower-middle | `360 ₾` (struck through) `→` `252 ₾` | Price reveal - old crossed, new big magenta |
 | Bottom-left small tag | `SOLO` | White pill, dark navy text, Latin |
 | Very bottom | `bubabu.ge` | Lime-orange gradient URL pill |
 
@@ -61,7 +61,7 @@ bubabu.ge
 მხოლოდ 2 დღე
 ```
 
-## NEGATIVE TEXT (banned variants — must NOT appear in baked render)
+## NEGATIVE TEXT (banned variants - must NOT appear in baked render)
 
 ```
 mtavruli capital Georgian (ბუბაბუ in capitals = banned)
@@ -80,7 +80,7 @@ typography spec leak: "Bold weight 900", "Bricolage", "26px", "letter-spacing", 
 
 ---
 
-## IMAGE PROMPT (single compiled — text BAKED IN)
+## IMAGE PROMPT (single compiled - text BAKED IN)
 
 ```
 Pixar 3D animation kids-commercial cover poster, 9:16 vertical 1080x1920. Hyper-saturated Candy Pop maximalist brand aesthetic. Style anchors: Pixar Animation Studios × Squishmallow brand × Jellycat plush warmth × Build-a-Bear product photography × Coco color saturation.
@@ -121,14 +121,14 @@ NEGATIVE: glasses on Bubabu, aviator goggles, eyewear, frames, lenses, beak open
 
 **Prompt-level (verifiable from this file before render):**
 - [x] No banned text variants in prompt (NEGATIVE TEXT block bans mtavruli / Cyrillic / Latin transliteration / typography-spec vocabulary)
-- [x] No typography-spec vocabulary inside baked-text instructions (no `weight 900` / `26px` / `Bricolage` / `letter-spacing` — visual descriptors only: chunky / rounded / 3D bevel / drop shadow)
-- [x] Bubabu plush form prompt-locked via abbreviated `match attached '1.jpeg' + '2.jpeg' EXACTLY 1:1` reference upload (per `feedback_no_appearance_dump_when_refs_uploaded.md` — canonical body lives in photo, NOT in prompt body)
-- [x] Candy Pop palette locked (butter-cream `#FFFAEB` BG, cyan/magenta/lime/yellow accents — NO editorial desaturated 60-20-10 chrome)
-- [x] Bubabu hero ~30% frame width, slightly left-of-center for sticker stack space — NOT giant realistic owl
+- [x] No typography-spec vocabulary inside baked-text instructions (no `weight 900` / `26px` / `Bricolage` / `letter-spacing` - visual descriptors only: chunky / rounded / 3D bevel / drop shadow)
+- [x] Bubabu plush form prompt-locked via abbreviated `match attached '1.jpeg' + '2.jpeg' EXACTLY 1:1` reference upload (per `feedback_no_appearance_dump_when_refs_uploaded.md` - canonical body lives in photo, NOT in prompt body)
+- [x] Candy Pop palette locked (butter-cream `#FFFAEB` BG, cyan/magenta/lime/yellow accents - NO editorial desaturated 60-20-10 chrome)
+- [x] Bubabu hero ~30% frame width, slightly left-of-center for sticker stack space - NOT giant realistic owl
 - [x] No editorial chrome banned in NEGATIVE (no antique gold filigree / no red ink stamp / no `EXCLUSIVE` burst / no Dinastia-style masthead / no press-paper texture)
 - [x] Safe zones planned: bottom 8% clear, top wordmark within ~8% top
-- [x] References enumerated (`1.jpeg` + `2.jpeg` uploaded with prompt) — heart state `3.jpeg` explicitly NOT used
-- [x] Channel restriction stated: Bubabu + Axiom Smart + BoG co-promo only — never personal channels
+- [x] References enumerated (`1.jpeg` + `2.jpeg` uploaded with prompt) - heart state `3.jpeg` explicitly NOT used
+- [x] Channel restriction stated: Bubabu + Axiom Smart + BoG co-promo only - never personal channels
 
 **9/9 prompt-level ✅ pass.**
 
@@ -149,12 +149,12 @@ If any post-render check fails → trigger FALLBACK editor-overlay path (see §F
 |----------|-------|-------|
 | IG/FB Reels cover | 9:16 1080×1920 | MASTER |
 | TikTok cover | 9:16 1080×1920 | Same as Reels |
-| IG feed thumbnail | 1:1 1080×1080 | Crop top + bottom 25% — keep Bubabu + 30% sticker + headline + URL |
-| FB ad creative still | 16:9 1920×1080 | Reframe horizontal — Bubabu left third + sticker stack right two-thirds |
+| IG feed thumbnail | 1:1 1080×1080 | Crop top + bottom 25% - keep Bubabu + 30% sticker + headline + URL |
+| FB ad creative still | 16:9 1920×1080 | Reframe horizontal - Bubabu left third + sticker stack right two-thirds |
 
 ---
 
-## FALLBACK — EDITOR-OVERLAY (only if 3+ retries fail Mkhedruli baked render)
+## FALLBACK - EDITOR-OVERLAY (only if 3+ retries fail Mkhedruli baked render)
 
 If Nano Banana / Imagen / Midjourney consistently fail to render any of the 4 Mkhedruli strings (`ბუბაბუ` / `ქეშბექი` / `9-10 მაისს` / `მხოლოდ 2 დღე`):
 
@@ -163,7 +163,7 @@ If Nano Banana / Imagen / Midjourney consistently fail to render any of the 4 Mk
 3. Add failed Mkhedruli string as PNG overlay in CapCut / Photoshop using real **Noto Sans Georgian Bold** tinted to match the surrounding text element's color
 4. Match position + size + drop shadow + outline per FINAL RENDER LIST visual styling
 
-This guarantees crisp Mkhedruli at the cost of an extra editor step. Use only when generator proves stubborn on specific Georgian strings — not as default path.
+This guarantees crisp Mkhedruli at the cost of an extra editor step. Use only when generator proves stubborn on specific Georgian strings - not as default path.
 
 ---
 

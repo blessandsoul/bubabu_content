@@ -1,6 +1,6 @@
-# Facebook — pair01 Cartoon (Wooden Vegetable Puzzle GE)
+# Facebook - pair01 Cartoon (Wooden Vegetable Puzzle GE)
 
-**Language:** English body + English first comment (SE§0 LAW 1 — overrides per-agent language).
+**Language:** English body + English first comment (SE§0 LAW 1 - overrides per-agent language).
 **Target platforms:** Bubabu official Facebook + Instagram caption + (translated by user) Georgian repost.
 **Body length:** ~810 chars (within 500-900 window).
 
@@ -36,11 +36,11 @@ This is the first gift in the Bubabu Smart Gifts collection, and it carries one 
 
 | Layer | Content | Check |
 |-------|---------|-------|
-| Line 1 — **Naked hook** (no emoji) | «The first gift Bubabu chose was hidden on a shelf nobody knew was there.» | ✅ no emoji, single-line, story-pull, ~14 words |
-| Line 2 — **SETUP** (1-3 thematic-fit emoji) | 🌲 + cloud-tree + storeroom-door + handmade-wonders line | ✅ tree emoji fits the cloud-tree setting (not generic owl emoji) |
-| Line 3 — **CONFLICT / REVEAL** (1-3 emoji) | 🎁 + Bubabu lifts puzzle + tucks into wing line | ✅ gift emoji fits the SKU + handoff reveal |
-| Line 4 — **PUNCH** (1-3 emoji) | 🌅 + paper-glider descent + windowsill + child finds it at dawn + learns shapes by name | ✅ sunrise emoji fits the dawn handoff + learning payoff |
-| Closing line (no emoji) | «This is the first gift in the Bubabu Smart Gifts collection, and it carries one quiet promise — every gift on his shelves is meant for one child to find.» | ✅ no emoji, lands the brand-launch line + circular gift-promise close |
+| Line 1 - **Naked hook** (no emoji) | «The first gift Bubabu chose was hidden on a shelf nobody knew was there.» | ✅ no emoji, single-line, story-pull, ~14 words |
+| Line 2 - **SETUP** (1-3 thematic-fit emoji) | 🌲 + cloud-tree + storeroom-door + handmade-wonders line | ✅ tree emoji fits the cloud-tree setting (not generic owl emoji) |
+| Line 3 - **CONFLICT / REVEAL** (1-3 emoji) | 🎁 + Bubabu lifts puzzle + tucks into wing line | ✅ gift emoji fits the SKU + handoff reveal |
+| Line 4 - **PUNCH** (1-3 emoji) | 🌅 + paper-glider descent + windowsill + child finds it at dawn + learns shapes by name | ✅ sunrise emoji fits the dawn handoff + learning payoff |
+| Closing line (no emoji) | «This is the first gift in the Bubabu Smart Gifts collection, and it carries one quiet promise - every gift on his shelves is meant for one child to find.» | ✅ no emoji, lands the brand-launch line + circular gift-promise close |
 | Hashtag line | 8 English single-word/compound hashtags | ✅ within 5-8 range, all EN single-words, no trailing emoji |
 
 ### §BS BODY-STYLE compliance (Bubabu universal 2026-05-29)
@@ -50,11 +50,11 @@ This is the first gift in the Bubabu Smart Gifts collection, and it carries one 
 - ✅ Every line is a complete grammatical sentence with proper connectors (and / so / but / when implicit via comma structure).
 - ✅ Reads aloud as one flowing post, not staccato fragments.
 
-### Thematic-fit emoji audit (SE§4 v2.1 — fresh per-line, NOT fixed agent pack)
+### Thematic-fit emoji audit (SE§4 v2.1 - fresh per-line, NOT fixed agent pack)
 
-- 🌲 — picked for cloud-tree storeroom (specific to scene content, not generic owl emoji)
-- 🎁 — picked for the gift-handoff (SKU is literally a gift in this story)
-- 🌅 — picked for the dawn arrival + morning windowsill discovery
+- 🌲 - picked for cloud-tree storeroom (specific to scene content, not generic owl emoji)
+- 🎁 - picked for the gift-handoff (SKU is literally a gift in this story)
+- 🌅 - picked for the dawn arrival + morning windowsill discovery
 - ❌ NO carousel-style mismatch (Bubabu courtyard ad lesson)
 - ❌ NO repeated 🦉 emoji (would feel template-stuck across all Bubabu posts)
 - ❌ NO 4+ emojis on a line (3 max per SE§4)
@@ -63,12 +63,12 @@ This is the first gift in the Bubabu Smart Gifts collection, and it carries one 
 
 - T1 **Identity** trigger (parent-shopping-for-kid-gifts recognition)
 - T2 **Wonder / nostalgia** trigger (handmade-wooden-toy + dawn-morning vibe)
-- T4 **Mystery teaser** (shelf nobody knew was there + first gift in collection — implies more coming)
-- First comment T5 **Choice / values disclosure** (think / build / bedtime — invites parent to think about their own child)
+- T4 **Mystery teaser** (shelf nobody knew was there + first gift in collection - implies more coming)
+- First comment T5 **Choice / values disclosure** (think / build / bedtime - invites parent to think about their own child)
 
 ### CTA approach (SE§5)
 
-- ❌ NO «DM us» / «click link in bio» / «buy now» — pair01 is brand-narrative-first, conversion comes from product visibility + first-comment engagement, not direct CTA.
+- ❌ NO «DM us» / «click link in bio» / «buy now» - pair01 is brand-narrative-first, conversion comes from product visibility + first-comment engagement, not direct CTA.
 - ❌ NO «keyword in comments» farming.
 - ✅ Real debate-bait question (which of the three sparks matters most for your child) drives organic engagement + plants Curiosity/Courage/Kindness spark vocabulary for future pairs.
 
@@ -83,19 +83,19 @@ This is the first gift in the Bubabu Smart Gifts collection, and it carries one 
 - ✅ No keyword CTA.
 - ✅ No colon-headline format.
 
-### SLOP_FILTER grep (per `bible/SLOP_FILTER_ENGINE.md` v1.0 — universal anti-AI-tells)
+### SLOP_FILTER grep (per `bible/SLOP_FILTER_ENGINE.md` v1.0 - universal anti-AI-tells)
 
-- ✅ No negation-correction («not X, it's Y») — every sentence is declarative.
+- ✅ No negation-correction («not X, it's Y») - every sentence is declarative.
 - ✅ No throat-clearing openers («Here's the thing» / «Let me be clear» / «To be honest»).
 - ✅ No emphasis crutches («Full stop» / «Let that sink in» / «Make no mistake»).
 - ✅ No business jargon (no «deep dive» / «circle back» / «lean into»).
 - ✅ No adverb intensifiers («really» / «just» / «literally» / «actually» / «basically» / «simply» / «truly»).
 - ✅ No meta-commentary («Plot twist:» / «Spoiler:» / «As we'll see»).
 - ✅ No vague declaratives («The stakes are high» / «This changes everything»).
-- ✅ No false agency («the data tells us» / «the market rewards» — no abstract subjects, every action has Bubabu or the child as agent).
+- ✅ No false agency («the data tells us» / «the market rewards» - no abstract subjects, every action has Bubabu or the child as agent).
 - ✅ No passive voice anywhere.
 - ✅ No lazy extremes («everyone knows» / «nobody talks about» / «every parent should»).
-- ✅ No rhetorical setups in body («What if X» / «Think about it:») — first comment uses one debate-bait question, allowed per SE§2.
+- ✅ No rhetorical setups in body («What if X» / «Think about it:») - first comment uses one debate-bait question, allowed per SE§2.
 - ✅ Em-dashes used as breath-pauses inside complete sentences (allowed per SLOP §13).
 - ✅ No performative emphasis («creeps in» / «I promise» / «actually matters»).
 
@@ -105,11 +105,11 @@ This is the first gift in the Bubabu Smart Gifts collection, and it carries one 
 |---------|-----|
 | `#bubabu` | Brand anchor |
 | `#bubabusmartgifts` | Smart Gifts sub-brand reinforcement (pair01 + every future pair) |
-| `#smartgiftsforkids` | Discovery — parents searching for gift ideas |
+| `#smartgiftsforkids` | Discovery - parents searching for gift ideas |
 | `#earlylearning` | Educational zone audience anchor |
-| `#educationaltoys` | Discovery — parents searching educational |
+| `#educationaltoys` | Discovery - parents searching educational |
 | `#woodenpuzzle` | SKU-specific discovery |
-| `#pixar3d` | Visual style discovery — Pixar-aesthetic-fans |
+| `#pixar3d` | Visual style discovery - Pixar-aesthetic-fans |
 | `#childhoodwonder` | Emotional anchor for share trigger T2 |
 
 8 hashtags = top of 5-8 range. All English single-words / compound-words, no trailing emoji on hashtags.
@@ -120,7 +120,7 @@ This is the first gift in the Bubabu Smart Gifts collection, and it carries one 
 - ✅ One question only (not list of questions)
 - ✅ `❓` opens + `👇` closes
 - ✅ Invites self-disclosure (parent has to think about their own child's preference)
-- ✅ Three-option choice (think / build / bedtime) ties to Bubabu's three sparks canon (Curiosity / Courage / Kindness) — primes audience for future pairs (every future pair features one of the three sparks)
+- ✅ Three-option choice (think / build / bedtime) ties to Bubabu's three sparks canon (Curiosity / Courage / Kindness) - primes audience for future pairs (every future pair features one of the three sparks)
 
 ### Posting time recommendation
 
@@ -130,4 +130,4 @@ This is the first gift in the Bubabu Smart Gifts collection, and it carries one 
 
 ### Body length recount
 
-810 chars — within 500-900 window. ✅
+810 chars - within 500-900 window. ✅

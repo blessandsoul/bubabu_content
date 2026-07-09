@@ -1,8 +1,8 @@
-# Bubabu + empty QR slot + BUBABU.GE wordmark — Nano Banana 2 prompt **v3 CLOUD STICKER**
+# Bubabu + empty QR slot + BUBABU.GE wordmark - Nano Banana 2 prompt **v3 CLOUD STICKER**
 
-**Purpose:** generate playful brand glass-sticker as a **die-cut cloud-shape sticker** (matching the kiosk category sticker system aesthetic — soft cloud blob silhouette + thick white die-cut border + soft drop shadow on pure white background). Inside the cloud: Bubabu LEFT + empty white card slot RIGHT (for QR composite) + BUBABU.GE wordmark BELOW. Stick on glass.
+**Purpose:** generate playful brand glass-sticker as a **die-cut cloud-shape sticker** (matching the kiosk category sticker system aesthetic - soft cloud blob silhouette + thick white die-cut border + soft drop shadow on pure white background). Inside the cloud: Bubabu LEFT + empty white card slot RIGHT (for QR composite) + BUBABU.GE wordmark BELOW. Stick on glass.
 
-**v3 vs v2:** v2 was rectangular butter-cream composition. v3 wraps everything inside a **die-cut cloud sticker** matching the existing 8-sticker kiosk system look. Same fun (Bubabu pose + sunburst + confetti + sparkle wordmark) but now contained inside an organic cloud blob with thick white border + drop shadow on pure white BG — looks like a real peel-and-stick sticker.
+**v3 vs v2:** v2 was rectangular butter-cream composition. v3 wraps everything inside a **die-cut cloud sticker** matching the existing 8-sticker kiosk system look. Same fun (Bubabu pose + sunburst + confetti + sparkle wordmark) but now contained inside an organic cloud blob with thick white border + drop shadow on pure white BG - looks like a real peel-and-stick sticker.
 
 **Upload to NB2:** `C:\Users\User\Desktop\BUBABU\1.jpeg` + `C:\Users\User\Desktop\BUBABU\2.jpeg` (mandatory plush refs).
 
@@ -18,7 +18,7 @@
 
 ## Operator workflow
 
-### Step 1 — Render in NB2
+### Step 1 - Render in NB2
 
 1. Upload `1.jpeg` + `2.jpeg` to Nano Banana 2.
 2. Paste JSON SPEC above.
@@ -34,28 +34,28 @@
    - **INSIDE card = empty pure flat white** (will fail v3 if NB2 fills it)
    - BUBABU.GE wordmark at bottom of cloud interior, deep magenta, with small sparkle accents
 
-### Step 2 — If empty card has content drift OR confetti bleeds into right half OR sunburst bleeds outside cloud
+### Step 2 - If empty card has content drift OR confetti bleeds into right half OR sunburst bleeds outside cloud
 
 Re-prompt explicitly with the failing constraint reinforced. The 3 hard constraints to repeat:
-1. «the right white card is completely empty pure flat white — NO QR drawn there»
+1. «the right white card is completely empty pure flat white - NO QR drawn there»
 2. «confetti + sunburst stay ONLY on the LEFT half of the cloud interior»
-3. «all decorations stay WITHIN the cloud silhouette — pure white background outside the cloud»
+3. «all decorations stay WITHIN the cloud silhouette - pure white background outside the cloud»
 
 If 3+ retries fail → manual clear card + crop in Photoshop OR `text_rendering.enabled: false` + I overlay wordmark + paste QR via PIL post-process.
 
-### Step 3 — Composite QR + finalize
+### Step 3 - Composite QR + finalize
 
 1. Save NB2 output as `bubabu_qr_cloud_sticker.png` in this folder.
-2. Tell me «render OK» — I'll write composite script that overlays `qr-code (1).png` into the white card slot at exact coordinates.
+2. Tell me «render OK» - I'll write composite script that overlays `qr-code (1).png` into the white card slot at exact coordinates.
 3. Final output: die-cut cloud glass sticker with QR composited in slot, BUBABU.GE wordmark baked, ready for vinyl print + glass stick.
 
 ## Calibration
 
-L1 — SPEC ready, matches kiosk sticker_format convention. L2 — Pixar lock + Bubabu refs mandatory + sticker_format block + consistency_lock + empty-slot strong negatives + atmosphere-on-LEFT-only constraint + atmosphere-within-cloud-only constraint. L3 — PENDING NB2 render (highest risks: NB2 may fill card slot OR bleed atmosphere into right half OR bleed atmosphere outside cloud). L4 — final glass sticker after composite + Арчил approval.
+L1 - SPEC ready, matches kiosk sticker_format convention. L2 - Pixar lock + Bubabu refs mandatory + sticker_format block + consistency_lock + empty-slot strong negatives + atmosphere-on-LEFT-only constraint + atmosphere-within-cloud-only constraint. L3 - PENDING NB2 render (highest risks: NB2 may fill card slot OR bleed atmosphere into right half OR bleed atmosphere outside cloud). L4 - final glass sticker after composite + Арчил approval.
 
 ## Notes
 
-- **Matches kiosk sticker DNA** — same `sticker_format` block + die-cut cloud + thick white border + drop shadow on pure white BG as the 8-sticker kiosk system. The QR sticker reads as part of the same family.
-- **Asymmetric interior** — fun on LEFT (Bubabu + atmosphere), clean slot on RIGHT (functional QR area). Brand-presence + scan-ready in one shape.
+- **Matches kiosk sticker DNA** - same `sticker_format` block + die-cut cloud + thick white border + drop shadow on pure white BG as the 8-sticker kiosk system. The QR sticker reads as part of the same family.
+- **Asymmetric interior** - fun on LEFT (Bubabu + atmosphere), clean slot on RIGHT (functional QR area). Brand-presence + scan-ready in one shape.
 - **Drop shadow under cloud** = peel-and-stick feel (the «I'll stick it on glass» kiosk vibe Арчил asked for).
 - **If text fails** → set `text_rendering.enabled: false` + I overlay BUBABU.GE wordmark via PIL post-composite (controlled font + exact magenta + reliable letterforms).

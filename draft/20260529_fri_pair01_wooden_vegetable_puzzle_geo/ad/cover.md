@@ -1,4 +1,4 @@
-# Cover — pair01 Ad (FB / IG / TT thumbnail)
+# Cover - pair01 Ad (FB / IG / TT thumbnail)
 
 **Path:** PRIMARY = baked-text (Nano Banana 2) per Bubabu cover override.
 **Style:** Same series-skin as cartoon cover (continuity) + ad-specific headline.
@@ -6,23 +6,23 @@
 
 ## Difference from cartoon cover
 
-The ad cover is **derived from the same hero image** as Scene 3 POSSESSION HOLD (Bubabu cradling puzzle on butter-cream background) but adds the `BUBABU SMART GIFTS` brand wordmark instead of the cartoon-cover's single brand-word «Curious.» **NO price, NO currency symbol, NO benefit subheadline, NO transactional text** — price + retail channels live ONLY in `post.md` social caption.
+The ad cover is **derived from the same hero image** as Scene 3 POSSESSION HOLD (Bubabu cradling puzzle on butter-cream background) but adds the `BUBABU SMART GIFTS` brand wordmark instead of the cartoon-cover's single brand-word «Curious.» **NO price, NO currency symbol, NO benefit subheadline, NO transactional text** - price + retail channels live ONLY in `post.md` social caption.
 
-## HEADLINE for ad cover (revised 2026-05-31 — NO PRICE per user directive «про цены мы не говорим»)
+## HEADLINE for ad cover (revised 2026-05-31 - NO PRICE per user directive «про цены мы не говорим»)
 
-The ad cover does NOT carry price, currency, or transactional text. Price + retail channels live ONLY in `post.md` social caption (per memory `feedback_bubabu_ad_voiceover_no_price_just_why_toy_matters` — scope extended 2026-05-31 to cover NO price in voiceover AND NO price on cover; price ONLY in post.md text).
+The ad cover does NOT carry price, currency, or transactional text. Price + retail channels live ONLY in `post.md` social caption (per memory `feedback_bubabu_ad_voiceover_no_price_just_why_toy_matters` - scope extended 2026-05-31 to cover NO price in voiceover AND NO price on cover; price ONLY in post.md text).
 
-**Option A (DEFAULT — clean brand):** `BUBABU SMART GIFTS` brand wordmark in soft warm gold display lettering, centered at upper-third position. Visual = Bubabu cradling the puzzle = product story. No secondary text. Cover sells brand presence + product moment, NOT transaction.
+**Option A (DEFAULT - clean brand):** `BUBABU SMART GIFTS` brand wordmark in soft warm gold display lettering, centered at upper-third position. Visual = Bubabu cradling the puzzle = product story. No secondary text. Cover sells brand presence + product moment, NOT transaction.
 
-**Option B (KA-channel variant):** `ბუბაბუ ჭკვიანი საჩუქრები` (BUBABU SMART GIFTS in Georgian mkhedruli lowercase) — user produces verbatim per memory rule `feedback_bubabu_no_ai_ka_verse_or_prose`.
+**Option B (KA-channel variant):** `ბუბაბუ ჭკვიანი საჩუქრები` (BUBABU SMART GIFTS in Georgian mkhedruli lowercase) - user produces verbatim per memory rule `feedback_bubabu_no_ai_ka_verse_or_prose`.
 
 **Option C (visual-only):** no text overlay at all, just hero image of Bubabu + puzzle on butter-cream BG with sunburst rays + candy confetti. Most minimal, maximum visual focus on product.
 
 **Locked for first export:** Option A.
 
-## IMAGE SPEC (Nano Banana 2 v3.2 — baked-text PRIMARY)
+## IMAGE SPEC (Nano Banana 2 v3.2 - baked-text PRIMARY)
 
-**📎 ЗАГРУЗИТЬ В NANO BANANA 2:** `1.jpeg` + `2.jpeg` + `sku_ref.jpg` — **baked-text ad cover, BUBABU SMART GIFTS wordmark only (no price)**
+**📎 ЗАГРУЗИТЬ В NANO BANANA 2:** `1.jpeg` + `2.jpeg` + `sku_ref.jpg` - **baked-text ad cover, BUBABU SMART GIFTS wordmark only (no price)**
 
 
 ```json
@@ -35,28 +35,28 @@ The ad cover does NOT carry price, currency, or transactional text. Price + reta
 |---|-------|------|
 | 1 | PRIMARY path = baked-text. FALLBACK = editor-overlay only on render failure. | ✅ |
 | 2 | Style anchors visible in SPEC: Pixar 3D + Squishmallow + Jellycat + Build-a-Bear + Candy Pop. ZERO editorial / tabloid tokens. | ✅ |
-| 3 | Butter-cream BG palette locked, sunburst rays + candy confetti — series-skin continuity with cartoon cover. | ✅ |
+| 3 | Butter-cream BG palette locked, sunburst rays + candy confetti - series-skin continuity with cartoon cover. | ✅ |
 | 4 | Bubabu hero matching `1.jpeg`+`2.jpeg` 1:1 with Curious mood-state and asymmetric-wing-lock. | ✅ |
 | 5 | Goggles = matte printed fabric (no glow, no LED, no illumination). | ✅ |
 | 6 | Beak BLACK CLOSED. | ✅ |
-| 7 | Brand wordmark = `BUBABU SMART GIFTS` in soft warm gold = brand-presence scan-anchor (NOT a price callout — price lives ONLY in `post.md` per memory rule extended 2026-05-31). | ✅ |
-| 8 | NO price text, NO currency symbol, NO numerals, NO benefit subheadline on cover — clean visual product moment. | ✅ |
+| 7 | Brand wordmark = `BUBABU SMART GIFTS` in soft warm gold = brand-presence scan-anchor (NOT a price callout - price lives ONLY in `post.md` per memory rule extended 2026-05-31). | ✅ |
+| 8 | NO price text, NO currency symbol, NO numerals, NO benefit subheadline on cover - clean visual product moment. | ✅ |
 | 9 | No religious symbols / no gold leaf / no vertical god-rays / no peach-pink / no lavender. | ✅ |
 | 10 | No Cyrillic / no Mtavruli capital Georgian. KA Option B requires user to write verbatim if chosen. | ✅ |
 
-**Score: 10/10 — SHIP.**
+**Score: 10/10 - SHIP.**
 
 ## A/B/C/D variants (optional, for testing)
 
 | Variant | Headline | Use case |
 |---------|----------|----------|
-| A (default) | `BUBABU SMART GIFTS` EN wordmark, soft warm gold | Universal channels — first ship |
+| A (default) | `BUBABU SMART GIFTS` EN wordmark, soft warm gold | Universal channels - first ship |
 | B | `ბუბაბუ ჭკვიანი საჩუქრები` KA wordmark (user writes) | GE-channel cuts |
-| C | No text overlay — image only (Bubabu + puzzle + butter-cream BG + sunburst + confetti) | Pure-visual test for organic feeds |
-| D | (reserved — A/B/C cover all current use cases) | — |
+| C | No text overlay - image only (Bubabu + puzzle + butter-cream BG + sunburst + confetti) | Pure-visual test for organic feeds |
+| D | (reserved - A/B/C cover all current use cases) | - |
 
-Ship A first. Test B/C if A underperforms after 24h. **Price + retail channels NEVER on cover** — those live ONLY in `post.md` caption per memory `feedback_bubabu_ad_voiceover_no_price_just_why_toy_matters` (scope extended 2026-05-31).
+Ship A first. Test B/C if A underperforms after 24h. **Price + retail channels NEVER on cover** - those live ONLY in `post.md` caption per memory `feedback_bubabu_ad_voiceover_no_price_just_why_toy_matters` (scope extended 2026-05-31).
 
 ## Channel restriction
 
-Same as cartoon cover.md — Bubabu official + Axiom Smart + BoG on sign-off only. NEVER Andrew personal / aiNOW.
+Same as cartoon cover.md - Bubabu official + Axiom Smart + BoG on sign-off only. NEVER Andrew personal / aiNOW.

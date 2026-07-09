@@ -1,4 +1,4 @@
-# Demo Video — bubabu.ge Product Page
+# Demo Video - bubabu.ge Product Page
 
 **Цель:** Поднять конверсию landing с 0.1% до ≥1%
 **Длительность:** 60 секунд
@@ -7,9 +7,9 @@
 **Язык:** грузинский voiceover + грузинские субтитры (EN/RU subtitle layers для экспатов)
 **Дедлайн:** 2 мая 2026
 
-**Reference:** https://heycurio.com/ — но heycurio БЕЗ demo video (наше преимущество). Они emotional/character-focused, мы добавляем демо + social proof + guarantee. Это что у них не показано — наше competitive edge.
+**Reference:** https://heycurio.com/ - но heycurio БЕЗ demo video (наше преимущество). Они emotional/character-focused, мы добавляем демо + social proof + guarantee. Это что у них не показано - наше competitive edge.
 
-**Pricing:** ОДНА цена 360 GEL (Арчил решил — без tier-структуры)
+**Pricing:** ОДНА цена 360 GEL (Арчил решил - без tier-структуры)
 
 ---
 
@@ -29,7 +29,7 @@
 
 ## STRUCTURE (60s breakdown)
 
-### BEAT 1 — HOOK (0:00–0:05) — pain → curiosity
+### BEAT 1 - HOOK (0:00-0:05) - pain → curiosity
 
 **Visual:**
 - Tight close-up глаз ребёнка которые светятся в полутёмной комнате
@@ -51,10 +51,10 @@ RU: Видели как ваш ребёнок реально увлечён че
 
 ---
 
-### BEAT 2 — REVEAL (0:05–0:15) — show product
+### BEAT 2 - REVEAL (0:05-0:15) - show product
 
 **Visual:**
-- Wide shot — ребёнок сидит на полу, держит Bubabu в руках
+- Wide shot - ребёнок сидит на полу, держит Bubabu в руках
 - Bubabu's cyan goggles softly glowing
 - Ребёнок задаёт вопрос (silhouette / blurred face for safety)
 
@@ -71,14 +71,14 @@ RU: Знакомьтесь — Bubabu, AI игрушка
 
 ---
 
-### BEAT 3 — DEMO #1: TALKING (0:15–0:25) — answer "really talks?"
+### BEAT 3 - DEMO #1: TALKING (0:15-0:25) - answer "really talks?"
 
 **Visual:**
-- Over-shoulder shot — child asks Bubabu in Georgian
+- Over-shoulder shot - child asks Bubabu in Georgian
 - Bubabu cyan glow brightens (responding state)
 - Audio of child question + Bubabu answer
 
-**Mock dialogue (recorded with real Bubabu voice — IMPORTANT для consistency):**
+**Mock dialogue (recorded with real Bubabu voice - IMPORTANT для consistency):**
 ```
 ბავშვი: ბუბაბუ, რატომ ანათებენ ვარსკვლავები?
 ბუბაბუ: ვარსკვლავები ცეცხლის უზარმაზარი ბურთებია — ისინი მილიარდობით წლის განმავლობაში ანათებენ.
@@ -93,10 +93,10 @@ RU: Настоящий AI — на базе Gemini
 
 ---
 
-### BEAT 4 — DEMO #2: 3 LANGUAGES (0:25–0:33) — answer "what languages?"
+### BEAT 4 - DEMO #2: 3 LANGUAGES (0:25-0:33) - answer "what languages?"
 
 **Visual:**
-- Quick cut — same Bubabu, different children speaking different languages
+- Quick cut - same Bubabu, different children speaking different languages
 - Subtitles flash language flags
 
 **Mock dialogue (1.5 sec each):**
@@ -114,7 +114,7 @@ EN/RU: 3 languages — one toy
 
 ---
 
-### BEAT 5 — DEMO #3: SAFETY (0:33–0:42) — answer "is it safe?"
+### BEAT 5 - DEMO #3: SAFETY (0:33-0:42) - answer "is it safe?"
 
 **Visual:**
 - Parent dashboard на phone (Axiom Smart app)
@@ -136,14 +136,14 @@ RU: Bubabu отказывается от любых вредных тем.
 ```
 
 **Visual sub-cue:**
-- Quick flash through "blocked topic" examples — child screen stays calm
+- Quick flash through "blocked topic" examples - child screen stays calm
 
 ---
 
-### BEAT 6 — SOCIAL PROOF (0:42–0:50) — answer "is it worth it?"
+### BEAT 6 - SOCIAL PROOF (0:42-0:50) - answer "is it worth it?"
 
 **Visual:**
-- Quick UGC montage — 4-5 short clips of different children's reactions
+- Quick UGC montage - 4-5 short clips of different children's reactions
 - Each child different age, different ethnicity, different setting (home, school)
 - Last shot: smiling parent watching child
 
@@ -158,7 +158,7 @@ RU: 1,000+ грузинских семей уже используют Bubabu
 
 ---
 
-### BEAT 7 — OFFER + GUARANTEE (0:50–0:55) — answer "how much?"
+### BEAT 7 - OFFER + GUARANTEE (0:50-0:55) - answer "how much?"
 
 **Visual:**
 - Product hero shot on cream background
@@ -182,12 +182,12 @@ RU: 360 GEL. 60-дневная гарантия возврата. Попробу
 
 ---
 
-### BEAT 8 — CTA (0:55–0:60) — close
+### BEAT 8 - CTA (0:55-0:60) - close
 
 **Visual:**
 - Clean cream background
 - Bubabu in center smiling
-- Big Coral CTA button "ვიყიდო — bubabu.ge"
+- Big Coral CTA button "ვიყიდო - bubabu.ge"
 - Subtle countdown timer (Kids Day 1 June anchor)
 
 **Text overlay:**
@@ -218,7 +218,7 @@ RU: Посмотрите как загорается ваш ребёнок. Buba
 ### Footage sources
 | Beat | Source |
 |------|--------|
-| 1 (eyes glow) | AI generated — Veo3 close-up |
+| 1 (eyes glow) | AI generated - Veo3 close-up |
 | 2 (child + Bubabu) | UGC от Арчила (Google Drive ~50 видео) |
 | 3 (talking demo) | UGC OR record fresh с реальным ребёнком в офисе |
 | 4 (3 languages) | UGC compilation OR AI gen children silhouette |

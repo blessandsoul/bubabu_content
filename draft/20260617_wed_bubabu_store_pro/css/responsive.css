@@ -1,0 +1,114 @@
+/* BUBABU.GE - responsive (mobile-first, min-width) */
+
+/* large phones */
+@media (min-width:560px){
+  .giftrow{grid-template-columns:repeat(3,1fr)}
+  .pgrid{grid-template-columns:repeat(3,1fr)}
+  .cats{grid-template-columns:repeat(3,1fr)}
+  .ages{grid-template-columns:repeat(3,1fr)}
+  .why{grid-template-columns:repeat(3,1fr)}
+  .fgrid{grid-template-columns:1fr 1fr}
+}
+
+/* tablets */
+@media (min-width:760px){
+  /* swipe rails revert to grids on tablet+ */
+  .giftrow,.pgrid,.cats,.ages,.sets,.revs{display:grid;overflow:visible;margin-inline:0;padding-inline:0;padding-bottom:0;scroll-snap-type:none}
+  .giftrow>.gtile,.pgrid>.pcard,.cats>.ccard,.ages>.acard,.sets>.setc,.revs>.rev{width:auto;flex:initial}
+  .giftrow{grid-template-columns:repeat(3,1fr)}
+  .pgrid{grid-template-columns:repeat(3,1fr)}
+  .cats{grid-template-columns:repeat(3,1fr)}
+  .ages{grid-template-columns:repeat(3,1fr)}
+  .tstrip__in{grid-template-columns:repeat(4,1fr)}
+  .banners{grid-template-columns:repeat(3,1fr)}
+  .revs{grid-template-columns:repeat(3,1fr)}
+  .fgrid{grid-template-columns:1.4fr 1fr 1fr}
+  .sets{grid-template-columns:repeat(4,1fr)}
+  .hprod{display:flex}
+}
+
+/* desktop */
+@media (min-width:900px){
+  /* drop mobile-native layer, restore desktop chrome */
+  .tabbar{display:none}
+  body{padding-bottom:0}
+  .topbar{display:block}
+  .hdr__main{padding-block:14px;gap:14px 18px}
+  .logo img{width:44px;height:44px}
+  .logo .lt b.ka{font-size:1.4rem}
+  .nav.open{position:static;box-shadow:none;max-height:none;overflow:visible;border:none}
+  .hdr__main{flex-wrap:nowrap}
+  .search{order:0;flex-basis:auto}
+  .nav{display:block}
+  .burger{display:none}
+  .hero__in{max-width:56%}
+  .hero__scrim{background:linear-gradient(90deg,rgba(255,255,255,.97) 0%,rgba(255,255,255,.9) 30%,rgba(255,255,255,.3) 52%,rgba(255,255,255,0) 68%)}
+  .hslide--dark .hero__scrim{background:linear-gradient(90deg,rgba(9,17,23,.84) 0%,rgba(9,17,23,.5) 40%,rgba(9,17,23,.06) 68%,transparent 82%)}
+  .harrow{display:grid}
+  .finder{grid-template-columns:.9fr 1.4fr}
+  .news{grid-template-columns:1fr 1fr}
+  .giftrow{grid-template-columns:repeat(5,1fr)}
+  .pgrid{grid-template-columns:repeat(4,1fr)}
+  .cats{grid-template-columns:repeat(4,1fr)}
+  .ages{grid-template-columns:repeat(6,1fr)}
+  .why{grid-template-columns:repeat(5,1fr)}
+  .fgrid{grid-template-columns:1.6fr 1fr 1fr 1fr 1fr}
+}
+
+/* wide desktop */
+@media (min-width:1200px){
+  .giftrow{grid-template-columns:repeat(7,1fr)}
+  .pgrid{grid-template-columns:repeat(6,1fr)}
+  .cats{grid-template-columns:repeat(6,1fr)}
+}
+
+/* PDP breakpoints */
+@media (min-width:560px){
+  .box{grid-template-columns:repeat(4,1fr)}
+  .giftopt{grid-template-columns:repeat(3,1fr)}
+  .gallery__thumbs{gap:10px}
+}
+@media (min-width:760px){
+  .dual{grid-template-columns:1fr 1fr}
+  .howit{grid-template-columns:repeat(2,1fr)}
+  .safety{grid-template-columns:repeat(2,1fr)}
+  .delivery{grid-template-columns:repeat(3,1fr)}
+  .setup{grid-template-columns:repeat(3,1fr)}
+  .reviews-top{grid-template-columns:.8fr 1.6fr}
+}
+@media (min-width:900px){
+  .pdp{grid-template-columns:1.02fr .98fr;gap:40px;align-items:start}
+  .gallery{position:sticky;top:96px}
+  .gallery__main{margin-inline:0;border-radius:var(--r-lg)}
+  .gallery__thumbs{display:grid;grid-template-columns:repeat(5,1fr);margin-inline:0;padding-inline:0}
+  .gallery__thumbs .thumb{flex:initial;width:auto}
+  .howit{grid-template-columns:repeat(4,1fr)}
+  .safety{grid-template-columns:repeat(4,1fr)}
+  .stickybuy{display:none}
+}
+
+/* review-pass components */
+@media (min-width:560px){
+  .frgrid{grid-template-columns:repeat(3,1fr)}
+  .budget{grid-template-columns:repeat(5,1fr)}
+  .bundles{grid-template-columns:repeat(2,1fr)}
+}
+@media (min-width:900px){
+  .bfeat{flex-direction:row;align-items:stretch}
+  .bfeat__img{flex:0 0 46%}
+  .bfeat__in{padding:34px;align-self:center}
+  .bundles{grid-template-columns:repeat(4,1fr)}
+  .frgrid{grid-template-columns:repeat(6,1fr)}
+  .videoblock{flex-direction:row;align-items:stretch}
+  .videoblock__poster{flex:0 0 52%}
+  .videoblock__b{align-self:center}
+  .checkout{grid-template-columns:1.6fr 1fr}
+  .summary{position:sticky;top:96px}
+  .cogrid{grid-template-columns:1fr 1fr}
+  .radiorow{grid-template-columns:1fr 1fr}
+}
+
+@media (prefers-reduced-motion: reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal{opacity:1!important;transform:none!important}
+}

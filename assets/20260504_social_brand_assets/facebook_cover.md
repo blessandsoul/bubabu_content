@@ -1,10 +1,10 @@
-# Bubabu — Facebook Cover
+# Bubabu - Facebook Cover
 
-**Aspect:** 851×315 px (FB) — render at 2× for retina = 1702×630, or 1640×664 master safe-zone
+**Aspect:** 851×315 px (FB) - render at 2× for retina = 1702×630, or 1640×664 master safe-zone
 **Compose 16:5.7 wide hero**
 **Critical safe zones:**
-- Left bottom 170×170 px = avatar overlay zone — keep clean, no key visual elements there
-- Bottom 100 px on mobile = covered by FB UI on some devices — keep CTA above this band
+- Left bottom 170×170 px = avatar overlay zone - keep clean, no key visual elements there
+- Bottom 100 px on mobile = covered by FB UI on some devices - keep CTA above this band
 - Center 60% = primary visual area, must be readable mobile + desktop
 
 ---
@@ -14,7 +14,7 @@
 - `1.jpeg` ⭐ standard cyan-eye plush state
 - `2.jpeg` alt angle, standard state
 
-(Heart-state ref `3.jpeg` NOT used — cover = standard cyan eyes only.)
+(Heart-state ref `3.jpeg` NOT used - cover = standard cyan eyes only.)
 
 ---
 

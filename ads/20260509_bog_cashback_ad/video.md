@@ -1,18 +1,18 @@
-# Main Video — Bank of Georgia Cashback Weekend Ad (CLEAN, NO TEXT)
+# Main Video - Bank of Georgia Cashback Weekend Ad (CLEAN, NO TEXT)
 
 **Style:** Pixar 3D + Candy Pop palette
-**Length:** 15 seconds (3 micro-shots stitched in editor — Scene 1 solo / Scene 2 use-case / Scene 3 CTA)
+**Length:** 15 seconds (3 micro-shots stitched in editor - Scene 1 solo / Scene 2 use-case / Scene 3 CTA)
 **Aspect:** 9:16 master → crops 1:1 + 16:9 in editor
-**No text in main video** — all Georgian text comes from `stickers.md` chroma-BLUE `#0000FF` assets composited in editor (BLUE chroma chosen because Bubabu sticker palette has lime/yellow/cyan that would degrade on green key — see `stickers.md` rationale)
+**No text in main video** - all Georgian text comes from `stickers.md` chroma-BLUE `#0000FF` assets composited in editor (BLUE chroma chosen because Bubabu sticker palette has lime/yellow/cyan that would degrade on green key - see `stickers.md` rationale)
 **References to upload:**
-- Shot A + C: `1.jpeg` + `2.jpeg` (standard cyan-eye plush state — heart-state NOT used in this ad)
+- Shot A + C: `1.jpeg` + `2.jpeg` (standard cyan-eye plush state - heart-state NOT used in this ad)
 - Shot B: `1.jpeg` + `2.jpeg` (Bubabu held by child)
 
 ---
 
-## ⚠️ BEHAVIORAL RULES — READ FIRST (no appearance dump per `feedback_no_appearance_dump_when_refs_uploaded.md`)
+## ⚠️ BEHAVIORAL RULES - READ FIRST (no appearance dump per `feedback_no_appearance_dump_when_refs_uploaded.md`)
 
-Refs `1.jpeg` + `2.jpeg` carry canonical body. DO NOT re-describe hex codes / fabric texture / eye structure / wing color / beak color in prompt body — generator USES the photo. Spec text + photo = conflict + drift + token waste. Behavioral constraints below apply (NOT appearance):
+Refs `1.jpeg` + `2.jpeg` carry canonical body. DO NOT re-describe hex codes / fabric texture / eye structure / wing color / beak color in prompt body - generator USES the photo. Spec text + photo = conflict + drift + token waste. Behavioral constraints below apply (NOT appearance):
 
 0. **HANDHELD SCALE LOCKED.** Bubabu = small plush ~20cm wide, ~25% frame width. NEVER grows, NEVER transforms into giant realistic owl, NEVER shape-shifts, NEVER gains real feathers / talons / biological anatomy, NEVER becomes life-size. Treat like Squishmallow / Build-a-Bear plush throughout entire 15s.
 
@@ -26,7 +26,7 @@ Refs `1.jpeg` + `2.jpeg` carry canonical body. DO NOT re-describe hex codes / fa
 
 ---
 
-## SCENE 1 — Bubabu Solo Hook (0–5s, hero intro)
+## SCENE 1 - Bubabu Solo Hook (0-5s, hero intro)
 
 ### IMAGE PROMPT (clean hero frame)
 
@@ -67,9 +67,9 @@ NEGATIVE: camera movement, zoom, push-in, Bubabu growing, transforming, becoming
 
 ---
 
-## SCENE 2 — Use-Case (5–10s, child holds Bubabu)
+## SCENE 2 - Use-Case (5-10s, child holds Bubabu)
 
-### IMAGE PROMPT (clean — child + Bubabu)
+### IMAGE PROMPT (clean - child + Bubabu)
 
 ```
 Pixar 3D animation 9:16 vertical medium-close shot. Georgian child age 4-5, warm honey-chestnut hair, soft round Pixar-toddler face, joyful curious expression, holding Bubabu plush owl up at chest-level with both hands.
@@ -108,7 +108,7 @@ NEGATIVE: camera movement, zoom, push-in, Bubabu growing, transforming, shape-sh
 
 ---
 
-## SCENE 3 — CTA Close (10–15s, Bubabu solo for URL bake)
+## SCENE 3 - CTA Close (10-15s, Bubabu solo for URL bake)
 
 ### IMAGE PROMPT (clean hero frame for CTA stacking)
 
@@ -152,15 +152,15 @@ NEGATIVE: camera movement, zoom, push-in, Bubabu growing, transforming, shape-sh
 
 ## EDITING WORKFLOW
 
-1. Generate Shot A (Scene 1, 5s clean) — pick best Bubabu pose with cleanest right-side empty zone
-2. Generate Shot B (Scene 2, 5s clean) — pick warmest child + Bubabu composition
-3. Generate Shot C (Scene 3, 5s clean) — pick celebratory pose with cleanest bottom + right
+1. Generate Shot A (Scene 1, 5s clean) - pick best Bubabu pose with cleanest right-side empty zone
+2. Generate Shot B (Scene 2, 5s clean) - pick warmest child + Bubabu composition
+3. Generate Shot C (Scene 3, 5s clean) - pick celebratory pose with cleanest bottom + right
 4. Generate all 6 stickers separately per `stickers.md` on chroma BLUE `#0000FF`
 5. Composite in CapCut / After Effects:
    - **Layer 0:** stitch Shot A → Shot B → Shot C with hard cuts at 5s + 10s (or quick crossfade 4 frames)
    - **Layer 1:** plush wordmark "Bubabu" sticker (top-center, 0:00 fade-in, holds entire 15s)
-   - **Layer 2:** 30% mega-sticker (top-right, 0:00 elastic pop, holds 0:00–0:05, fades during Shot B)
-   - **Layer 3:** "9-10 მაისს" date pill (below 30%, 0:01 slide-in, holds 0:01–0:05)
+   - **Layer 2:** 30% mega-sticker (top-right, 0:00 elastic pop, holds 0:00-0:05, fades during Shot B)
+   - **Layer 3:** "9-10 მაისს" date pill (below 30%, 0:01 slide-in, holds 0:01-0:05)
    - **Layer 4:** price reveal "360 → 252 ₾" (middle-right, 0:10 strikethrough animation in Shot C)
    - **Layer 5:** "SOLO ბარათით" tag (bottom-left small, 0:11 slide-in)
    - **Layer 6:** "bubabu.ge →" CTA pill (bottom, 0:12 slide-up + idle bounce)
@@ -175,23 +175,23 @@ NEGATIVE: camera movement, zoom, push-in, Bubabu growing, transforming, shape-sh
 | Placement | Ratio | Crop strategy |
 |-----------|-------|---------------|
 | IG/FB Reels + TikTok + Stories | 9:16 1080×1920 | MASTER, no crop |
-| IG feed + FB feed | 1:1 1080×1080 | Crop top + bottom 25% — keep Bubabu + sticker stack centered |
-| FB ad horizontal | 16:9 1920×1080 | Reframe — Bubabu/child left third + sticker stack right two-thirds |
+| IG feed + FB feed | 1:1 1080×1080 | Crop top + bottom 25% - keep Bubabu + sticker stack centered |
+| FB ad horizontal | 16:9 1920×1080 | Reframe - Bubabu/child left third + sticker stack right two-thirds |
 
 ---
 
 ## SELF-CHECK
 
-- [x] No appearance dump with hex codes / eye structure / fabric / wing color in prompt body (refs uploaded carry canonical body — per `feedback_no_appearance_dump_when_refs_uploaded.md`)
-- [x] Behavioral rules only (scale lock / no transform / beak closed / standard state / no LED) — appearance lives in `1.jpeg` + `2.jpeg`
+- [x] No appearance dump with hex codes / eye structure / fabric / wing color in prompt body (refs uploaded carry canonical body - per `feedback_no_appearance_dump_when_refs_uploaded.md`)
+- [x] Behavioral rules only (scale lock / no transform / beak closed / standard state / no LED) - appearance lives in `1.jpeg` + `2.jpeg`
 - [x] Bubabu hero ~25% frame width across all 3 shots, NEVER giant realistic owl
 - [x] LOCKED STATIC CAMERA all 3 shots
 - [x] **NO TEXT in source frames** (text comes from sticker layer in editor)
 - [x] No music, no dialogue, no character speech in any video prompt
 - [x] Bubabu positioned slightly left in Shot A + C to leave space for sticker stack
 - [x] References uploaded: `1.jpeg` + `2.jpeg` (Shots A + B + C)
-- [x] Scene 2 use-case shot adds emotional anchor + scale proof (child holds plush) — addresses cold-viewer "what is this?" gap
+- [x] Scene 2 use-case shot adds emotional anchor + scale proof (child holds plush) - addresses cold-viewer "what is this?" gap
 - [x] 3 micro-scenes phase-aligned with VO 3 lines (Scene 1 ↔ L1 hook / Scene 2 ↔ L2 price / Scene 3 ↔ L3 CTA)
 - [x] Audio cyan-chime opens 0:00 + transition ding 0:08 (Scene 2→3 boundary) + outro chime 0:14
 - [ ] Post-render: verify all 3 clips stitch cleanly without identity drift on Bubabu plush form (human verification)
-- [ ] Post-render: verify child face is warm not creepy — no Pixar-Coco uncanny valley drift
+- [ ] Post-render: verify child face is warm not creepy - no Pixar-Coco uncanny valley drift

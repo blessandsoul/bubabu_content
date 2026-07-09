@@ -1,13 +1,13 @@
-# Bubabu — Grandma Testimonial (Nikusha + ბებო shot)
+# Bubabu - Grandma Testimonial (Nikusha + ბებო shot)
 
 **Concept:** Modern grandmother + young grandson (Nikusha, age 7-9) testimonial shot for Bubabu demo video.
-**Use:** Testimonial beat inside Bubabu demo video — placed AFTER UGC intro so viewer sees grandma+grandson as separate story unit, not linked to UGC kid.
+**Use:** Testimonial beat inside Bubabu demo video - placed AFTER UGC intro so viewer sees grandma+grandson as separate story unit, not linked to UGC kid.
 **Spoken line:** "ნიკუშა ვერაფრით მოვწყვიტეთ ტიკტოკს, მერე ბუბაბუ ვიპოვეთ, ამის შემდეგ ტიკტოკი არც კი გახსენებია!"
 **Disambiguation fix:** Grandson IN frame = viewer can't confuse him with UGC kid from intro.
 
 ---
 
-## STEP 1 — PHOTO PROMPT (Nano Banana 2)
+## STEP 1 - PHOTO PROMPT (Nano Banana 2)
 
 ```
 Photorealistic editorial portrait. Modern senior woman age 58-65 AND her young grandson age 7-9 sitting together on modern sofa, both facing camera.
@@ -38,7 +38,7 @@ NEGATIVE: cartoon, 3D render, illustration, AI plastic skin, multiple generation
 
 ---
 
-## STEP 2 — TEXT STRIP PROMPT (optional, if text renders in photo)
+## STEP 2 - TEXT STRIP PROMPT (optional, if text renders in photo)
 
 Feed generated photo back into Nano Banana 2:
 
@@ -48,7 +48,7 @@ Reproduce this image EXACTLY — same composition, same people, same expressions
 
 ---
 
-## STEP 3 — VIDEO PROMPT (Kling / Veo3 img2vid)
+## STEP 3 - VIDEO PROMPT (Kling / Veo3 img2vid)
 
 Feed final photo into img2vid:
 
@@ -88,7 +88,7 @@ NEGATIVE: camera movement, zoom, pan, tilt, handheld shake, frozen face with no 
 
 ---
 
-## STEP 4 — STANDALONE TTS (backup if Veo3 audio качество слабое)
+## STEP 4 - STANDALONE TTS (backup if Veo3 audio качество слабое)
 
 **Engine:** Gemini 3.1 Flash TTS (`gemini-3.1-flash-tts-preview`)
 

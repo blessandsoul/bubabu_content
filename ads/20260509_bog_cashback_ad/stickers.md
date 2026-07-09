@@ -1,14 +1,14 @@
-# Stickers — Chroma-Key Overlay Assets
+# Stickers - Chroma-Key Overlay Assets
 
 **Purpose:** ALL Georgian text + branded badges generated as separate AI assets on **chroma-key BLUE `#0000FF` background** (NOT green). Designer cuts the blue in CapCut/After Effects and composites stickers over the main Bubabu video.
 
-⚠️ **WHY BLUE, NOT GREEN — Chroma Key Color Safety rule (`feedback_chroma_key_color_safety.md`):**
-Bubabu Candy Pop sticker palette contains **lime `#84CC16`** + **yellow `#FFEB3B`** + **cyan `#5BC0DE`**. All three share the GREEN channel. On a `#00B140` green chroma key, the de-spill step strips the green channel from EVERYTHING in frame — yellow becomes orange, lime becomes brown, cyan becomes blue. User incident 2026-05-06: shipped on green chroma → "сейчас я срезал зеленый и желтый стал оранжевым". Fix: BLUE chroma `#0000FF` strips blue channel — kills only blues/purples in palette, but Bubabu sticker palette has zero pure blues, so warm + green-family colors survive intact.
+⚠️ **WHY BLUE, NOT GREEN - Chroma Key Color Safety rule (`feedback_chroma_key_color_safety.md`):**
+Bubabu Candy Pop sticker palette contains **lime `#84CC16`** + **yellow `#FFEB3B`** + **cyan `#5BC0DE`**. All three share the GREEN channel. On a `#00B140` green chroma key, the de-spill step strips the green channel from EVERYTHING in frame - yellow becomes orange, lime becomes brown, cyan becomes blue. User incident 2026-05-06: shipped on green chroma → "сейчас я срезал зеленый и желтый стал оранжевым". Fix: BLUE chroma `#0000FF` strips blue channel - kills only blues/purples in palette, but Bubabu sticker palette has zero pure blues, so warm + green-family colors survive intact.
 
 **Why this approach (chroma-key isolation in general):**
 - Mkhedruli text rendering on AI = 60-90% failure rate when mixed with full scene
 - Isolating each sticker on chroma blue = generator focuses ONLY on text + shape, success rate jumps to 70-85%
-- Each sticker can be regenerated independently if it fails — no need to redo the whole video
+- Each sticker can be regenerated independently if it fails - no need to redo the whole video
 - Designer has full timing/position control in editor
 
 **6 stickers needed:**
@@ -17,11 +17,11 @@ Bubabu Candy Pop sticker palette contains **lime `#84CC16`** + **yellow `#FFEB3B
 3. **Price reveal** (360 → 252 ₾ with strikethrough)
 4. **CTA URL pill** (bubabu.ge → lime-orange gradient)
 5. **Plush wordmark** (Mkhedruli "ბუბაბუ" fleece-fabric)
-6. **SOLO tag** (small white pill with bank ref — single word "SOLO" Latin only, no Mastercard suffix)
+6. **SOLO tag** (small white pill with bank ref - single word "SOLO" Latin only, no Mastercard suffix)
 
 ---
 
-## STICKER 1 — 30% MEGA-STICKER
+## STICKER 1 - 30% MEGA-STICKER
 
 ### IMAGE PROMPT
 
@@ -66,7 +66,7 @@ DO NOT change anything except the sticker animation. Background MUST stay solid 
 
 ---
 
-## STICKER 2 — 9-10 მაისს DATE PILL
+## STICKER 2 - 9-10 მაისს DATE PILL
 
 ### IMAGE PROMPT
 
@@ -106,7 +106,7 @@ DO NOT change anything except pill animation. Background solid chroma blue.
 
 ---
 
-## STICKER 3 — PRICE REVEAL (360 → 252 ₾)
+## STICKER 3 - PRICE REVEAL (360 → 252 ₾)
 
 ### IMAGE PROMPT
 
@@ -153,7 +153,7 @@ DO NOT change anything except the animation sequence above. Background solid chr
 
 ---
 
-## STICKER 4 — CTA URL PILL (bubabu.ge →)
+## STICKER 4 - CTA URL PILL (bubabu.ge →)
 
 ### IMAGE PROMPT
 
@@ -195,7 +195,7 @@ DO NOT change anything except pill animation. Background solid chroma blue.
 
 ---
 
-## STICKER 5 — PLUSH WORDMARK ბუბაბუ (Mkhedruli)
+## STICKER 5 - PLUSH WORDMARK ბუბაბუ (Mkhedruli)
 
 ### IMAGE PROMPT
 
@@ -244,7 +244,7 @@ DO NOT change anything except wordmark animation. Background solid chroma blue. 
 
 ---
 
-## STICKER 6 — SOLO TAG (Bank of Georgia premium card line, Mastercard suffix dropped)
+## STICKER 6 - SOLO TAG (Bank of Georgia premium card line, Mastercard suffix dropped)
 
 ### IMAGE PROMPT
 
@@ -263,7 +263,7 @@ NEGATIVE: any background other than solid chroma blue, any scene elements, Bubab
 ```
 
 **Aspect ratio:** 16:9 wide (small element)
-**Generate:** 4 versions → pick cleanest Latin "SOLO" rendering with proper kerning (single word only — NO "MASTERCARD" suffix leak)
+**Generate:** 4 versions → pick cleanest Latin "SOLO" rendering with proper kerning (single word only - NO "MASTERCARD" suffix leak)
 
 ### VIDEO PROMPT (animated)
 
@@ -289,32 +289,32 @@ DO NOT change anything except tag animation. Background solid chroma blue.
 ## CHROMA KEY COMPOSITING NOTES (for designer)
 
 ### Cutting in CapCut / After Effects
-- Use **Color Key effect** with target color **`#0000FF` BLUE** (NOT green — Bubabu sticker palette contains green-channel colors that would degrade on green key)
+- Use **Color Key effect** with target color **`#0000FF` BLUE** (NOT green - Bubabu sticker palette contains green-channel colors that would degrade on green key)
 - Spill suppression: 5-10% **yellow** complementary to remove blue halo (NOT magenta)
 - Edge feathering: 1-2 pixels for soft anti-aliased edges
 - If blue still visible at edges, use **Despill HSL plugin** in After Effects targeting blue
-- ⚠️ **De-spill warning:** keying the blue channel will mildly affect cyan/blue/purple colors in the sticker. Bubabu sticker palette has zero pure blues, so this is safe. NEVER reintroduce a green chroma key just because mascot agent uses one — that's a different content with different palette constraints.
+- ⚠️ **De-spill warning:** keying the blue channel will mildly affect cyan/blue/purple colors in the sticker. Bubabu sticker palette has zero pure blues, so this is safe. NEVER reintroduce a green chroma key just because mascot agent uses one - that's a different content with different palette constraints.
 
 ### Layering order (top to bottom in timeline)
-1. Sticker 5 — Plush wordmark "ბუბაბუ" (top of frame)
-2. Sticker 1 — 30% mega-sticker (top-right corner)
-3. Sticker 2 — 9-10 მაისს date pill (below 30%)
-4. Sticker 3 — Price reveal (middle-right or center)
-5. Sticker 4 — CTA URL pill (bottom)
-6. Sticker 6 — SOLO tag (bottom-left corner, smallest, single Latin word)
+1. Sticker 5 - Plush wordmark "ბუბაბუ" (top of frame)
+2. Sticker 1 - 30% mega-sticker (top-right corner)
+3. Sticker 2 - 9-10 მაისს date pill (below 30%)
+4. Sticker 3 - Price reveal (middle-right or center)
+5. Sticker 4 - CTA URL pill (bottom)
+6. Sticker 6 - SOLO tag (bottom-left corner, smallest, single Latin word)
 7. Background: Cut A/B/C clean Bubabu video
 
 ### Timing on master 6s cut
-- 0:00 — Bubabu video starts
-- 0:30s — Sticker 5 wordmark fades in (top)
-- 0:50s — Sticker 1 (30%) elastic pop
-- 1:50s — Sticker 2 (9-10 მაისს) slides in below
-- 4:00s — Sticker 4 (CTA pill) slides up from bottom
-- 4:00s — Sticker 6 (BoG tag) slides in (bottom-left)
-- 5:50s — All hold for final beat
+- 0:00 - Bubabu video starts
+- 0:30s - Sticker 5 wordmark fades in (top)
+- 0:50s - Sticker 1 (30%) elastic pop
+- 1:50s - Sticker 2 (9-10 მაისს) slides in below
+- 4:00s - Sticker 4 (CTA pill) slides up from bottom
+- 4:00s - Sticker 6 (BoG tag) slides in (bottom-left)
+- 5:50s - All hold for final beat
 
 ### Timing on master 15s cut
-- Add Sticker 3 (price reveal) at 5:00 — full bounce animation
+- Add Sticker 3 (price reveal) at 5:00 - full bounce animation
 - Other stickers stay layered through full 15s
 - Wordmark and CTA pill have continuous gentle animation
 
@@ -323,7 +323,7 @@ DO NOT change anything except tag animation. Background solid chroma blue.
 ## SELF-CHECK before generating each sticker
 
 - [ ] Background = solid chroma blue `#0000FF` ONLY, no scenes
-- [ ] Sticker palette contains lime/yellow/cyan (which is WHY we use blue not green) — NEGATIVE prompts ban blue-tint on subject edges
+- [ ] Sticker palette contains lime/yellow/cyan (which is WHY we use blue not green) - NEGATIVE prompts ban blue-tint on subject edges
 - [ ] Only ONE sticker element per frame
 - [ ] No Bubabu, no owl, no characters in sticker frame
 - [ ] Mkhedruli text in mkhedruli only (NO mtavruli)

@@ -1,18 +1,18 @@
-# Video Cover / Thumbnail — "ეზოს ბიჭები"
+# Video Cover / Thumbnail - "ეზოს ბიჭები"
 
 **Use:** YouTube thumbnail / Facebook video cover / Instagram Reels cover / TikTok cover frame
 **Engine:** Bubabu COVER OVERRIDE per `feedback_bubabu_cover_override_baked_text.md` (NOT default COVER_ENGINE)
 **Path:** PRIMARY baked-text (Nano Banana 2 / Imagen 3 / Midjourney v7 render directly into image). FALLBACK editor-overlay only after 3+ retries fail Mkhedruli.
 **Master ratio:** 16:9 (1920×1080) → crops 1:1 / 9:16 / 4:5 / 851×315
-**Style:** Pixar 3D × Squishmallow × Jellycat × Candy Pop kids-commercial brand polish — NOT editorial / tabloid / press chrome
+**Style:** Pixar 3D × Squishmallow × Jellycat × Candy Pop kids-commercial brand polish - NOT editorial / tabloid / press chrome
 
 ---
 
 ## DESIGN CONCEPT
 
-**Hook mechanic:** curiosity gap — viewer sees three Pixar 3D Georgian boys leaning in with WONDER faces + Bubabu plush owl in foreground center = "what just happened?" → click.
+**Hook mechanic:** curiosity gap - viewer sees three Pixar 3D Georgian boys leaning in with WONDER faces + Bubabu plush owl in foreground center = "what just happened?" → click.
 
-**Emotional read:** PURE AMAZEMENT (NOT shock, NOT fear) — Pixar wonder face. Plus Candy Pop joy.
+**Emotional read:** PURE AMAZEMENT (NOT shock, NOT fear) - Pixar wonder face. Plus Candy Pop joy.
 
 **Style anchors:** Pixar Animation Studios × Coco family wonder × Squishmallow brand banner × Jellycat plush warmth × Build-a-Bear product photography. NEVER editorial / tabloid / broadcast-chyron.
 
@@ -22,12 +22,12 @@
 
 - `1.jpeg` ⭐ standard cyan-eye plush state
 - `2.jpeg` alt angle, standard state
-- `character_bubabu.md` color lock (BLACK beak `#1A1A1A` / caramel-brown `#A47551` wings / white body / printed-fabric cyan eyes — NO LED glow)
-- `main_boy_ref.png` (orange-stripe boy — Main Hero)
+- `character_bubabu.md` color lock (BLACK beak `#1A1A1A` / caramel-brown `#A47551` wings / white body / printed-fabric cyan eyes - NO LED glow)
+- `main_boy_ref.png` (orange-stripe boy - Main Hero)
 - `friend1_ref.png` (olive-hoodie glasses boy)
 - `friend2_ref.png` (yellow-tee bracelet boy)
 
-(Heart-state ref `3.jpeg` NOT used — cover = standard cyan eyes only.)
+(Heart-state ref `3.jpeg` NOT used - cover = standard cyan eyes only.)
 
 ---
 
@@ -36,7 +36,7 @@
 | Position | Text | Notes |
 |----------|------|-------|
 | Top-center | `ბუბაბუ` | Plush-fabric Mkhedruli wordmark |
-| Bottom third | `რა ელოდებოდათ ოთახში?` | Curiosity-gap headline — pure question, "what was waiting for them in the room?" |
+| Bottom third | `რა ელოდებოდათ ოთახში?` | Curiosity-gap headline - pure question, "what was waiting for them in the room?" |
 | Top-right | `360 ₾` | Magenta circle price sticker |
 | Bottom-center | `bubabu.ge` | Lime-orange gradient URL pill |
 
@@ -56,7 +56,7 @@ bubabu.ge
 რა ელოდებოდათ ოთახში?
 ```
 
-## NEGATIVE TEXT (banned variants — must NOT appear in baked render)
+## NEGATIVE TEXT (banned variants - must NOT appear in baked render)
 
 ```
 mtavruli capital Georgian (ბუბაბუ in capitals = banned)
@@ -72,7 +72,7 @@ character speech bubbles or comic dialogue
 
 ---
 
-## IMAGE PROMPT (single compiled — text BAKED IN)
+## IMAGE PROMPT (single compiled - text BAKED IN)
 
 ```
 Pixar 3D animation kids-commercial video cover composition, wide 16:9 landscape 1920x1080. Hyper-saturated Candy Pop maximalist brand aesthetic. Style anchors: Pixar Animation Studios × Coco family wonder × Squishmallow brand × Jellycat plush warmth × Build-a-Bear product photography.
@@ -122,7 +122,7 @@ NEGATIVE: glasses on Bubabu, aviator goggles, eyewear on Bubabu, frames, lenses,
 - [ ] Bubabu plush form correct: BLACK beak `#1A1A1A`, caramel-brown wings, white body, printed cyan plush eyes (NO LED glow / NO halo / NO heart eyes)
 - [ ] All 3 boys' WONDER faces (positive amazement, NOT fear / shock / panic)
 - [ ] Boys' faces lit warm window light, NOT cyan-projected
-- [ ] Candy Pop palette locked (butter-cream BG, cyan/magenta/lime/yellow accents — NO editorial desaturated 60-20-10)
+- [ ] Candy Pop palette locked (butter-cream BG, cyan/magenta/lime/yellow accents - NO editorial desaturated 60-20-10)
 - [ ] Bubabu hero ~25% of frame width, NOT giant realistic owl
 - [ ] No editorial chrome (NO antique gold filigree / NO red ink stamp / NO `EXCLUSIVE` burst / NO Dinastia-style masthead / NO press-paper texture)
 - [ ] No character names anywhere on cover
@@ -138,7 +138,7 @@ Same baked-text path, swap only the headline string in IMAGE PROMPT element 3:
 
 | Variant | Headline (Mkhedruli) | Hook angle |
 |---------|---------------------|-----------|
-| **A** ⭐ | `რა ელოდებოდათ ოთახში?` | pure question / curiosity gap (recommended baseline — "what was waiting for them in the room?") |
+| **A** ⭐ | `რა ელოდებოდათ ოთახში?` | pure question / curiosity gap (recommended baseline - "what was waiting for them in the room?") |
 | **B** | `ის პირველი ლაპარაკობს` | magic moment / product reveal |
 | **C** | `ცოცხალი მეგობარი — ეკრანის გარეშე` | direct value (good for cold audience) |
 | **D** | `სამი ბიჭი. სამი ტელეფონი. ერთი მეგობარი.` | three-beat rhythm / arithmetic mystery (3+3=1) |
@@ -153,17 +153,17 @@ When swapping headline, also update MKHEDRULI WHITELIST + NEGATIVE TEXT to match
 
 | Platform | Ratio | Crop strategy |
 |----------|-------|---------------|
-| YouTube thumbnail | 16:9 | Master 1920×1080 — primary deliverable |
+| YouTube thumbnail | 16:9 | Master 1920×1080 - primary deliverable |
 | Facebook video cover | 16:9 → 1280×720 | Same as YouTube |
-| Instagram feed video | 1:1 → 1080×1080 | Crop center — keep Bubabu + center boy + headline, lose left/right edges |
-| Instagram Reels cover | 9:16 → 1080×1920 | Vertical reframe — Bubabu top half, headline middle, kids' faces tighter behind Bubabu |
+| Instagram feed video | 1:1 → 1080×1080 | Crop center - keep Bubabu + center boy + headline, lose left/right edges |
+| Instagram Reels cover | 9:16 → 1080×1920 | Vertical reframe - Bubabu top half, headline middle, kids' faces tighter behind Bubabu |
 | TikTok cover | 9:16 → 1080×1920 | Same as Reels |
 | FB / IG Story | 9:16 | Same as Reels |
-| FB cover banner (page) | 851×315 → 16:5.7 | Use brand FB cover instead — see `agents/bubabu/content/20260504_social_brand_assets/facebook_cover.md` |
+| FB cover banner (page) | 851×315 → 16:5.7 | Use brand FB cover instead - see `agents/bubabu/content/20260504_social_brand_assets/facebook_cover.md` |
 
 ---
 
-## FALLBACK — EDITOR-OVERLAY (only if 3+ retries fail Mkhedruli baked render)
+## FALLBACK - EDITOR-OVERLAY (only if 3+ retries fail Mkhedruli baked render)
 
 If Nano Banana / Imagen / Midjourney consistently fail to render Mkhedruli wordmark "ბუბაბუ" or headline "სამმა ბიჭმა ტელეფონი ერთად დააგდო":
 
@@ -172,7 +172,7 @@ If Nano Banana / Imagen / Midjourney consistently fail to render Mkhedruli wordm
 3. Add failed Mkhedruli string as PNG overlay in CapCut / Photoshop using real **Noto Sans Georgian Bold** tinted to match the surrounding text element's color (cyan for wordmark, navy for headline)
 4. Match position + size + drop shadow + outline per IMAGE PROMPT visual styling
 
-This guarantees crisp Mkhedruli at the cost of an extra editor step. Use only when generator proves stubborn on specific Georgian strings — not as default path.
+This guarantees crisp Mkhedruli at the cost of an extra editor step. Use only when generator proves stubborn on specific Georgian strings - not as default path.
 
 ---
 

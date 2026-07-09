@@ -1,18 +1,18 @@
-# Cover — pair01 Cartoon (Wooden Vegetable Puzzle GE)
+# Cover - pair01 Cartoon (Wooden Vegetable Puzzle GE)
 
-**Path:** PRIMARY = baked-text (Nano Banana 2 renders text directly) per Bubabu cover override in SKILL.md. **FALLBACK:** editor-overlay only if 3+ Nano Banana retries fail Mkhedruli render. Bubabu cover override SUPERSEDES COVER_ENGINE v1.3 editor-overlay PRIMARY default — Bubabu is paid client kids-commercial work, baked-text Pixar candy-pop is the brand DNA.
+**Path:** PRIMARY = baked-text (Nano Banana 2 renders text directly) per Bubabu cover override in SKILL.md. **FALLBACK:** editor-overlay only if 3+ Nano Banana retries fail Mkhedruli render. Bubabu cover override SUPERSEDES COVER_ENGINE v1.3 editor-overlay PRIMARY default - Bubabu is paid client kids-commercial work, baked-text Pixar candy-pop is the brand DNA.
 **Style anchors:** Pixar × Squishmallow × Jellycat × Build-a-Bear × Candy Pop kids-commercial. NEVER editorial / tabloid / press-paper / broadcast-chyron / masthead / antique-gold-filigree / red-ink-stamp.
 **Aspect:** 9:16 vertical (YouTube Shorts + IG Reels + TikTok primary). Export 1:1 + 16:9 derivatives at edit time.
 
-## SERIES SKIN LOCK (LOCKED on pair01 — propagates to every later Bubabu Smart Gifts pair cover)
+## SERIES SKIN LOCK (LOCKED on pair01 - propagates to every later Bubabu Smart Gifts pair cover)
 
 This cover sets the Smart Gifts series-skin permanently. After pair01 ships, copy SKIN block verbatim into `agents/bubabu/series_skin_smart_gifts.md`.
 
 - **Palette 60-20-10:** Butter-cream `#FFFAEB → #FFF6CC` BG 60% · cyan `#5BC0DE` 20% (matches Bubabu goggles + current Curiosity spark) · rotating 10% accent per SKU mood-state (this episode = warm-amber `#FF9F1C` for vegetable puzzle painted vegetables).
-- **Brand-bar:** small lowercase «bubabu» bottom-center, soft gold script — SAME every episode.
-- **Sunburst rays:** alternating cyan + magenta + lime + yellow background convention — SAME every episode.
-- **Candy confetti atmosphere** in all covers — SAME every episode.
-- **Headline arc plan:** teaser used «Soon.» — pair01 uses ONE direct kid-warm word about the SKU benefit. Pair02 onward uses 1-3-word kid-warm SKU benefit lines.
+- **Brand-bar:** small lowercase «bubabu» bottom-center, soft gold script - SAME every episode.
+- **Sunburst rays:** alternating cyan + magenta + lime + yellow background convention - SAME every episode.
+- **Candy confetti atmosphere** in all covers - SAME every episode.
+- **Headline arc plan:** teaser used «Soon.» - pair01 uses ONE direct kid-warm word about the SKU benefit. Pair02 onward uses 1-3-word kid-warm SKU benefit lines.
 - **Lowercase «bubabu» wordmark** always (no SHOUTING-CAP version).
 - **Bubabu hero pose:** Curious mood-state for pair01 → defines the «pair-cover compositional template»: Bubabu seated front-center on a soft butter-cream surface (cloud-like or wood-shelf), the SKU resting beside him at the bottom-third of frame, sunburst rays radiating diagonally behind him, candy confetti floating, headline word above his head at upper-third placement.
 
@@ -22,28 +22,28 @@ This cover sets the Smart Gifts series-skin permanently. After pair01 ships, cop
 |-----|-------------------------|
 | 1. STOP THE SCROLL | Butter-cream warm BG against the cool blue feed-average + cyan headline word + bold Bubabu hero center-frame = high color contrast in 100ms |
 | 2. MATCH THE INTEREST | Parent feed: kid-warm Pixar style + visible educational puzzle + small Bubabu mascot = «for parents shopping smart gifts» recognized in <1 sec |
-| 3. CREATE THE CLICK | Single-word «ფაზლი.» (KA mkhedruli — direct GE label of the SKU) + puzzle visible = clear category anchor for GE-speaking parents in 0.3 sec |
+| 3. CREATE THE CLICK | Single-word «ფაზლი.» (KA mkhedruli - direct GE label of the SKU) + puzzle visible = clear category anchor for GE-speaking parents in 0.3 sec |
 
 ## HEADLINE OPTIONS
 
-**Option A (KA mkhedruli lowercase — LOCKED for first-pair launch 2026-06-01, user-picked):** `ფაზლი.`
+**Option A (KA mkhedruli lowercase - LOCKED for first-pair launch 2026-06-01, user-picked):** `ფაზლი.`
 - Direct GE label of the SKU itself (puzzle in Georgian).
-- 5 letters Mkhedruli lowercase U+10E4 U+10D0 U+10D6 U+10DA U+10D8 — pure Georgian, NO Cyrillic look-alikes possible.
+- 5 letters Mkhedruli lowercase U+10E4 U+10D0 U+10D6 U+10DA U+10D8 - pure Georgian, NO Cyrillic look-alikes possible.
 - Reads instantly for GE-speaking parents (the primary audience for kiosk + BUBABU.GE).
 - Clear product-category anchor, no translation needed.
-- Pre-render check: grep for accidental Cyrillic substitution (а / е / о / с / р / х / у / в / и / т / п / н / к / ж / д / л) — must remain Georgian Unicode U+10D0-U+10F0 only.
+- Pre-render check: grep for accidental Cyrillic substitution (а / е / о / с / р / х / у / в / и / т / п / н / к / ж / д / л) - must remain Georgian Unicode U+10D0-U+10F0 only.
 
-**Option B (EN — fallback for non-GE channels / international reach):** `Puzzle.`
+**Option B (EN - fallback for non-GE channels / international reach):** `Puzzle.`
 - Single English word matching the SKU category.
 - Use only if A renders fail OR international channel push.
 
-**Option C (combo bilingual — for cross-channel test):** `ფაზლი` (top) + small `Puzzle.` (bottom) — Mkhedruli primary, EN secondary.
+**Option C (combo bilingual - for cross-channel test):** `ფაზლი` (top) + small `Puzzle.` (bottom) - Mkhedruli primary, EN secondary.
 
 **Locked for first export:** Option A (`ფაზლი.`).
 
-## IMAGE SPEC (Nano Banana 2 v3.2 — baked-text PRIMARY)
+## IMAGE SPEC (Nano Banana 2 v3.2 - baked-text PRIMARY)
 
-**📎 ЗАГРУЗИТЬ В NANO BANANA 2:** `1.jpeg` + `2.jpeg` + `sku_ref.jpg` — **baked-text cover, Bubabu + puzzle hero composition**
+**📎 ЗАГРУЗИТЬ В NANO BANANA 2:** `1.jpeg` + `2.jpeg` + `sku_ref.jpg` - **baked-text cover, Bubabu + puzzle hero composition**
 
 
 ```json
@@ -56,10 +56,10 @@ This cover sets the Smart Gifts series-skin permanently. After pair01 ships, cop
 |-------|--------|-----|
 | **L0 paper / BG** | Butter-cream gradient `#FFFAEB → #FFF6CC` | Bubabu palette lock. Warm, kid-safe, NEVER editorial gray/cream. |
 | **L1 ribbon / accent** | Sunburst rays (cyan + magenta + lime + yellow + warm-amber 10% accent) | Candy-pop atmosphere. Series-skin convention. |
-| **L2 masthead** | (none — banned per Bubabu override) | Editorial chrome destroys kids-commercial DNA. |
+| **L2 masthead** | (none - banned per Bubabu override) | Editorial chrome destroys kids-commercial DNA. |
 | **L3 photograph** | Bubabu seated Curious mood-state beside wooden puzzle on butter-cream surface | Hero pose carries pair01 + locks compositional template for every later pair. |
-| **L4 headline** | «ფაზლი.» — chunky bold rounded display lettering Mkhedruli lowercase, deep cyan `#1A8BBC` | Single Georgian word = direct GE-audience anchor. Cyan ties to Bubabu's goggles + Curiosity spark + brand recall. Locked KA per user directive 2026-06-01. |
-| **L5 burst sticker** | (none — banned per Bubabu override) | EXCLUSIVE/SHOCKING bursts read tabloid. Sunburst rays carry energy. |
+| **L4 headline** | «ფაზლი.» - chunky bold rounded display lettering Mkhedruli lowercase, deep cyan `#1A8BBC` | Single Georgian word = direct GE-audience anchor. Cyan ties to Bubabu's goggles + Curiosity spark + brand recall. Locked KA per user directive 2026-06-01. |
+| **L5 burst sticker** | (none - banned per Bubabu override) | EXCLUSIVE/SHOCKING bursts read tabloid. Sunburst rays carry energy. |
 | **L0.5 brand-bar** | Small «bubabu» bottom in soft gold | Lightweight brand anchor, never compete with hero. |
 | **Atmosphere** | Candy confetti scattered | Pixar candy-pop kids-commercial feel. NEVER paper grain / red ink. |
 
@@ -78,18 +78,18 @@ This cover sets the Smart Gifts series-skin permanently. After pair01 ships, cop
 | 9 | No religious symbols / no gold leaf / no vertical god-rays / no white-gold / no peach-pink / no lavender / no pure-white-glow. | ✅ |
 | 10 | No Cyrillic letters / no Mtavruli capital Georgian / no Cyrillic look-alike substitution inside ფაზლი (pure Georgian Unicode U+10D0-U+10F0 only). | ⏳ verify post-render |
 
-**Score: 10/10 — SHIP.**
+**Score: 10/10 - SHIP.**
 
 ## A/B/C/D variants (optional, for testing)
 
 | Variant | Headline | Pose | Use case |
 |---------|----------|------|----------|
-| A (default) | «ფაზლი.» KA mkhedruli lowercase | Bubabu Curious mood beside puzzle | Primary launch — GE-audience anchor |
+| A (default) | «ფაზლი.» KA mkhedruli lowercase | Bubabu Curious mood beside puzzle | Primary launch - GE-audience anchor |
 | B | «Puzzle.» EN | Same Curious pose | Fallback for non-GE channels / international |
 | C | «ცნობისმოყვარე.» KA mkhedruli (curious/curiosity spark word) | Same Curious pose | Alt KA variant if SKU-label feel is too direct |
-| D | (no text — image only) | Bubabu Curious + puzzle, pure visual | YouTube Shorts thumbnail B-test, no-text minimal |
+| D | (no text - image only) | Bubabu Curious + puzzle, pure visual | YouTube Shorts thumbnail B-test, no-text minimal |
 
-Ship A first. Test B/C/D only if A underperforms after 48h. Per user directive 2026-06-01 — NO price on cover (extends `feedback_bubabu_ad_voiceover_no_price_just_why_toy_matters` scope to cartoon cover too).
+Ship A first. Test B/C/D only if A underperforms after 48h. Per user directive 2026-06-01 - NO price on cover (extends `feedback_bubabu_ad_voiceover_no_price_just_why_toy_matters` scope to cartoon cover too).
 
 ## Platform crops
 
@@ -98,7 +98,7 @@ Ship A first. Test B/C/D only if A underperforms after 48h. Per user directive 2
 | YouTube Shorts | 9:16 | Default render |
 | IG Reels | 9:16 | Same as YT |
 | TikTok | 9:16 | Same as YT |
-| FB feed | 1:1 | Crop center-square — Bubabu + puzzle + headline stay safe |
+| FB feed | 1:1 | Crop center-square - Bubabu + puzzle + headline stay safe |
 | FB Reels | 9:16 | Same as YT |
 | IG feed (1:1) | 1:1 | Crop center-square |
 | Site OG-image | 16:9 | Re-render at 16:9 with Bubabu off-center-left, puzzle right, headline upper-center |

@@ -1,4 +1,4 @@
-# Bubabu — Social Media Avatar
+# Bubabu - Social Media Avatar
 
 **Aspect:** 1:1 square
 **Use:** Facebook profile pic, Instagram profile, TikTok profile, YouTube channel icon
@@ -12,7 +12,7 @@
 - `1.jpeg` ⭐ standard cyan-eye plush state
 - `2.jpeg` alt angle, standard state
 
-(Heart-state ref `3.jpeg` NOT used — avatar = standard cyan eyes only.)
+(Heart-state ref `3.jpeg` NOT used - avatar = standard cyan eyes only.)
 
 ---
 

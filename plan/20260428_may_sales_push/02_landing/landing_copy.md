@@ -1,14 +1,14 @@
-# Bubabu Landing Page — Sales Rewrite (May 2026)
+# Bubabu Landing Page - Sales Rewrite (May 2026)
 
 **Цель:** Поднять конверсию с 0.1% до ≥1% через Hormozi value stack + Cialdini принципы
 **Контекст:** Сейчас landing = "Meet Bubabu" + 2 фото + buy button. Конверсия 2/2000 = 0.1%
-**Принцип:** Reframe Dream Outcome — продаём не сову, продаём **облегчение мамы + развитие ребёнка**
+**Принцип:** Reframe Dream Outcome - продаём не сову, продаём **облегчение мамы + развитие ребёнка**
 
 ---
 
 ## STRUCTURE (Above the Fold → Scroll Depth)
 
-### 1. HERO (above the fold) — emotion + demo
+### 1. HERO (above the fold) - emotion + demo
 
 ```
 [Demo video 60s autoplay muted]
@@ -47,7 +47,7 @@ CTA: 🦉 Купить Bubabu — 360 ₾
 
 ---
 
-### 2. PROBLEM (Pain — agitate)
+### 2. PROBLEM (Pain - agitate)
 
 ```
 KA HEADLINE:
@@ -113,13 +113,13 @@ KA TESTIMONIALS (3 короткие, после survey собираем наст
 [FB / IG / TT logos with follower counts: 3,929 + 1,772 + 261]
 ```
 
-**Психология:** Social proof по Cialdini — другие = сделали + был = ОК
+**Психология:** Social proof по Cialdini - другие = сделали + был = ОК
 
 ---
 
-### 5. THE OFFER (value stack — single price 360 GEL + bonuses)
+### 5. THE OFFER (value stack - single price 360 GEL + bonuses)
 
-**Решение Арчила:** ОДНА цена 360 GEL. Без 3-tier — продукт один. Vmesto tier-структуры используем VALUE STACK с bonus-ами.
+**Решение Арчила:** ОДНА цена 360 GEL. Без 3-tier - продукт один. Vmesto tier-структуры используем VALUE STACK с bonus-ами.
 
 ```
 KA HEADLINE:
@@ -139,11 +139,11 @@ KA HEADLINE:
 ერთი ფასი — 360 ლარი. ყველაფერი შიდა.
 ```
 
-**Visual hint:** показать как stack list — каждый bonus с зеленой галочкой, последний с big "ALL FOR 360 GEL" highlight.
+**Visual hint:** показать как stack list - каждый bonus с зеленой галочкой, последний с big "ALL FOR 360 GEL" highlight.
 
 ---
 
-### 6. GUARANTEE (risk reversal — Cialdini reciprocity + Hormozi)
+### 6. GUARANTEE (risk reversal - Cialdini reciprocity + Hormozi)
 
 ```
 KA HEADLINE:
@@ -235,7 +235,7 @@ trust badges:
 | Problem | Carousel 3 stat cards (4-6h, doctors, alternative?) |
 | Solution | 3-pillar grid с иконками |
 | Social Proof | UGC video grid 6 thumbnails + 3 quote cards |
-| Offer | Value stack list — каждый bonus с ценой "−" перечёркнутой |
+| Offer | Value stack list - каждый bonus с ценой "−" перечёркнутой |
 | Guarantee | Большая card с шрифтом, навы фон |
 | Urgency | Countdown timer (Kids Day 1 June) |
 | FAQ | Accordion |
@@ -245,13 +245,13 @@ trust badges:
 
 ## COLOR APPLICATION (per palette 27.04)
 
-- **Steel Blue `#1982C4`** — headers, primary buttons
-- **Vibrant Coral `#FF595E`** — CTA buttons (купить)
-- **Golden Pollen `#FFCA3A`** — value stack accents, "save" highlights
-- **Yellow Green `#8AC926`** — green checkmarks (trust badges)
-- **Bubabu Cyan `#5BC0DE`** — Bubabu mentions, brand mark
-- **Cream `#FAF7F2`** — section backgrounds
-- **Deep Navy `#1A1A2E`** — body text
+- **Steel Blue `#1982C4`** - headers, primary buttons
+- **Vibrant Coral `#FF595E`** - CTA buttons (купить)
+- **Golden Pollen `#FFCA3A`** - value stack accents, "save" highlights
+- **Yellow Green `#8AC926`** - green checkmarks (trust badges)
+- **Bubabu Cyan `#5BC0DE`** - Bubabu mentions, brand mark
+- **Cream `#FAF7F2`** - section backgrounds
+- **Deep Navy `#1A1A2E`** - body text
 
 ---
 
@@ -265,13 +265,13 @@ trust badges:
 
 ---
 
-## TECHNICAL SPECS (для Сабы — dev)
+## TECHNICAL SPECS (для Сабы - dev)
 
 - Mobile-first (≥70% траффика мобильный)
 - Demo video: lazy load, low-bandwidth poster image
 - Page weight target: <1MB
 - Load time target: <2s on 3G
-- ALL текст в KA/EN/RU — i18n switch top right
+- ALL текст в KA/EN/RU - i18n switch top right
 - Sticky bottom CTA on mobile after 50% scroll
 
 ## QA self-check

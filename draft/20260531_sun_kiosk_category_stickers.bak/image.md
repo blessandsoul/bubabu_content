@@ -1,15 +1,15 @@
-# image.md — Kiosk Category Stickers · DIE-CUT NB2 JSON SPECs
+# image.md - Kiosk Category Stickers · DIE-CUT NB2 JSON SPECs
 
 <!-- engine-override: PROMPT_ENGINE_DETAIL_FLOOR reason: Bubabu Pixar-lock drops photoreal fields (Kelvin/lens/aperture/lut/SSS/hdr/contrast/roughness/reflections); camera.model=Pixar virtual + style_anchor carry render intent. Die-cut format: text_rendering.enabled=true (text-bearing label, cover-style carve-out) + sticker_format/consistency_lock extension fields. -->
 
-**Concept:** each category = a **die-cut vinyl sticker** — soft cloud-like organic shape (different per category on purpose) + thick glossy WHITE die-cut border + soft drop shadow, on a pure WHITE background. Unified by the white border + candy-pop palette + Bubabu owl + BUBABU.GE banner — NOT by an identical frame.
-**Generator:** Nano Banana 2 — paste one JSON SPEC, one render. No reference image needed.
+**Concept:** each category = a **die-cut vinyl sticker** - soft cloud-like organic shape (different per category on purpose) + thick glossy WHITE die-cut border + soft drop shadow, on a pure WHITE background. Unified by the white border + candy-pop palette + Bubabu owl + BUBABU.GE banner - NOT by an identical frame.
+**Generator:** Nano Banana 2 - paste one JSON SPEC, one render. No reference image needed.
 **Pre-save gates:** Pixar-lock (no photoreal fields, camera.model="Pixar virtual", style_anchor every SPEC) · text order Georgian headline → benefit → English · BUBABU.GE caps · zero Cyrillic · negative bans rectangle/straight-frame/photoreal.
 **Text fallback:** if Georgian mis-renders 3×, set text_rendering.enabled:false, render icon+border only, overlay text in an editor.
 
 ---
 
-## 1 — Bubabu AI Friend (HERO)
+## 1 - Bubabu AI Friend (HERO)
 
 ```json
 {
@@ -48,7 +48,7 @@
 
 ---
 
-## 2 — Magnetic Toys
+## 2 - Magnetic Toys
 
 ```json
 {
@@ -90,7 +90,7 @@
 
 ---
 
-## 3 — Smart Learning Gifts
+## 3 - Smart Learning Gifts
 
 ```json
 {
@@ -132,7 +132,7 @@
 
 ---
 
-## 4 — STEM & Robotics
+## 4 - STEM & Robotics
 
 ```json
 {
@@ -174,7 +174,7 @@
 
 ---
 
-## 5 — Creative Gifts
+## 5 - Creative Gifts
 
 ```json
 {
@@ -216,7 +216,7 @@
 
 ---
 
-## 6 — Fun Gifts
+## 6 - Fun Gifts
 
 ```json
 {
@@ -258,7 +258,7 @@
 
 ---
 
-## 7 — Gift Sets
+## 7 - Gift Sets
 
 ```json
 {
@@ -300,7 +300,7 @@
 
 ---
 
-## 8 — Screen-Free Gifts
+## 8 - Screen-Free Gifts
 
 ```json
 {

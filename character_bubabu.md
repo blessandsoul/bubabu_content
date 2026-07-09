@@ -1,11 +1,11 @@
-# Bubabu — Character Reference
+# Bubabu - Character Reference
 
 ## SOURCE OF TRUTH
 **Reference photo:** `bubabu_reference.jpg` (uploaded by client, official product shot)
-**Rule:** Match uploaded reference EXACTLY. Do NOT invent colors, proportions, or features. Cyan goggle eye-markings are the brand signature — must be preserved on every render.
+**Rule:** Match uploaded reference EXACTLY. Do NOT invent colors, proportions, or features. Cyan goggle eye-markings are the brand signature - must be preserved on every render.
 
 ## IDENTITY BLOCK (verbatim in every scene)
-Bubabu is a round fluffy plush owl mascot, ball-shaped body almost spherical, primary color soft pure white snowy fluffy fur covering the entire body, face AND TOP OF HEAD. Two tiny pointed PURE WHITE ear tufts on top of head matching the body fur exactly — ears are SAME WHITE COLOR as body, NEVER brown, NEVER caramel. Signature cyan-turquoise circular eye-goggle markings on face — like aviator pilot goggles built in — with cream-beige inner ring around each eye. Bright yellow upper eyelid arcs inside the cyan goggle rings. Large round black expressive eyes with single white highlight reflection. Small triangular black beak between the goggles. Two small caramel-brown stubby wings sticking out from sides — short and rounded — wings ONLY are caramel-brown. Two small caramel-brown feet at bottom with three orange toes each — feet ONLY are caramel-brown. Body is round and chunky like a fluffy snowball. Soft cute kawaii expression, gentle calm wise look. Match uploaded bubabu_reference.jpg exactly.
+Bubabu is a round fluffy plush owl mascot, ball-shaped body almost spherical, primary color soft pure white snowy fluffy fur covering the entire body, face AND TOP OF HEAD. Two tiny pointed PURE WHITE ear tufts on top of head matching the body fur exactly - ears are SAME WHITE COLOR as body, NEVER brown, NEVER caramel. Signature cyan-turquoise circular eye-goggle markings on face - like aviator pilot goggles built in - with cream-beige inner ring around each eye. Bright yellow upper eyelid arcs inside the cyan goggle rings. Large round black expressive eyes with single white highlight reflection. Small triangular black beak between the goggles. Two small caramel-brown stubby wings sticking out from sides - short and rounded - wings ONLY are caramel-brown. Two small caramel-brown feet at bottom with three orange toes each - feet ONLY are caramel-brown. Body is round and chunky like a fluffy snowball. Soft cute kawaii expression, gentle calm wise look. Match uploaded bubabu_reference.jpg exactly.
 
 **COLOR LOCK:** WHITE = body + face + ears + top of head. CARAMEL-BROWN = ONLY wings + feet. Anything else white getting brown = appearance violation.
 

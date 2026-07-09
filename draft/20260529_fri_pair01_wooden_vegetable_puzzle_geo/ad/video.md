@@ -1,6 +1,6 @@
-# Video — pair01 Ad (3 scenes, dual NB2 SPEC-only per PROMPT_ENGINE v3.2)
+# Video - pair01 Ad (3 scenes, dual NB2 SPEC-only per PROMPT_ENGINE v3.2)
 
-**Format:** cartoon-style dual SPEC scene-block. Each scene = paired Nano Banana 2 image SPEC + Veo 3.1 video SPEC. Same generation workflow as `../cartoon/video.md` — render image first, then img2vid into Veo using rendered image as source frame.
+**Format:** cartoon-style dual SPEC scene-block. Each scene = paired Nano Banana 2 image SPEC + Veo 3.1 video SPEC. Same generation workflow as `../cartoon/video.md` - render image first, then img2vid into Veo using rendered image as source frame.
 
 **Status:** REPLACES previous single-hero `ad/image.md` + single-loop `ad/video.md` split. Merged into one file 2026-05-30 per user directive «у меня все подточено под формат картун там фото промпт и видео промпт». `ad/image.md` deleted.
 
@@ -12,19 +12,19 @@
 
 ---
 
-## CHARACTER REFERENCE (paste-source for every prompt — verbatim from `../cartoon/character.md`)
+## CHARACTER REFERENCE (paste-source for every prompt - verbatim from `../cartoon/character.md`)
 
 ### Bubabu IDENTITY BLOCK
 ```
 Bubabu is a round fluffy plush owl mascot, ball-shaped body almost spherical, primary color soft pure white snowy fluffy fur covering the entire body, face AND TOP OF HEAD. Two tiny pointed PURE WHITE ear tufts on top of head matching the body fur exactly — ears are SAME WHITE COLOR as body, NEVER brown, NEVER caramel. Signature cyan-turquoise circular eye-goggle markings on face — like aviator pilot goggles built in — with cream-beige inner ring around each eye. Bright yellow upper eyelid arcs inside the cyan goggle rings. Large round black expressive eyes with single white highlight reflection. Small triangular black beak between the goggles, STAYS CLOSED throughout, brand lock. Two small caramel-brown stubby wings sticking out from sides — short and rounded — wings ONLY are caramel-brown. Two small caramel-brown feet at bottom with three orange toes each — feet ONLY are caramel-brown. Body is round and chunky like a fluffy snowball. Soft cute kawaii expression, gentle calm wise look. Match uploaded 1.jpeg + 2.jpeg plush form EXACTLY 1:1.
 ```
 
-### Wonder object — WOODEN VEGETABLE PUZZLE (SKU reference-only — appearance from uploaded photo)
+### Wonder object - WOODEN VEGETABLE PUZZLE (SKU reference-only - appearance from uploaded photo)
 ```
 Wooden vegetable matching puzzle SKU. APPEARANCE = match attached ./sku_ref.jpg 1:1 — do NOT invent shape, colors, vegetable types, label text, tile-slot count, or frame material. Generator MUST use the uploaded sku_ref.jpg as the SOLE visual source of truth for this object. Rendered in Pure Pixar 3D feature-film aesthetic to match the rest of the scene (toy-like proportions, stylized geometry, NOT photoreal).
 ```
 
-### VISUAL_STYLE block (Pixar render lock — append to every image prompt)
+### VISUAL_STYLE block (Pixar render lock - append to every image prompt)
 ```
 Ultra-detailed Pixar feature-film 3D final-render quality — Disney/Pixar studio polish grade, sharp clean geometry, crisp edge separation between subjects and background, high-frequency detail on plush fur weave + wood grain textures, vivid saturated Candy Pop kid-toy palette (NOT muted, NOT washed out, NOT desaturated), bright clear studio-polish lighting (warm key + soft fill + gentle rim). Reference quality bar: Boo close-up sharpness from Monsters Inc + Carl Fredricksen warm-render quality from Up + Miguel character detail from Coco. Butter-cream commercial background (`#FFFAEB` top fading to `#FFF6CC` bottom), sunburst rays + candy confetti = series-skin atmosphere shared with cartoon cover. Vertical 9:16. Stylized toy-like proportions. NEVER muddy, NEVER soft-focused, NEVER cheap-3D, NEVER photoreal (no Sony / Sigma / Kodak / Octane / DSLR / ISO), NEVER live-action, NEVER cinematic film. NEVER watercolor, NEVER 2D anime, NEVER paper-grain, NEVER ink-contour.
 ```
@@ -41,21 +41,21 @@ Sound: foley only — no music, no soundtrack, no speech, no speaking, no dialog
 
 ---
 
-## VOICEOVER-TO-CLIP MAP (n/a — ad has NO narration, foley + caption only)
+## VOICEOVER-TO-CLIP MAP (n/a - ad has NO narration, foley + caption only)
 
 | Scene | Duration | Beat | Bubabu mood-state sub-variant | SKU in frame |
 |-------|----------|------|-------------------------------|--------------|
-| 1 | 4-6 sec | JOY-HOP REVEAL — puzzle foreground, Bubabu rigid-translates vertical hop behind, sunburst rays expand | Curious-Excited (excited variant: feet apart, body upright, wide eyes on SKU, vertical hop without squash) | yes — center-foreground hero |
-| 2 | 5-7 sec | THEMATIC PLAY — close on Bubabu's right wing-tip placing one vegetable tile into its matching slot on the puzzle | Curious-Playful (playful variant: wing-tip mid-motion engaged with tile, body rotated 12° toward puzzle, left wing frozen) | yes — fills frame, close-up matching action |
-| 3 | 4-6 sec | POSSESSION HOLD — Bubabu seated, puzzle cradled in right wing-fold against chest, eyes soft on puzzle, gentle settle | Curious-Cozy (cozy variant: seated, body softened pose, wing draped over puzzle, contemplative micro-breath) | yes — cradled in wing-fold |
+| 1 | 4-6 sec | JOY-HOP REVEAL - puzzle foreground, Bubabu rigid-translates vertical hop behind, sunburst rays expand | Curious-Excited (excited variant: feet apart, body upright, wide eyes on SKU, vertical hop without squash) | yes - center-foreground hero |
+| 2 | 5-7 sec | THEMATIC PLAY - close on Bubabu's right wing-tip placing one vegetable tile into its matching slot on the puzzle | Curious-Playful (playful variant: wing-tip mid-motion engaged with tile, body rotated 12° toward puzzle, left wing frozen) | yes - fills frame, close-up matching action |
+| 3 | 4-6 sec | POSSESSION HOLD - Bubabu seated, puzzle cradled in right wing-fold against chest, eyes soft on puzzle, gentle settle | Curious-Cozy (cozy variant: seated, body softened pose, wing draped over puzzle, contemplative micro-breath) | yes - cradled in wing-fold |
 
 ---
 
-## SCENE 1 — JOY-HOP REVEAL
+## SCENE 1 - JOY-HOP REVEAL
 
 > BEAT: «Puzzle revealed center-foreground, Bubabu joy-hops behind in pure delight, sunburst rays expand.»
 
-**📎 ЗАГРУЗИТЬ В NANO BANANA 2:** `1.jpeg` + `2.jpeg` + `sku_ref.jpg` (mandatory — generator uses sku_ref.jpg as sole SKU appearance source)
+**📎 ЗАГРУЗИТЬ В NANO BANANA 2:** `1.jpeg` + `2.jpeg` + `sku_ref.jpg` (mandatory - generator uses sku_ref.jpg as sole SKU appearance source)
 
 ### Image SPEC
 
@@ -79,11 +79,11 @@ Sound: foley only — no music, no soundtrack, no speech, no speaking, no dialog
 
 ---
 
-## SCENE 2 — THEMATIC PLAY (matching one vegetable tile into its slot)
+## SCENE 2 - THEMATIC PLAY (matching one vegetable tile into its slot)
 
 > BEAT: «Close on Bubabu's right wing-tip slowly placing one vegetable tile into its matching slot on the puzzle. Audience sees: this is a matching game.»
 
-**📎 ЗАГРУЗИТЬ В NANO BANANA 2:** `1.jpeg` + `2.jpeg` + `sku_ref.jpg` (mandatory — generator uses sku_ref.jpg as sole SKU appearance source AND derives which tile + slot from the photo, do NOT specify which vegetable in prompt)
+**📎 ЗАГРУЗИТЬ В NANO BANANA 2:** `1.jpeg` + `2.jpeg` + `sku_ref.jpg` (mandatory - generator uses sku_ref.jpg as sole SKU appearance source AND derives which tile + slot from the photo, do NOT specify which vegetable in prompt)
 
 ### Image SPEC
 
@@ -107,11 +107,11 @@ Sound: foley only — no music, no soundtrack, no speech, no speaking, no dialog
 
 ---
 
-## SCENE 3 — POSSESSION HOLD (wing-fold cradle)
+## SCENE 3 - POSSESSION HOLD (wing-fold cradle)
 
 > BEAT: «Bubabu sits, puzzle cradled in right wing-fold against chest, eyes soft on puzzle, contemplative settle. Audience reads: this is yours.»
 
-**📎 ЗАГРУЗИТЬ В NANO BANANA 2:** `1.jpeg` + `2.jpeg` + `sku_ref.jpg` (mandatory — generator uses sku_ref.jpg as sole SKU appearance source)
+**📎 ЗАГРУЗИТЬ В NANO BANANA 2:** `1.jpeg` + `2.jpeg` + `sku_ref.jpg` (mandatory - generator uses sku_ref.jpg as sole SKU appearance source)
 
 ### Image SPEC
 
@@ -154,28 +154,28 @@ Each scene = foley only out of Veo. Editor layers a 6-sec Lyria 3 brand-bell ost
 ## Audit
 
 - ✅ 3 scene-blocks with dual SPEC each = 6 SPECs total (3 image + 3 video).
-- ✅ Cartoon-style scene-block format — operator workflow identical to cartoon/video.md.
+- ✅ Cartoon-style scene-block format - operator workflow identical to cartoon/video.md.
 - ✅ Every scene uploads `1.jpeg` + `2.jpeg` + `sku_ref.jpg` (mandatory).
 - ✅ SKU appearance = reference-only line in every scene (no body description per `feedback_no_sku_appearance_dump_when_ref_uploaded`).
-- ✅ Pixar render lock honored — zero photoreal SPEC fields (no Kelvin / no SSS on human / no aperture / no lens mm / no motion_blur / no dynamic_range / no hdr_mode / no noise_reduction).
+- ✅ Pixar render lock honored - zero photoreal SPEC fields (no Kelvin / no SSS on human / no aperture / no lens mm / no motion_blur / no dynamic_range / no hdr_mode / no noise_reduction).
 - ✅ `style_anchor` field populated per scene image + video SPEC.
 - ✅ `style_motion` field populated per video SPEC.
 - ✅ Bubabu rigid-translate-only honored (Scene 1 joy-hop = NO squash-stretch).
 - ✅ Asymmetric-wing-lock honored (Scene 2 + Scene 3 = only right wing engaged with SKU, left wing frozen).
 - ✅ Beak closed throughout (brand lock).
 - ✅ Static camera every scene (no zoom / pan / dolly).
-- ✅ Foley-only audio (no music/speech in Veo output — Lyria 3 layering in editor post-render).
+- ✅ Foley-only audio (no music/speech in Veo output - Lyria 3 layering in editor post-render).
 - ✅ Set-equality check passes for all 3 scenes ({video subjects} = {image subjects}).
-- ✅ SLOP_FILTER §BS clean — no `...`, no `[bracket]` TTS directives, prose-only beat descriptions.
-- ✅ MODERATION-SAFE — no child subject in any ad scene (Bubabu + SKU only).
+- ✅ SLOP_FILTER §BS clean - no `...`, no `[bracket]` TTS directives, prose-only beat descriptions.
+- ✅ MODERATION-SAFE - no child subject in any ad scene (Bubabu + SKU only).
 - ✅ Universal NEGATIVE_LOCK + Pixar lock extension appended to every scene negative_prompt.
 
 ## Calibration
 
-- L1 FORMAT — VERIFIED at write time (3 paired scenes, JSON parses, schema_version markers present).
-- L2 SPEC-CONFORMANCE — VERIFIED (Pixar render lock, SKU reference-only, asymmetric-wing-lock, rigid-translate-only).
-- L3 GENERATOR-CONVERGENCE — PENDING render. Highest-risk beats: Scene 1 (rigid-translate hop without squash — Veo tends to add squash by default), Scene 2 (tile-placement matching action — generator must read sku_ref.jpg to pick correct tile + slot).
-- L4 VIEWER-TEST — PENDING audience response 24-48h after Saturday publish.
+- L1 FORMAT - VERIFIED at write time (3 paired scenes, JSON parses, schema_version markers present).
+- L2 SPEC-CONFORMANCE - VERIFIED (Pixar render lock, SKU reference-only, asymmetric-wing-lock, rigid-translate-only).
+- L3 GENERATOR-CONVERGENCE - PENDING render. Highest-risk beats: Scene 1 (rigid-translate hop without squash - Veo tends to add squash by default), Scene 2 (tile-placement matching action - generator must read sku_ref.jpg to pick correct tile + slot).
+- L4 VIEWER-TEST - PENDING audience response 24-48h after Saturday publish.
 
 **Allowed claim now:** «Format + spec checks pass on all 6 ad SPECs. Outcome pending render.»
-**Forbidden claim:** «Done / shipped / works / ready» — outcome unverified.
+**Forbidden claim:** «Done / shipped / works / ready» - outcome unverified.

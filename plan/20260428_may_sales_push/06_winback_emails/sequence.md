@@ -1,4 +1,4 @@
-# Win-Back Email Sequence — Axiom Smart Users
+# Win-Back Email Sequence - Axiom Smart Users
 
 **Цель:** Reactivate 1000+ existing Axiom Smart app users (зарегистрированы, но многие НЕ купили Bubabu)
 **Methodology:** Hormozi 3-touch sequence (high → social proof → takeaway close)
@@ -12,16 +12,16 @@
 
 | Сегмент | Кол-во (estimate) | Touch |
 |---------|-------------------|-------|
-| **Bought Bubabu, last buy >60 дней назад** | ~200 | "Кому подаришь следующее?" — referral |
+| **Bought Bubabu, last buy >60 дней назад** | ~200 | "Кому подаришь следующее?" - referral |
 | **Registered, never bought** | ~600 | 3-touch win-back (этот sequence) |
 | **Forum users only** | ~500 | hybrid (register check + offer) |
-| **Active users** | ~200 | Скип — не нужно reactivate |
+| **Active users** | ~200 | Скип - не нужно reactivate |
 
 **Этот sequence = focus на ~600 unconverted users** (главный win-back target).
 
 ---
 
-## EMAIL 1 — DAY 1 (8 мая) — exclusive offer
+## EMAIL 1 - DAY 1 (8 мая) - exclusive offer
 
 **Subject lines (A/B test):**
 ```
@@ -30,10 +30,10 @@ B: ჩვენ Axiom-ში მოგიწვევთ — ბუბაბუ 
 C: ანდრო — საიდუმლო ფასდაკლება Axiom Smart მომხმარებლებისთვის
 ```
 
-**Sender:** "Archil — Bubabu founder" <archil@axiomsmart.com>
+**Sender:** "Archil - Bubabu founder" <archil@axiomsmart.com>
 **Reply-to:** WhatsApp number Арчила
 
-### Body (Georgian — verbatim, не auto-translate)
+### Body (Georgian - verbatim, не auto-translate)
 
 ```
 KA:
@@ -113,7 +113,7 @@ Founder, Axiom Smart / Bubabu
 
 ---
 
-## EMAIL 2 — DAY 5 (13 мая) — social proof
+## EMAIL 2 - DAY 5 (13 мая) - social proof
 
 **Sent only to:** users who opened Email 1 but didn't click / didn't buy
 
@@ -164,7 +164,7 @@ KA:
 
 ---
 
-## EMAIL 3 — DAY 12 (19 мая) — takeaway close + scarcity
+## EMAIL 3 - DAY 12 (19 мая) - takeaway close + scarcity
 
 **Sent only to:** users who opened Email 1 OR 2 but still didn't buy
 
@@ -205,10 +205,10 @@ KA:
 ```
 
 ### Psychology breakdown
-- **Takeaway close** ("это нормально что не покупаете") — снимает давление, повышает ценность
-- **Real deadline** — кодовый дедлайн true
-- **Bridge to next opportunity** — Bank of Georgia июнь = ещё one option, не давление
-- **Founder voice** — личность не корпорация
+- **Takeaway close** ("это нормально что не покупаете") - снимает давление, повышает ценность
+- **Real deadline** - кодовый дедлайн true
+- **Bridge to next opportunity** - Bank of Georgia июнь = ещё one option, не давление
+- **Founder voice** - личность не корпорация
 
 ### Tracking
 - Open rate target: ≥40% (последний шанс эффект)
@@ -221,9 +221,9 @@ KA:
 
 | Metric | E1 | E2 | E3 | Total |
 |--------|----|----|----|-------|
-| Sent | 600 | ~300 | ~150 | — |
-| Open rate | 30% | 35% | 40% | — |
-| Click rate | 8% | 12% | 15% | — |
+| Sent | 600 | ~300 | ~150 | - |
+| Open rate | 30% | 35% | 40% | - |
+| Click rate | 8% | 12% | 15% | - |
 | Sales | ~12 | ~10 | ~8 | **~30** |
 | Revenue | ~3,672 GEL | ~3,060 | ~2,448 | **~9,180 GEL** |
 
@@ -259,10 +259,10 @@ KA:
 
 ## QA self-check
 - [x] 3-touch sequence (Hormozi pattern)
-- [x] Founder voice — Арчил personal letter
+- [x] Founder voice - Арчил personal letter
 - [x] Real exclusive offer (AXIOM15 = 15% off, code expires)
 - [x] Social proof в E2 (5 UGC videos)
-- [x] Takeaway close в E3 (psychology — снимает давление)
+- [x] Takeaway close в E3 (psychology - снимает давление)
 - [x] Real deadline на 12 дней
 - [x] Bridge к Bank of Georgia (не feel like dead-end)
 - [x] Personalization tags ready
@@ -276,15 +276,15 @@ KA:
 2. Setup automation triggers
 3. A/B test setup для subject lines
 4. UGC видео preparation для E2 (5 short clips от Drive)
-5. Launch 8 мая 09:00 — Email 1 send
+5. Launch 8 мая 09:00 - Email 1 send
 6. Daily monitoring dashboard
 7. Final report 22 мая (3 дня после E3)
 
 ## NOTE для Арчила
 
 **Время Арчила в этом sequence:**
-- 30 минут — review текстов (своим голосом ли звучит?)
-- 30 минут — финальные правки
-- 1 час — ответы на WhatsApp от тех кто пишет лично (ожидаемо ~20 сообщений)
+- 30 минут - review текстов (своим голосом ли звучит?)
+- 30 минут - финальные правки
+- 1 час - ответы на WhatsApp от тех кто пишет лично (ожидаемо ~20 сообщений)
 
 Total time investment Арчила = ~2 часа за весь sequence. Возврат 25-35 покупок = ~9000+ GEL revenue.

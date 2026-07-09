@@ -1,6 +1,6 @@
-# AI Video Prompts — "ეზოს ბიჭები" (Pixar 3D)
+# AI Video Prompts - "ეზოს ბიჭები" (Pixar 3D)
 
-**Style:** Pixar 3D animation throughout. All scenes AI-generated — image first, then img2vid.
+**Style:** Pixar 3D animation throughout. All scenes AI-generated - image first, then img2vid.
 **Universal style line in EVERY prompt:** `Pixar 3D animation style. Octane render. Subsurface scattering. Soft cinematic lighting. Stylized grounded proportions.`
 **Identity Lock:** Paste at end of every scene prompt (see character.md).
 
@@ -11,15 +11,15 @@
 For EVERY scene:
 1. **Image first** (Nano Banana / Midjourney / Flux) using full CHARACTER_BLOCK + scene description + uploaded reference images
 2. **Img2vid** (Veo3 / Kling 2.0 / Runway Gen-4) using generated image as input
-3. **Audio** layered separately — TTS dialogue + foley + ambient ONLY
+3. **Audio** layered separately - TTS dialogue + foley + ambient ONLY
 
 ---
 
-## ⛔ NO MUSIC IN VIDEO PROMPTS — ABSOLUTE RULE
+## ⛔ NO MUSIC IN VIDEO PROMPTS - ABSOLUTE RULE
 
-Video generator (Veo3 / Kling) does NOT generate music. Music is a SEPARATE Suno track layered in editor — see `audio.md` for full thematic music brief.
+Video generator (Veo3 / Kling) does NOT generate music. Music is a SEPARATE Suno track layered in editor - see `audio.md` for full thematic music brief.
 
-In every video prompt below the audio line MUST say "NO music" — this prevents Veo/Kling from inventing AI music ambience that fights the proper Suno track in post.
+In every video prompt below the audio line MUST say "NO music" - this prevents Veo/Kling from inventing AI music ambience that fights the proper Suno track in post.
 
 ✅ In video prompts: TTS dialogue + foley + ambient + Bubabu product SFX (cyan-chime, heart-pulse blip)
 ❌ In video prompts: ANY music description, instruments, BPM, score cue
@@ -27,13 +27,13 @@ In every video prompt below the audio line MUST say "NO music" — this prevents
 
 ---
 
-## 🧸 BUBABU IS A KIDS' PLUSH TOY — NOT A SCI-FI DEVICE
+## 🧸 BUBABU IS A KIDS' PLUSH TOY - NOT A SCI-FI DEVICE
 
 Bubabu is a soft cuddly stuffed owl. His cyan eyes are **colored fabric/plush features**, NOT light-emitting LED panels. NO sci-fi glow. NO spaceship aesthetic. NO halos. NO laser beams. NO godrays. NO neon. NO bright luminescent emission.
 
-The toy looks like Squishmallow / Build-a-Bear / Jellycat — **plushy, matte, soft**. Cyan eye color is a fabric color, not a glow.
+The toy looks like Squishmallow / Build-a-Bear / Jellycat - **plushy, matte, soft**. Cyan eye color is a fabric color, not a glow.
 
-**Exception:** Scene 7 (wake-up moment) — eyes have a *very subtle* warm pulse from dark-dim to normal cyan color, like the toy turning on softly. Even that is gentle, NOT a light show. After Scene 7, Bubabu's eyes stay as plain cyan-colored plush features (NO ongoing glow).
+**Exception:** Scene 7 (wake-up moment) - eyes have a *very subtle* warm pulse from dark-dim to normal cyan color, like the toy turning on softly. Even that is gentle, NOT a light show. After Scene 7, Bubabu's eyes stay as plain cyan-colored plush features (NO ongoing glow).
 
 **Universal NEGATIVE block to paste in EVERY Bubabu scene:**
 ```
@@ -46,28 +46,28 @@ glowing eyes, luminescent eyes, LED-bright eyes, neon eyes, sci-fi glow, spacesh
 
 | Scene | Main Boy | Friend 1 | Friend 2 | Mom | Bubabu plush | Box |
 |-------|:--------:|:--------:|:--------:|:---:|:------------:|:---:|
-| 1 — Courtyard | ✅ | ✅ | ✅ | — | — | — |
-| 2 — Mom window | — | — | — | ✅ | — | — |
-| 3 — Boys looking up | ✅ | ✅ | ✅ | — | — | — |
-| 4 — Stairwell | ✅ | ✅ | ✅ | — | — | — |
-| **4.5 — Mom greets** ⭐NEW | ✅ | ✅ | ✅ | ✅ | — | — |
-| 5 — Box reveal | ✅ | ✅ | ✅ | — | (in window) | ✅ REAL |
-| **5.5 — Opening box** ⭐NEW | ✅ | ✅ | ✅ | — | (glimpse inside) | ✅ REAL |
-| 6 — Lift Bubabu | ✅ | ✅ | ✅ | — | ✅ FIRST FULL | ✅ |
-| 7 — Eyes activate ⭐ | — | — | — | — | ✅ HERO | — |
-| 8 — Boys shock | ✅ | ✅ | ✅ | — | ✅ | — |
-| 9 — Invitation 💗 | use Scene 8 still as ref OR full set + 💗heart-eyes |
-| 10 — Joy montage 💗 | ✅ | ✅ | ✅ | ✅ BG | ✅ + 💗 | — |
-| 11 — Final hero | — | — | — | — | ✅ | — |
+| 1 - Courtyard | ✅ | ✅ | ✅ | - | - | - |
+| 2 - Mom window | - | - | - | ✅ | - | - |
+| 3 - Boys looking up | ✅ | ✅ | ✅ | - | - | - |
+| 4 - Stairwell | ✅ | ✅ | ✅ | - | - | - |
+| **4.5 - Mom greets** ⭐NEW | ✅ | ✅ | ✅ | ✅ | - | - |
+| 5 - Box reveal | ✅ | ✅ | ✅ | - | (in window) | ✅ REAL |
+| **5.5 - Opening box** ⭐NEW | ✅ | ✅ | ✅ | - | (glimpse inside) | ✅ REAL |
+| 6 - Lift Bubabu | ✅ | ✅ | ✅ | - | ✅ FIRST FULL | ✅ |
+| 7 - Eyes activate ⭐ | - | - | - | - | ✅ HERO | - |
+| 8 - Boys shock | ✅ | ✅ | ✅ | - | ✅ | - |
+| 9 - Invitation 💗 | use Scene 8 still as ref OR full set + 💗heart-eyes |
+| 10 - Joy montage 💗 | ✅ | ✅ | ✅ | ✅ BG | ✅ + 💗 | - |
+| 11 - Final hero | - | - | - | - | ✅ | - |
 
 **Files needed in working folder:**
-- `main_boy_ref.png` — Character 1 reference sheet
-- `friend1_ref.png` — Character 2 reference sheet
-- `friend2_ref.png` — Character 3 reference sheet
-- `mom_ref.png` — Character 4 reference sheet
-- `1.jpeg` + `2.jpeg` — Bubabu plush product photo (sacred source-of-truth, standard cyan-eye state)
-- `3.jpeg` ⭐ — real product photo showing PINK heart eye-display lit up (use for Scenes 9, 10, 11 heart-state generation)
-- `bubabu_box_real.jpg` ⭐ — real product retail box photo (Bubabu Boo Industrial Design Sheet)
+- `main_boy_ref.png` - Character 1 reference sheet
+- `friend1_ref.png` - Character 2 reference sheet
+- `friend2_ref.png` - Character 3 reference sheet
+- `mom_ref.png` - Character 4 reference sheet
+- `1.jpeg` + `2.jpeg` - Bubabu plush product photo (sacred source-of-truth, standard cyan-eye state)
+- `3.jpeg` ⭐ - real product photo showing PINK heart eye-display lit up (use for Scenes 9, 10, 11 heart-state generation)
+- `bubabu_box_real.jpg` ⭐ - real product retail box photo (Bubabu Boo Industrial Design Sheet)
 
 ---
 
@@ -77,11 +77,11 @@ The real Bubabu box has specific construction the generator MUST respect:
 
 | Feature | Detail |
 |---------|--------|
-| **Dimensions** | 220mm W × 250mm H × 120mm D — vertical rectangular |
+| **Dimensions** | 220mm W × 250mm H × 120mm D - vertical rectangular |
 | **Color** | Cyan turquoise #5BC0DE main body, white front panel |
 | **Handle** | Textured polypropylene strap on TOP of box |
-| **Window** | 0.8mm clear PETG plastic on front — Bubabu plush visible INSIDE through window even before opening |
-| **Opening** | TOP FLAPS fold UP and OUT (like petals) when handle is pulled — NOT a lift-off lid, NOT a side-pull, NOT cut open |
+| **Window** | 0.8mm clear PETG plastic on front - Bubabu plush visible INSIDE through window even before opening |
+| **Opening** | TOP FLAPS fold UP and OUT (like petals) when handle is pulled - NOT a lift-off lid, NOT a side-pull, NOT cut open |
 | **Wordmark** | Mkhedruli "ბუბაბუ ბუ" printed on cyan top section above front window |
 | **Bottom strip** | Mkhedruli Georgian text on cyan strip at bottom of front |
 | **Side panel** | QR code printed on right side |
@@ -94,60 +94,60 @@ The real Bubabu box has specific construction the generator MUST respect:
 
 ## VOICE CONSISTENCY KEY (paste-ready voice baselines)
 
-Every video prompt with dialogue must include the FULL voice baseline for that speaker — copy verbatim, no shortening. This ensures Veo3/Kling renders the same voice across all scenes.
+Every video prompt with dialogue must include the FULL voice baseline for that speaker - copy verbatim, no shortening. This ensures Veo3/Kling renders the same voice across all scenes.
 
 ### MOM voice baseline (3 lines total)
-**Gemini TTS — VOICE: Sulafat / STYLE: Empathetic / PACE: Natural / ACCENT: Georgian**
+**Gemini TTS - VOICE: Sulafat / STYLE: Empathetic / PACE: Natural / ACCENT: Georgian**
 ```
 Warm Georgian female voice age 38, real mom-energy, NOT actress reading copy, slight smile in voice baseline, dark-brown vocal warmth, lived-in motherly tone. Sulafat-typical adult female mother-storyteller timbre.
 ```
-- Scene 2 line 1: calling down 6 stories — volume raised, friendly shout
-- Scene 2 line 3: "ეგენიც ამოიყვანე!" — slight playful wave-energy, same shout volume
+- Scene 2 line 1: calling down 6 stories - volume raised, friendly shout
+- Scene 2 line 3: "ეგენიც ამოიყვანე!" - slight playful wave-energy, same shout volume
 - Scene 4.5 line: knowing-mom playful tease, normal volume, warmth
 
 ### BUBABU voice baseline (2 lines total)
-**Gemini TTS — VOICE: Leda (NOT Sulafat — Bubabu must sound DIFFERENT from Mom) / STYLE: Narrative / PACE: Natural / ACCENT: Georgian**
+**Gemini TTS - VOICE: Leda (NOT Sulafat - Bubabu must sound DIFFERENT from Mom) / STYLE: Narrative / PACE: Natural / ACCENT: Georgian**
 ```
 🧸 CUTE TOY VOICE — like a friendly stuffed animal coming to life. Slightly higher pitch, soft fuzzy warmth, gentle plush-character timbre. Think Pixar/Disney plush toy character (Toy Story Slinky's softer cousin / Build-a-Bear talking voice / Care Bear warmth). Leda-typical brighter forward-placement female voice with toy-like cuteness. NOT mom, NOT adult-warm-female, NOT child voice, NOT robotic, NOT formal announcer, NOT wise-grandmother. AGE-NEUTRAL plush-toy companion timbre. Slight smile baseline. Soft cuddly fuzzy-cheeks vocal quality. Distinctly DIFFERENT from Sulafat (Mom).
 
 Reference timbre: imagine if a friendly bedtime plush owl could talk — that's Bubabu. NOT a serious AI assistant. NOT a narrator. A CUTE TOY.
 ```
-- Scene 7 line: first hello — slow gentle awakening discovery, cute toy-warmth, like a stuffed animal slowly waking up to greet a child
-- Scene 9 line: invitation question — playful curious lift, upward Georgian interrogative on "გინდა", toy-friend energy
+- Scene 7 line: first hello - slow gentle awakening discovery, cute toy-warmth, like a stuffed animal slowly waking up to greet a child
+- Scene 9 line: invitation question - playful curious lift, upward Georgian interrogative on "გინდა", toy-friend energy
 
 ⚠️ **CRITICAL:** Mom = Sulafat (warm adult mother). Bubabu = Leda (cute plush-toy voice). These MUST be different voices in the final mix. If using same TTS engine, pick distinctly different voice slot.
 
 ### NIKA (orange-stripe-tee boy) voice baseline (2 lines total)
-**Gemini TTS — VOICE: Aoede / STYLE: Narrative / PACE: Natural / ACCENT: Georgian**
+**Gemini TTS - VOICE: Aoede / STYLE: Narrative / PACE: Natural / ACCENT: Georgian**
 ```
 Real 9-10 year old Georgian boy voice. Aoede-typical child timbre — bright forward placement, open vowels, slight upward intonation, NOT adult-pretending-child, NOT female-disguised-as-boy. Child energy genuine. Distinctly DIFFERENT from both Sulafat (Mom) and Leda (Bubabu).
 ```
 - Scene 3 line: tired-bored zombie tone, calling up but not shouting (just woke from phone-trance)
-- Scene 9 line: bright excited tone, ear-to-ear smile in voice, energy released — opposite of his earlier tired courtyard delivery
+- Scene 9 line: bright excited tone, ear-to-ear smile in voice, energy released - opposite of his earlier tired courtyard delivery
 
-⚠️ **CRITICAL:** Nika = Aoede. NOT Sulafat (= Mom). NOT Leda (= Bubabu). All three must be distinguishable in audio playback. If Aoede unavailable for Georgian phonemes — use ElevenLabs child voice + Georgian language pack OR record real Georgian boy 9-10 yrs old.
+⚠️ **CRITICAL:** Nika = Aoede. NOT Sulafat (= Mom). NOT Leda (= Bubabu). All three must be distinguishable in audio playback. If Aoede unavailable for Georgian phonemes - use ElevenLabs child voice + Georgian language pack OR record real Georgian boy 9-10 yrs old.
 
 ### TTS engine + voice mapping summary
 | Speaker | Engine | Voice slot | Why this voice |
 |---------|--------|-----------|----------------|
-| Mom | Gemini 3.1 Flash TTS | **Sulafat** | Warm adult female storyteller — canonical Bubabu narrator voice |
+| Mom | Gemini 3.1 Flash TTS | **Sulafat** | Warm adult female storyteller - canonical Bubabu narrator voice |
 | Bubabu | Gemini 3.1 Flash TTS | **Leda** | Bright AI-companion timbre, distinct from Mom |
 | Nika | Gemini 3.1 Flash TTS | **Aoede** | Genuine child voice, canonical from Bubabu episode `20260425_ep_a_stars` |
 | Fallbacks | ElevenLabs / Tuya product voice | | Real Bubabu Tuya voice when available; ElevenLabs for child if Aoede fails Georgian |
 
 ---
 
-## BUBABU EYES — CRITICAL CLARIFICATION
+## BUBABU EYES - CRITICAL CLARIFICATION
 
-⚠️ **Bubabu has NO glasses. NO goggles. NO eyewear of any kind.** The cyan circles ARE Bubabu's actual eyes — built into the plush face like big cartoon owl eyes.
+⚠️ **Bubabu has NO glasses. NO goggles. NO eyewear of any kind.** The cyan circles ARE Bubabu's actual eyes - built into the plush face like big cartoon owl eyes.
 
 **Eye structure (per `1.jpeg` + `2.jpeg`):**
-1. OUTER RING — large round CYAN turquoise iris-area (the visible "eye" on the face, integrated into plush)
-2. MIDDLE RING — thin cream/beige inner ring (eyelid)
-3. CENTER — small round BLACK pupil with white catchlight highlight
-4. Top-inner accent — small yellow eyelid arc inside the cyan area
+1. OUTER RING - large round CYAN turquoise iris-area (the visible "eye" on the face, integrated into plush)
+2. MIDDLE RING - thin cream/beige inner ring (eyelid)
+3. CENTER - small round BLACK pupil with white catchlight highlight
+4. Top-inner accent - small yellow eyelid arc inside the cyan area
 
-These three layers TOGETHER make up Bubabu's eyes. There is no eyewear ON or AROUND the eyes — the cyan IS the eye color.
+These three layers TOGETHER make up Bubabu's eyes. There is no eyewear ON or AROUND the eyes - the cyan IS the eye color.
 
 **Universal Bubabu NEGATIVE block to paste in EVERY scene where Bubabu appears:**
 ```
@@ -162,17 +162,17 @@ Bubabu has TWO eye-display modes rendered into the ad:
 
 | State | When | Visual |
 |-------|------|--------|
-| **Standard cyan circles** | Idle / talking / wonder | Round cyan #5BC0DE stylized cyan circular eyes (Bubabu's ACTUAL EYES — round cyan iris-area + thin cream inner ring + small black pupil with white catchlight + tiny yellow eyelid accent — three concentric layers, NO glasses, NO goggles, this IS his face design), soft glow |
-| **HEART eyes** 💗 | Joy / affection / excitement response | **Match `3.jpeg` EXACTLY** — the uploaded real product photo of Bubabu with heart-eye display lit up. Reference photo is the source of truth for color, shape, position. Generator copies heart-eye visual 1:1 from photo, no reinterpretation. |
+| **Standard cyan circles** | Idle / talking / wonder | Round cyan #5BC0DE stylized cyan circular eyes (Bubabu's ACTUAL EYES - round cyan iris-area + thin cream inner ring + small black pupil with white catchlight + tiny yellow eyelid accent - three concentric layers, NO glasses, NO goggles, this IS his face design), soft glow |
+| **HEART eyes** 💗 | Joy / affection / excitement response | **Match `3.jpeg` EXACTLY** - the uploaded real product photo of Bubabu with heart-eye display lit up. Reference photo is the source of truth for color, shape, position. Generator copies heart-eye visual 1:1 from photo, no reinterpretation. |
 
 **Production approach:** generate BOTH eye states as separate image stills, then use img2vid to morph between them. Heart-state still is anchor frame for the morph animation.
 
 **Use heart eyes in:**
-- Scene 9 — when Main Boy shouts "Riddles!" (Bubabu responds with heart-eye flash)
-- Scene 10 — joy montage peak laughter moments (heart eyes pulse in/out)
-- Scene 11 — optional final wink (subtle heart flash at very end)
+- Scene 9 - when Main Boy shouts "Riddles!" (Bubabu responds with heart-eye flash)
+- Scene 10 - joy montage peak laughter moments (heart eyes pulse in/out)
+- Scene 11 - optional final wink (subtle heart flash at very end)
 
-This is a REAL Bubabu product capability — the LED display can show different shapes including hearts when toy detects emotional engagement. Showcasing this = product feature demo without explanation.
+This is a REAL Bubabu product capability - the LED display can show different shapes including hearts when toy detects emotional engagement. Showcasing this = product feature demo without explanation.
 
 ---
 
@@ -180,9 +180,9 @@ This is a REAL Bubabu product capability — the LED display can show different 
 
 Separate stills you generate to anchor the heart-eye animation. Use for img2vid morphs OR as static frames in editor.
 
-### HEART STATE — Scene 9 variant (Bubabu in Main Boy's hands)
+### HEART STATE - Scene 9 variant (Bubabu in Main Boy's hands)
 
-**REFERENCES TO UPLOAD:** `1.jpeg` + `2.jpeg` + `3.jpeg` ⭐ (real product photo with pink-heart eyes lit up — UPLOAD this) + `scene9_circles.png` (the standard-eye still you already generated)
+**REFERENCES TO UPLOAD:** `1.jpeg` + `2.jpeg` + `3.jpeg` ⭐ (real product photo with pink-heart eyes lit up - UPLOAD this) + `scene9_circles.png` (the standard-eye still you already generated)
 
 ```
 Pixar 3D animation MEDIUM CLOSE-UP. Bubabu pure white spherical fluffy plush owl held in child's hands at chest height (same composition and framing as scene9_circles.png reference). Match `1.jpeg` + `2.jpeg` plush form exactly.
@@ -204,7 +204,7 @@ DO NOT modify Bubabu form, hands, or composition — match scene9_circles.png ex
 
 ---
 
-### HEART STATE — Scene 10 variant (Bubabu in center floor)
+### HEART STATE - Scene 10 variant (Bubabu in center floor)
 
 **REFERENCES TO UPLOAD:** `1.jpeg` + `2.jpeg` + `3.jpeg` ⭐ (real product pink-heart eye photo) + `scene10_circles.png`
 
@@ -228,7 +228,7 @@ DO NOT modify scene composition or character poses — match scene10_circles.png
 
 ---
 
-### HEART STATE — Scene 11 final-hero variant (optional, for end wink)
+### HEART STATE - Scene 11 final-hero variant (optional, for end wink)
 
 **REFERENCES TO UPLOAD:** `1.jpeg` + `2.jpeg` + `3.jpeg` ⭐ (real product pink-heart eye photo) + `scene11_circles.png`
 
@@ -263,7 +263,7 @@ DO NOT modify ANY design element except Bubabu's eye shape (circles → hearts).
 
 ---
 
-## SCENE 1 — COURTYARD ESTABLISHING (Beat 1)
+## SCENE 1 - COURTYARD ESTABLISHING (Beat 1)
 
 **REFERENCES TO UPLOAD:**
 - `main_boy_ref.png` (Character 1 turnaround)
@@ -323,7 +323,7 @@ DO NOT modify character appearance — must match attached image exactly.
 
 ---
 
-## SCENE 2 — MOM AT WINDOW (Beat 2 Shot A)
+## SCENE 2 - MOM AT WINDOW (Beat 2 Shot A)
 
 **REFERENCES TO UPLOAD:**
 - `mom_ref.png` (Character 4 turnaround)
@@ -381,7 +381,7 @@ DO NOT modify appearance — match attached image.
 
 ---
 
-## SCENE 3 — BOYS LOOKING UP (Beat 2 Shot B)
+## SCENE 3 - BOYS LOOKING UP (Beat 2 Shot B)
 
 **REFERENCES TO UPLOAD:**
 - `main_boy_ref.png`
@@ -442,7 +442,7 @@ DO NOT modify character appearance — match attached image.
 
 ---
 
-## SCENE 4 — STAIRWELL CLIMB (Beat 3)
+## SCENE 4 - STAIRWELL CLIMB (Beat 3)
 
 **REFERENCES TO UPLOAD:**
 - `main_boy_ref.png`
@@ -487,7 +487,7 @@ DO NOT modify character appearance — match attached image.
 
 ---
 
-## SCENE 4.5 — MOM GREETS BOYS (Beat 3.5) ⭐ NEW
+## SCENE 4.5 - MOM GREETS BOYS (Beat 3.5) ⭐ NEW
 
 **REFERENCES TO UPLOAD:**
 - `main_boy_ref.png`
@@ -561,7 +561,7 @@ DO NOT modify appearance — match attached image.
 
 ---
 
-## SCENE 5 — BUBABU BOX REVEAL (Beat 4 Shot B-C)
+## SCENE 5 - BUBABU BOX REVEAL (Beat 4 Shot B-C)
 
 **REFERENCES TO UPLOAD:**
 - `main_boy_ref.png`
@@ -629,7 +629,7 @@ DO NOT modify character appearance — match attached image.
 
 ---
 
-## SCENE 5.5 — OPENING THE BOX (Beat 4 Shot C-D) ⭐ NEW
+## SCENE 5.5 - OPENING THE BOX (Beat 4 Shot C-D) ⭐ NEW
 
 **REFERENCES TO UPLOAD:**
 - `main_boy_ref.png`
@@ -681,7 +681,7 @@ DO NOT modify appearance — match attached image. Box top-flap mechanism is cri
 
 ---
 
-## SCENE 6 — UNBOXING + LIFT (Beat 4 Shot D-F)
+## SCENE 6 - UNBOXING + LIFT (Beat 4 Shot D-F)
 
 **REFERENCES TO UPLOAD:**
 - `main_boy_ref.png`
@@ -741,7 +741,7 @@ DO NOT modify appearance — match attached image.
 
 ---
 
-## SCENE 7 — BUBABU EYES ACTIVATE (Beat 5 — HERO SHOT)
+## SCENE 7 - BUBABU EYES ACTIVATE (Beat 5 - HERO SHOT)
 
 **REFERENCES TO UPLOAD:**
 - `1.jpeg` + `2.jpeg` ⭐ HERO SHOT
@@ -797,7 +797,7 @@ DO NOT modify Bubabu appearance — match attached image plush form.
 
 ---
 
-## SCENE 8 — BOYS WONDER (Beat 5 Shot B-C)
+## SCENE 8 - BOYS WONDER (Beat 5 Shot B-C)
 
 **REFERENCES TO UPLOAD:**
 - `main_boy_ref.png`
@@ -858,14 +858,14 @@ DO NOT modify appearance — match attached image.
 
 ---
 
-## SCENE 9 — BUBABU INVITATION (Beat 6)
+## SCENE 9 - BUBABU INVITATION (Beat 6)
 
 **REFERENCES TO UPLOAD:**
 - `main_boy_ref.png`
 - `friend1_ref.png`
 - `friend2_ref.png`
 - `1.jpeg` + `2.jpeg` (general Bubabu plush form)
-- `3.jpeg` ⭐ **MANDATORY** (Bubabu heart-eyes state — copy 1:1 for this scene)
+- `3.jpeg` ⭐ **MANDATORY** (Bubabu heart-eyes state - copy 1:1 for this scene)
 
 ### IMAGE PROMPT
 
@@ -960,14 +960,14 @@ DO NOT modify appearance — match attached image. Bubabu has NO physical glasse
 
 ---
 
-## SCENE 10 — JOY MONTAGE (Beat 7)
+## SCENE 10 - JOY MONTAGE (Beat 7)
 
 **REFERENCES TO UPLOAD:**
 - `main_boy_ref.png`
 - `friend1_ref.png`
 - `friend2_ref.png`
 - `1.jpeg` + `2.jpeg`
-- `3.jpeg` ⭐ (heart-eye state reference — CRITICAL for this scene)
+- `3.jpeg` ⭐ (heart-eye state reference - CRITICAL for this scene)
 - `mom_ref.png` (mom in BG doorway)
 
 Generate 5 separate stills + img2vid, OR generate as one wider shot with motion.
@@ -1041,7 +1041,7 @@ DO NOT modify appearance — match attached image.
 
 ---
 
-## SCENE 11 — FINAL HERO (Beat 8) — CANDY POP EXPLOSION
+## SCENE 11 - FINAL HERO (Beat 8) - CANDY POP EXPLOSION
 
 **REFERENCES TO UPLOAD:**
 - `1.jpeg` + `2.jpeg` ⭐
@@ -1110,7 +1110,7 @@ DO NOT modify Bubabu appearance — match attached image.
 ### NOTE on text rendering
 
 If Mkhedruli "ბუბაბუ" plush wordmark renders badly (60-90% AI failure rate per text-in-image rules):
-1. Generate image WITHOUT wordmark — clean composition with empty halo space above Bubabu
+1. Generate image WITHOUT wordmark - clean composition with empty halo space above Bubabu
 2. Add wordmark as PNG overlay in CapCut / After Effects using real Noto Sans Georgian Bold (or licensed plush font asset) tinted cyan #5BC0DE
 3. Add "360 ₾" and "bubabu.ge" text on top of generated sticker/pill SHAPES in editor for guaranteed crisp rendering
 
@@ -1120,8 +1120,8 @@ This editor-overlay path is the SAFER production route per cover.md / COVER_ENGI
 
 ## CRITICAL UNIVERSAL RULES (apply to every scene)
 
-1. **Pixar 3D style throughout** — never drift to photorealistic, anime, 2D, or live-action
+1. **Pixar 3D style throughout** - never drift to photorealistic, anime, 2D, or live-action
 2. **All character anchors visible** in every scene (paste full CHARACTER_BLOCK from character.md)
-3. **Bubabu beak ALWAYS CLOSED** — small triangle frozen, never animates open
-4. **LOCKED STATIC CAMERA** — except Scene 4 stairwell (5% shake exception only)
-5. **Identity Lock at end of every prompt:** "DO NOT modify any character's appearance — must match character reference sheets exactly. Pixar 3D animation style maintained throughout."
+3. **Bubabu beak ALWAYS CLOSED** - small triangle frozen, never animates open
+4. **LOCKED STATIC CAMERA** - except Scene 4 stairwell (5% shake exception only)
+5. **Identity Lock at end of every prompt:** "DO NOT modify any character's appearance - must match character reference sheets exactly. Pixar 3D animation style maintained throughout."

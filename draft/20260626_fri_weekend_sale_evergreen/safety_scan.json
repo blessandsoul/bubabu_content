@@ -1,0 +1,10 @@
+{
+  "agent": "bubabu",
+  "content": "20260626_fri_weekend_sale_evergreen",
+  "scan_type": "input_side_safety_engine",
+  "verdict": "PASS",
+  "raw_user_input_ingested": false,
+  "notes": "No raw user text / CSV / file / URL ingested. Built from the proven 20260617_wed_weekend_sale package (internal) + the user's verbatim prior caption (date tokens swapped to day-names). No PII, no prompt-injection surface. Offer figures (30%, day-names, store addresses) are client-set brand facts, not user-pasted external input.",
+  "pii_findings": [],
+  "injection_findings": []
+}

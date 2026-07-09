@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<title>Bubabu Stand Text Stickers - Preview (GE 6.5cm / EN 3.2cm letters)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;500;600;700;800;900&family=Noto+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --mm: 1.2px;            /* preview scale: 1 mm = 1.2 px */
+    --magenta:#FF1F8F;
+    --red:#E2231A;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:#E9E7E2;font-family:"Noto Sans",sans-serif;padding:24px}
+  h1{font-size:18px;margin:0 0 4px}
+  .sub{font-size:13px;color:#666;margin:0 0 16px}
+  .controls{position:sticky;top:0;background:#E9E7E2;padding:10px 0;z-index:5;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+  .controls button{font:700 14px "Noto Sans",sans-serif;padding:10px 18px;border:0;border-radius:10px;cursor:pointer;background:#111;color:#fff}
+  .controls button.alt{background:#fff;color:#111;border:2px solid #111}
+  .ruler{height:10px;background:repeating-linear-gradient(90deg,#111 0,#111 calc(var(--mm)*10),#fff calc(var(--mm)*10),#fff calc(var(--mm)*20));width:calc(var(--mm)*200);border:1px solid #111}
+  .ruler-label{font-size:11px;color:#666}
+  .sticker-row{margin:26px 0;overflow-x:auto}
+  .sticker{
+    display:inline-block;background:#fff;border-radius:calc(var(--mm)*8);
+    box-shadow:0 4px 18px rgba(0,0,0,.14);              /* preview only, not printed */
+    padding:calc(var(--mm)*15) calc(var(--mm)*22) calc(var(--mm)*13);
+    white-space:nowrap;
+  }
+  .sticker.en{padding:calc(var(--mm)*8) calc(var(--mm)*12) calc(var(--mm)*7)}
+  .wrap{display:inline-block;text-align:center}
+  :root{--w:600}  /* letter weight - client asked thinner ×2 (2026-06-12); switcher below */
+  .txt{display:inline-block;color:#000;line-height:1.05;letter-spacing:.025em;font-weight:var(--w)}
+  .ge .txt{font-family:"Noto Sans Georgian",sans-serif}
+  .en .txt{font-family:"Noto Sans",sans-serif}
+  .wbtn{font:700 13px "Noto Sans",sans-serif;padding:8px 14px;border:2px solid #111;border-radius:10px;cursor:pointer;background:#fff;color:#111}
+  .wbtn.on{background:#111;color:#fff}
+  .bar{
+    height:calc(var(--mm)*9);border-radius:999px;margin-top:calc(var(--mm)*7);
+    background:linear-gradient(90deg,#5BC0DE,#FF1F8F,#84CC16,#FFEB3B,#FF9F1C,#FF6B6B);
+    display:none;
+  }
+  .en .bar{height:calc(var(--mm)*5);margin-top:calc(var(--mm)*4)}
+  body.variantB .bar{display:block}
+  /* rev 2026-06-12 client «ჯობია ყველაფერი შავად ეწეროს» - ALL letters black, no magenta brand word, no red promo */
+  .brandword,.promo .txt{color:#000}
+  .label{font-size:12px;color:#777;margin-top:6px}
+  .note{font-size:12px;color:#888;max-width:740px;line-height:1.5;margin-top:30px}
+  @media print{.controls,.note,h1,.sub{display:none}}
+</style>
+</head>
+<body class="variantB">
+
+<h1>Bubabu Stand Text Stickers - 9 × GE + 9 × EN</h1>
+<p class="sub">White vinyl strips · Noto Sans Georgian / Noto Sans, weight 600 (400-900 switcher) · GE = MTAVRULI uniform-height letters 65&nbsp;mm · EN = ALL CAPS 32&nbsp;mm · every letter same height · matte lamination · text uses a hyphen, no em-dash</p>
+
+<div class="controls">
+  <button id="toggle">Rainbow underline: ON (letters stay black)</button>
+  <span class="ruler-label">Letter weight:</span>
+  <button class="wbtn" data-w="400">400</button>
+  <button class="wbtn" data-w="500">500</button>
+  <button class="wbtn on" data-w="600">600</button>
+  <button class="wbtn" data-w="700">700</button>
+  <button class="wbtn" data-w="800">800</button>
+  <button class="wbtn" data-w="900">900</button>
+  <span class="ruler"></span><span class="ruler-label">= 20 cm real size at this preview scale</span>
+</div>
+
+<div id="stage">Loading fonts…</div>
+
+<p class="note">
+  ALL letters 100% black (client decision 2026-06-12 - no colored words). The rainbow underline toggle is kept
+  only as an optional extra to show on request; default = OFF. Width labels are auto-measured real production
+  sizes and re-measure when you switch weight. Shadows on this page are screen preview only - printed stickers
+  have NO shadow.
+</p>
+
+<script>
+const STICKERS = [
+  {ge:'ბუბაბუ - იდეალური საჩუქარი', en:'Bubabu - The Perfect Gift', brand:true},
+  {ge:'პრემიუმ საჩუქრები',          en:'Premium Gifts'},
+  {ge:'სასწავლო საჩუქრები',         en:'Educational Gifts'},
+  {ge:'ტექნო საჩუქრები',            en:'Tech Gifts'},
+  {ge:'სახალისო საჩუქრები',         en:'Fun Gifts'},
+  {ge:'ასაწყობი საჩუქრები',         en:'Build & Create Gifts'},
+  {ge:'მაგნიტური სათამაშოები',      en:'Magnetic Toys'},
+  {ge:'ჭკვიანი საჩუქრები',          en:'Smart Gifts'},
+  {ge:'აქცია',                      en:'Special Offer', promo:true},
+];
+const MM = 1.2;                 // px per mm (keep in sync with --mm)
+const GE_BODY_MM = 65;          // Georgian Mtavruli letter height - UNIFORM, every letter exactly this
+const EN_CAP_MM  = 32;          // English cap height (≈ half of GE) - ALL CAPS, uniform
+
+// Mkhedruli source → Mtavruli render (uniform letter height, client directive 2026-06-12)
+const toMt = s => [...s].map(c => {
+  const cp = c.codePointAt(0);
+  return (cp >= 0x10D0 && cp <= 0x10FA) ? String.fromCodePoint(cp + 0xBC0) : c;
+}).join('');
+
+function inkFactor(fontFamily, glyph){
+  // returns px font-size needed so the glyph ink height = 1px (letter height is weight-independent)
+  const c = document.createElement('canvas').getContext('2d');
+  c.font = '700 100px "'+fontFamily+'"';
+  const m = c.measureText(glyph);
+  const ink = m.actualBoundingBoxAscent + m.actualBoundingBoxDescent;
+  return 100 / ink;
+}
+
+const ROWS = [];
+function measureAll(){
+  requestAnimationFrame(()=>{
+    ROWS.forEach(r=>{
+      const w = Math.round(r.st.offsetWidth / MM / 10);   // cm
+      const h = Math.round(r.st.offsetHeight / MM / 10);  // cm
+      r.label.textContent = '#'+r.n+' '+r.lang.toUpperCase()+' - ≈ '+w+' cm × '+h+' cm (production size)';
+    });
+  });
+}
+
+document.fonts.ready.then(()=>{
+  const geFS = GE_BODY_MM * MM * inkFactor('Noto Sans Georgian','Ა'); // Mtavruli glyph = uniform height
+  const enFS = EN_CAP_MM  * MM * inkFactor('Noto Sans','H');          // cap-height glyph
+  const stage = document.getElementById('stage');
+  stage.innerHTML = '';
+
+  STICKERS.forEach((s,i)=>{
+    [['ge',toMt(s.ge),geFS],['en',s.en.toUpperCase(),enFS]].forEach(([lang,text,fs])=>{
+      const row = document.createElement('div'); row.className='sticker-row';
+      const st  = document.createElement('div'); st.className='sticker '+lang+(s.promo?' promo':'');
+      const wrap= document.createElement('div'); wrap.className='wrap';
+      const txt = document.createElement('div'); txt.className='txt'; txt.style.fontSize=fs+'px';
+      if(s.brand){
+        const word = lang==='ge' ? toMt('ბუბაბუ') : 'BUBABU';
+        const rest = text.slice(word.length);
+        txt.innerHTML = '<span class="brandword">'+word+'</span>'+rest.replace('&','&amp;');
+      } else {
+        txt.textContent = text;
+      }
+      const bar = document.createElement('div'); bar.className='bar';
+      wrap.appendChild(txt); wrap.appendChild(bar); st.appendChild(wrap);
+      const label = document.createElement('div'); label.className='label';
+      row.appendChild(st); row.appendChild(label); stage.appendChild(row);
+      ROWS.push({st, label, n:i+1, lang});
+    });
+  });
+  measureAll();
+});
+
+document.querySelectorAll('.wbtn').forEach(b=>{
+  b.addEventListener('click',()=>{
+    document.documentElement.style.setProperty('--w', b.dataset.w);
+    document.querySelectorAll('.wbtn').forEach(x=>x.classList.toggle('on', x===b));
+    measureAll();   // width shrinks/grows with weight - refresh labels
+  });
+});
+
+const btn = document.getElementById('toggle');
+btn.addEventListener('click',()=>{
+  document.body.classList.toggle('variantB');
+  const b = document.body.classList.contains('variantB');
+  btn.textContent = b ? 'Rainbow underline: ON (letters stay black)' : 'Rainbow underline: OFF';
+  btn.classList.toggle('alt', !b);
+});
+</script>
+</body>
+</html>

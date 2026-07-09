@@ -1,0 +1,19 @@
+%% Bubabu Smart Gifts Shop — MVP build task canvas
+%% updatedTime: 2026-06-13 · batch 001 · one `doing` node at a time
+%% drill-down: grep node ID -> read :: ref: path
+flowchart TD
+  N0["001-N0 Setup shop_build tracking (canvas+digest+scope) :: status: done"]
+  N1["001-N1 Premortem GATE — CONDITIONAL PASS: COD-first + clean-seed decouple :: status: done :: ref: ../../premortem/content/20260613_bubabu_shop_mvp/transcript.md"]
+  N2["001-N2 Scaffold bubabu-shop (Next.js App Router + FLORCA UI/cart + next-intl + Docker) :: status: todo"]
+  N3["001-N3 Data model + seed (Prisma: Product/Category/Order; seed from product_catalog.md) :: status: todo"]
+  N4["001-N4 Storefront pages (homepage MVP blocks, Bubabu hero, 3-4 categories, listing, detail) :: status: todo"]
+  N5["001-N5 i18n GE/EN (next-intl ka default, bilingual fields, LanguageSwitcher) :: status: todo"]
+  N6["001-N6 Cart + checkout + Order + confirmation email (Resend) :: status: todo"]
+  N7["001-N7 GE payment gateway TBC/BoG :: status: blocked :: BLOCKER: Archil merchant creds"]
+  N8["001-N8 Minimal admin (product CRUD + order list) :: status: todo"]
+  N9["001-N9 Analytics GA4 + Meta Pixel :: status: todo"]
+  N10["001-N10 Deploy Coolify/VPS staging + /api/health smoke :: status: todo"]
+  N11["001-N11 Swap real catalog data :: status: blocked :: BLOCKER: Archil final list + photos"]
+  N0 --> N1 --> N2 --> N3 --> N4 --> N5 --> N6 --> N7 --> N8 --> N9 --> N10 --> N11
+  N3 -.seed temp.-> N11
+  N6 -.pay step.-> N7

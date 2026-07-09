@@ -1,4 +1,4 @@
-# Facebook — Storeroom Reveal Teaser (SOCIAL_ENGINE v2.1 - Georgian Version)
+# Facebook - Storeroom Reveal Teaser (SOCIAL_ENGINE v2.1 - Georgian Version)
 
 **Language:** Georgian body + Georgian first comment (Localized for GE channels).
 **Target platforms:** Bubabu official Facebook + Instagram caption + Georgian repost.
@@ -36,18 +36,18 @@
 
 | Layer | Content | Check |
 |-------|---------|-------|
-| Line 1 — **Naked hook** (no emoji) | «ხის შიგნით არის კარი, რომელიც არასდროს გაღებულა.» | ✅ no emoji, single-line, story-pull |
-| Line 2 — **SETUP** (1-3 thematic-fit emoji) | 🌲 + cloud-tree line | ✅ tree emoji fits setting |
-| Line 3 — **CONFLICT / REVEAL** (1-3 emoji) | 🕯️ + door opening line | ✅ candle emoji fits warm reveal |
-| Line 4 — **PUNCH** (1-3 emoji) | 🎁 + gifts line | ✅ gift emoji fits product/promise |
+| Line 1 - **Naked hook** (no emoji) | «ხის შიგნით არის კარი, რომელიც არასდროს გაღებულა.» | ✅ no emoji, single-line, story-pull |
+| Line 2 - **SETUP** (1-3 thematic-fit emoji) | 🌲 + cloud-tree line | ✅ tree emoji fits setting |
+| Line 3 - **CONFLICT / REVEAL** (1-3 emoji) | 🕯️ + door opening line | ✅ candle emoji fits warm reveal |
+| Line 4 - **PUNCH** (1-3 emoji) | 🎁 + gifts line | ✅ gift emoji fits product/promise |
 | Closing line (no emoji) | «ძალიან მალე, ერთი ბავშვი გაიღვიძებს და ფანჯრის რაფაზე საჩუქარს იპოვის.» | ✅ no emoji, ends on the promise |
 | Hashtag line | 8 hashtags (3 English brand/style, 5 Georgian topic) | ✅ within 5-8 range |
 
 ### Thematic-fit emoji audit (SE§4 v2.1)
 
-- 🌲 — picked for cloud-tree
-- 🕯️ — picked for warm intimate door-opening
-- 🎁 — picked for the gift-promise
+- 🌲 - picked for cloud-tree
+- 🕯️ - picked for warm intimate door-opening
+- 🎁 - picked for the gift-promise
 
 ### Share triggers used (SE§3)
 

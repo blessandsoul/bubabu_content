@@ -1,4 +1,4 @@
-# Bubabu on pure white BG — Nano Banana 2 prompt
+# Bubabu on pure white BG - Nano Banana 2 prompt
 
 **Purpose:** isolate Bubabu plush from 1.jpeg + 2.jpeg refs onto pure white background. Use as cleaner center logo for QR (or any sticker where you need Bubabu cutout-style on white).
 
@@ -16,7 +16,7 @@
 
 ## Pre-render checks
 
-- [ ] Both `1.jpeg` + `2.jpeg` uploaded to Nano Banana 2 (mandatory — generator uses them as appearance source).
+- [ ] Both `1.jpeg` + `2.jpeg` uploaded to Nano Banana 2 (mandatory - generator uses them as appearance source).
 - [ ] Aspect 1:1 square.
 - [ ] After render: pure white background, NO shadow, NO atmosphere, Bubabu visible from his classic 3/4 angle, beak closed, goggles matte cyan.
 
@@ -36,4 +36,4 @@ If 3+ retries fail → manual background removal in editor (Photoshop / GIMP / o
 
 ## Calibration
 
-L1 FORMAT — SPEC ready to paste. L2 SPEC — Pixar lock + no-appearance-dump (refs attached) + isolated cutout vocabulary. L3 — PENDING NB2 render (will it actually produce clean white-only BG?). L4 — viewer test = does cleaner cutout improve QR center visual?
+L1 FORMAT - SPEC ready to paste. L2 SPEC - Pixar lock + no-appearance-dump (refs attached) + isolated cutout vocabulary. L3 - PENDING NB2 render (will it actually produce clean white-only BG?). L4 - viewer test = does cleaner cutout improve QR center visual?

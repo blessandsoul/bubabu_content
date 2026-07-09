@@ -1,0 +1,32 @@
+/* BUBABU.GE - animations / motion */
+
+/* scroll reveal */
+.reveal{opacity:0;transform:translateY(26px)}
+.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.js .reveal.in{opacity:1;transform:none}
+body:not(.js) .reveal{opacity:1;transform:none}
+
+/* marquee (promo bar) */
+.marq{overflow:hidden}
+.marq__row{display:flex;gap:46px;width:max-content;animation:marq 34s linear infinite}
+.marq:hover .marq__row{animation-play-state:paused}
+@keyframes marq{to{transform:translateX(-50%)}}
+
+/* gentle float (hero owl) */
+.float{animation:float 7s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+
+/* breathing gradient (dark banners) */
+.breathe{background-size:200% 200%;animation:breathe 18s ease infinite}
+@keyframes breathe{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+
+/* image hover zoom */
+.zoom{overflow:hidden}
+.zoom img{transition:transform .7s var(--ease)}
+.zoom:hover img{transform:scale(1.06)}
+
+/* cart drawer + mega menu transitions handled in components */
+@media (prefers-reduced-motion: reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal{opacity:1!important;transform:none!important}
+}

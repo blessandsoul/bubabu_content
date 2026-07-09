@@ -1,6 +1,6 @@
-# მშობლების გზამკვლევი — ბუბაბუსთან საუბრის 100 კითხვა
+# მშობლების გზამკვლევი - ბუბაბუსთან საუბრის 100 კითხვა
 
-**Bubabu Parent Guide PDF — 10 страниц**
+**Bubabu Parent Guide PDF - 10 страниц**
 **Bundle value:** 50 GEL (часть Hormozi value stack на landing)
 **Lead magnet:** также бесплатно для email opt-in (выдаётся через welcome email до покупки)
 
@@ -11,7 +11,7 @@
 | Стр | Раздел | Содержимое |
 |-----|--------|-----------|
 | 1 | Cover | Title + Bubabu hero image + Axiom Smart logo |
-| 2 | Введение | "Ваш ребёнок — ваш Bubabu — этот гайд" (3 параграфа) |
+| 2 | Введение | "Ваш ребёнок - ваш Bubabu - этот гайд" (3 параграфа) |
 | 3 | Как это работает | 5 шагов как начать диалог |
 | 4 | 20 ENTRY вопросов | первый разговор с Bubabu |
 | 5 | 20 EDUCATION вопросов | "почему звёзды светят" type |
@@ -23,7 +23,7 @@
 
 ---
 
-## PAGE 1 — COVER
+## PAGE 1 - COVER
 
 ```
 [Big Bubabu hero image — cyan goggles glow]
@@ -40,7 +40,7 @@ bubabu.ge
 
 ---
 
-## PAGE 2 — ВВЕДЕНИЕ
+## PAGE 2 - ВВЕДЕНИЕ
 
 ```
 გამარჯობა, ძვირფასო მშობელო.
@@ -62,7 +62,7 @@ bubabu.ge
 
 ---
 
-## PAGE 3 — КАК ЭТО РАБОТАЕТ
+## PAGE 3 - КАК ЭТО РАБОТАЕТ
 
 ```
 როგორ დაიწყოთ — 5 ნაბიჯი
@@ -88,7 +88,7 @@ bubabu.ge
 
 ---
 
-## PAGE 4 — 20 ENTRY ВОПРОСОВ
+## PAGE 4 - 20 ENTRY ВОПРОСОВ
 
 ```
 🌱 პირველი დღის კითხვები
@@ -117,7 +117,7 @@ bubabu.ge
 
 ---
 
-## PAGE 5 — 20 EDUCATION ВОПРОСОВ
+## PAGE 5 - 20 EDUCATION ВОПРОСОВ
 
 ```
 🧠 ცოდნის გასახდელად
@@ -146,7 +146,7 @@ bubabu.ge
 
 ---
 
-## PAGE 6 — 20 EMOTIONAL ВОПРОСОВ
+## PAGE 6 - 20 EMOTIONAL ВОПРОСОВ
 
 ```
 💛 გრძნობების გასაგებად
@@ -175,7 +175,7 @@ bubabu.ge
 
 ---
 
-## PAGE 7 — 20 IMAGINATION ВОПРОСОВ
+## PAGE 7 - 20 IMAGINATION ВОПРОСОВ
 
 ```
 ✨ წარმოსახვის გასააქტიურებლად
@@ -204,7 +204,7 @@ bubabu.ge
 
 ---
 
-## PAGE 8 — 20 BEDTIME ВОПРОСОВ
+## PAGE 8 - 20 BEDTIME ВОПРОСОВ
 
 ```
 🌙 ძილის წინ — წყნარი მომენტებისთვის
@@ -233,7 +233,7 @@ bubabu.ge
 
 ---
 
-## PAGE 9 — PRO TIPS ДЛЯ РОДИТЕЛЕЙ
+## PAGE 9 - PRO TIPS ДЛЯ РОДИТЕЛЕЙ
 
 ```
 👨‍👩‍👧 5 PRO TIPS
@@ -258,7 +258,7 @@ bubabu.ge
 
 ---
 
-## PAGE 10 — FINAL + CTA
+## PAGE 10 - FINAL + CTA
 
 ```
 რა მოდის შემდეგ?
@@ -309,13 +309,13 @@ bubabu.ge
 
 ## USAGE
 
-1. **Bundle bonus** на bubabu.ge — выдаётся после покупки
-2. **Lead magnet** — отдаётся бесплатно за email opt-in (welcome funnel)
-3. **Print mini** — 2-страничная версия для физ.магазинов (Tbilisi Mall, Galleria) как giveaway
-4. **Social asset** — каждая категория (entry/education/emotional/imagination/bedtime) = карусель пост в FB/IG
+1. **Bundle bonus** на bubabu.ge - выдаётся после покупки
+2. **Lead magnet** - отдаётся бесплатно за email opt-in (welcome funnel)
+3. **Print mini** - 2-страничная версия для физ.магазинов (Tbilisi Mall, Galleria) как giveaway
+4. **Social asset** - каждая категория (entry/education/emotional/imagination/bedtime) = карусель пост в FB/IG
 
 ## QA self-check
-- [x] 100 вопросов на грузинском — sorted по 5 категориям × 20 вопросов
+- [x] 100 вопросов на грузинском - sorted по 5 категориям × 20 вопросов
 - [x] Pro tips для родителей включены
 - [x] Cross-promotion на следующие продукты (smart light, lock, camera)
 - [x] CTA на bubabu.ge + UGC harvest invitation
